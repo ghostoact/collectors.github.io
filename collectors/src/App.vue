@@ -1,19 +1,15 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld/>
     <FrameTest/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
 import FrameTest from './components/FrameTest'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
     FrameTest
   }
 }
