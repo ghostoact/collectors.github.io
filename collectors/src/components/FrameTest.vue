@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="ultra-item" v-for="ultra in ultraman" :key="ultra.id">
+    <div class="ultra-item" v-for="ultra in ultraman" :key="ultra.id" :style="'background-image: url(./static/img/ultraman/'+ultra.id+'.jpg);'">
       {{ ultra.name.zh }}
     </div>
   </div>
@@ -1430,5 +1430,6 @@ export default {
   float: left;
   background-color: #f8f8f8;
   margin: 0 5px 5px 0;
+  background-size: cover;
 }
 </style>
