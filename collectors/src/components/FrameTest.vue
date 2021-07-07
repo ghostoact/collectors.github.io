@@ -30,9 +30,9 @@
             '.png);'
           "
         >
-         <div class="item-title">
-          {{ ultra.name.zh }}
-        </div>
+          <div class="item-title">
+            {{ ultra.name.zh }}
+          </div>
         </div>
       </div>
       <div class="box-list">
@@ -46,9 +46,9 @@
             '.png);'
           "
         >
-         <div class="item-title">
-          {{ ultra.name.zh }}
-        </div>
+          <div class="item-title">
+            {{ ultra.name.zh }}
+          </div>
         </div>
       </div>
     </div>
@@ -1420,7 +1420,10 @@ export default {
           },
           first: 2003,
         },
-      ],
+      ], //奥特曼数据
+      ultramedal: [], //泽塔奥特勋章
+      hyperkeys: [], //特利迦胜利超越之钥
+      sofubi: [], //500软胶
       baseList: null, //基础形态列表
       nowUltra: {
         info: null, //基础信息
