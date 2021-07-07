@@ -1,13 +1,13 @@
 <template>
   <div>
-    <!-- <div class="ultra-item" v-for="ultra in ultraman" :key="ultra.id" :style="'background-image: url(./static/img/ultraman/'+ultra.id+'.jpg);'"> -->
     <div class="item-list">
-      <div
+      <div class="item-box" v-for="ultra in baseList" :key="ultra.id" @click="getInfoById(ultra.id)" :style="'background-image: url(./static/img/ultraman/thumb/'+ultra.id+'.png);'">
+      <!-- <div
         class="item-box"
         v-for="ultra in baseList"
         :key="ultra.id"
         @click="getInfoById(ultra.id)"
-      >
+      > -->
         {{ ultra.name.zh }}
       </div>
     </div>
@@ -386,7 +386,7 @@ export default {
           id: 33,
           type: "base",
           name: {
-            zh: "阿古茹奥特曼至高型",
+            zh: "阿古茹奥特曼",
             jp: "ウルトラマンアグル",
             en: "Ultraman Agul"
           },
@@ -1467,14 +1467,15 @@ export default {
   overflow: hidden;
 }
 .item-box {
-  width: 80px;
-  height: 70px;
-  text-align: center;
-  padding-top: 22px;
-  float: left;
-  background-color: #f8f8f8;
-  margin: 0 5px 5px 0;
-  background-size: cover;
+    width: 90px;
+    height: 70px;
+    text-align: center;
+    padding-top: 22px;
+    float: left;
+    background-color: #f8f8f8;
+    margin: 0 5px 5px 0;
+    background-size: cover;
+    background-position: center;
 }
 .detail-box {
   overflow: hidden;
