@@ -1,8 +1,18 @@
 <template>
   <div>
     <div class="item-list">
-      <div class="item-box" v-for="ultra in baseList" :key="ultra.id" @click="getInfoById(ultra.id)" :style="'background-image: url(./static/img/ultraman/thumb/'+ultra.id+'.png);'">
-      <!-- <div
+      <div
+        class="item-box"
+        v-for="ultra in baseList"
+        :key="ultra.id"
+        @click="getInfoById(ultra.id)"
+        :style="
+          'background-image: url(./static/img/ultraman/thumb/' +
+            ultra.id +
+            '.png);'
+        "
+      >
+        <!-- <div
         class="item-box"
         v-for="ultra in baseList"
         :key="ultra.id"
@@ -29,7 +39,7 @@
 
 <script>
 // 1.奥特曼列表 √
-// 2.奥特曼形态列表+相关融合列表
+// 2.奥特曼形态列表+相关融合列表 √
 // 3.周边列表
 // 4.形态对应相关周边,例如泽塔勋章和特利迦钥匙
 // 5.组合测试，选择不同的奥特曼，得出形态
@@ -37,6 +47,11 @@
 // 类型分别有：基础 base、形态 form、融合 fusion
 // 形态 form 有 baseId
 // 融合 fusion 有数组 fusionArr
+// ultraman 数组的下标与id是对应的，不可错误
+
+// 难题：
+// 欧布：涉及到欧布设定的基本形态切换问题，从最早的重光形态到欧布原生
+// 捷德：类似欧布的基本形态问题，
 export default {
   name: "FrameTest",
   data() {
@@ -753,9 +768,9 @@ export default {
           id: 68,
           type: "base",
           name: {
-            zh: "欧布奥特曼",
-            jp: "ウルトラマンオーブ",
-            en: "Ultraman Orb"
+            zh: "欧布奥特曼 原生形态",
+            jp: "オーブオリジン",
+            en: "Ultraman Orb Origin"
           },
           first: 2016
         },
@@ -770,25 +785,14 @@ export default {
           },
           first: 2016
         },
-        {
-          id: 70,
-          type: "form",
-          formId: 68,
-          name: {
-            zh: "欧布奥特曼 原生形态",
-            jp: "オーブオリジン",
-            en: "Orb Origin"
-          },
-          first: 2016
-        },
+        { id: 70 },
         {
           id: 71,
-          type: "fusion",
-          fusionArr: [103, 0, 60],
+          type: "base",
           name: {
-            zh: "捷德奥特曼 原始形态",
+            zh: "捷德奥特曼 原初形态",
             jp: "ウルトラマンジード",
-            en: "Ultraman Geed Primitive"
+            en: "Original Form"
           },
           first: 2017
         },
@@ -1050,7 +1054,7 @@ export default {
         {
           id: 96,
           type: "fusion",
-          fusionArr: [69, 0, 20],
+          fusionArr: [68, 0, 20],
           name: {
             zh: "欧布奥特曼 重光形态",
             jp: "スペシウムゼペリオン",
@@ -1061,7 +1065,7 @@ export default {
         {
           id: 97,
           type: "fusion",
-          fusionArr: [69, 6, 54],
+          fusionArr: [68, 6, 54],
           name: {
             zh: "欧布奥特曼 暴炎形态",
             jp: "バーンマイト",
@@ -1072,7 +1076,7 @@ export default {
         {
           id: 98,
           type: "fusion",
-          fusionArr: [69, 3, 62],
+          fusionArr: [68, 3, 62],
           name: {
             zh: "欧布奥特曼 疾风形态",
             jp: "ハリケーンスラッシュ",
@@ -1083,7 +1087,7 @@ export default {
         {
           id: 99,
           type: "fusion",
-          fusionArr: [69, 1, 60],
+          fusionArr: [68, 1, 60],
           name: {
             zh: "欧布奥特曼 暗耀形态",
             jp: "サンダーブレスター",
@@ -1094,7 +1098,7 @@ export default {
         {
           id: 100,
           type: "fusion",
-          fusionArr: [69, 65, 67],
+          fusionArr: [68, 65, 67],
           name: {
             zh: "欧布奥特曼 煌闪形态",
             jp: "ライトニングアタッカー",
@@ -1105,7 +1109,7 @@ export default {
         {
           id: 101,
           type: "fusion",
-          fusionArr: [69, 2, 62],
+          fusionArr: [68, 2, 62],
           name: {
             zh: "欧布奥特曼 智勇形态",
             jp: "エメリウムスラッガー",
@@ -1116,7 +1120,7 @@ export default {
         {
           id: 102,
           type: "fusion",
-          fusionArr: [70, 65, 66, 67],
+          fusionArr: [68, 65, 66, 67],
           name: {
             zh: "欧布奥特曼 三重形态",
             jp: "オーブトリニティ",
@@ -1126,18 +1130,19 @@ export default {
         },
         {
           id: 103,
-          type: "base",
+          type: "fusion",
+          fusionArr: [71, 0, 60],
           name: {
-            zh: "捷德奥特曼 原初形态",
+            zh: "捷德奥特曼 原始形态",
             jp: "ウルトラマンジード",
-            en: "Original Form"
+            en: "Ultraman Geed Primitive"
           },
           first: 2017
         },
         {
           id: 104,
           type: "fusion",
-          fusionArr: [103, 2, 8],
+          fusionArr: [71, 2, 8],
           name: {
             zh: "捷德奥特曼 刚燃形态",
             jp: "ソリッドバーニング",
@@ -1148,7 +1153,7 @@ export default {
         {
           id: 105,
           type: "fusion",
-          fusionArr: [103, 58, 38],
+          fusionArr: [71, 58, 38],
           name: {
             zh: "捷德奥特曼 机敏形态",
             jp: "アクロスマッシャー",
@@ -1159,7 +1164,7 @@ export default {
         {
           id: 106,
           type: "fusion",
-          fusionArr: [103, 62, 5],
+          fusionArr: [71, 62, 5],
           name: {
             zh: "捷德奥特曼 豪勇形态",
             jp: "マグニフィセント",
@@ -1170,7 +1175,7 @@ export default {
         {
           id: 107,
           type: "fusion",
-          fusionArr: [103, 60, 10],
+          fusionArr: [71, 60, 10],
           name: {
             zh: "捷德奥特曼 尊皇形态",
             jp: "ロイヤルメガマスター",
@@ -1181,7 +1186,7 @@ export default {
         {
           id: 108,
           type: "form",
-          formId: 103,
+          formId: 71,
           name: {
             zh: "捷德奥特曼 终极形态",
             jp: "ウルティメイトファイナル",
@@ -1192,7 +1197,7 @@ export default {
         {
           id: 109,
           type: "fusion",
-          fusionArr: [103, 65, 67, 70],
+          fusionArr: [71, 65, 67, 70],
           name: {
             zh: "捷德奥特曼 银河初升",
             jp: "ギャラクシーライジング",
@@ -1357,7 +1362,7 @@ export default {
         {
           id: 124,
           type: "fusion",
-          fusionArr: [65, 66, 67, 70, 71, 72, 73, 74, 77, 79, 80],
+          fusionArr: [65, 66, 67, 68, 71, 72, 73, 74, 77, 79, 80],
           name: {
             zh: "令迦奥特曼",
             jp: "ウルトラマンレイガ",
@@ -1467,15 +1472,15 @@ export default {
   overflow: hidden;
 }
 .item-box {
-    width: 90px;
-    height: 70px;
-    text-align: center;
-    padding-top: 22px;
-    float: left;
-    background-color: #f8f8f8;
-    margin: 0 5px 5px 0;
-    background-size: cover;
-    background-position: center;
+  width: 90px;
+  height: 70px;
+  text-align: center;
+  padding-top: 22px;
+  float: left;
+  background-color: #f8f8f8;
+  margin: 0 5px 5px 0;
+  background-size: cover;
+  background-position: center;
 }
 .detail-box {
   overflow: hidden;
