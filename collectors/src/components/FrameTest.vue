@@ -1,15 +1,30 @@
 <template>
   <div>
     <div class="item-list">
-      <characterItem  v-for="ultra in baseList" v-bind:character="ultra"  @click.native="getInfoById(ultra.id)" :key="ultra.id"/>
+      <characterItem
+        v-for="ultra in baseList"
+        v-bind:character="ultra"
+        @click.native="getInfoById(ultra.id)"
+        :key="ultra.id"
+      />
     </div>
     <div class="detail-box" v-if="nowUltra.info != null">
       <p>{{ nowUltra.info.name.zh }}</p>
       <div class="box-list">
-              <characterItem  v-for="ultra in nowUltra.form" v-bind:character="ultra"  @click.native="getInfoById(ultra.id)" :key="ultra.id"/>
+        <characterItem
+          v-for="ultra in nowUltra.form"
+          v-bind:character="ultra"
+          @click.native="getInfoById(ultra.id)"
+          :key="ultra.id"
+        />
       </div>
       <div class="box-list">
-        <characterItem  v-for="ultra in nowUltra.fusion" v-bind:character="ultra"  @click.native="getInfoById(ultra.id)" :key="ultra.id"/>
+        <characterItem
+          v-for="ultra in nowUltra.fusion"
+          v-bind:character="ultra"
+          @click.native="getInfoById(ultra.id)"
+          :key="ultra.id"
+        />
       </div>
     </div>
   </div>
@@ -1471,9 +1486,18 @@ export default {
 }
 .detail-box {
   overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999999;
+  background-color: rgb(89 89 89 / 53%);
+  -webkit-filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+  -webkit-backdrop-filter: saturate(180%) blur(8px);
+  backdrop-filter: saturate(180%) blur(8px);
 }
 .box-list {
   overflow: hidden;
-  margin-bottom: 20px;
 }
 </style>
