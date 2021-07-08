@@ -8,23 +8,30 @@
         :key="ultra.id"
       />
     </div>
-    <div class="detail-box" v-if="nowUltra.info != null">
-      <p>{{ nowUltra.info.name.zh }}</p>
-      <div class="box-list">
-        <characterItem
-          v-for="ultra in nowUltra.form"
-          v-bind:character="ultra"
-          @click.native="getInfoById(ultra.id)"
-          :key="ultra.id"
-        />
+    <div class="detail-box" v-show="isOpen" v-if="nowUltra.info != null">
+      <div class="close-btn" @click="closeDetail">
+        <i class="iconfont icon-fanhuicopy"></i>
       </div>
-      <div class="box-list">
-        <characterItem
-          v-for="ultra in nowUltra.fusion"
-          v-bind:character="ultra"
-          @click.native="getInfoById(ultra.id)"
-          :key="ultra.id"
-        />
+      <div class="detail-warp">
+        <p>{{ nowUltra.info.name.zh }}</p>
+        <div class="box-list" v-if="nowUltra.form.length != 0">
+          <p class="box-title">型态</p>
+          <characterItem
+            v-for="ultra in nowUltra.form"
+            v-bind:character="ultra"
+            @click.native="getInfoById(ultra.id)"
+            :key="ultra.id"
+          />
+        </div>
+        <div class="box-list" v-if="nowUltra.fusion.length != 0">
+          <p class="box-title">融合</p>
+          <characterItem
+            v-for="ultra in nowUltra.fusion"
+            v-bind:character="ultra"
+            @click.native="getInfoById(ultra.id)"
+            :key="ultra.id"
+          />
+        </div>
       </div>
     </div>
   </div>
@@ -49,7 +56,7 @@ import CharacterItem from "@/components/CharacterItem";
 export default {
   name: "FrameTest",
   components: {
-    CharacterItem
+    CharacterItem,
   },
   data() {
     return {
@@ -60,9 +67,9 @@ export default {
           name: {
             zh: "奥特曼",
             jp: "ウルトラマン",
-            en: "ultraman"
+            en: "ultraman",
           },
-          first: 1966
+          first: 1966,
         },
         {
           id: 1,
@@ -70,9 +77,9 @@ export default {
           name: {
             zh: "佐菲",
             jp: "ゾフィー",
-            en: "Zoffy"
+            en: "Zoffy",
           },
-          first: 1967
+          first: 1967,
         },
         {
           id: 2,
@@ -80,9 +87,9 @@ export default {
           name: {
             zh: "赛文奥特曼",
             jp: "ウルトラセブン",
-            en: "UltraSeven"
+            en: "UltraSeven",
           },
-          first: 1967
+          first: 1967,
         },
         {
           id: 3,
@@ -90,9 +97,9 @@ export default {
           name: {
             zh: "杰克奥特曼",
             jp: "ウルトラマンジャック",
-            en: "Ultraman Jack"
+            en: "Ultraman Jack",
           },
-          first: 1971
+          first: 1971,
         },
         {
           id: 4,
@@ -100,9 +107,9 @@ export default {
           name: {
             zh: "艾斯奥特曼",
             jp: "ウルトラマンエース",
-            en: "Ultraman Ace"
+            en: "Ultraman Ace",
           },
-          first: 1972
+          first: 1972,
         },
         {
           id: 5,
@@ -110,9 +117,9 @@ export default {
           name: {
             zh: "奥特之父",
             jp: "ウルトラの父",
-            en: "Father of Ultra"
+            en: "Father of Ultra",
           },
-          first: 1972
+          first: 1972,
         },
         {
           id: 6,
@@ -120,9 +127,9 @@ export default {
           name: {
             zh: "泰罗奥特曼",
             jp: "ウルトラマンタロウ",
-            en: "Ultraman Taro"
+            en: "Ultraman Taro",
           },
-          first: 1973
+          first: 1973,
         },
         {
           id: 7,
@@ -130,9 +137,9 @@ export default {
           name: {
             zh: "奥特之母",
             jp: "ウルトラの母",
-            en: "Mother of Ultra"
+            en: "Mother of Ultra",
           },
-          first: 1973
+          first: 1973,
         },
         {
           id: 8,
@@ -140,9 +147,9 @@ export default {
           name: {
             zh: "雷欧奥特曼",
             jp: "ウルトラマンレオ",
-            en: "Ultraman Leo"
+            en: "Ultraman Leo",
           },
-          first: 1974
+          first: 1974,
         },
         {
           id: 9,
@@ -150,9 +157,9 @@ export default {
           name: {
             zh: "阿斯特拉",
             jp: "アストラ",
-            en: "Astra"
+            en: "Astra",
           },
-          first: 1974
+          first: 1974,
         },
         {
           id: 10,
@@ -160,9 +167,9 @@ export default {
           name: {
             zh: "奥特之王",
             jp: "ウルトラマンキング",
-            en: "Ultraman King"
+            en: "Ultraman King",
           },
-          first: 1974
+          first: 1974,
         },
         {
           id: 11,
@@ -170,9 +177,9 @@ export default {
           name: {
             zh: "乔尼亚斯奥特曼",
             jp: "ウルトラマンジョーニアス",
-            en: "Ultraman Joneus"
+            en: "Ultraman Joneus",
           },
-          first: 1979
+          first: 1979,
         },
         {
           id: 12,
@@ -180,9 +187,9 @@ export default {
           name: {
             zh: "爱迪奥特曼",
             jp: "ウルトラマン80",
-            en: "Ultraman 80"
+            en: "Ultraman 80",
           },
-          first: 1980
+          first: 1980,
         },
         {
           id: 13,
@@ -190,9 +197,9 @@ export default {
           name: {
             zh: "尤莉安奥特曼",
             jp: "ユリアン",
-            en: "Yullian"
+            en: "Yullian",
           },
-          first: 1981
+          first: 1981,
         },
         {
           id: 14,
@@ -200,9 +207,9 @@ export default {
           name: {
             zh: "史考特奥特曼",
             jp: "ウルトラマンスコット",
-            en: "Ultraman Scott"
+            en: "Ultraman Scott",
           },
-          first: 1987
+          first: 1987,
         },
         {
           id: 15,
@@ -210,9 +217,9 @@ export default {
           name: {
             zh: "察克奥特曼",
             jp: "ウルトラマンチャック",
-            en: "Ultraman Chuck"
+            en: "Ultraman Chuck",
           },
-          first: 1987
+          first: 1987,
         },
         {
           id: 16,
@@ -220,9 +227,9 @@ export default {
           name: {
             zh: "贝斯奥特曼",
             jp: "ウルトラウーマンベス",
-            en: "Ultrawoman Beth"
+            en: "Ultrawoman Beth",
           },
-          first: 1989
+          first: 1989,
         },
         {
           id: 17,
@@ -230,9 +237,9 @@ export default {
           name: {
             zh: "葛雷奥特曼",
             jp: "ウルトラマンG（グレート）",
-            en: "Ultraman Great"
+            en: "Ultraman Great",
           },
-          first: 1990
+          first: 1990,
         },
         {
           id: 18,
@@ -240,9 +247,9 @@ export default {
           name: {
             zh: "帕瓦特奥特曼",
             jp: "ウルトラマンパワード",
-            en: "Ultraman Powered"
+            en: "Ultraman Powered",
           },
-          first: 1993
+          first: 1993,
         },
         {
           id: 19,
@@ -250,9 +257,9 @@ export default {
           name: {
             zh: "哉阿斯奥特曼",
             jp: "ウルトラマンゼアス",
-            en: "Ultraman Zearth"
+            en: "Ultraman Zearth",
           },
-          first: 1996
+          first: 1996,
         },
         {
           id: 20,
@@ -260,9 +267,9 @@ export default {
           name: {
             zh: "迪迦奥特曼复合型",
             jp: "ウルトラマンティガ",
-            en: "Ultraman Tiga"
+            en: "Ultraman Tiga",
           },
-          first: 1996
+          first: 1996,
         },
         {
           id: 21,
@@ -271,9 +278,9 @@ export default {
           name: {
             zh: "迪迦奥特曼强力型",
             jp: "ウルトラマンティガ",
-            en: "Ultraman Tiga"
+            en: "Ultraman Tiga",
           },
-          first: 1996
+          first: 1996,
         },
         {
           id: 22,
@@ -282,9 +289,9 @@ export default {
           name: {
             zh: "迪迦奥特曼空中型",
             jp: "ウルトラマンティガ",
-            en: "Ultraman Tiga"
+            en: "Ultraman Tiga",
           },
-          first: 1996
+          first: 1996,
         },
         {
           id: 23,
@@ -293,9 +300,9 @@ export default {
           name: {
             zh: "闪耀迪迦",
             jp: "ウルトラマンティガ",
-            en: "Glitter Tiga"
+            en: "Glitter Tiga",
           },
-          first: 1996
+          first: 1996,
         },
         {
           id: 24,
@@ -304,9 +311,9 @@ export default {
           name: {
             zh: "黑暗迪迦",
             jp: "ウルトラマンティガ",
-            en: "Tiga Dark"
+            en: "Tiga Dark",
           },
-          first: 2000
+          first: 2000,
         },
         {
           id: 25,
@@ -315,9 +322,9 @@ export default {
           name: {
             zh: "迪迦奥特曼龙卷型",
             jp: "ウルトラマンティガ",
-            en: "Tiga Tornado"
+            en: "Tiga Tornado",
           },
-          first: 2000
+          first: 2000,
         },
         {
           id: 26,
@@ -326,9 +333,9 @@ export default {
           name: {
             zh: "迪迦奥特曼爆裂型",
             jp: "ウルトラマンティガ",
-            en: "Tiga Blast"
+            en: "Tiga Blast",
           },
-          first: 2000
+          first: 2000,
         },
         {
           id: 27,
@@ -336,9 +343,9 @@ export default {
           name: {
             zh: "戴拿奥特曼闪亮型",
             jp: "ウルトラマンダイナ",
-            en: "Ultraman Dyna Flash Type"
+            en: "Ultraman Dyna Flash Type",
           },
-          first: 1997
+          first: 1997,
         },
         {
           id: 28,
@@ -347,9 +354,9 @@ export default {
           name: {
             zh: "戴拿奥特曼强壮型",
             jp: "ウルトラマンダイナ",
-            en: "Ultraman Dyna Strong Type"
+            en: "Ultraman Dyna Strong Type",
           },
-          first: 1997
+          first: 1997,
         },
         {
           id: 29,
@@ -358,30 +365,30 @@ export default {
           name: {
             zh: "戴拿奥特曼奇迹型",
             jp: "ウルトラマンダイナ",
-            en: "Ultraman Dyna Miracle Type"
+            en: "Ultraman Dyna Miracle Type",
           },
-          first: 1997
+          first: 1997,
         },
         {
           id: 30,
           type: "base",
           name: {
-            zh: "盖亚奥特曼",
+            zh: "盖亚奥特曼V2",
             jp: "ウルトラマンガイア",
-            en: "Ultraman Gaia"
+            en: "Ultraman Gaia Version 2",
           },
-          first: 1998
+          first: 1998,
         },
         {
           id: 31,
           type: "form",
           formId: 30,
           name: {
-            zh: "盖亚奥特曼V2",
+            zh: "盖亚奥特曼",
             jp: "ウルトラマンガイア",
-            en: "Ultraman Gaia Version 2"
+            en: "Ultraman Gaia",
           },
-          first: 1998
+          first: 1998,
         },
         {
           id: 32,
@@ -390,30 +397,30 @@ export default {
           name: {
             zh: "盖亚奥特曼至高型",
             jp: "ウルトラマンガイア",
-            en: "Ultraman Gaia Supreme Version"
+            en: "Ultraman Gaia Supreme Version",
           },
-          first: 1998
+          first: 1998,
         },
         {
           id: 33,
           type: "base",
           name: {
-            zh: "阿古茹奥特曼",
+            zh: "阿古茹奥特曼V2",
             jp: "ウルトラマンアグル",
-            en: "Ultraman Agul"
+            en: "Ultraman Agul Version 2",
           },
-          first: 1998
+          first: 1998,
         },
         {
           id: 34,
           type: "form",
           formId: 33,
           name: {
-            zh: "阿古茹奥特曼V2",
+            zh: "阿古茹奥特曼",
             jp: "ウルトラマンアグル",
-            en: "Ultraman Agul Version 2"
+            en: "Ultraman Agul",
           },
-          first: 1998
+          first: 1998,
         },
         {
           id: 35,
@@ -421,9 +428,9 @@ export default {
           name: {
             zh: "纳伊斯奥特曼",
             jp: "ウルトラマンナイス",
-            en: "ULTRAMAN NICE"
+            en: "ULTRAMAN NICE",
           },
-          first: 1999
+          first: 1999,
         },
         {
           id: 36,
@@ -431,9 +438,9 @@ export default {
           name: {
             zh: "奈欧斯奥特曼",
             jp: "ウルトラマンネオス",
-            en: "ULTRAMAN NEOS"
+            en: "ULTRAMAN NEOS",
           },
-          first: 2000
+          first: 2000,
         },
         {
           id: 37,
@@ -441,84 +448,84 @@ export default {
           name: {
             zh: "赛文21奥特曼",
             jp: "ウルトラセブン·21",
-            en: "ULTRASEVEN21"
+            en: "ULTRASEVEN21",
           },
-          first: 2000
+          first: 2000,
         },
         {
           id: 38,
           type: "base",
           name: {
-            zh: "高斯奥特曼月神模式",
+            zh: "高斯奥特曼 月神模式",
             jp: "ウルトラマンコスモス",
-            en: "Ultraman Cosmos"
+            en: "Ultraman Cosmos",
           },
-          first: 2001
+          first: 2001,
         },
         {
           id: 39,
           type: "form",
           formId: 38,
           name: {
-            zh: "高斯奥特曼日冕模式",
+            zh: "高斯奥特曼 日冕模式",
             jp: "ウルトラマンコスモス",
-            en: "Ultraman Cosmos"
+            en: "Ultraman Cosmos",
           },
-          first: 2001
+          first: 2001,
         },
         {
           id: 40,
           type: "form",
           formId: 38,
           name: {
-            zh: "高斯奥特曼日蚀模式",
+            zh: "高斯奥特曼 日蚀模式",
             jp: "ウルトラマンコスモス",
-            en: "Ultraman Cosmos"
+            en: "Ultraman Cosmos",
           },
-          first: 2001
+          first: 2001,
         },
         {
           id: 41,
           type: "form",
           formId: 38,
           name: {
-            zh: "高斯奥特曼宇宙日冕模式",
+            zh: "高斯奥特曼 宇宙日冕模式",
             jp: "ウルトラマンコスモス",
-            en: "Ultraman Cosmos"
+            en: "Ultraman Cosmos",
           },
-          first: 2001
+          first: 2001,
         },
         {
           id: 42,
           type: "form",
           formId: 38,
           name: {
-            zh: "高斯奥特曼宇宙未来模式",
+            zh: "高斯奥特曼 未来模式",
             jp: "ウルトラマンコスモス",
-            en: "Ultraman Cosmos"
+            en: "Ultraman Cosmos",
           },
-          first: 2001
+          first: 2001,
         },
         {
           id: 43,
           type: "base",
           name: {
-            zh: "杰斯提斯奥特曼",
+            zh: "杰斯提斯奥特曼 标准模式",
             jp: "ウルトラマンジャスティス",
-            en: "UItraman Justice"
+            en: "UItraman Justice",
           },
-          first: 2002
+          first: 2002,
         },
         {
           id: 44,
           type: "form",
           formId: 43,
           name: {
-            zh: "杰斯提斯奥特曼强力形态",
+            zh: "杰斯提斯奥特曼 粉碎模式",
             jp: "ウルトラマンジャスティス",
-            en: "UItraman Justice"
+            en: "UItraman Justice",
           },
-          first: 2002
+          first: 2002,
         },
         {
           id: 45,
@@ -526,9 +533,9 @@ export default {
           name: {
             zh: "博伊奥特曼",
             jp: "ウルトラマンボーイ",
-            en: "ULTRAMAN BOY"
+            en: "ULTRAMAN BOY",
           },
-          first: 2003
+          first: 2003,
         },
         {
           id: 46,
@@ -536,9 +543,9 @@ export default {
           name: {
             zh: "奈克赛斯奥特曼",
             jp: "ウルトラマンネクサス",
-            en: "Ultraman Nexus"
+            en: "Ultraman Nexus",
           },
-          first: 2004
+          first: 2004,
         },
         {
           id: 47,
@@ -547,9 +554,9 @@ export default {
           name: {
             zh: "奈克斯特奥特曼（幼年体）",
             jp: "ウルトラマン・ザ・ネクスト",
-            en: "Ultraman The Next"
+            en: "Ultraman The Next",
           },
-          first: 2004
+          first: 2004,
         },
         {
           id: 48,
@@ -558,9 +565,9 @@ export default {
           name: {
             zh: "奈克斯特奥特曼（青年体）",
             jp: "ウルトラマン・ザ・ネクスト",
-            en: "Ultraman The Next"
+            en: "Ultraman The Next",
           },
-          first: 2004
+          first: 2004,
         },
         {
           id: 49,
@@ -569,9 +576,9 @@ export default {
           name: {
             zh: "奈克斯特奥特曼青年形态",
             jp: "ウルトラマン・ザ・ネクスト",
-            en: "Ultraman Nexus Junis"
+            en: "Ultraman Nexus Junis",
           },
-          first: 2004
+          first: 2004,
         },
         {
           id: 50,
@@ -580,9 +587,9 @@ export default {
           name: {
             zh: "奈克斯特奥特曼蓝色青年形态",
             jp: "ウルトラマン・ザ・ネクスト",
-            en: "Ultraman Nexus Junis Blue"
+            en: "Ultraman Nexus Junis Blue",
           },
-          first: 2004
+          first: 2004,
         },
         {
           id: 51,
@@ -591,9 +598,9 @@ export default {
           name: {
             zh: "诺亚奥特曼",
             jp: "ウルトラマンノア",
-            en: "Ultraman Noa"
+            en: "Ultraman Noa",
           },
-          first: 2005
+          first: 2005,
         },
         {
           id: 52,
@@ -601,9 +608,9 @@ export default {
           name: {
             zh: "麦克斯奥特曼",
             jp: "ウルトラマンマックス",
-            en: "Ultraman Max"
+            en: "Ultraman Max",
           },
-          first: 2005
+          first: 2005,
         },
         {
           id: 53,
@@ -611,9 +618,9 @@ export default {
           name: {
             zh: "杰诺奥特曼",
             jp: "ウルトラマンゼノン",
-            en: "Ultraman Xenon"
+            en: "Ultraman Xenon",
           },
-          first: 2005
+          first: 2005,
         },
         {
           id: 54,
@@ -621,9 +628,9 @@ export default {
           name: {
             zh: "梦比优斯奥特曼",
             jp: "ウルトラマンメビウス",
-            en: "Ultraman Mebius"
+            en: "Ultraman Mebius",
           },
-          first: 2006
+          first: 2006,
         },
         {
           id: 55,
@@ -632,9 +639,9 @@ export default {
           name: {
             zh: "梦比优斯勇者",
             jp: "メビウスブレイブ",
-            en: "Mebius Brave"
+            en: "Mebius Brave",
           },
-          first: 2006
+          first: 2006,
         },
         {
           id: 56,
@@ -643,9 +650,9 @@ export default {
           name: {
             zh: "梦比优斯燃烧勇者",
             jp: "メビウスバーニングブレイブ",
-            en: "Mebius Burning Brave"
+            en: "Mebius Burning Brave",
           },
-          first: 2006
+          first: 2006,
         },
         {
           id: 57,
@@ -654,9 +661,9 @@ export default {
           name: {
             zh: "梦比优斯凤凰勇者",
             jp: "メビウスフェニックスブレイブ",
-            en: "Mebius Phoenix Brave"
+            en: "Mebius Phoenix Brave",
           },
-          first: 2006
+          first: 2006,
         },
         {
           id: 58,
@@ -664,9 +671,9 @@ export default {
           name: {
             zh: "希卡利奥特曼",
             jp: "ウルトラマンヒカリ",
-            en: "UItraman Hikari"
+            en: "UItraman Hikari",
           },
-          first: 2006
+          first: 2006,
         },
         {
           id: 59,
@@ -674,9 +681,9 @@ export default {
           name: {
             zh: "赛文奥特曼X",
             jp: "ウルトラセブン X",
-            en: "Ultra Seven X"
+            en: "Ultra Seven X",
           },
-          first: 2007
+          first: 2007,
         },
         {
           id: 60,
@@ -684,9 +691,9 @@ export default {
           name: {
             zh: "贝利亚奥特曼",
             jp: "ウルトラマンベリアル",
-            en: "Ultraman Belial"
+            en: "Ultraman Belial",
           },
-          first: 2009
+          first: 2009,
         },
         {
           id: 61,
@@ -695,9 +702,9 @@ export default {
           name: {
             zh: "贝利亚奥特曼 早期形态",
             jp: "ウルトラマンベリアル アーリースタイル",
-            en: "Ultraman Belial Early Style"
+            en: "Ultraman Belial Early Style",
           },
-          first: 2009
+          first: 2009,
         },
         {
           id: 62,
@@ -705,20 +712,20 @@ export default {
           name: {
             zh: "赛罗奥特曼",
             jp: "ウルトラマンゼロ",
-            en: "Ultraman Zero"
+            en: "Ultraman Zero",
           },
-          first: 2009
+          first: 2009,
         },
         {
           id: 63,
           type: "form",
           formId: 62,
           name: {
-            zh: "终极赛罗",
+            zh: "究极赛罗",
             jp: "ウルティメイトゼロ",
-            en: "Ultimate Zero"
+            en: "Ultimate Zero",
           },
-          first: 2009
+          first: 2009,
         },
         {
           id: 64,
@@ -727,9 +734,9 @@ export default {
           name: {
             zh: "赛罗奥特曼闪耀形态",
             jp: "シャイニングウルトラマンゼロ",
-            en: "Shining Ultraman Zero"
+            en: "Shining Ultraman Zero",
           },
-          first: 2009
+          first: 2009,
         },
         {
           id: 65,
@@ -737,9 +744,9 @@ export default {
           name: {
             zh: "银河奥特曼",
             jp: "ウルトラマンギンガ",
-            en: "Ultraman Ginga"
+            en: "Ultraman Ginga",
           },
-          first: 2013
+          first: 2013,
         },
         {
           id: 66,
@@ -747,9 +754,9 @@ export default {
           name: {
             zh: "维克特利奥特曼",
             jp: "ウルトラマンビクトリー",
-            en: "Ultraman Victory"
+            en: "Ultraman Victory",
           },
-          first: 2014
+          first: 2014,
         },
         {
           id: 67,
@@ -757,9 +764,9 @@ export default {
           name: {
             zh: "艾克斯奥特曼",
             jp: "ウルトラマンX",
-            en: "Ultraman X"
+            en: "Ultraman X",
           },
-          first: 2015
+          first: 2015,
         },
         {
           id: 68,
@@ -767,9 +774,9 @@ export default {
           name: {
             zh: "欧布奥特曼 原生形态",
             jp: "オーブオリジン",
-            en: "Ultraman Orb Origin"
+            en: "Ultraman Orb Origin",
           },
-          first: 2016
+          first: 2016,
         },
         {
           id: 69,
@@ -778,9 +785,9 @@ export default {
           name: {
             zh: "欧布奥特曼 初始形态",
             jp: "オリジン・ザ・ファースト",
-            en: "Origin The First"
+            en: "Origin The First",
           },
-          first: 2016
+          first: 2016,
         },
         { id: 70 },
         {
@@ -789,9 +796,9 @@ export default {
           name: {
             zh: "捷德奥特曼 原初形态",
             jp: "ウルトラマンジード",
-            en: "Original Form"
+            en: "Original Form",
           },
-          first: 2017
+          first: 2017,
         },
         {
           id: 72,
@@ -799,9 +806,9 @@ export default {
           name: {
             zh: "罗索奥特曼",
             jp: "ウルトラマンロッソ",
-            en: "Ultraman Rosso"
+            en: "Ultraman Rosso",
           },
-          first: 2018
+          first: 2018,
         },
         {
           id: 73,
@@ -809,9 +816,9 @@ export default {
           name: {
             zh: "布鲁奥特曼",
             jp: "ウルトラマンブル",
-            en: "Ultraman Blu"
+            en: "Ultraman Blu",
           },
-          first: 2018
+          first: 2018,
         },
         {
           id: 74,
@@ -819,9 +826,9 @@ export default {
           name: {
             zh: "格丽乔奥特曼",
             jp: "ウルトラウーマングリージョ",
-            en: "Ultrawoman Grigio"
+            en: "Ultrawoman Grigio",
           },
-          first: 2019
+          first: 2019,
         },
         {
           id: 75,
@@ -829,9 +836,9 @@ export default {
           name: {
             zh: "托雷基亚奥特曼",
             jp: "ウルトラマントレギア",
-            en: "Ultraman Tregear"
+            en: "Ultraman Tregear",
           },
-          first: 2019
+          first: 2019,
         },
         {
           id: 76,
@@ -840,9 +847,9 @@ export default {
           name: {
             zh: "托雷基亚奥特曼 早期形态",
             jp: "ウルトラマントレギア アーリースタイル",
-            en: "Ultraman Tregear Early Style"
+            en: "Ultraman Tregear Early Style",
           },
-          first: 2019
+          first: 2019,
         },
         {
           id: 77,
@@ -850,9 +857,9 @@ export default {
           name: {
             zh: "泰迦奥特曼",
             jp: "ウルトラマンタイガ",
-            en: "Ultraman Taiga"
+            en: "Ultraman Taiga",
           },
-          first: 2019
+          first: 2019,
         },
         {
           id: 78,
@@ -861,9 +868,9 @@ export default {
           name: {
             zh: "泰迦奥特曼光子地球形态",
             jp: "フォトンアース",
-            en: "Ultraman Taiga Photon-Earth"
+            en: "Ultraman Taiga Photon-Earth",
           },
-          first: 2019
+          first: 2019,
         },
         {
           id: 79,
@@ -871,9 +878,9 @@ export default {
           name: {
             zh: "泰塔斯奥特曼",
             jp: "ウルトラマンタイタス",
-            en: "Ultraman Titas"
+            en: "Ultraman Titas",
           },
-          first: 2019
+          first: 2019,
         },
         {
           id: 80,
@@ -881,9 +888,9 @@ export default {
           name: {
             zh: "风马奥特曼",
             jp: "ウルトラマンフーマ",
-            en: "Ultraman Fuma"
+            en: "Ultraman Fuma",
           },
-          first: 2019
+          first: 2019,
         },
         {
           id: 81,
@@ -891,9 +898,9 @@ export default {
           name: {
             zh: "泽塔奥特曼",
             jp: "ウルトラマンゼット",
-            en: "Ultraman Z"
+            en: "Ultraman Z",
           },
-          first: 2020
+          first: 2020,
         },
         {
           id: 82,
@@ -901,9 +908,9 @@ export default {
           name: {
             zh: "特利迦奥特曼复合型",
             jp: "ウルトラマントリガー",
-            en: "Ultraman Trigger"
+            en: "Ultraman Trigger",
           },
-          first: 2021
+          first: 2021,
         },
         {
           id: 83,
@@ -912,9 +919,9 @@ export default {
           name: {
             zh: "特利迦奥特曼强力型",
             jp: "ウルトラマントリガー",
-            en: "Ultraman Trigger"
+            en: "Ultraman Trigger",
           },
-          first: 2021
+          first: 2021,
         },
         {
           id: 84,
@@ -923,9 +930,9 @@ export default {
           name: {
             zh: "特利迦奥特曼空中型",
             jp: "ウルトラマントリガー",
-            en: "Ultraman Trigger"
+            en: "Ultraman Trigger",
           },
-          first: 2021
+          first: 2021,
         },
         {
           id: 85,
@@ -934,31 +941,31 @@ export default {
           name: {
             zh: "梦比优斯无限形态",
             jp: "メビウスインフィニティー",
-            en: "Mebius Infinity"
+            en: "Mebius Infinity",
           },
-          first: 2006
+          first: 2006,
         },
         {
           id: 86,
           type: "fusion",
           fusionArr: [62, 27, 39],
           name: {
-            zh: "赛罗奥特曼·强壮日冕型",
+            zh: "赛罗奥特曼 强壮日冕型",
             jp: "ストロングコロナゼロ",
-            en: "Strong Corona Zero"
+            en: "Strong Corona Zero",
           },
-          first: 2012
+          first: 2012,
         },
         {
           id: 87,
           type: "fusion",
           fusionArr: [62, 27, 38],
           name: {
-            zh: "赛罗奥特曼·月神奇迹型",
+            zh: "赛罗奥特曼 月神奇迹型",
             jp: "ルナミラクルゼロ",
-            en: "Luna-Miracle Zero"
+            en: "Luna-Miracle Zero",
           },
-          first: 2012
+          first: 2012,
         },
         {
           id: 88,
@@ -967,20 +974,20 @@ export default {
           name: {
             zh: "赛罗奥特曼 无限形态",
             jp: "ゼロ ビヨンド",
-            en: "Zero Beyond"
+            en: "Zero Beyond",
           },
-          first: 2017
+          first: 2017,
         },
         {
           id: 89,
           type: "fusion",
           fusionArr: [62, 63, 64],
           name: {
-            zh: "究极赛罗闪耀形态",
+            zh: "究极赛罗 闪耀形态",
             jp: "ウルティメイトシャイニングゼロ",
-            en: "Ultimate Shining Zero"
+            en: "Ultimate Shining Zero",
           },
-          first: 2017
+          first: 2017,
         },
         {
           id: 90,
@@ -989,9 +996,9 @@ export default {
           name: {
             zh: "银河斯特利姆奥特曼",
             jp: "ウルトラマンギンガストリウム",
-            en: "Ultraman Ginga Strium"
+            en: "Ultraman Ginga Strium",
           },
-          first: 2014
+          first: 2014,
         },
         {
           id: 91,
@@ -1000,9 +1007,9 @@ export default {
           name: {
             zh: "维克特利奥特曼 骑士形态",
             jp: "ウルトラマンビクトリーナイト",
-            en: "Ultraman Victory Knight"
+            en: "Ultraman Victory Knight",
           },
-          first: 2014
+          first: 2014,
         },
         {
           id: 92,
@@ -1011,9 +1018,9 @@ export default {
           name: {
             zh: "银河维克特利奥特曼",
             jp: "ウルトラマンギンガビクトリー",
-            en: "Ultraman Ginga Victory"
+            en: "Ultraman Ginga Victory",
           },
-          first: 2015
+          first: 2015,
         },
         {
           id: 93,
@@ -1022,9 +1029,9 @@ export default {
           name: {
             zh: "超越艾克斯",
             jp: "エクシードX",
-            en: "Exceed X"
+            en: "Exceed X",
           },
-          first: 2015
+          first: 2015,
         },
         {
           id: 94,
@@ -1033,9 +1040,9 @@ export default {
           name: {
             zh: "艾克斯奥特曼 贝塔火花装甲",
             jp: "ベータスパークアーマー",
-            en: "Beta Spark Armor"
+            en: "Beta Spark Armor",
           },
-          first: 2015
+          first: 2015,
         },
         {
           id: 95,
@@ -1044,9 +1051,9 @@ export default {
           name: {
             zh: "艾克斯奥特曼 究极赛罗装甲",
             jp: "ウルトラマンX",
-            en: "Ultraman X"
+            en: "Ultraman X",
           },
-          first: 2015
+          first: 2015,
         },
         {
           id: 96,
@@ -1055,9 +1062,9 @@ export default {
           name: {
             zh: "欧布奥特曼 重光形态",
             jp: "スペシウムゼペリオン",
-            en: "Spacium Zeperion"
+            en: "Spacium Zeperion",
           },
-          first: 2016
+          first: 2016,
         },
         {
           id: 97,
@@ -1066,9 +1073,9 @@ export default {
           name: {
             zh: "欧布奥特曼 暴炎形态",
             jp: "バーンマイト",
-            en: "Burnmite"
+            en: "Burnmite",
           },
-          first: 2016
+          first: 2016,
         },
         {
           id: 98,
@@ -1077,9 +1084,9 @@ export default {
           name: {
             zh: "欧布奥特曼 疾风形态",
             jp: "ハリケーンスラッシュ",
-            en: "Hurricane Slash"
+            en: "Hurricane Slash",
           },
-          first: 2016
+          first: 2016,
         },
         {
           id: 99,
@@ -1088,9 +1095,9 @@ export default {
           name: {
             zh: "欧布奥特曼 暗耀形态",
             jp: "サンダーブレスター",
-            en: "Thunder Breastar"
+            en: "Thunder Breastar",
           },
-          first: 2016
+          first: 2016,
         },
         {
           id: 100,
@@ -1099,9 +1106,9 @@ export default {
           name: {
             zh: "欧布奥特曼 煌闪形态",
             jp: "ライトニングアタッカー",
-            en: "Lighting Attacker"
+            en: "Lighting Attacker",
           },
-          first: 2016
+          first: 2016,
         },
         {
           id: 101,
@@ -1110,9 +1117,9 @@ export default {
           name: {
             zh: "欧布奥特曼 智勇形态",
             jp: "エメリウムスラッガー",
-            en: "Emerium Slugger"
+            en: "Emerium Slugger",
           },
-          first: 2016
+          first: 2016,
         },
         {
           id: 102,
@@ -1121,9 +1128,9 @@ export default {
           name: {
             zh: "欧布奥特曼 三重形态",
             jp: "オーブトリニティ",
-            en: "Orb Trinity"
+            en: "Orb Trinity",
           },
-          first: 2016
+          first: 2016,
         },
         {
           id: 103,
@@ -1132,9 +1139,9 @@ export default {
           name: {
             zh: "捷德奥特曼 原始形态",
             jp: "ウルトラマンジード",
-            en: "Ultraman Geed Primitive"
+            en: "Ultraman Geed Primitive",
           },
-          first: 2017
+          first: 2017,
         },
         {
           id: 104,
@@ -1143,9 +1150,9 @@ export default {
           name: {
             zh: "捷德奥特曼 刚燃形态",
             jp: "ソリッドバーニング",
-            en: "Solid Burning"
+            en: "Solid Burning",
           },
-          first: 2017
+          first: 2017,
         },
         {
           id: 105,
@@ -1154,9 +1161,9 @@ export default {
           name: {
             zh: "捷德奥特曼 机敏形态",
             jp: "アクロスマッシャー",
-            en: "Acro Smasher"
+            en: "Acro Smasher",
           },
-          first: 2017
+          first: 2017,
         },
         {
           id: 106,
@@ -1165,9 +1172,9 @@ export default {
           name: {
             zh: "捷德奥特曼 豪勇形态",
             jp: "マグニフィセント",
-            en: "Magnificent"
+            en: "Magnificent",
           },
-          first: 2017
+          first: 2017,
         },
         {
           id: 107,
@@ -1176,9 +1183,9 @@ export default {
           name: {
             zh: "捷德奥特曼 尊皇形态",
             jp: "ロイヤルメガマスター",
-            en: "Royal Mega-Master"
+            en: "Royal Mega-Master",
           },
-          first: 2017
+          first: 2017,
         },
         {
           id: 108,
@@ -1187,9 +1194,9 @@ export default {
           name: {
             zh: "捷德奥特曼 终极形态",
             jp: "ウルティメイトファイナル",
-            en: "Ultimate Final"
+            en: "Ultimate Final",
           },
-          first: 2017
+          first: 2017,
         },
         {
           id: 109,
@@ -1198,9 +1205,9 @@ export default {
           name: {
             zh: "捷德奥特曼 银河初升",
             jp: "ギャラクシーライジング",
-            en: "Galaxy Rising"
+            en: "Galaxy Rising",
           },
-          first: 2020
+          first: 2020,
         },
         {
           id: 110,
@@ -1209,9 +1216,9 @@ export default {
           name: {
             zh: "罗索奥特曼 跃水形态",
             jp: "アクア",
-            en: "Aqua"
+            en: "Aqua",
           },
-          first: 2018
+          first: 2018,
         },
         {
           id: 111,
@@ -1220,9 +1227,9 @@ export default {
           name: {
             zh: "罗索奥特曼 旋风形态",
             jp: "ウィンド",
-            en: "Wind"
+            en: "Wind",
           },
-          first: 2018
+          first: 2018,
         },
         {
           id: 112,
@@ -1231,9 +1238,9 @@ export default {
           name: {
             zh: "罗索奥特曼 大地形态",
             jp: "グランド",
-            en: "Ground"
+            en: "Ground",
           },
-          first: 2018
+          first: 2018,
         },
         {
           id: 113,
@@ -1242,9 +1249,9 @@ export default {
           name: {
             zh: "布鲁奥特曼 烈火形态",
             jp: "フレイム",
-            en: "Flame"
+            en: "Flame",
           },
-          first: 2018
+          first: 2018,
         },
         {
           id: 114,
@@ -1253,9 +1260,9 @@ export default {
           name: {
             zh: "布鲁奥特曼 旋风形态",
             jp: "ウィンド",
-            en: "Wind"
+            en: "Wind",
           },
-          first: 2018
+          first: 2018,
         },
         {
           id: 115,
@@ -1264,9 +1271,9 @@ export default {
           name: {
             zh: "布鲁奥特曼 大地形态",
             jp: "グランド",
-            en: "Ground"
+            en: "Ground",
           },
-          first: 2018
+          first: 2018,
         },
         {
           id: 116,
@@ -1275,9 +1282,9 @@ export default {
           name: {
             zh: "罗布奥特曼",
             jp: "ウルトラマンルーブ",
-            en: "Ultraman Ruebu"
+            en: "Ultraman Ruebu",
           },
-          first: 2018
+          first: 2018,
         },
         {
           id: 117,
@@ -1286,9 +1293,9 @@ export default {
           name: {
             zh: "格罗布奥特曼",
             jp: "ウルトラマングルーブ",
-            en: "Ultraman Gruebe"
+            en: "Ultraman Gruebe",
           },
-          first: 2019
+          first: 2019,
         },
         {
           id: 118,
@@ -1297,9 +1304,9 @@ export default {
           name: {
             zh: "泰迦奥特曼 三重斯特利姆形态",
             jp: "トライストリウム",
-            en: "Tri-Strium"
+            en: "Tri-Strium",
           },
-          first: 2019
+          first: 2019,
         },
         {
           id: 119,
@@ -1308,9 +1315,9 @@ export default {
           name: {
             zh: "泽塔奥特曼 阿尔法装甲",
             jp: "アルファエッジ",
-            en: "Alpha Edge"
+            en: "Alpha Edge",
           },
-          first: 2020
+          first: 2020,
         },
         {
           id: 120,
@@ -1319,9 +1326,9 @@ export default {
           name: {
             zh: "泽塔奥特曼 贝塔冲击",
             jp: "ベータスマッシュ",
-            en: "Beta Smash"
+            en: "Beta Smash",
           },
-          first: 2020
+          first: 2020,
         },
         {
           id: 121,
@@ -1330,9 +1337,9 @@ export default {
           name: {
             zh: "泽塔奥特曼 伽马未来",
             jp: "ガンマフューチャー",
-            en: "Gamma Future"
+            en: "Gamma Future",
           },
-          first: 2020
+          first: 2020,
         },
         {
           id: 122,
@@ -1341,9 +1348,9 @@ export default {
           name: {
             zh: "泽塔奥特曼 德尔塔天爪",
             jp: "デルタライズクロー",
-            en: "Delta Rise Claw"
+            en: "Delta Rise Claw",
           },
-          first: 2020
+          first: 2020,
         },
         {
           id: 123,
@@ -1352,9 +1359,9 @@ export default {
           name: {
             zh: "极恶贝利亚",
             jp: "ンベリアルアトロシアス",
-            en: "Belial Atrocious"
+            en: "Belial Atrocious",
           },
-          first: 2017
+          first: 2017,
         },
         {
           id: 124,
@@ -1363,9 +1370,9 @@ export default {
           name: {
             zh: "令迦奥特曼",
             jp: "ウルトラマンレイガ",
-            en: "Ultraman Reiga"
+            en: "Ultraman Reiga",
           },
-          first: 2020
+          first: 2020,
         },
         {
           id: 125,
@@ -1373,9 +1380,9 @@ export default {
           name: {
             zh: "利布特奥特曼",
             jp: "ウルトラマンリブット",
-            en: "Ultraman Ribut"
+            en: "Ultraman Ribut",
           },
-          first: 2014
+          first: 2014,
         },
         {
           id: 126,
@@ -1384,21 +1391,21 @@ export default {
           name: {
             zh: "赛迦奥特曼",
             jp: "ウルトラマンサーガ",
-            en: "Ultraman Saga"
+            en: "Ultraman Saga",
           },
-          first: 2012
+          first: 2012,
         },
         {
           id: 127,
           type: "fusion",
-          fusionArr: [38, 27],
+          fusionArr: [38, 43],
           name: {
             zh: "雷杰多奥特曼",
             jp: "ウルトラマンレジェンド",
-            en: "Ultraman Legend"
+            en: "Ultraman Legend",
           },
-          first: 2003
-        }
+          first: 2003,
+        },
       ], //奥特曼数据
       ultramedal: [], //泽塔奥特勋章
       hyperkeys: [], //特利迦胜利超越之钥
@@ -1407,8 +1414,9 @@ export default {
       nowUltra: {
         info: null, //基础信息
         form: null, //形态列表
-        fusion: null //融合列表
-      }
+        fusion: null, //融合列表
+      },
+      isOpen: false,
     };
   },
   created() {
@@ -1444,7 +1452,6 @@ export default {
       let arr = [];
       switch (type) {
         case "base":
-        default:
           this.ultraman.forEach((item, index, array) => {
             if (item.type == "base") {
               arr.push(item);
@@ -1465,6 +1472,9 @@ export default {
             }
           });
           break;
+        default:
+          arr = this.ultraman;
+          break;
       }
       return arr;
     },
@@ -1474,8 +1484,12 @@ export default {
       this.nowUltra.info = this.getUltraInfo(id);
       this.nowUltra.form = this.getUltraByType(id, "form");
       this.nowUltra.fusion = this.getUltraByType(id, "fusion");
-    }
-  }
+      this.isOpen = true;
+    },
+    closeDetail() {
+      this.isOpen = false;
+    },
+  },
 };
 </script>
 <style scoped>
@@ -1488,6 +1502,7 @@ export default {
   overflow: hidden;
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   z-index: 99999999;
@@ -1499,5 +1514,33 @@ export default {
 }
 .box-list {
   overflow: hidden;
+  margin-bottom: 20px;
+}
+.close-btn {
+  height: 80px;
+  line-height: 80px;
+  cursor: pointer;
+  text-align: center;
+}
+.close-btn .iconfont {
+  color: #ffffff7d;
+  font-size: 24px;
+}
+.close-btn:hover {
+  background-color: #ffffff0f;
+}
+.close-btn:hover .iconfont {
+  color: #fff;
+}
+.detail-warp {
+  width: 800px;
+  margin: 15px auto;
+  background-color: #ffffff75;
+  border-radius: 6px;
+  padding: 40px 20px;
+}
+.box-title {
+  color: #fff;
+  margin-bottom: 5px;
 }
 </style>

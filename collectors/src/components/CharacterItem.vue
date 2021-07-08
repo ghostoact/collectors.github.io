@@ -1,16 +1,12 @@
 <template>
-  <div>
-    <div
-      class="item-box"
-      :style="
-        'background-image: url(./static/img/ultraman/thumb/' +
-          char.id +
-          '.png);'
-      "
-    >
-      <div class="item-title">
-        {{ char.name.zh }}
-      </div>
+  <div
+    class="item-box"
+    :style="
+      'background-image: url(./static/img/ultraman/thumb/' + char.id + '.png);'
+    "
+  >
+    <div class="item-title">
+      {{ char.name.zh }}
     </div>
   </div>
 </template>
@@ -20,15 +16,15 @@ export default {
   name: "CharacterItem",
   props: {
     character: {
-      type: Object
-    }
+      type: Object,
+    },
   },
   data() {
     return {
-      char: this.character
+      char: this.character,
     };
   },
-  methods: {}
+  methods: {},
 };
 </script>
 <style scoped>
