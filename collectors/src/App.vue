@@ -20,7 +20,6 @@ export default {
 <style>
 body {
   background-size: cover;
-  background-image: url("/static/img/bg.jpg");
 }
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;

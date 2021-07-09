@@ -2,7 +2,8 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
-import "./assets/icon/iconfont.css"
+import "@/assets/icon/iconfont.css"
+import '@/styles/global.scss'
 
 Vue.config.productionTip = false
 
