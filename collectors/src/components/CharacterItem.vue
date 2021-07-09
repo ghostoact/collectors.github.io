@@ -29,7 +29,7 @@ export default {
 </script>
 <style scoped>
 .item-box {
-  width: 120px;
+  width: 155px;
   height: 120px;
   float: left;
   background-color: #f8f8f8;
