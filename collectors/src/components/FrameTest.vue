@@ -57,7 +57,7 @@
 
 // 难题：
 // 欧布：涉及到欧布设定的基本形态切换问题，从最早的重光形态到欧布原生
-// 捷德：类似欧布的基本形态问题，捷德的常见默认形态是融合形态
+// 捷德：捷德的常见默认形态是融合形态，而这个融合形态没法在默认形态里展示
 import CharacterItem from "@/components/CharacterItem";
 export default {
   name: "FrameTest",
