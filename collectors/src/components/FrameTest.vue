@@ -1814,6 +1814,8 @@ export default {
   background-color: #ffffffa6;
   border-radius: 6px;
   padding: 40px 20px;
+  overflow-y: auto;
+  height: calc(100% - 80px - 110px);
 }
 .box-title {
   color: #fff;
