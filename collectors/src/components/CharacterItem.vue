@@ -1,9 +1,7 @@
 <template>
   <div
     class="item-box"
-    :style="
-      'background-image: url(./static/img/ultraman/thumb/' + char.id + '.png);'
-    "
+    :style="'background-image: url(' + thumbUrl + char.id + '.png);'"
   >
     <div class="item-title">
       {{ char.name.zh }}
@@ -16,15 +14,16 @@ export default {
   name: "CharacterItem",
   props: {
     character: {
-      type: Object,
-    },
+      type: Object
+    }
   },
   data() {
     return {
       char: this.character,
+      thumbUrl: "./static/img/ultraman/thumb/"
     };
   },
-  methods: {},
+  methods: {}
 };
 </script>
 <style scoped>
