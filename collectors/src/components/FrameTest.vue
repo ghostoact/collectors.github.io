@@ -1742,10 +1742,12 @@ export default {
         this.nowBase = index;
       }
       this.isOpen = true;
+      document.documentElement.classList.add("isOpen");
     },
     // 关闭详情
     closeDetail() {
       this.isOpen = false;
+      document.documentElement.classList.remove("isOpen");
     },
     // 查看上一个基础数据
     getPreInfo() {
@@ -1811,14 +1813,34 @@ export default {
 .detail-warp {
   width: 800px;
   margin: 15px auto;
-  background-color: #ffffffa6;
+background-color: #ffffffc7;
   border-radius: 6px;
   padding: 40px 20px;
   overflow-y: auto;
   height: calc(100% - 80px - 110px);
+} /* 滚动条底色 */
+
+::-webkit-scrollbar-track {
+  background-color: #f8faff;
+  border-radius: 20px;
+}
+
+/* 滚动条颜色 */
+
+::-webkit-scrollbar-thumb {
+  background-color: #d9d9d9;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 8px;
+  background-color: #d9d9d9;
+  opacity: 0;
+  border-radius: 20px;
 }
 .box-title {
-  color: #fff;
+  color: #272727;
   margin-bottom: 5px;
 }
 .detail-btn {
@@ -1894,6 +1916,8 @@ export default {
 }
 .detail-title {
   font-size: 24px;
+  text-align: center;
+  margin-top: 80px;
   margin-bottom: 14px;
   color: #2e2e2e;
   font-weight: 600;
