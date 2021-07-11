@@ -913,7 +913,7 @@ export default {
           type: "form",
           formId: 62,
           name: {
-            zh: "赛罗奥特曼闪耀形态",
+            zh: "赛罗奥特曼 闪耀形态",
             jp: "シャイニングウルトラマンゼロ",
             en: "Shining Ultraman Zero",
           },
@@ -1598,7 +1598,7 @@ export default {
           type: "form",
           formId: 60,
           name: {
-            zh: "极恶贝利亚",
+            zh: "极恶 贝利亚",
             jp: "ンベリアルアトロシアス",
             en: "Belial Atrocious",
           },

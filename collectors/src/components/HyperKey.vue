@@ -1,7 +1,12 @@
 <template>
   <div>
     <div class="item-list">
-      <PropItem v-for="hk in hyperKey" v-bind:item="hk" :key="hk.id" />
+      <PropItem
+        v-for="hk in hyperKey"
+        v-bind:item="hk"
+        :urlType="0"
+        :key="hk.id"
+      />
     </div>
   </div>
 </template>
@@ -21,15 +26,14 @@ export default {
           type: "U", //U 奥特曼  M 怪兽  O 其它
           tag: ["限定"], //标签：限定 DX SG食玩 GP扭蛋
           name: "奥特曼55周年", //名称
-          tag: 0, //关联奥特曼或怪兽实体数组
+          tag: [0], //关联奥特曼或怪兽实体数组
         },
         {
           id: "EX-2",
           type: "U",
           tag: ["限定"],
           name: "特利迦与泽塔",
-          tag: [82, 81],
-          pic: "EX-2.jpg",
+          tag: [82, 81]
         },
         {
           id: "U-01",
@@ -184,7 +188,7 @@ export default {
           tag: ["SG"],
           name: "伽古拉斯·伽古拉",
           tag: null,
-        }
+        },
       ],
     };
   },

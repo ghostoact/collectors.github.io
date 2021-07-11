@@ -1,7 +1,7 @@
 <template>
   <div
     class="prop-item"
-    :style="'background-image: url(' + thumbUrl + propitem.id + '.jpg);'"
+    :style="'background-image: url(' + url + propitem.id + '.jpg);'"
   >
     <div class="item-title">
       {{ propitem.name }}
@@ -16,14 +16,25 @@ export default {
     item: {
       type: Object,
     },
+    urlType: {
+      type: Number,
+    },
   },
   data() {
     return {
       propitem: this.item,
-      thumbUrl: "./static/img/item/trigger/hyperkey/",
+      thumbUrl: [
+        "./static/img/item/trigger/hyperkey/",
+        "/static/img/item/z/ultramedal/",
+      ],
     };
   },
   methods: {},
+  computed: {
+    url() {
+      return this.thumbUrl[this.urlType];
+    },
+  },
 };
 </script>
 
