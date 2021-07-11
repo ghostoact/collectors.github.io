@@ -20,6 +20,14 @@ export default {
 <style>
 body {
   background-size: cover;
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  min-width: 1240px;
+  overflow: hidden;
+  height: 1200px;
+  margin: 0 auto;
+  z-index: 1;
 }
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
