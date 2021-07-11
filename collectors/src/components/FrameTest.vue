@@ -1664,7 +1664,7 @@ export default {
       hyperkeys: [], //特利迦胜利超越之钥
       sofubi: [], //500软胶
       baseList: null, //基础形态列表
-      nowBase: null, //当前基础下标
+      nowId: null, //当前ID
       nowUltra: {
         info: null, //基础信息
         form: null, //形态列表
@@ -1734,12 +1734,12 @@ export default {
     },
     // 根据奥特曼的id获取基础信息，形态列表以及融合列表
     // 应用：查询迪迦的信息和形态和融合列表
-    getInfoById(id, index) {
+    getInfoById(id) {
       this.nowUltra.info = this.getUltraInfo(id);
       this.nowUltra.form = this.getUltraByType(id, "form");
       this.nowUltra.fusion = this.getUltraByType(id, "fusion");
       if (this.nowUltra.info.type == "base") {
-        this.nowBase = index;
+        this.nowId = id;
       }
       this.isOpen = true;
       document.documentElement.classList.add("isOpen");
@@ -1751,21 +1751,21 @@ export default {
     },
     // 查看上一个基础数据
     getPreInfo() {
-      if (this.nowBase > 0) {
-        this.nowBase = this.nowBase - 1;
+      if (this.nowId > 0) {
+        this.nowId = this.nowId - 1;
       } else {
-        this.nowBase = this.baseList.length - 1;
+        this.nowId = this.ultraman.length - 1;
       }
-      this.getInfoById(this.baseList[this.nowBase].id, this.nowBase);
+      this.getInfoById(this.nowId);
     },
     // 查看下一个基础数据
     getNextInfo() {
-      if (this.nowBase < this.baseList.length - 1) {
-        this.nowBase = this.nowBase + 1;
+      if (this.nowId < this.ultraman.length - 1) {
+        this.nowId = this.nowId + 1;
       } else {
-        this.nowBase = 0;
+        this.nowId = 0;
       }
-      this.getInfoById(this.baseList[this.nowBase].id, this.nowBase);
+      this.getInfoById(this.nowId);
     },
   },
 };
