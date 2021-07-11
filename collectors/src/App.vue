@@ -1,6 +1,15 @@
 <template>
   <div id="app">
-    <FrameTest />
+    <div class="menu-box">
+      <router-link
+        class="menu-item"
+        v-for="(m, i) in menu"
+        :to="m.url"
+        :key="i"
+        >{{ m.name }}</router-link
+      >
+    </div>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -11,6 +20,24 @@ export default {
   name: "App",
   components: {
     FrameTest,
+  },
+  data() {
+    return {
+      menu: [
+        {
+          name: "奥特曼",
+          url: "/",
+        },
+        {
+          name: "特利迦·胜利超越之钥",
+          url: "/HyperKey",
+        },
+        {
+          name: "泽塔·奥特勋章",
+          url: "/UltraMedal",
+        },
+      ],
+    };
   },
 };
 </script>
@@ -24,7 +51,6 @@ body {
   width: 100%;
   max-width: 1920px;
   min-width: 1240px;
-  overflow: hidden;
   height: 1200px;
   margin: 0 auto;
   z-index: 1;
@@ -34,5 +60,22 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
+}
+
+.menu-box {
+  text-align: center;
+  height: 100px;
+}
+.menu-item {
+  display: inline-block;
+  height: 100px;
+  line-height: 100px;
+  color: #fff;
+  cursor: pointer;
+  padding: 0 20px;
+  text-decoration: none;
+}
+.menu-item:hover {
+  background-color: #ffffff24;
 }
 </style>

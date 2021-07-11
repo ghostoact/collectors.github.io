@@ -2,9 +2,9 @@
   <div :class="isOpen ? 'isOpen' : ''">
     <div class="item-list">
       <characterItem
-        v-for="(ultra, index) in baseList"
+        v-for="ultra in baseList"
         v-bind:character="ultra"
-        @click.native="getInfoById(ultra.id, index)"
+        @click.native="getInfoById(ultra.id)"
         :key="ultra.id"
       />
     </div>
@@ -1766,7 +1766,7 @@ export default {
         this.nowId = 0;
       }
       this.getInfoById(this.nowId);
-    },
+    }
   },
 };
 </script>
@@ -1813,7 +1813,7 @@ export default {
 .detail-warp {
   width: 800px;
   margin: 15px auto;
-background-color: #ffffffc7;
+  background-color: #ffffffc7;
   border-radius: 6px;
   padding: 40px 20px;
   overflow-y: auto;

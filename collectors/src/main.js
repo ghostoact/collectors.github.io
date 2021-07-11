@@ -4,12 +4,14 @@ import Vue from 'vue'
 import App from './App'
 import "@/assets/icon/iconfont.css"
 import '@/styles/global.css'
+import router from './router'//导入自定义路由配置
 
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  router,
   components: { App },
   template: '<App/>'
 })
