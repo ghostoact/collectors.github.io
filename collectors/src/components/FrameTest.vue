@@ -382,7 +382,7 @@ export default {
           id: 20,
           type: "base",
           name: {
-            zh: "迪迦奥特曼复合型",
+            zh: "迪迦奥特曼 复合型",
             jp: "ウルトラマンティガ",
             en: "Ultraman Tiga",
           },
@@ -397,7 +397,7 @@ export default {
           type: "form",
           formId: 20,
           name: {
-            zh: "迪迦奥特曼强力型",
+            zh: "迪迦奥特曼 强力型",
             jp: "ウルトラマンティガ",
             en: "Ultraman Tiga",
           },
@@ -408,7 +408,7 @@ export default {
           type: "form",
           formId: 20,
           name: {
-            zh: "迪迦奥特曼空中型",
+            zh: "迪迦奥特曼 空中型",
             jp: "ウルトラマンティガ",
             en: "Ultraman Tiga",
           },
@@ -441,7 +441,7 @@ export default {
           type: "form",
           formId: 20,
           name: {
-            zh: "迪迦奥特曼龙卷型",
+            zh: "迪迦奥特曼 龙卷型",
             jp: "ウルトラマンティガ",
             en: "Tiga Tornado",
           },
@@ -452,7 +452,7 @@ export default {
           type: "form",
           formId: 20,
           name: {
-            zh: "迪迦奥特曼爆裂型",
+            zh: "迪迦奥特曼 爆裂型",
             jp: "ウルトラマンティガ",
             en: "Tiga Blast",
           },
@@ -462,7 +462,7 @@ export default {
           id: 27,
           type: "base",
           name: {
-            zh: "戴拿奥特曼闪亮型",
+            zh: "戴拿奥特曼 闪亮型",
             jp: "ウルトラマンダイナ",
             en: "Ultraman Dyna Flash Type",
           },
@@ -477,7 +477,7 @@ export default {
           type: "form",
           formId: 27,
           name: {
-            zh: "戴拿奥特曼强壮型",
+            zh: "戴拿奥特曼 强壮型",
             jp: "ウルトラマンダイナ",
             en: "Ultraman Dyna Strong Type",
           },
@@ -488,7 +488,7 @@ export default {
           type: "form",
           formId: 27,
           name: {
-            zh: "戴拿奥特曼奇迹型",
+            zh: "戴拿奥特曼 奇迹型",
             jp: "ウルトラマンダイナ",
             en: "Ultraman Dyna Miracle Type",
           },
@@ -498,7 +498,7 @@ export default {
           id: 30,
           type: "base",
           name: {
-            zh: "盖亚奥特曼V2",
+            zh: "盖亚奥特曼 V2",
             jp: "ウルトラマンガイア",
             en: "Ultraman Gaia Version 2",
           },
@@ -524,7 +524,7 @@ export default {
           type: "form",
           formId: 30,
           name: {
-            zh: "盖亚奥特曼至高型",
+            zh: "盖亚奥特曼 至高型",
             jp: "ウルトラマンガイア",
             en: "Ultraman Gaia Supreme Version",
           },
@@ -534,7 +534,7 @@ export default {
           id: 33,
           type: "base",
           name: {
-            zh: "阿古茹奥特曼V2",
+            zh: "阿古茹奥特曼 V2",
             jp: "ウルトラマンアグル",
             en: "Ultraman Agul Version 2",
           },
@@ -1771,11 +1771,6 @@ export default {
 };
 </script>
 <style scoped>
-.item-list {
-  overflow: hidden;
-  width: 70%;
-  margin: 60px auto 0;
-}
 .detail-box {
   overflow: hidden;
   position: fixed;
