@@ -687,6 +687,7 @@ export default {
           tag: ["限定"],
           name: "泽塔奥特曼 德尔塔天爪",
           link: [81, 71, 88, 123],
+          color:"#8a939c"
         },
         {
           id: "M-091",
