@@ -1,9 +1,11 @@
 <template>
   <div
     class="prop-item"
-    :style="'background-image: url(' + url + propitem.id + '.jpg);'"
+    :style="
+      showpic ? 'background-image: url(' + url + propitem.id + '.jpg);' : ''
+    "
   >
-    <div class="item-title">
+    <div class="item-title" :style="'background-color:' + color">
       {{ propitem.name }}
     </div>
   </div>
@@ -14,19 +16,37 @@ export default {
   name: "PropItem",
   props: {
     item: {
-      type: Object,
+      //信息
+      type: Object
     },
     urlType: {
-      type: Number,
+      //区别图片URL
+      type: Number
     },
+    showPic: {
+      //是否显示图片
+      type: Boolean,
+      default: true
+    },
+    defaultColor: {
+      //默认barColor
+      type: String,
+      default: "#c3370b"
+    },
+    barColor: {
+      //设置color
+      type: String,
+      default: null
+    }
   },
   data() {
     return {
       propitem: this.item,
+      showpic: this.showPic,
       thumbUrl: [
         "./static/img/item/trigger/hyperkey/",
-        "/static/img/item/z/ultramedal/",
-      ],
+        "/static/img/item/z/ultramedal/"
+      ]
     };
   },
   methods: {},
@@ -34,7 +54,10 @@ export default {
     url() {
       return this.thumbUrl[this.urlType];
     },
-  },
+    color() {
+      return this.barColor != null ? this.barColor : this.defaultColor;
+    }
+  }
 };
 </script>
 
