@@ -287,6 +287,7 @@ export default {
           tag: ["EX03"],
           name: "银河维克特利奥特曼",
           link: [92],
+          color:"#173dc3"
         },
         {
           id: "M-035",
@@ -294,6 +295,7 @@ export default {
           tag: ["EX03"],
           name: "艾克斯奥特曼 贝塔火花装甲",
           link: [94],
+          color:"#173dc3"
         },
         {
           id: "M-036",
@@ -301,6 +303,7 @@ export default {
           tag: ["EX03"],
           name: "欧布奥特曼 三重形态",
           link: [102],
+          color:"#173dc3"
         },
         {
           id: "M-037",
@@ -308,6 +311,7 @@ export default {
           tag: ["EX03"],
           name: "捷德奥特曼 终极形态",
           link: [108],
+          color:"#173dc3"
         },
         {
           id: "M-038",
@@ -315,6 +319,7 @@ export default {
           tag: ["EX03"],
           name: "格罗布奥特曼",
           link: [117],
+          color:"#173dc3"
         },
         {
           id: "M-039",
@@ -322,6 +327,7 @@ export default {
           tag: ["EX03"],
           name: "令迦奥特曼",
           link: [124],
+          color:"#173dc3"
         },
         {
           id: "M-040",
@@ -329,6 +335,7 @@ export default {
           tag: ["EX04"],
           name: "奥特六兄弟",
           link: [0, 1, 2, 3, 4, 6],
+          color:"#8a939c"
         },
         {
           id: "M-041",
@@ -716,6 +723,7 @@ export default {
           tag: ["SP"],
           name: "泽塔奥特曼",
           link: [73],
+          color:"#d8111a"
         },
         {
           id: "M-096",
@@ -723,6 +731,7 @@ export default {
           tag: ["SP"],
           name: "银河奥特曼",
           link: [73],
+          color:"#d8111a"
         },
         {
           id: "M-097",
@@ -730,6 +739,7 @@ export default {
           tag: ["SP"],
           name: "维克特利奥特曼",
           link: [73],
+          color:"#d8111a"
         },
         {
           id: "M-098",
@@ -737,6 +747,7 @@ export default {
           tag: ["SP"],
           name: "艾克斯奥特曼",
           link: [73],
+          color:"#d8111a"
         },
         {
           id: "M-099",
@@ -744,6 +755,7 @@ export default {
           tag: ["SP"],
           name: "欧布奥特曼",
           link: [73],
+          color:"#d8111a"
         },
         {
           id: "M-100",
@@ -751,6 +763,7 @@ export default {
           tag: ["SP"],
           name: "捷德奥特曼",
           link: [73],
+          color:"#d8111a"
         },
         {
           id: "M-101",
@@ -758,6 +771,7 @@ export default {
           tag: ["SP"],
           name: "罗索奥特曼",
           link: [73],
+          color:"#d8111a"
         },
         {
           id: "M-102",
@@ -765,6 +779,7 @@ export default {
           tag: ["SP"],
           name: "布鲁奥特曼",
           link: [73],
+          color:"#d8111a"
         },
         {
           id: "M-103",
@@ -772,6 +787,7 @@ export default {
           tag: ["SP"],
           name: "泰迦奥特曼",
           link: [73],
+          color:"#d8111a"
         },
         {
           id: "M-104",
@@ -940,6 +956,7 @@ export default {
           tag: ["PB"],
           name: "泽塔奥特曼 德尔塔天爪",
           link: [73],
+          color:"#de9104"
         },
         {
           id: "M-127",
