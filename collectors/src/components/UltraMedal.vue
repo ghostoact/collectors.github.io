@@ -8,6 +8,7 @@
         :urlType="1"
         :showPic="true"
         :key="um.id"
+        :barColor="um.color"
       />
     </div>
   </div>
@@ -20,11 +21,29 @@ export default {
   name: "UltraMedal",
   components: {
     PropItem,
-    TagBar
+    TagBar,
   },
   data() {
     return {
-      tags: ["全部", "限定", "DX", "SG", "GP", "SP", "披风"],
+      tags: [
+        "全部",
+        "限定",
+        "DX",
+        "EX01",
+        "EX02",
+        "EX03",
+        "EX04",
+        "SG01",
+        "SG02",
+        "GP01",
+        "GP02",
+        "GP03",
+        "GP04",
+        "GPEX",
+        "SP",
+        "披风",
+        "PB",
+      ],
       nowList: null, //展示列表
       ultramedal: [
         {
@@ -32,982 +51,995 @@ export default {
           type: "U", //U 奥特曼  M 怪兽  O 其它
           tag: ["DX"], //标签：限定 DX EX扩展 SG食玩 GP扭蛋 SP特殊 PF披风
           name: "赛罗奥特曼", //名称
-          link: [62] //关联奥特曼或怪兽实体数组
+          link: [62], //关联奥特曼或怪兽实体数组
+          // color: "#F44336", //自定义颜色
         },
         {
           id: "M-002",
           type: "U",
           tag: ["DX"],
           name: "赛文奥特曼",
-          link: [2]
+          link: [2],
         },
         {
           id: "M-003",
           type: "U",
           tag: ["DX"],
           name: "雷欧奥特曼",
-          link: [8]
+          link: [8],
         },
         {
           id: "M-004",
           type: "U",
           tag: ["DX"],
           name: "奥特曼",
-          link: [0]
+          link: [0],
         },
         {
           id: "M-005",
           type: "U",
           tag: ["DX"],
           name: "艾斯奥特曼",
-          link: [4]
+          link: [4],
         },
         {
           id: "M-006",
           type: "U",
           tag: ["DX"],
           name: "泰罗奥特曼",
-          link: [6]
+          link: [6],
         },
         {
           id: "M-007",
           type: "U",
           tag: ["DX"],
           name: "迪迦奥特曼",
-          link: [20]
+          link: [20],
         },
         {
           id: "M-008",
           type: "U",
           tag: ["DX"],
           name: "戴拿奥特曼",
-          link: [27]
+          link: [27],
         },
         {
           id: "M-009",
           type: "U",
           tag: ["DX"],
           name: "盖亚奥特曼",
-          link: [30]
+          link: [30],
         },
         {
           id: "M-010",
           type: "U",
           tag: ["DX"],
           name: "赛罗奥特曼 无限形态",
-          link: [88]
+          link: [88],
+          color: "#de9104",
         },
         {
           id: "M-011",
           type: "U",
           tag: ["DX"],
           name: "捷德奥特曼",
-          link: [103]
+          link: [103],
+          color: "#de9104",
         },
         {
           id: "M-012",
           type: "U",
           tag: ["DX"],
           name: "极恶 贝利亚",
-          link: [123]
+          link: [123],
+          color: "#de9104",
         },
         {
           id: "M-013",
           type: "U",
           tag: ["DX"],
           name: "佐菲",
-          link: [1]
+          link: [1],
         },
         {
           id: "M-014",
           type: "U",
           tag: ["DX"],
           name: "杰克奥特曼",
-          link: [3]
+          link: [3],
         },
         {
           id: "M-015",
           type: "U",
           tag: ["DX"],
           name: "奥特之父",
-          link: [5]
+          link: [5],
         },
         {
           id: "M-016",
           type: "U",
           tag: ["DX"],
           name: "高斯奥特曼",
-          link: [38]
+          link: [38],
         },
         {
           id: "M-017",
           type: "U",
           tag: ["DX"],
           name: "奈克赛斯奥特曼",
-          link: [46]
+          link: [46],
         },
         {
           id: "M-018",
           type: "U",
           tag: ["DX"],
           name: "梦比优斯奥特曼",
-          link: [54]
+          link: [54],
         },
         {
           id: "M-019",
           type: "U",
           tag: ["DX"],
           name: "银河奥特曼",
-          link: [65]
+          link: [65],
         },
         {
           id: "M-020",
           type: "U",
           tag: ["DX"],
           name: "艾克斯奥特曼",
-          link: [67]
+          link: [67],
         },
         {
           id: "M-021",
           type: "U",
           tag: ["DX"],
           name: "欧布奥特曼",
-          link: [68]
+          link: [68],
         },
         {
           id: "M-022",
           type: "U",
-          tag: ["EX"],
+          tag: ["EX01"],
           name: "赛罗奥特曼 闪耀形态",
-          link: [64]
+          link: [64],
         },
         {
           id: "M-023",
           type: "U",
-          tag: ["EX"],
+          tag: ["EX01"],
           name: "火焰骑士",
-          link: null
+          link: null,
         },
         {
           id: "M-024",
           type: "U",
-          tag: ["EX"],
+          tag: ["EX01"],
           name: "镜子骑士",
-          link: null
+          link: null,
         },
         {
           id: "M-025",
           type: "U",
-          tag: ["EX"],
+          tag: ["EX01"],
           name: "钢铁九号",
-          link: null
+          link: null,
         },
         {
           id: "M-026",
           type: "U",
-          tag: ["EX"],
+          tag: ["EX01"],
           name: "钢铁杀手",
-          link: null
+          link: null,
         },
         {
           id: "M-027",
           type: "U",
-          tag: ["EX"],
+          tag: ["EX01"],
           name: "捷德奥特曼",
-          link: [103]
+          link: [103],
         },
         {
           id: "M-028",
           type: "U",
-          tag: ["EX"],
+          tag: ["EX02"],
           name: "银河斯特利姆奥特曼",
-          link: [90]
+          link: [90],
         },
         {
           id: "M-029",
           type: "U",
-          tag: ["EX"],
+          tag: ["EX02"],
           name: "维克特利奥特曼 骑士形态",
-          link: [91]
+          link: [91],
         },
         {
           id: "M-030",
           type: "U",
-          tag: ["EX"],
+          tag: ["EX02"],
           name: "超越艾克斯",
-          link: [93]
+          link: [93],
         },
         {
           id: "M-031",
           type: "U",
-          tag: ["EX"],
+          tag: ["EX02"],
           name: "捷德奥特曼 尊皇形态",
-          link: [107]
+          link: [107],
         },
         {
           id: "M-032",
           type: "U",
-          tag: ["EX"],
+          tag: ["EX02"],
           name: "罗布奥特曼",
-          link: [116]
+          link: [116],
         },
         {
           id: "M-033",
           type: "U",
-          tag: ["EX"],
+          tag: ["EX02"],
           name: "泰迦三重斯特利姆",
-          link: [118]
+          link: [118],
         },
         {
           id: "M-034",
           type: "U",
-          tag: ["EX"],
+          tag: ["EX03"],
           name: "银河维克特利奥特曼",
-          link: [92]
+          link: [92],
         },
         {
           id: "M-035",
           type: "U",
-          tag: ["EX"],
+          tag: ["EX03"],
           name: "艾克斯奥特曼 贝塔火花装甲",
-          link: [94]
+          link: [94],
         },
         {
           id: "M-036",
           type: "U",
-          tag: ["EX"],
+          tag: ["EX03"],
           name: "欧布奥特曼 三重形态",
-          link: [102]
+          link: [102],
         },
         {
           id: "M-037",
           type: "U",
-          tag: ["EX"],
+          tag: ["EX03"],
           name: "捷德奥特曼 终极形态",
-          link: [108]
+          link: [108],
         },
         {
           id: "M-038",
           type: "U",
-          tag: ["EX"],
+          tag: ["EX03"],
           name: "格罗布奥特曼",
-          link: [117]
+          link: [117],
         },
         {
           id: "M-039",
           type: "U",
-          tag: ["EX"],
+          tag: ["EX03"],
           name: "令迦奥特曼",
-          link: [124]
+          link: [124],
         },
         {
           id: "M-040",
           type: "U",
-          tag: ["EX"],
+          tag: ["EX04"],
           name: "奥特六兄弟",
-          link: [0, 1, 2, 3, 4, 6]
+          link: [0, 1, 2, 3, 4, 6],
         },
         {
           id: "M-041",
           type: "U",
-          tag: ["EX"],
+          tag: ["EX04"],
           name: "爱迪奥特曼",
-          link: [12]
+          link: [12],
         },
         {
           id: "M-042",
           type: "U",
-          tag: ["EX"],
+          tag: ["EX04"],
           name: "杰斯提斯奥特曼 标准模式",
-          link: [43]
+          link: [43],
         },
         {
           id: "M-043",
           type: "U",
-          tag: ["EX"],
+          tag: ["EX04"],
           name: "希卡利奥特曼",
-          link: [58]
+          link: [58],
         },
         {
           id: "M-044",
           type: "U",
-          tag: ["EX"],
+          tag: ["EX04"],
           name: "赛罗奥特曼 月神奇迹型",
-          link: [87]
+          link: [87],
         },
         {
           id: "M-045",
           type: "U",
-          tag: ["EX"],
+          tag: ["EX04"],
           name: "利布特奥特曼",
-          link: [125]
+          link: [125],
         },
         {
           id: "M-046",
           type: "U",
-          tag: ["GP"],
+          tag: ["GP01"],
           name: "赛文奥特曼 闪耀型",
-          link: [2]
+          link: [2],
         },
         {
           id: "M-047",
           type: "U",
-          tag: ["GP"],
+          tag: ["GP02"],
           name: "奥特曼 闪耀型",
-          link: [0]
+          link: [0],
         },
         {
           id: "M-048",
           type: "U",
-          tag: ["GP"],
+          tag: ["GP01"],
           name: "葛雷奥特曼",
-          link: [17]
+          link: [17],
         },
         {
           id: "M-049",
           type: "U",
-          tag: ["GP"],
+          tag: ["GP01"],
           name: "赛罗奥特曼 强壮日冕型",
-          link: [86]
+          link: [86],
         },
         {
           id: "M-050",
           type: "U",
-          tag: ["GP"],
+          tag: ["GP01"],
           name: "阿古茹奥特曼",
-          link: [33]
+          link: [33],
         },
         {
           id: "M-051",
           type: "U",
-          tag: ["GP"],
+          tag: ["GP01"],
           name: "乔尼亚斯奥特曼",
-          link: [11]
+          link: [11],
         },
         {
           id: "M-052",
           type: "M",
-          tag: ["GP"],
+          tag: ["GP02"],
           name: "内隆嘎",
-          link: null
+          link: null,
         },
         {
           id: "M-053",
           type: "M",
-          tag: ["GP"],
+          tag: ["GP02"],
           name: "盖内伽古",
-          link: null
+          link: null,
         },
         {
           id: "M-054",
           type: "M",
-          tag: ["GP"],
+          tag: ["GP02"],
           name: "吉拉斯",
-          link: null
+          link: null,
         },
         {
           id: "M-055",
           type: "U",
-          tag: ["GP"],
+          tag: ["GP02"],
           name: "奈克斯特奥特曼 蓝色青年形态",
-          link: [50]
+          link: [50],
         },
         {
           id: "M-056",
           type: "U",
-          tag: ["GP"],
+          tag: ["GP02"],
           name: "戴拿奥特曼 奇迹型",
-          link: [29]
+          link: [29],
         },
         {
           id: "M-057",
           type: "U",
-          tag: ["GP"],
+          tag: ["GP03"],
           name: "闪耀迪迦",
-          link: [23]
+          link: [23],
         },
         {
           id: "M-058",
           type: "U",
-          tag: ["GP"],
+          tag: ["GP03"],
           name: "帕瓦特奥特曼",
-          link: [18]
+          link: [18],
         },
         {
           id: "M-059",
           type: "U",
-          tag: ["GP"],
+          tag: ["GP03"],
           name: "奥特之王",
-          link: [10]
+          link: [10],
         },
         {
           id: "M-060",
           type: "M",
-          tag: ["GP"],
+          tag: ["GP03"],
           name: "伽古拉斯·伽古拉",
-          link: null
+          link: null,
         },
         {
           id: "M-061",
           type: "M",
-          tag: ["GP"],
+          tag: ["GP03"],
           name: "金古桥",
-          link: null
+          link: null,
         },
         {
           id: "M-062",
           type: "U",
-          tag: ["GP"],
+          tag: ["GP04"],
           name: "哉阿斯奥特曼",
-          link: [19]
+          link: [19],
         },
         {
           id: "M-063",
           type: "U",
-          tag: ["GP"],
+          tag: ["GP04"],
           name: "纳伊斯奥特曼",
-          link: [35]
+          link: [35],
         },
         {
           id: "M-064",
           type: "U",
-          tag: ["GP"],
+          tag: ["GP04"],
           name: "格丽乔奥特曼",
-          link: [74]
+          link: [74],
         },
         {
           id: "M-065",
           type: "M",
-          tag: ["GP"],
+          tag: ["GP04"],
           name: "特空机1号 赛文加",
-          link: null
+          link: null,
         },
         {
           id: "M-066",
           type: "M",
-          tag: ["GP"],
+          tag: ["GP04"],
           name: "特空机2号 乌英达姆",
-          link: null
+          link: null,
         },
         {
           id: "M-067",
           type: "M",
-          tag: ["GP"],
+          tag: ["GP04"],
           name: "特空机3号 金古桥军械库定制",
-          link: null
+          link: null,
         },
         {
           id: "M-068",
           type: "M",
-          tag: ["GP"],
+          tag: ["GP04"],
           name: "特空机4号 奥特人造机甲赛罗",
-          link: null
+          link: null,
         },
         {
           id: "M-069",
           type: "M",
-          tag: ["GP"],
+          tag: ["GP04"],
           name: "歼灭机甲兽德斯特鲁多斯",
-          link: null
+          link: null,
         },
         {
           id: "M-070",
           type: "M",
-          tag: ["GP"],
+          tag: ["GP04"],
           name: "虚空怪兽格利扎",
-          link: null
+          link: null,
         },
         {
           id: "M-071",
           type: "U",
-          tag: ["SG"],
+          tag: ["SG01"],
           name: "究极赛罗",
-          link: [74]
+          link: [74],
         },
         {
           id: "M-072",
           type: "U",
-          tag: ["SG"],
+          tag: ["SG01"],
           name: "欧布奥特曼 重光形态",
-          link: [96]
+          link: [96],
         },
         {
           id: "M-073",
           type: "U",
-          tag: ["SG"],
+          tag: ["SG01"],
           name: "维克特利奥特曼",
-          link: [66]
+          link: [66],
         },
         {
           id: "M-074",
           type: "U",
-          tag: ["SG"],
+          tag: ["SG01"],
           name: "麦克斯奥特曼",
-          link: [52]
+          link: [52],
         },
         {
           id: "M-075",
           type: "U",
-          tag: ["SG"],
+          tag: ["SG01"],
           name: "泰迦奥特曼",
-          link: [77]
+          link: [77],
         },
         {
           id: "M-076",
           type: "U",
-          tag: ["SG"],
+          tag: ["SG01"],
           name: "泰塔斯奥特曼",
-          link: [79]
+          link: [79],
         },
         {
           id: "M-077",
           type: "U",
-          tag: ["SG"],
+          tag: ["SG01"],
           name: "风马奥特曼",
-          link: [80]
+          link: [80],
         },
         {
           id: "M-078",
           type: "U",
-          tag: ["SG"],
+          tag: ["SG01"],
           name: "奈克斯特奥特曼青年形态",
-          link: [49]
+          link: [49],
         },
         {
           id: "M-079",
           type: "M",
-          tag: ["SG"],
+          tag: ["SG02"],
           name: "艾雷王",
-          link: null
+          link: null,
         },
         {
           id: "M-080",
           type: "M",
-          tag: ["SG"],
+          tag: ["SG02"],
           name: "艾斯杀手",
-          link: null
+          link: null,
         },
         {
           id: "M-081",
           type: "M",
-          tag: ["SG"],
+          tag: ["SG02"],
           name: "霍洛波罗兹",
-          link: null
+          link: null,
         },
         {
           id: "M-082",
           type: "M",
-          tag: ["SG"],
+          tag: ["SG02"],
           name: "吉尔巴里斯",
-          link: null
+          link: null,
         },
         {
           id: "M-083",
           type: "M",
-          tag: ["SG"],
+          tag: ["SG02"],
           name: "加拉特隆MK2",
-          link: null
+          link: null,
         },
         {
           id: "M-084",
           type: "U",
           tag: ["限定"],
           name: "赛罗与捷德",
-          link: [62, 103]
+          link: [62, 103],
+          color: "#de9104",
         },
         {
           id: "M-085",
           type: "U",
           tag: ["限定"],
           name: "戴拿奥特曼 强壮型",
-          link: [28]
+          link: [28],
         },
         {
           id: "M-086",
           type: "U",
           tag: ["限定"],
           name: "高斯奥特曼 日冕模式",
-          link: [39]
+          link: [39],
         },
         {
           id: "M-087",
           type: "U",
           tag: ["限定"],
           name: "初代光线",
-          link: [0]
+          link: [0],
         },
         {
           id: "M-088",
           type: "U",
           tag: ["限定"],
           name: "泽塔奥特曼 阿尔法装甲",
-          link: [81, 62, 2, 8]
+          link: [81, 62, 2, 8],
         },
         {
           id: "M-089",
           type: "U",
           tag: ["限定"],
           name: "泽塔奥特曼 伽马未来",
-          link: [81, 20, 27, 30]
+          link: [81, 20, 27, 30],
         },
         {
           id: "M-090",
           type: "U",
           tag: ["限定"],
           name: "泽塔奥特曼 德尔塔天爪",
-          link: [81, 71, 88, 123]
+          link: [81, 71, 88, 123],
         },
         {
           id: "M-091",
           type: "U",
           tag: ["限定"],
           name: "十周年赛罗",
-          link: [62]
+          link: [62],
         },
         {
           id: "M-092",
           type: "U",
           tag: ["限定"],
           name: "泽塔奥特曼 德尔塔天爪圣诞版",
-          link: [122]
+          link: [122],
+          color: "#027e42",
         },
         {
           id: "M-093",
           type: "U",
           tag: ["限定"],
           name: "罗索奥特曼",
-          link: [72]
+          link: [72],
         },
         {
           id: "M-094",
           type: "U",
           tag: ["限定"],
           name: "布鲁奥特曼",
-          link: [73]
+          link: [73],
         },
         {
           id: "M-095",
           type: "U",
           tag: ["SP"],
           name: "泽塔奥特曼",
-          link: [73]
+          link: [73],
         },
         {
           id: "M-096",
           type: "U",
           tag: ["SP"],
           name: "银河奥特曼",
-          link: [73]
+          link: [73],
         },
         {
           id: "M-097",
           type: "U",
           tag: ["SP"],
           name: "维克特利奥特曼",
-          link: [73]
+          link: [73],
         },
         {
           id: "M-098",
           type: "U",
           tag: ["SP"],
           name: "艾克斯奥特曼",
-          link: [73]
+          link: [73],
         },
         {
           id: "M-099",
           type: "U",
           tag: ["SP"],
           name: "欧布奥特曼",
-          link: [73]
+          link: [73],
         },
         {
           id: "M-100",
           type: "U",
           tag: ["SP"],
           name: "捷德奥特曼",
-          link: [73]
+          link: [73],
         },
         {
           id: "M-101",
           type: "U",
           tag: ["SP"],
           name: "罗索奥特曼",
-          link: [73]
+          link: [73],
         },
         {
           id: "M-102",
           type: "U",
           tag: ["SP"],
           name: "布鲁奥特曼",
-          link: [73]
+          link: [73],
         },
         {
           id: "M-103",
           type: "U",
           tag: ["SP"],
           name: "泰迦奥特曼",
-          link: [73]
+          link: [73],
         },
         {
           id: "M-104",
           type: "U",
           tag: ["披风"],
           name: "赛罗奥特曼",
-          link: [73]
+          link: [73],
+          color: "#5dbc9c",
         },
         {
           id: "M-105",
           type: "U",
           tag: ["披风"],
           name: "奥特曼",
-          link: [73]
+          link: [73],
+          color: "#5dbc9c",
         },
         {
           id: "M-106",
           type: "U",
           tag: ["披风"],
           name: "佐菲奥特曼",
-          link: [73]
+          link: [73],
+          color: "#5dbc9c",
         },
         {
           id: "M-107",
           type: "U",
           tag: ["披风"],
           name: "赛文奥特曼",
-          link: [73]
+          link: [73],
+          color: "#5dbc9c",
         },
         {
           id: "M-108",
           type: "U",
           tag: ["披风"],
           name: "杰克奥特曼",
-          link: [73]
+          link: [73],
+          color: "#5dbc9c",
         },
         {
           id: "M-109",
           type: "U",
           tag: ["披风"],
           name: "艾斯奥特曼",
-          link: [73]
+          link: [73],
+          color: "#5dbc9c",
         },
         {
           id: "M-110",
           type: "U",
           tag: ["披风"],
           name: "泰罗奥特曼",
-          link: [73]
+          link: [73],
+          color: "#5dbc9c",
         },
         {
           id: "M-111",
           type: "U",
-          tag: ["GP"],
+          tag: ["GPEX"],
           name: "奥特之母",
-          link: [73]
+          link: [73],
         },
         {
           id: "M-112",
           type: "U",
-          tag: ["GP"],
+          tag: ["GPEX"],
           name: "尤莉安",
-          link: [73]
+          link: [73],
         },
         {
           id: "M-113",
           type: "U",
-          tag: ["GP"],
+          tag: ["GPEX"],
           name: "索拉",
-          link: [73]
+          link: [73],
         },
         {
           id: "M-114",
           type: "U",
-          tag: ["GP"],
+          tag: ["GPEX"],
           name: "博伊",
-          link: [73]
+          link: [73],
         },
         {
           id: "M-115",
           type: "U",
-          tag: ["GP"],
+          tag: ["GPEX"],
           name: "察克",
-          link: [73]
+          link: [73],
         },
         {
           id: "M-116",
           type: "U",
-          tag: ["GP"],
+          tag: ["GPEX"],
           name: "史考特",
-          link: [73]
+          link: [73],
         },
         {
           id: "M-117",
           type: "U",
-          tag: ["GP"],
+          tag: ["GPEX"],
           name: "贝斯",
-          link: [73]
+          link: [73],
         },
         {
           id: "M-118",
           type: "U",
-          tag: ["GP"],
+          tag: ["GPEX"],
           name: "杰诺",
-          link: [73]
+          link: [73],
         },
         {
           id: "M-119",
           type: "U",
-          tag: ["GP"],
+          tag: ["GPEX"],
           name: "赛文21",
-          link: [73]
+          link: [73],
         },
         {
           id: "M-120",
           type: "U",
-          tag: ["GP"],
+          tag: ["GPEX"],
           name: "奈欧斯",
-          link: [73]
+          link: [73],
         },
         {
           id: "M-121",
           type: "U",
-          tag: ["GP"],
+          tag: ["GPEX"],
           name: "奈克斯特",
-          link: [73]
+          link: [73],
         },
         {
           id: "M-122",
           type: "U",
-          tag: ["GP"],
+          tag: ["GPEX"],
           name: "诺亚",
-          link: [73]
+          link: [73],
         },
         {
           id: "M-123",
           type: "U",
           tag: ["PB"],
           name: "泽塔奥特曼 阿尔法装甲",
-          link: [73]
+          link: [73],
         },
         {
           id: "M-124",
           type: "U",
           tag: ["PB"],
           name: "泽塔奥特曼 贝塔冲击",
-          link: [73]
+          link: [73],
         },
         {
           id: "M-125",
           type: "U",
           tag: ["PB"],
           name: "泽塔奥特曼 伽马未来",
-          link: [73]
+          link: [73],
         },
         {
           id: "M-126",
           type: "U",
           tag: ["PB"],
           name: "泽塔奥特曼 德尔塔天爪",
-          link: [73]
+          link: [73],
         },
         {
           id: "M-127",
           type: "O",
           tag: ["PB"],
           name: "武器1",
-          link: [73]
+          link: [73],
         },
         {
           id: "M-128",
           type: "O",
           tag: ["PB"],
           name: "武器2",
-          link: [73]
+          link: [73],
         },
         {
           id: "M-129",
           type: "O",
           tag: ["PB"],
           name: "武器3",
-          link: [73]
+          link: [73],
         },
         {
           id: "M-130",
           type: "M",
           tag: ["PB"],
           name: "杰顿",
-          link: null
+          link: null,
         },
         {
           id: "M-131",
           type: "M",
           tag: ["PB"],
           name: "庞顿",
-          link: null
+          link: null,
         },
         {
           id: "M-132",
           type: "M",
           tag: ["PB"],
           name: "玛伽大蛇",
-          link: null
+          link: null,
         },
         {
           id: "M-133",
           type: "M",
           tag: ["PB"],
           name: "超古代怪兽 哥尔赞",
-          link: null
+          link: null,
         },
         {
           id: "M-134",
           type: "M",
           tag: ["PB"],
           name: "超古代龙 美尔巴",
-          link: null
+          link: null,
         },
         {
           id: "M-135",
           type: "M",
           tag: ["PB"],
           name: "宇宙海兽 雷丘巴斯",
-          link: null
+          link: null,
         },
         {
           id: "M-136",
           type: "M",
           tag: ["PB"],
           name: "奇兽眼Q",
-          link: null
+          link: null,
         },
         {
           id: "M-137",
           type: "M",
           tag: ["PB"],
           name: "宇宙战斗兽 超戈布",
-          link: null
+          link: null,
         },
         {
           id: "M-138",
           type: "U",
           tag: ["DX"],
           name: "贝利亚奥特曼",
-          link: [60]
+          link: [60],
         },
         {
           id: "M-139",
           type: "M",
           tag: ["DX"],
           name: "宇古代怪兽 哥莫拉",
-          link: null
+          link: null,
         },
         {
           id: "M-140",
           type: "M",
           tag: ["DX"],
           name: "骷髅怪兽 雷德王",
-          link: null
-        }
-      ]
+          link: null,
+        },
+      ],
     };
   },
   methods: {
@@ -1026,11 +1058,11 @@ export default {
         }
       });
       return arr;
-    }
+    },
   },
   created() {
     this.nowList = this.ultramedal;
-  }
+  },
 };
 </script>
 
