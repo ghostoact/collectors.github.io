@@ -1738,11 +1738,17 @@ export default {
     // 应用：查询迪迦的信息和形态和融合列表
     getInfoById(id) {
       this.nowUltra.info = this.getUltraInfo(id);
-      this.nowUltra.form = this.getUltraByType(id, "form");
-      this.nowUltra.fusion = this.getUltraByType(id, "fusion");
       if (this.nowUltra.info.type == "base") {
         this.nowId = id;
+        this.nowUltra.form = this.getUltraByType(id, "form");
       }
+      if (this.nowUltra.info.type == "form") {
+        this.nowUltra.form = this.getUltraByType(
+          this.nowUltra.info.formId,
+          "form"
+        );
+      }
+      this.nowUltra.fusion = this.getUltraByType(id, "fusion");
       this.isOpen = true;
       document.documentElement.classList.add("isOpen");
     },
@@ -1816,7 +1822,6 @@ export default {
   overflow-y: auto;
   max-height: calc(100% - 80px - 110px);
 }
-
 
 .detail-warp::-webkit-scrollbar {
   display: none; /* Chrome Safari */
