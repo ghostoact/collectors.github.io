@@ -2,9 +2,9 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 //导入自定义组件
-import FrameTest from '../components/FrameTest'
-import HyperKey from '../components/HyperKey'
-import UltraMedal from '../components/UltraMedal'
+import Index from '../view/Index/Index'
+import HyperKey from '../view/Trigger/HyperKey'
+import UltraMedal from '../view/Z/UltraMedal'
 
 //安装路由，显示引用
 Vue.use(VueRouter);
@@ -18,9 +18,9 @@ export default new VueRouter({
       //路由路径
       path: '/',
       //自定义路由名称
-      name: 'FrameTest',
+      name: 'Index',
       //路由跳转的组件
-      component: FrameTest
+      component: Index
     },
     {
       //路由路径

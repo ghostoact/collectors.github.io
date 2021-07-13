@@ -91,7 +91,7 @@
 // 捷德：捷德的常见默认形态是融合形态，而这个融合形态没法在默认形态里展示
 import CharacterItem from "@/components/CharacterItem";
 export default {
-  name: "FrameTest",
+  name: "Index",
   components: {
     CharacterItem,
   },

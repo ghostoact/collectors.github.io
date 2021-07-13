@@ -14,12 +14,12 @@
 </template>
 
 <script>
-import FrameTest from "./components/FrameTest";
+import Index from "@/view/Index/Index";
 
 export default {
   name: "App",
   components: {
-    FrameTest,
+    Index,
   },
   data() {
     return {
