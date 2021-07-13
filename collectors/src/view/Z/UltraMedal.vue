@@ -370,7 +370,7 @@ export default {
           type: "U",
           tag: ["EX04"],
           name: "利布特奥特曼",
-          link: [125],
+          link: [70],
         },
         {
           id: "M-046",

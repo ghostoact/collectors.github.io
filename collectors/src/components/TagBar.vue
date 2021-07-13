@@ -47,7 +47,7 @@ export default {
   height: 25px;
   line-height: 25px;
   border-radius: 18px;
-  margin-right: 8px;
+  margin-right: 2px;
   cursor: pointer;
 }
 .tag-item:hover,

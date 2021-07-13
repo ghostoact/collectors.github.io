@@ -8,15 +8,14 @@
         :key="ultra.id"
       />
     </div>
-    <div class="detail-box" v-show="isOpen" v-if="nowUltra.info != null">
+    <div
+      class="detail-box"
+      v-show="isOpen"
+      @click.self="closeDetail"
+      v-if="nowUltra.info != null"
+    >
       <div class="close-btn" @click="closeDetail">
         <i class="iconfont icon-fanhuicopy"></i>
-      </div>
-      <div class="detail-btn pre-btn" @click="getPreInfo">
-        <i class="iconfont icon-left"></i>
-      </div>
-      <div class="detail-btn next-btn" @click="getNextInfo">
-        <i class="iconfont icon-right"></i>
       </div>
       <div class="detail-warp">
         <div class="detail-info">
@@ -988,7 +987,20 @@ export default {
           },
           first: 2016,
         },
-        { id: 70 },
+        {
+          id: 70,
+          type: "base",
+          name: {
+            zh: "利布特奥特曼",
+            jp: "ウルトラマンリブット",
+            en: "Ultraman Ribut",
+          },
+          first: 2014,
+          height: 40, //米
+          weight: 40000, //吨
+          maxSpeed: 9, //马赫
+          birthPlace: "M78星云·光之国",
+        },
         {
           id: 71,
           type: "base",
@@ -1619,17 +1631,6 @@ export default {
         },
         {
           id: 125,
-          type: "base",
-          name: {
-            zh: "利布特奥特曼",
-            jp: "ウルトラマンリブット",
-            en: "Ultraman Ribut",
-          },
-          first: 2014,
-          height: 40, //米
-          weight: 40000, //吨
-          maxSpeed: 9, //马赫
-          birthPlace: "M78星云·光之国",
         },
         {
           id: 126,
@@ -1738,17 +1739,11 @@ export default {
     // 应用：查询迪迦的信息和形态和融合列表
     getInfoById(id) {
       this.nowUltra.info = this.getUltraInfo(id);
+      this.nowUltra.form = this.getUltraByType(id, "form");
+      this.nowUltra.fusion = this.getUltraByType(id, "fusion");
       if (this.nowUltra.info.type == "base") {
         this.nowId = id;
-        this.nowUltra.form = this.getUltraByType(id, "form");
       }
-      if (this.nowUltra.info.type == "form") {
-        this.nowUltra.form = this.getUltraByType(
-          this.nowUltra.info.formId,
-          "form"
-        );
-      }
-      this.nowUltra.fusion = this.getUltraByType(id, "fusion");
       this.isOpen = true;
       document.documentElement.classList.add("isOpen");
     },
@@ -1756,24 +1751,6 @@ export default {
     closeDetail() {
       this.isOpen = false;
       document.documentElement.classList.remove("isOpen");
-    },
-    // 查看上一个基础数据
-    getPreInfo() {
-      if (this.nowId > 0) {
-        this.nowId = this.nowId - 1;
-      } else {
-        this.nowId = this.ultraman.length - 1;
-      }
-      this.getInfoById(this.nowId);
-    },
-    // 查看下一个基础数据
-    getNextInfo() {
-      if (this.nowId < this.ultraman.length - 1) {
-        this.nowId = this.nowId + 1;
-      } else {
-        this.nowId = 0;
-      }
-      this.getInfoById(this.nowId);
     },
   },
 };
@@ -1814,13 +1791,14 @@ export default {
   color: #fff;
 }
 .detail-warp {
-  width: 800px;
+  width: 890px;
   margin: 15px auto;
   background-color: #ffffffc7;
   border-radius: 6px;
   padding: 40px 20px;
   overflow-y: auto;
   max-height: calc(100% - 80px - 110px);
+  min-height: 470px;
 }
 
 .detail-warp::-webkit-scrollbar {
@@ -1851,31 +1829,6 @@ export default {
 .box-title {
   color: #272727;
   margin-bottom: 5px;
-}
-.detail-btn {
-  position: absolute;
-  bottom: 0;
-  height: calc(100% - 80px);
-  line-height: 90vh;
-  width: 200px;
-  text-align: center;
-  cursor: pointer;
-}
-.detail-btn:hover {
-  background-color: #ffffff0f;
-}
-.detail-btn .iconfont {
-  color: #ffffff7d;
-  font-size: 24px;
-}
-.detail-btn:hover .iconfont {
-  color: #fff;
-}
-.pre-btn {
-  left: 0;
-}
-.next-btn {
-  right: 0;
 }
 .detail-info {
   overflow: hidden;

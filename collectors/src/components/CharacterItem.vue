@@ -28,7 +28,7 @@ export default {
 </script>
 <style scoped>
 .item-box {
-  width: 155px;
+  width: 172px;
   height: 120px;
   float: left;
   background-color: #f8f8f8;

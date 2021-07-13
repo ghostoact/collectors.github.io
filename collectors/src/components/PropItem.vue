@@ -63,7 +63,7 @@ export default {
 
 <style scoped>
 .prop-item {
-  width: 160px;
+  width: 172px;
   height: 160px;
   float: left;
   background-color: #f8f8f8;
