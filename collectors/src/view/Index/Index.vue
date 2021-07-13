@@ -1768,7 +1768,7 @@ export default {
         this.nowId = 0;
       }
       this.getInfoById(this.nowId);
-    }
+    },
   },
 };
 </script>
@@ -1814,8 +1814,15 @@ export default {
   border-radius: 6px;
   padding: 40px 20px;
   overflow-y: auto;
-  height: calc(100% - 80px - 110px);
-} /* 滚动条底色 */
+  max-height: calc(100% - 80px - 110px);
+}
+
+
+.detail-warp::-webkit-scrollbar {
+  display: none; /* Chrome Safari */
+}
+
+/* 滚动条底色 */
 
 ::-webkit-scrollbar-track {
   background-color: #f8faff;
