@@ -77,9 +77,11 @@
 <script>
 // 1.奥特曼列表 √
 // 2.奥特曼形态列表+相关融合列表 √
-// 3.周边列表
+// 3.周边列表 √
 // 4.形态对应相关周边,例如泽塔勋章和特利迦钥匙
 // 5.组合测试，选择不同的奥特曼，得出形态
+// 6.本地保存当前收集信息
+// 7.收集完成进度
 
 // 类型分别有：基础 base、形态 form、融合 fusion
 // 形态 form 有 baseId
@@ -731,7 +733,7 @@ export default {
           type: "form",
           formId: 46,
           name: {
-            zh: "奈克斯特奥特曼青年形态",
+            zh: "奈克赛斯奥特曼 青年形态",
             jp: "ウルトラマン・ザ・ネクスト",
             en: "Ultraman Nexus Junis",
           },
@@ -742,7 +744,7 @@ export default {
           type: "form",
           formId: 46,
           name: {
-            zh: "奈克斯特奥特曼蓝色青年形态",
+            zh: "奈克赛斯奥特曼 蓝色青年形态",
             jp: "ウルトラマン・ザ・ネクスト",
             en: "Ultraman Nexus Junis Blue",
           },

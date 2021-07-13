@@ -552,7 +552,7 @@ export default {
           type: "U",
           tag: ["SG01"],
           name: "究极赛罗",
-          link: [74],
+          link: [63],
         },
         {
           id: "M-072",
@@ -600,7 +600,7 @@ export default {
           id: "M-078",
           type: "U",
           tag: ["SG01"],
-          name: "奈克斯特奥特曼青年形态",
+          name: "奈克斯特奥特曼 青年形态",
           link: [49],
         },
         {
@@ -723,7 +723,7 @@ export default {
           type: "U",
           tag: ["SP"],
           name: "泽塔奥特曼",
-          link: [73],
+          link: [81],
           color:"#d8111a"
         },
         {
@@ -731,7 +731,7 @@ export default {
           type: "U",
           tag: ["SP"],
           name: "银河奥特曼",
-          link: [73],
+          link: [65],
           color:"#d8111a"
         },
         {
@@ -739,7 +739,7 @@ export default {
           type: "U",
           tag: ["SP"],
           name: "维克特利奥特曼",
-          link: [73],
+          link: [66],
           color:"#d8111a"
         },
         {
@@ -747,7 +747,7 @@ export default {
           type: "U",
           tag: ["SP"],
           name: "艾克斯奥特曼",
-          link: [73],
+          link: [67],
           color:"#d8111a"
         },
         {
@@ -755,7 +755,7 @@ export default {
           type: "U",
           tag: ["SP"],
           name: "欧布奥特曼",
-          link: [73],
+          link: [68],
           color:"#d8111a"
         },
         {
@@ -763,7 +763,7 @@ export default {
           type: "U",
           tag: ["SP"],
           name: "捷德奥特曼",
-          link: [73],
+          link: [103],
           color:"#d8111a"
         },
         {
@@ -771,7 +771,7 @@ export default {
           type: "U",
           tag: ["SP"],
           name: "罗索奥特曼",
-          link: [73],
+          link: [72],
           color:"#d8111a"
         },
         {
@@ -787,7 +787,7 @@ export default {
           type: "U",
           tag: ["SP"],
           name: "泰迦奥特曼",
-          link: [73],
+          link: [77],
           color:"#d8111a"
         },
         {
@@ -795,7 +795,7 @@ export default {
           type: "U",
           tag: ["披风"],
           name: "赛罗奥特曼",
-          link: [73],
+          link: [62],
           color: "#5dbc9c",
         },
         {
@@ -803,7 +803,7 @@ export default {
           type: "U",
           tag: ["披风"],
           name: "奥特曼",
-          link: [73],
+          link: [0],
           color: "#5dbc9c",
         },
         {
@@ -811,7 +811,7 @@ export default {
           type: "U",
           tag: ["披风"],
           name: "佐菲奥特曼",
-          link: [73],
+          link: [1],
           color: "#5dbc9c",
         },
         {
@@ -819,7 +819,7 @@ export default {
           type: "U",
           tag: ["披风"],
           name: "赛文奥特曼",
-          link: [73],
+          link: [2],
           color: "#5dbc9c",
         },
         {
@@ -827,7 +827,7 @@ export default {
           type: "U",
           tag: ["披风"],
           name: "杰克奥特曼",
-          link: [73],
+          link: [3],
           color: "#5dbc9c",
         },
         {
@@ -835,7 +835,7 @@ export default {
           type: "U",
           tag: ["披风"],
           name: "艾斯奥特曼",
-          link: [73],
+          link: [4],
           color: "#5dbc9c",
         },
         {
@@ -843,7 +843,7 @@ export default {
           type: "U",
           tag: ["披风"],
           name: "泰罗奥特曼",
-          link: [73],
+          link: [6],
           color: "#5dbc9c",
         },
         {
@@ -851,112 +851,112 @@ export default {
           type: "U",
           tag: ["GPEX"],
           name: "奥特之母",
-          link: [73],
+          link: [7],
         },
         {
           id: "M-112",
           type: "U",
           tag: ["GPEX"],
-          name: "尤莉安",
-          link: [73],
+          name: "尤莉安奥特曼",
+          link: [13],
         },
         {
           id: "M-113",
           type: "U",
           tag: ["GPEX"],
           name: "索拉",
-          link: [73],
+          link: null
         },
         {
           id: "M-114",
           type: "U",
           tag: ["GPEX"],
-          name: "博伊",
-          link: [73],
+          name: "博伊奥特曼",
+          link: [45],
         },
         {
           id: "M-115",
           type: "U",
           tag: ["GPEX"],
-          name: "察克",
-          link: [73],
+          name: "察克奥特曼",
+          link: [15],
         },
         {
           id: "M-116",
           type: "U",
           tag: ["GPEX"],
-          name: "史考特",
-          link: [73],
+          name: "史考特奥特曼",
+          link: [14],
         },
         {
           id: "M-117",
           type: "U",
           tag: ["GPEX"],
-          name: "贝斯",
-          link: [73],
+          name: "贝斯奥特曼",
+          link: [16],
         },
         {
           id: "M-118",
           type: "U",
           tag: ["GPEX"],
-          name: "杰诺",
-          link: [73],
+          name: "杰诺奥特曼",
+          link: [53],
         },
         {
           id: "M-119",
           type: "U",
           tag: ["GPEX"],
-          name: "赛文21",
-          link: [73],
+          name: "赛文21奥特曼",
+          link: [37],
         },
         {
           id: "M-120",
           type: "U",
           tag: ["GPEX"],
-          name: "奈欧斯",
-          link: [73],
+          name: "奈欧斯奥特曼",
+          link: [36],
         },
         {
           id: "M-121",
           type: "U",
           tag: ["GPEX"],
-          name: "奈克斯特",
-          link: [73],
+          name: "奈克斯特奥特曼",
+          link: [48],
         },
         {
           id: "M-122",
           type: "U",
           tag: ["GPEX"],
-          name: "诺亚",
-          link: [73],
+          name: "诺亚奥特曼",
+          link: [51],
         },
         {
           id: "M-123",
           type: "U",
           tag: ["PB"],
           name: "泽塔奥特曼 阿尔法装甲",
-          link: [73],
+          link: [119],
         },
         {
           id: "M-124",
           type: "U",
           tag: ["PB"],
           name: "泽塔奥特曼 贝塔冲击",
-          link: [73],
+          link: [120],
         },
         {
           id: "M-125",
           type: "U",
           tag: ["PB"],
           name: "泽塔奥特曼 伽马未来",
-          link: [73],
+          link: [121],
         },
         {
           id: "M-126",
           type: "U",
           tag: ["PB"],
           name: "泽塔奥特曼 德尔塔天爪",
-          link: [73],
+          link: [122],
           color:"#de9104"
         },
         {
@@ -964,21 +964,21 @@ export default {
           type: "O",
           tag: ["PB"],
           name: "武器1",
-          link: [73],
+          link: null
         },
         {
           id: "M-128",
           type: "O",
           tag: ["PB"],
           name: "武器2",
-          link: [73],
+          link: null
         },
         {
           id: "M-129",
           type: "O",
           tag: ["PB"],
           name: "武器3",
-          link: [73],
+          link: null
         },
         {
           id: "M-130",
