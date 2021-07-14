@@ -2,12 +2,12 @@
   <div class="tags-bar">
     <div
       class="tag-item"
-      :class="nowTag == tag ? 'active' : ''"
+      :class="nowTag == tag.name ? 'active' : ''"
       v-for="tag in tagsData"
-      :key="tag"
-      @click="getDataByTag(tag)"
+      :key="tag.name"
+      @click="getDataByTag(tag.name)"
     >
-      {{ tag }}
+      {{ tag.title }}
     </div>
   </div>
 </template>
@@ -23,11 +23,12 @@ export default {
   data() {
     return {
       tagsData: this.tags,
-      nowTag: "全部"
+      nowTag: "ALL"
     };
   },
   methods: {
     getDataByTag(tag) {
+      console.log(this.tagsData);
       this.nowTag = tag;
       this.$emit("parentEvent", tag);
     }

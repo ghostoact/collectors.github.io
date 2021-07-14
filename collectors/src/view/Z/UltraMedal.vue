@@ -26,30 +26,65 @@ export default {
   data() {
     return {
       tags: [
-        "全部",
-        "限定",
-        "DX",
-        "EX01",
-        "EX02",
-        "EX03",
-        "EX04",
-        "SG01",
-        "SG02",
-        "GP01",
-        "GP02",
-        "GP03",
-        "GP04",
-        "GPEX",
-        "SP",
-        "披风",
-        "PB",
+        {
+          name: "ALL",
+          title: "全部"
+        },{
+          name: "XD",
+          title: "限定"
+        },{
+          name: "DX",
+          title: "DX"
+        },{
+          name: "EX01",
+          title: "EX01"
+        },{
+          name: "EX02",
+          title: "EX02"
+        },{
+          name: "EX03",
+          title: "EX03"
+        },{
+          name: "EX04",
+          title: "EX04"
+        },{
+          name: "SG01",
+          title: "SG01"
+        },{
+          name: "SG02",
+          title: "SG02"
+        },{
+          name: "GP01",
+          title: "GP01"
+        },{
+          name: "GP02",
+          title: "GP02"
+        },{
+          name: "GP03",
+          title: "GP03"
+        },{
+          name: "GP04",
+          title: "GP04"
+        },{
+          name: "GPEX",
+          title: "GPEX"
+        },{
+          name: "SP",
+          title: "SP"
+        },{
+          name: "PF",
+          title: "披风"
+        },{
+          name: "PB",
+          title: "PB"
+        }
       ],
       nowList: null, //展示列表
       ultramedal: [
         {
           id: "M-001", //唯一ID
           type: "U", //U 奥特曼  M 怪兽  O 其它
-          tag: ["DX"], //标签：限定 DX EX扩展 SG食玩 GP扭蛋 SP特殊 PF披风
+          tag: ["DX"], //标签：XD限定 DX EX扩展 SG食玩 GP扭蛋 SP特殊 PF披风
           name: "赛罗奥特曼", //名称
           link: [62], //关联奥特曼或怪兽实体数组
           // color: "#F44336", //自定义颜色
@@ -641,7 +676,7 @@ export default {
         {
           id: "M-084",
           type: "U",
-          tag: ["限定"],
+          tag: ["XD"],
           name: "赛罗与捷德",
           link: [62, 103],
           color: "#de9104",
@@ -649,42 +684,42 @@ export default {
         {
           id: "M-085",
           type: "U",
-          tag: ["限定"],
+          tag: ["XD"],
           name: "戴拿奥特曼 强壮型",
           link: [28],
         },
         {
           id: "M-086",
           type: "U",
-          tag: ["限定"],
+          tag: ["XD"],
           name: "高斯奥特曼 日冕模式",
           link: [39],
         },
         {
           id: "M-087",
           type: "U",
-          tag: ["限定"],
+          tag: ["XD"],
           name: "初代光线",
           link: [0],
         },
         {
           id: "M-088",
           type: "U",
-          tag: ["限定"],
+          tag: ["XD"],
           name: "泽塔奥特曼 阿尔法装甲",
           link: [81, 62, 2, 8],
         },
         {
           id: "M-089",
           type: "U",
-          tag: ["限定"],
+          tag: ["XD"],
           name: "泽塔奥特曼 伽马未来",
           link: [81, 20, 27, 30],
         },
         {
           id: "M-090",
           type: "U",
-          tag: ["限定"],
+          tag: ["XD"],
           name: "泽塔奥特曼 德尔塔天爪",
           link: [81, 71, 88, 123],
           color:"#8a939c"
@@ -692,14 +727,14 @@ export default {
         {
           id: "M-091",
           type: "U",
-          tag: ["限定"],
+          tag: ["XD"],
           name: "十周年赛罗",
           link: [62],
         },
         {
           id: "M-092",
           type: "U",
-          tag: ["限定"],
+          tag: ["XD"],
           name: "泽塔奥特曼 德尔塔天爪圣诞版",
           link: [122],
           color: "#027e42",
@@ -707,14 +742,14 @@ export default {
         {
           id: "M-093",
           type: "U",
-          tag: ["限定"],
+          tag: ["XD"],
           name: "罗索奥特曼",
           link: [72],
         },
         {
           id: "M-094",
           type: "U",
-          tag: ["限定"],
+          tag: ["XD"],
           name: "布鲁奥特曼",
           link: [73],
         },
@@ -793,7 +828,7 @@ export default {
         {
           id: "M-104",
           type: "U",
-          tag: ["披风"],
+          tag: ["PF"],
           name: "赛罗奥特曼",
           link: [62],
           color: "#5dbc9c",
@@ -801,7 +836,7 @@ export default {
         {
           id: "M-105",
           type: "U",
-          tag: ["披风"],
+          tag: ["PF"],
           name: "奥特曼",
           link: [0],
           color: "#5dbc9c",
@@ -809,7 +844,7 @@ export default {
         {
           id: "M-106",
           type: "U",
-          tag: ["披风"],
+          tag: ["PF"],
           name: "佐菲奥特曼",
           link: [1],
           color: "#5dbc9c",
@@ -817,7 +852,7 @@ export default {
         {
           id: "M-107",
           type: "U",
-          tag: ["披风"],
+          tag: ["PF"],
           name: "赛文奥特曼",
           link: [2],
           color: "#5dbc9c",
@@ -825,7 +860,7 @@ export default {
         {
           id: "M-108",
           type: "U",
-          tag: ["披风"],
+          tag: ["PF"],
           name: "杰克奥特曼",
           link: [3],
           color: "#5dbc9c",
@@ -833,7 +868,7 @@ export default {
         {
           id: "M-109",
           type: "U",
-          tag: ["披风"],
+          tag: ["PF"],
           name: "艾斯奥特曼",
           link: [4],
           color: "#5dbc9c",
@@ -841,7 +876,7 @@ export default {
         {
           id: "M-110",
           type: "U",
-          tag: ["披风"],
+          tag: ["PF"],
           name: "泰罗奥特曼",
           link: [6],
           color: "#5dbc9c",
@@ -1062,7 +1097,7 @@ export default {
   },
   methods: {
     getDataByTag(tag) {
-      if (tag == "全部") {
+      if (tag == "ALL") {
         this.nowList = this.ultramedal;
       } else {
         this.nowList = this.getListByTag(tag);
@@ -1076,7 +1111,7 @@ export default {
         }
       });
       return arr;
-    },
+    }
   },
   created() {
     this.nowList = this.ultramedal;
