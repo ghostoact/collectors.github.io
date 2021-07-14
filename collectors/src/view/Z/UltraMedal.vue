@@ -1,6 +1,12 @@
 <template>
   <div>
     <div class="item-list">
+      <floatLayer
+        :show="layerShow"
+        :item="nowDetail"
+        :urlType="1"
+        @parentEvent="hideDetail"
+      />
       <tagBar v-bind:tags="tags" @parentEvent="getDataByTag" />
       <propItem
         v-for="um in nowList"
@@ -9,6 +15,7 @@
         :showPic="true"
         :key="um.id"
         :barColor="um.color"
+        @click.native="showDetail(um)"
       />
     </div>
   </div>
@@ -17,11 +24,13 @@
 <script>
 import PropItem from "@/components/PropItem";
 import TagBar from "@/components/TagBar";
+import FloatLayer from "@/components/FloatLayer";
 export default {
   name: "UltraMedal",
   components: {
     PropItem,
     TagBar,
+    FloatLayer,
   },
   data() {
     return {
@@ -80,6 +89,8 @@ export default {
         }
       ],
       nowList: null, //展示列表
+      nowDetail: null,
+      layerShow: false,
       ultramedal: [
         {
           id: "M-001", //唯一ID
@@ -1111,6 +1122,13 @@ export default {
         }
       });
       return arr;
+    },
+    showDetail(item) {
+      this.layerShow = true;
+      this.nowDetail = item;
+    },
+    hideDetail(visible) {
+      this.layerShow = visible;
     }
   },
   created() {

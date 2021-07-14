@@ -1,9 +1,16 @@
-html.isOpen{
+html.isOpen {
   overflow: hidden;
 }
+
 body {
-   /* background-image: url("/static/img/bg.jpg"); */
+  /* background-image: url("/static/img/bg.jpg"); */
   background-image: url(../assets/img/bg.jpg);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .item-list {

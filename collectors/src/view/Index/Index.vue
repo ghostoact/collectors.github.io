@@ -1799,6 +1799,15 @@ export default {
   overflow-y: auto;
   max-height: calc(100% - 80px - 110px);
   min-height: 470px;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 8px;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .detail-warp::-webkit-scrollbar {

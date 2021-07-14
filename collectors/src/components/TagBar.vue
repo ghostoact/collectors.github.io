@@ -28,7 +28,6 @@ export default {
   },
   methods: {
     getDataByTag(tag) {
-      console.log(this.tagsData);
       this.nowTag = tag;
       this.$emit("parentEvent", tag);
     }
