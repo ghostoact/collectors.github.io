@@ -1,7 +1,7 @@
 <template>
   <div
     class="item-box"
-    :style="'background-image: url(' + thumbUrl + char.id + '.png);'"
+    v-lazy:background-image=" thumbUrl + char.id + '.png'"
   >
     <div class="item-title">
       {{ char.name.zh }}

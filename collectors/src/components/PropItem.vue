@@ -1,9 +1,7 @@
 <template>
   <div
     class="prop-item"
-    :style="
-      showpic ? 'background-image: url(' + url + propitem.id + '.jpg);' : ''
-    "
+    v-lazy:background-image="showpic ? url + propitem.id + '.jpg':''"
   >
     <div class="item-title" :style="'background-color:' + color">
       {{ propitem.name }}
