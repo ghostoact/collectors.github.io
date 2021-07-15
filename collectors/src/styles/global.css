@@ -13,6 +13,17 @@ body {
   box-sizing: border-box;
 }
 
+.logo {
+  display: unset;
+  height: 100px;
+  width: 100px;
+  color: #fff;
+  cursor: pointer;
+  padding: 0 20px;
+  background-image: url(../assets/img/logo_192.png);
+  background-size: cover;
+}
+
 .item-list {
   overflow: hidden;
   width: 1240px;

@@ -1,13 +1,16 @@
 <template>
   <div id="app">
     <div class="menu-box">
-      <router-link
-        class="menu-item"
-        v-for="(m, i) in menu"
-        :to="m.url"
-        :key="i"
-        >{{ m.name }}</router-link
-      >
+      <div class="menu-warp">
+        <a class="logo menu-item"> </a>
+        <router-link
+          class="menu-item"
+          v-for="(m, i) in menu"
+          :to="m.url"
+          :key="i"
+          >{{ m.name }}</router-link
+        >
+      </div>
     </div>
     <router-view></router-view>
   </div>
@@ -19,24 +22,24 @@ import Index from "@/view/Index/Index";
 export default {
   name: "App",
   components: {
-    Index
+    Index,
   },
   data() {
     return {
       menu: [
         {
           name: "奥特曼",
-          url: "/"
+          url: "/",
         },
         {
           name: "特利迦·胜利超越之钥",
-          url: "/HyperKey"
+          url: "/HyperKey",
         },
         {
           name: "泽塔·奥特勋章",
-          url: "/UltraMedal"
-        }
-      ]
+          url: "/UltraMedal",
+        },
+      ],
     };
   },
   methods: {
@@ -49,12 +52,12 @@ export default {
       script.id = "cnzz";
       document.body.appendChild(script);
     },
-    cnzzEvent: function(category, action, label, value, nodeid) {
+    cnzzEvent: function (category, action, label, value, nodeid) {
       //cnzz事件统计
       if (window._czc) {
         czc.push(["_trackEvent", category, action, label, value, nodeid]);
       }
-    }
+    },
   },
   mounted() {
     this.initCNZZ();
@@ -68,8 +71,8 @@ export default {
         let refererUrl = "/";
         window._czc.push(["_trackPageview", contentUrl, refererUrl]);
       }
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -95,8 +98,12 @@ body {
   text-align: center;
   height: 100px;
 }
-.menu-item {
+.menu-warp{
   display: inline-block;
+}
+.menu-item {
+  /* display: inline-block; */
+  float: left;
   height: 100px;
   line-height: 100px;
   color: #fff;
