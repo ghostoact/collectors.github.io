@@ -384,6 +384,10 @@ export default {
     getCollectFilter() {
       this.collectFilter = this.collectFilter ? false : true;
     },
+    // 获取收藏进程
+    getCollectProgress(){
+      
+    }
   },
   created() {
     this.nowList = this.hyperKey;

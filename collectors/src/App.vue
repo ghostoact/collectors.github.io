@@ -38,6 +38,10 @@ export default {
         {
           name: "泽塔·奥特勋章",
           url: "/UltraMedal"
+        },
+        {
+          name: "500软胶",
+          url: "/Sofubi"
         }
       ]
     };

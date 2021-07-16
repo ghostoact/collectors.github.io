@@ -5,6 +5,7 @@ import VueRouter from 'vue-router'
 import Index from '../view/Index/Index'
 import HyperKey from '../view/Trigger/HyperKey'
 import UltraMedal from '../view/Z/UltraMedal'
+import Sofubi from '../view/Sofubi/Sofubi'
 
 //安装路由，显示引用
 Vue.use(VueRouter);
@@ -37,6 +38,14 @@ export default new VueRouter({
       name: 'UltraMedal',
       //路由跳转的组件
       component: UltraMedal
+    },
+    {
+      //路由路径
+      path: '/Sofubi',
+      //自定义路由名称
+      name: 'Sofubi',
+      //路由跳转的组件
+      component: Sofubi
     }
   ]
 });
