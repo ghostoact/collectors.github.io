@@ -1,23 +1,38 @@
 <template>
-  <div>
-    <div class="item-list">
-      <floatLayer
-        :show="layerShow"
-        :item="nowDetail"
-        :urlType="1"
-        @parentEvent="hideDetail"
-      />
+  <div class="item-list" :class="collectStatus ? 'collect-status' : ''">
+    <floatLayer
+      :show="layerShow"
+      :item="nowDetail"
+      :urlType="1"
+      @parentEvent="hideDetail"
+    />
+    <div class="ctrl-panel">
+      <div
+        class="switch-box"
+        :class="collectFilter ? 'active' : ''"
+        @click="getCollectFilter"
+      >
+        <div class="switch-label">过滤已拥有的</div>
+        <div class="switch-btn"></div>
+      </div>
+      <div
+        class="btn"
+        v-text="collectStatus ? '退出标记模式' : '标记我已拥有的'"
+        @click="collectToggle"
+      ></div>
       <tagBar v-bind:tags="tags" @parentEvent="getDataByTag" />
-      <propItem
-        v-for="um in nowList"
-        v-bind:item="um"
-        :urlType="1"
-        :showPic="true"
-        :key="um.id"
-        :barColor="um.color"
-        @click.native="showDetail(um)"
-      />
     </div>
+    <propItem
+      v-for="um in nowList"
+      v-bind:item="um"
+      :class="getCollect(um.id) ? 'collect' : ''"
+      :urlType="1"
+      :showPic="true"
+      :key="um.id"
+      :barColor="um.color"
+      @click.native="showDetail(um)"
+      v-show="collectFilter == false || !getCollect(um.id)"
+    />
   </div>
 </template>
 
@@ -37,60 +52,79 @@ export default {
       tags: [
         {
           name: "ALL",
-          title: "全部"
-        },{
+          title: "全部",
+        },
+        {
           name: "XD",
-          title: "限定"
-        },{
+          title: "限定",
+        },
+        {
           name: "DX",
-          title: "DX"
-        },{
+          title: "DX",
+        },
+        {
           name: "EX01",
-          title: "EX01"
-        },{
+          title: "EX01",
+        },
+        {
           name: "EX02",
-          title: "EX02"
-        },{
+          title: "EX02",
+        },
+        {
           name: "EX03",
-          title: "EX03"
-        },{
+          title: "EX03",
+        },
+        {
           name: "EX04",
-          title: "EX04"
-        },{
+          title: "EX04",
+        },
+        {
           name: "SG01",
-          title: "SG01"
-        },{
+          title: "SG01",
+        },
+        {
           name: "SG02",
-          title: "SG02"
-        },{
+          title: "SG02",
+        },
+        {
           name: "GP01",
-          title: "GP01"
-        },{
+          title: "GP01",
+        },
+        {
           name: "GP02",
-          title: "GP02"
-        },{
+          title: "GP02",
+        },
+        {
           name: "GP03",
-          title: "GP03"
-        },{
+          title: "GP03",
+        },
+        {
           name: "GP04",
-          title: "GP04"
-        },{
+          title: "GP04",
+        },
+        {
           name: "GPEX",
-          title: "GPEX"
-        },{
+          title: "GPEX",
+        },
+        {
           name: "SP",
-          title: "SP"
-        },{
+          title: "SP",
+        },
+        {
           name: "PF",
-          title: "披风"
-        },{
+          title: "披风",
+        },
+        {
           name: "PB",
-          title: "PB"
-        }
+          title: "PB",
+        },
       ],
       nowList: null, //展示列表
       nowDetail: null,
       layerShow: false,
+      collectStatus: false, //标记模式
+      collectFilter: false, //过滤已拥有的
+      collectList: [], //收藏列表
       ultramedal: [
         {
           id: "M-001", //唯一ID
@@ -333,7 +367,7 @@ export default {
           tag: ["EX03"],
           name: "银河维克特利奥特曼",
           link: [92],
-          color:"#173dc3"
+          color: "#173dc3",
         },
         {
           id: "M-035",
@@ -341,7 +375,7 @@ export default {
           tag: ["EX03"],
           name: "艾克斯奥特曼 贝塔火花装甲",
           link: [94],
-          color:"#173dc3"
+          color: "#173dc3",
         },
         {
           id: "M-036",
@@ -349,7 +383,7 @@ export default {
           tag: ["EX03"],
           name: "欧布奥特曼 三重形态",
           link: [102],
-          color:"#173dc3"
+          color: "#173dc3",
         },
         {
           id: "M-037",
@@ -357,7 +391,7 @@ export default {
           tag: ["EX03"],
           name: "捷德奥特曼 终极形态",
           link: [108],
-          color:"#173dc3"
+          color: "#173dc3",
         },
         {
           id: "M-038",
@@ -365,7 +399,7 @@ export default {
           tag: ["EX03"],
           name: "格罗布奥特曼",
           link: [117],
-          color:"#173dc3"
+          color: "#173dc3",
         },
         {
           id: "M-039",
@@ -373,7 +407,7 @@ export default {
           tag: ["EX03"],
           name: "令迦奥特曼",
           link: [124],
-          color:"#173dc3"
+          color: "#173dc3",
         },
         {
           id: "M-040",
@@ -381,7 +415,7 @@ export default {
           tag: ["EX04"],
           name: "奥特六兄弟",
           link: [0, 1, 2, 3, 4, 6],
-          color:"#8a939c"
+          color: "#8a939c",
         },
         {
           id: "M-041",
@@ -733,7 +767,7 @@ export default {
           tag: ["XD"],
           name: "泽塔奥特曼 德尔塔天爪",
           link: [81, 71, 88, 123],
-          color:"#8a939c"
+          color: "#8a939c",
         },
         {
           id: "M-091",
@@ -770,7 +804,7 @@ export default {
           tag: ["SP"],
           name: "泽塔奥特曼",
           link: [81],
-          color:"#d8111a"
+          color: "#d8111a",
         },
         {
           id: "M-096",
@@ -778,7 +812,7 @@ export default {
           tag: ["SP"],
           name: "银河奥特曼",
           link: [65],
-          color:"#d8111a"
+          color: "#d8111a",
         },
         {
           id: "M-097",
@@ -786,7 +820,7 @@ export default {
           tag: ["SP"],
           name: "维克特利奥特曼",
           link: [66],
-          color:"#d8111a"
+          color: "#d8111a",
         },
         {
           id: "M-098",
@@ -794,7 +828,7 @@ export default {
           tag: ["SP"],
           name: "艾克斯奥特曼",
           link: [67],
-          color:"#d8111a"
+          color: "#d8111a",
         },
         {
           id: "M-099",
@@ -802,7 +836,7 @@ export default {
           tag: ["SP"],
           name: "欧布奥特曼",
           link: [68],
-          color:"#d8111a"
+          color: "#d8111a",
         },
         {
           id: "M-100",
@@ -810,7 +844,7 @@ export default {
           tag: ["SP"],
           name: "捷德奥特曼",
           link: [103],
-          color:"#d8111a"
+          color: "#d8111a",
         },
         {
           id: "M-101",
@@ -818,7 +852,7 @@ export default {
           tag: ["SP"],
           name: "罗索奥特曼",
           link: [72],
-          color:"#d8111a"
+          color: "#d8111a",
         },
         {
           id: "M-102",
@@ -826,7 +860,7 @@ export default {
           tag: ["SP"],
           name: "布鲁奥特曼",
           link: [73],
-          color:"#d8111a"
+          color: "#d8111a",
         },
         {
           id: "M-103",
@@ -834,7 +868,7 @@ export default {
           tag: ["SP"],
           name: "泰迦奥特曼",
           link: [77],
-          color:"#d8111a"
+          color: "#d8111a",
         },
         {
           id: "M-104",
@@ -911,7 +945,7 @@ export default {
           type: "U",
           tag: ["GPEX"],
           name: "索拉",
-          link: null
+          link: null,
         },
         {
           id: "M-114",
@@ -1003,28 +1037,28 @@ export default {
           tag: ["PB"],
           name: "泽塔奥特曼 德尔塔天爪",
           link: [122],
-          color:"#de9104"
+          color: "#de9104",
         },
         {
           id: "M-127",
           type: "O",
           tag: ["PB"],
           name: "武器1",
-          link: null
+          link: null,
         },
         {
           id: "M-128",
           type: "O",
           tag: ["PB"],
           name: "武器2",
-          link: null
+          link: null,
         },
         {
           id: "M-129",
           type: "O",
           tag: ["PB"],
           name: "武器3",
-          link: null
+          link: null,
         },
         {
           id: "M-130",
@@ -1124,15 +1158,47 @@ export default {
       return arr;
     },
     showDetail(item) {
-      this.layerShow = true;
-      this.nowDetail = item;
+      if (this.collectStatus) {
+        // 收藏模式
+        if (this.collectList.indexOf(item.id) == -1) {
+          this.collectList.push(item.id); //新增项
+        } else {
+          this.collectList.splice(this.collectList.indexOf(item.id), 1); //删除项
+        }
+        this.$Tools.$setStroage("ultramedal", this.collectList); //保存最新数据
+      } else {
+        // 详情模式
+        this.layerShow = true;
+        this.nowDetail = item;
+      }
     },
     hideDetail(visible) {
       this.layerShow = visible;
-    }
+    },
+    // 加载收藏数据
+    getCollectData() {
+      this.collectList =
+        this.$Tools.$getStroage("ultramedal") != null
+          ? this.$Tools.$getStroage("ultramedal")
+          : [];
+    },
+    // 切换收藏状态
+    collectToggle() {
+      this.collectStatus = this.collectStatus ? false : true;
+      console.log(this.collectStatus);
+    },
+    // 获取拥有状态
+    getCollect(id) {
+      return this.collectList.indexOf(id) != -1; //返回true为已标记
+    },
+    //过滤已拥有的
+    getCollectFilter() {
+      this.collectFilter = this.collectFilter ? false : true;
+    },
   },
   created() {
     this.nowList = this.ultramedal;
+    this.getCollectData();
   },
 };
 </script>

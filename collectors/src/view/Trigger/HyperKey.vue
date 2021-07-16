@@ -1,41 +1,39 @@
 <template>
-  <div>
-    <div class="item-list" :class="collectStatus ? 'collect-status' : ''">
-      <floatLayer
-        :show="layerShow"
-        :item="nowDetail"
-        :urlType="0"
-        @parentEvent="hideDetail"
-      />
-      <div class="ctrl-panel">
-        <div
-          class="switch-box"
-          :class="collectFilter ? 'active' : ''"
-          @click="getCollectFilter"
-        >
-          <div class="switch-label">过滤已拥有的</div>
-          <div class="switch-btn"></div>
-        </div>
-        <div
-          class="btn"
-          v-text="collectStatus ? '退出标记模式' : '标记我已拥有的'"
-          @click="collectToggle"
-        ></div>
-        <tagBar v-bind:tags="tags" @parentEvent="getDataByTag" />
+  <div class="item-list" :class="collectStatus ? 'collect-status' : ''">
+    <floatLayer
+      :show="layerShow"
+      :item="nowDetail"
+      :urlType="0"
+      @parentEvent="hideDetail"
+    />
+    <div class="ctrl-panel">
+      <div
+        class="switch-box"
+        :class="collectFilter ? 'active' : ''"
+        @click="getCollectFilter"
+      >
+        <div class="switch-label">过滤已拥有的</div>
+        <div class="switch-btn"></div>
       </div>
-      <propItem
-        v-for="hk in nowList"
-        v-bind:item="hk"
-        :class="getCollect(hk.id) ? 'collect' : ''"
-        :urlType="0"
-        :showPic="true"
-        :key="hk.id"
-        :defaultColor="'#5420ae'"
-        :barColor="hk.color"
-        @click.native="showDetail(hk)"
-        v-show="collectFilter == false || !getCollect(hk.id)"
-      />
+      <div
+        class="btn"
+        v-text="collectStatus ? '退出标记模式' : '标记我已拥有的'"
+        @click="collectToggle"
+      ></div>
+      <tagBar v-bind:tags="tags" @parentEvent="getDataByTag" />
     </div>
+    <propItem
+      v-for="hk in nowList"
+      v-bind:item="hk"
+      :class="getCollect(hk.id) ? 'collect' : ''"
+      :urlType="0"
+      :showPic="true"
+      :key="hk.id"
+      :defaultColor="'#5420ae'"
+      :barColor="hk.color"
+      @click.native="showDetail(hk)"
+      v-show="collectFilter == false || !getCollect(hk.id)"
+    />
   </div>
 </template>
 
@@ -83,7 +81,7 @@ export default {
       layerShow: false,
       collectStatus: false, //标记模式
       collectFilter: false, //过滤已拥有的
-      collectList: [],
+      collectList: [], //收藏列表
       hyperKey: [
         {
           id: "EX-1", //唯一ID
@@ -382,6 +380,7 @@ export default {
     getCollect(id) {
       return this.collectList.indexOf(id) != -1; //返回true为已标记
     },
+    //过滤已拥有的
     getCollectFilter() {
       this.collectFilter = this.collectFilter ? false : true;
     },
@@ -394,10 +393,4 @@ export default {
 </script>
 
 <style scoped>
-.collect-status .prop-item {
-  opacity: 0.6;
-}
-.collect-status .prop-item.collect {
-  opacity: 1;
-}
 </style>

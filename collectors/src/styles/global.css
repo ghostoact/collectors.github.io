@@ -99,3 +99,11 @@ body {
 .btn:hover {
   background-color: #ffffff36;
 }
+
+.collect-status .prop-item {
+  opacity: 0.6;
+}
+
+.collect-status .prop-item.collect {
+  opacity: 1;
+}
