@@ -81,6 +81,7 @@
 // 5.组合测试，选择不同的奥特曼，得出形态
 // 6.本地保存当前收集信息
 // 7.收集完成进度
+// 8.价格趋势，参考价
 
 // 类型分别有：基础 base、形态 form、融合 fusion
 // 形态 form 有 baseId
@@ -1663,9 +1664,6 @@ export default {
           birthPlace: "无",
         },
       ], //奥特曼数据
-      ultramedal: [], //泽塔奥特勋章
-      hyperkeys: [], //特利迦胜利超越之钥
-      sofubi: [], //500软胶
       baseList: null, //基础形态列表
       nowId: null, //当前ID
       nowUltra: {

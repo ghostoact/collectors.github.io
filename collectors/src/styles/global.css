@@ -3,7 +3,6 @@ html.isOpen {
 }
 
 body {
-  /* background-image: url("/static/img/bg.jpg"); */
   background-image: url(../assets/img/bg.jpg);
 }
 
@@ -14,13 +13,12 @@ body {
 }
 
 .logo {
-  display: unset;
-  height: 100px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  height: 45px;
   width: 100px;
-  color: #fff;
-  cursor: pointer;
-  padding: 0 20px;
-  background-image: url(../assets/img/logo_192.png);
+  background-image: url(../assets/img/logo_t.png);
   background-size: cover;
 }
 
