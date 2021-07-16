@@ -346,7 +346,10 @@ export default {
     },
     // 加载收藏数据
     getCollectData() {
-      this.collectList = this.$Tools.$getStroage("hyperKey");
+      this.collectList =
+        this.$Tools.$getStroage("hyperKey") != null
+          ? this.$Tools.$getStroage("hyperKey")
+          : [];
     },
     // 切换收藏状态
     collectToggle() {
