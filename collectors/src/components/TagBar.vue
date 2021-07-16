@@ -37,8 +37,9 @@ export default {
 
 <style scoped>
 .tags-bar {
-  margin-bottom: 10px;
-  overflow: hidden;
+    margin-bottom: 10px;
+    overflow: hidden;
+    width: 100%;
 }
 .tag-item {
   float: left;

@@ -10,12 +10,17 @@
       <div class="ctrl-panel">
         <div
           class="switch-box"
-          :class="collectStatus ? 'active' : ''"
-          @click="collectToggle"
+          :class="collectFilter ? 'active' : ''"
+          @click="getCollectFilter"
         >
-          <div class="switch-label">已拥有标记</div>
+          <div class="switch-label">过滤已拥有的</div>
           <div class="switch-btn"></div>
         </div>
+        <div
+          class="btn"
+          v-text="collectStatus ? '退出标记模式' : '标记我已拥有的'"
+          @click="collectToggle"
+        ></div>
         <tagBar v-bind:tags="tags" @parentEvent="getDataByTag" />
       </div>
       <propItem
@@ -28,6 +33,7 @@
         :defaultColor="'#5420ae'"
         :barColor="hk.color"
         @click.native="showDetail(hk)"
+        v-show="collectFilter == false || !getCollect(hk.id)"
       />
     </div>
   </div>
@@ -75,7 +81,8 @@ export default {
       nowList: null, //展示列表
       nowDetail: null,
       layerShow: false,
-      collectStatus: false,
+      collectStatus: false, //标记模式
+      collectFilter: false, //过滤已拥有的
       collectList: [],
       hyperKey: [
         {
@@ -373,7 +380,10 @@ export default {
     },
     // 获取拥有状态
     getCollect(id) {
-      return this.collectList.indexOf(id) != -1;
+      return this.collectList.indexOf(id) != -1; //返回true为已标记
+    },
+    getCollectFilter() {
+      this.collectFilter = this.collectFilter ? false : true;
     },
   },
   created() {

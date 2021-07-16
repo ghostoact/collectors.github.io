@@ -38,6 +38,8 @@ body {
   color: #fff;
   cursor: pointer;
   margin-bottom: 10px;
+  float: left;
+  margin-right: 10px;
 }
 
 .switch-label, .switch-btn {
@@ -79,4 +81,21 @@ body {
 
 .ctrl-panel {
   margin-bottom: 10px;
+}
+
+.btn {
+  float: left;
+  height: 25px;
+  line-height: 25px;
+  color: #fff;
+  background-color: #ffffff4f;
+  padding: 0 10px;
+  border-radius: 2px;
+  font-size: 14px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ffffff36;
 }
