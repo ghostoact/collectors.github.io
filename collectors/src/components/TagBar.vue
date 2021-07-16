@@ -52,7 +52,7 @@ export default {
 }
 .tag-item:hover,
 .tag-item.active {
-  color: #000;
-  background-color: #00e2ff;
+  color: #fff;
+  background-color: #cf3100;
 }
 </style>

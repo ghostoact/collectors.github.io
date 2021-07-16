@@ -1,8 +1,5 @@
 <template>
-  <div
-    class="item-box"
-    v-lazy:background-image=" thumbUrl + char.id + '.png'"
-  >
+  <div class="item-box" v-lazy:background-image="thumbUrl + char.id + '.png'">
     <div class="item-title">
       {{ char.name.zh }}
     </div>
@@ -49,7 +46,7 @@ export default {
   width: 100%;
   text-align: center;
   color: #fff;
-  background-color: #1946ba;
+  background-color: #c3370b;
   bottom: 0;
   font-size: 12px;
   padding: 4px;
