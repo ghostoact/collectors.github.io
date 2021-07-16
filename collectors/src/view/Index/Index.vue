@@ -14,10 +14,10 @@
       @click.self="closeDetail"
       v-if="nowUltra.info != null"
     >
-      <div class="close-btn" @click="closeDetail">
-        <i class="iconfont icon-fanhuicopy"></i>
-      </div>
       <div class="detail-warp">
+        <div class="close-layer" @click="closeDetail">
+          <i class="iconfont icon-fanhuicopy"></i>
+        </div>
         <div class="detail-info">
           <div class="detail-left">
             <img
@@ -1771,22 +1771,6 @@ export default {
 .box-list {
   overflow: hidden;
   margin-bottom: 20px;
-}
-.close-btn {
-  height: 80px;
-  line-height: 80px;
-  cursor: pointer;
-  text-align: center;
-}
-.close-btn .iconfont {
-  color: #ffffff7d;
-  font-size: 24px;
-}
-.close-btn:hover {
-  background-color: #ffffff0f;
-}
-.close-btn:hover .iconfont {
-  color: #fff;
 }
 .detail-warp {
   width: 890px;

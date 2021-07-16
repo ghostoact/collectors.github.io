@@ -104,20 +104,4 @@ export default {
   border-radius: 23px;
   color: #fff;
 }
-.close-layer {
-  color: #c5c5c5;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  border-radius: 0 8px 0 8px;
-  cursor: pointer;
-}
-.close-layer:hover {
-  color: #ff6161;
-  background-color: #ffeeee;
-}
 </style>
