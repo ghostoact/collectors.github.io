@@ -27,7 +27,56 @@ body {
   width: 1240px;
   margin: 60px auto 0;
 }
+
 /* @font-face {
   font-family: "飞驰标题体";
   src: url("../assets/fonts/飞驰标题体.ttf") format("truetype");
 } */
+
+.switch-box {
+  overflow: hidden;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.switch-label, .switch-btn {
+  height: 25px;
+  line-height: 25px;
+  float: left;
+}
+
+.switch-label {
+  padding-right: 5px;
+}
+
+.switch-btn {
+  position: relative;
+  width: 55px;
+  background-color: #ffffff5e;
+  border-radius: 26px;
+}
+
+.switch-btn::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  border-radius: 50px;
+  background-color: #fff;
+  transition: left .3s;
+}
+
+.switch-box.active .switch-btn::before {
+  left: 30px;
+}
+
+.switch-box.active .switch-btn {
+  background-color: #FF9800;
+}
+
+.ctrl-panel {
+  margin-bottom: 10px;
+}
