@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="item-list">
+    <div class="item-list" :class="collectStatus ? 'collect-status' : ''">
       <floatLayer
         :show="layerShow"
         :item="nowDetail"
@@ -12,6 +12,7 @@
       <propItem
         v-for="hk in nowList"
         v-bind:item="hk"
+        :class="getCollect(hk.id) ? 'collect' : ''"
         :urlType="0"
         :showPic="true"
         :key="hk.id"
@@ -350,6 +351,10 @@ export default {
     // 切换收藏状态
     collectToggle() {
       this.collectStatus = this.collectStatus ? false : true;
+    },
+    // 获取拥有状态
+    getCollect(id) {
+      return this.collectList.indexOf(id) != -1;
     }
   },
   created() {
@@ -359,4 +364,11 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.collect-status .prop-item {
+  opacity: 0.6;
+}
+.collect-status .prop-item.collect {
+  opacity: 1;
+}
+</style>
