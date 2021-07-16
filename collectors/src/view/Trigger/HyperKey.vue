@@ -264,6 +264,13 @@ export default {
           link: null,
         },
         {
+          id: "M-20",
+          type: "M",
+          tag: ["XD"],
+          name: "贝利亚奥特曼",
+          link: [60],
+        },
+        {
           id: "M-24",
           type: "M",
           tag: ["SG02"],
