@@ -13,7 +13,7 @@
           tag
         }}</span>
       </p>
-      <p class="tag-box">
+      <p class="tag-box" v-if="[2].indexOf(urlType) != -1">
         <span class="tag-item">{{ item.id }}</span>
       </p>
     </div>
