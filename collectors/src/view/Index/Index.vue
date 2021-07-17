@@ -1154,7 +1154,7 @@ export default {
           id: 82,
           type: "base",
           name: {
-            zh: "特利迦奥特曼复合型",
+            zh: "特利迦奥特曼 复合型",
             jp: "ウルトラマントリガー",
             en: "Ultraman Trigger",
           },
@@ -1169,7 +1169,7 @@ export default {
           type: "form",
           formId: 82,
           name: {
-            zh: "特利迦奥特曼强力型",
+            zh: "特利迦奥特曼 强力型",
             jp: "ウルトラマントリガー",
             en: "Ultraman Trigger",
           },
@@ -1180,7 +1180,7 @@ export default {
           type: "form",
           formId: 82,
           name: {
-            zh: "特利迦奥特曼空中型",
+            zh: "特利迦奥特曼 空中型",
             jp: "ウルトラマントリガー",
             en: "Ultraman Trigger",
           },
