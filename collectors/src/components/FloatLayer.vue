@@ -8,10 +8,13 @@
     </div>
     <div class="detail-info">
       <p class="b-title">{{ item.name }}</p>
-      <p class="tag-box">
+      <p class="tag-box" v-if="[0, 1].indexOf(urlType) != -1">
         <span class="tag-item" v-for="tag in item.tag" :key="tag">{{
           tag
         }}</span>
+      </p>
+      <p class="tag-box">
+        <span class="tag-item">{{ item.id }}</span>
       </p>
     </div>
   </div>
@@ -42,7 +45,7 @@ export default {
       thumbUrl: [
         "./static/img/item/trigger/hyperkey/",
         "/static/img/item/z/ultramedal/",
-        "/static/img/item/sofubi/500/"
+        "/static/img/item/sofubi/500/",
       ],
     };
   },
