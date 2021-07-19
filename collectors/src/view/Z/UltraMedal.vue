@@ -725,6 +725,7 @@ export default {
           name: "赛罗与捷德",
           link: [62, 103],
           color: "#de9104",
+          way: "泽塔升华器套装附赠特典",
         },
         {
           id: "M-085",
@@ -732,6 +733,7 @@ export default {
           tag: ["XD"],
           name: "戴拿奥特曼 强壮型",
           link: [28],
+          way: "奥特曼联名童装附赠"
         },
         {
           id: "M-086",
@@ -739,6 +741,7 @@ export default {
           tag: ["XD"],
           name: "高斯奥特曼 日冕模式",
           link: [39],
+          way: "奥特曼联名童装附赠"
         },
         {
           id: "M-087",
@@ -746,6 +749,7 @@ export default {
           tag: ["XD"],
           name: "初代光线",
           link: [0],
+          way: "活动限定"
         },
         {
           id: "M-088",
@@ -753,6 +757,7 @@ export default {
           tag: ["XD"],
           name: "泽塔奥特曼 阿尔法装甲",
           link: [81, 62, 2, 8],
+          way:"泽塔奥特曼阿尔法装甲限定软胶附赠"
         },
         {
           id: "M-089",
@@ -760,6 +765,7 @@ export default {
           tag: ["XD"],
           name: "泽塔奥特曼 伽马未来",
           link: [81, 20, 27, 30],
+          way:"泽塔奥特曼伽马未来限定软胶附赠"
         },
         {
           id: "M-090",
@@ -768,6 +774,7 @@ export default {
           name: "泽塔奥特曼 德尔塔天爪",
           link: [81, 71, 88, 123],
           color: "#8a939c",
+          way:"泽塔奥特曼德尔塔天爪限定软胶附赠"
         },
         {
           id: "M-091",
@@ -775,6 +782,7 @@ export default {
           tag: ["XD"],
           name: "十周年赛罗",
           link: [62],
+          way: "M78商店赛罗限定软胶附赠",
         },
         {
           id: "M-092",
@@ -783,6 +791,7 @@ export default {
           name: "泽塔奥特曼 德尔塔天爪圣诞版",
           link: [122],
           color: "#027e42",
+          way:"2020年M78商店圣诞节赠送"
         },
         {
           id: "M-093",
@@ -790,6 +799,7 @@ export default {
           tag: ["XD"],
           name: "罗索奥特曼",
           link: [72],
+          way: "奥特曼联名童装附赠"
         },
         {
           id: "M-094",
@@ -797,6 +807,7 @@ export default {
           tag: ["XD"],
           name: "布鲁奥特曼",
           link: [73],
+          way: "奥特曼联名童装附赠"
         },
         {
           id: "M-095",
