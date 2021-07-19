@@ -8,6 +8,9 @@
     </div>
     <div class="detail-info">
       <p class="b-title">{{ item.name }}</p>
+      <p class="item-way" v-if="[0].indexOf(urlType) != -1">
+        {{ item.way }}
+      </p>
       <p class="tag-box" v-if="[0, 1].indexOf(urlType) != -1">
         <span class="tag-item" v-for="tag in item.tag" :key="tag">{{
           tag
@@ -26,18 +29,18 @@ export default {
   props: {
     item: {
       type: Object,
-      default: {},
+      default: {}
     },
     show: {
-      type: Boolean,
+      type: Boolean
     },
     urlType: {
-      type: Number,
+      type: Number
     },
     showPic: {
       type: Boolean,
-      default: true,
-    },
+      default: true
+    }
   },
   data() {
     return {
@@ -45,27 +48,26 @@ export default {
       thumbUrl: [
         "./static/img/item/trigger/hyperkey/",
         "/static/img/item/z/ultramedal/",
-        "/static/img/item/sofubi/500/",
-      ],
+        "/static/img/item/sofubi/500/"
+      ]
     };
   },
   methods: {
     closeThis() {
       this.$emit("parentEvent", false);
-    },
+    }
   },
   computed: {
     url() {
       return this.thumbUrl[this.urlType];
-    },
-  },
+    }
+  }
 };
 </script>
 
 <style scoped>
 .float-layer {
   width: 500px;
-  height: 600px;
   background-color: red;
   background-color: #ffffff;
   box-shadow: 0 10px 20px -6px #ababab;
@@ -90,12 +92,11 @@ export default {
 }
 .detail-info {
   text-align: center;
-  height: 100px;
   background-color: #f5f8f9;
-  padding: 10px 0;
+  padding: 10px 0 20px;
 }
 .b-title {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 600;
   box-sizing: border-box;
 }
@@ -107,5 +108,10 @@ export default {
   padding: 5px 15px;
   border-radius: 23px;
   color: #fff;
+}
+.item-way {
+  font-size: 14px;
+  margin: 4px 0;
+  color: #4caf50;
 }
 </style>
