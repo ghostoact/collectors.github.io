@@ -108,7 +108,7 @@ export default {
           name: "特利迦奥特曼 复合型",
           link: [82],
           color: "#ad3ec3",
-          way: "" //获取途径
+          way: ""
         },
         {
           id: "U-02",
@@ -117,7 +117,7 @@ export default {
           name: "特利迦奥特曼 强力型",
           link: [83],
           color: "#f13342",
-          way: "" //获取途径
+          way: ""
         },
         {
           id: "U-03",
@@ -126,7 +126,7 @@ export default {
           name: "特利迦奥特曼 空中型",
           link: [84],
           color: "#406cec",
-          way: "" //获取途径
+          way: ""
         },
         {
           id: "U-04",
@@ -135,7 +135,43 @@ export default {
           name: "泽塔奥特曼 原始形态",
           link: [81],
           color: "#35b9e7",
-          way: "" //获取途径
+          way: ""
+        },
+        {
+          id: "U-05",
+          type: "U",
+          tag: ["DX"],
+          name: "泽塔奥特曼 阿尔法装甲",
+          link: [119],
+          color: "#35b9e7",
+          way: ""
+        },
+        {
+          id: "U-06",
+          type: "U",
+          tag: ["DX"],
+          name: "泽塔奥特曼 贝塔冲击",
+          link: [120],
+          color: "#35b9e7",
+          way: ""
+        },
+        {
+          id: "U-07",
+          type: "U",
+          tag: ["DX"],
+          name: "泽塔奥特曼 伽马未来",
+          link: [121],
+          color: "#35b9e7",
+          way: ""
+        },
+        {
+          id: "U-08",
+          type: "U",
+          tag: ["DX"],
+          name: "泽塔奥特曼 德尔塔天爪",
+          link: [122],
+          color: "#35b9e7",
+          way: ""
         },
         {
           id: "U-10",
@@ -144,7 +180,7 @@ export default {
           name: "迪迦奥特曼 复合型",
           link: [20],
           color: "#ad3ec3",
-          way: "" //获取途径
+          way: ""
         },
         {
           id: "U-11",
@@ -153,7 +189,7 @@ export default {
           name: "迪迦奥特曼 强力型",
           link: [21],
           color: "#f13342",
-          way: "" //获取途径
+          way: ""
         },
         {
           id: "U-12",
@@ -162,7 +198,7 @@ export default {
           name: "迪迦奥特曼 空中型",
           link: [22],
           color: "#406cec",
-          way: "" //获取途径
+          way: ""
         },
         {
           id: "U-13",
@@ -171,7 +207,7 @@ export default {
           name: "闪耀迪迦",
           link: [23],
           color: "#e4b51f",
-          way: "" //获取途径
+          way: ""
         },
         {
           id: "M-01",
@@ -179,7 +215,7 @@ export default {
           tag: ["SG01"],
           name: "古代怪兽 哥莫拉",
           link: null,
-          way: "" //获取途径
+          way: ""
         },
         {
           id: "M-02",
@@ -187,7 +223,7 @@ export default {
           tag: ["SG01"],
           name: "宇宙怪兽 艾雷王",
           link: null,
-          way: "" //获取途径
+          way: ""
         },
         {
           id: "M-03",
@@ -195,7 +231,7 @@ export default {
           tag: ["GP01"],
           name: "宇宙恐龙 杰顿",
           link: null,
-          way: "" //获取途径
+          way: ""
         },
         {
           id: "M-03-2",
@@ -203,7 +239,7 @@ export default {
           tag: ["GP01"],
           name: "宇宙恐龙 杰顿二世",
           link: null,
-          way: "" //获取途径
+          way: ""
         },
         {
           id: "M-04",
@@ -211,7 +247,7 @@ export default {
           tag: ["GP01"],
           name: "蛤蜊怪兽 加玛库基拉",
           link: null,
-          way: "" //获取途径
+          way: ""
         },
         {
           id: "M-10",
@@ -219,7 +255,7 @@ export default {
           tag: ["SG02"],
           name: "石化魔兽 贾戈尔贡",
           link: null,
-          way: "" //获取途径
+          way: ""
         },
         {
           id: "M-11",
@@ -227,7 +263,7 @@ export default {
           tag: ["GP01"],
           name: "特空机1号 赛文加",
           link: null,
-          way: "" //获取途径
+          way: ""
         },
         {
           id: "M-12",
@@ -235,7 +271,7 @@ export default {
           tag: ["SG01"],
           name: "特空机2号 乌英达姆",
           link: null,
-          way: "" //获取途径
+          way: ""
         },
         {
           id: "M-13",
@@ -243,7 +279,7 @@ export default {
           tag: ["GP01"],
           name: "特空机3号 金古桥军械库定制",
           link: null,
-          way: "" //获取途径
+          way: ""
         },
         {
           id: "M-14",
@@ -259,7 +295,7 @@ export default {
           tag: ["SG01"],
           name: "宇宙忍者 巴尔坦星人",
           link: null,
-          way: "" //获取途径
+          way: ""
         },
         {
           id: "M-16",
@@ -267,7 +303,7 @@ export default {
           tag: ["GP01"],
           name: "超古代怪兽 哥尔赞",
           link: null,
-          way: "" //获取途径
+          way: ""
         },
         {
           id: "M-17",
@@ -275,7 +311,7 @@ export default {
           tag: ["SG01"],
           name: "超古代龙 美尔巴",
           link: null,
-          way: "" //获取途径
+          way: ""
         },
         {
           id: "M-18",
@@ -283,7 +319,7 @@ export default {
           tag: ["SG01"],
           name: "基里艾洛德人",
           link: null,
-          way: "" //获取途径
+          way: ""
         },
         {
           id: "M-19",
@@ -291,7 +327,7 @@ export default {
           tag: ["GP01"],
           name: "邪恶迪迦",
           link: null,
-          way: "" //获取途径
+          way: ""
         },
         {
           id: "M-20",
@@ -307,7 +343,7 @@ export default {
           tag: ["SG02"],
           name: "光热怪兽 奇拉",
           link: null,
-          way: "" //获取途径
+          way: ""
         },
         {
           id: "M-25",
@@ -315,7 +351,7 @@ export default {
           tag: ["SG02"],
           name: "凯姆尔人",
           link: null,
-          way: "" //获取途径
+          way: ""
         },
         {
           id: "M-27",
@@ -323,7 +359,7 @@ export default {
           tag: ["SG02"],
           name: "黑暗的支配者 邪神加坦杰厄",
           link: null,
-          way: "" //获取途径
+          way: ""
         },
         {
           id: "M-28",
@@ -331,7 +367,7 @@ export default {
           tag: ["SG02"],
           name: "爱憎战士 卡蜜拉",
           link: null,
-          way: "" //获取途径
+          way: ""
         },
         {
           id: "M-29",
@@ -339,7 +375,7 @@ export default {
           tag: ["SG02"],
           name: "刚力战士 达拉姆",
           link: null,
-          way: "" //获取途径
+          way: ""
         },
         {
           id: "M-30",
@@ -347,7 +383,7 @@ export default {
           tag: ["SG02"],
           name: "俊敏战士 希特拉",
           link: null,
-          way: "" //获取途径
+          way: ""
         },
         {
           id: "M-31",
@@ -355,7 +391,7 @@ export default {
           tag: ["SG02"],
           name: "伽古拉斯·伽古拉",
           link: null,
-          way: "" //获取途径
+          way: ""
         }
       ]
     };
