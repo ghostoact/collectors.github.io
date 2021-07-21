@@ -46,31 +46,35 @@ export default {
   components: {
     PropItem,
     TagBar,
-    FloatLayer,
+    FloatLayer
   },
   data() {
     return {
       tags: [
         {
           name: "ALL",
-          title: "全部",
+          title: "全部"
         },
         {
           name: "S",
-          title: "奥特曼",
+          title: "奥特曼"
         },
         {
           name: "EX",
-          title: "奥特限定",
+          title: "奥特限定"
         },
         {
           name: "K",
-          title: "怪兽",
+          title: "怪兽"
         },
         {
           name: "EX-K",
-          title: "怪兽限定",
+          title: "怪兽限定"
         },
+        {
+          name: "DX",
+          title: "DX"
+        }
       ],
       nowList: null, //展示列表
       nowDetail: null,
@@ -78,14 +82,14 @@ export default {
       collectStatus: false, //标记模式
       collectFilter: false, //过滤已拥有的
       collectList: [], //收藏列表
-      sofubi500: [
+      sofubi: [
         {
           id: "S-01", //唯一ID
           type: "U", //U 奥特曼  M 怪兽  O 其它
           tag: ["S"], //标签：S 奥特曼 EX 奥特限定  K 怪兽 EX-K 限定怪兽
           name: "奥特曼", //名称
           link: [0], //关联奥特曼或怪兽实体数组
-          color: "#F44336", //自定义颜色
+          color: "#F44336" //自定义颜色
         },
         {
           id: "S-02",
@@ -93,7 +97,7 @@ export default {
           tag: ["S"],
           name: "赛文奥特曼",
           link: [2],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-03",
@@ -101,7 +105,7 @@ export default {
           tag: ["S"],
           name: "佐菲",
           link: [1],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-04",
@@ -109,7 +113,7 @@ export default {
           tag: ["S"],
           name: "杰克奥特曼",
           link: [3],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-05",
@@ -117,7 +121,7 @@ export default {
           tag: ["S"],
           name: "艾斯奥特曼",
           link: [4],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-06",
@@ -125,7 +129,7 @@ export default {
           tag: ["S"],
           name: "泰罗奥特曼",
           link: [6],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-07",
@@ -133,7 +137,7 @@ export default {
           tag: ["S"],
           name: "雷欧奥特曼",
           link: [8],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-08",
@@ -141,7 +145,7 @@ export default {
           tag: ["S"],
           name: "迪迦奥特曼 复合型",
           link: [20],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-09",
@@ -149,7 +153,7 @@ export default {
           tag: ["S"],
           name: "盖亚奥特曼 V2",
           link: [30],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-10",
@@ -157,7 +161,7 @@ export default {
           tag: ["S"],
           name: "阿古茹奥特曼 V2",
           link: [33],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-11",
@@ -165,7 +169,7 @@ export default {
           tag: ["S"],
           name: "银河奥特曼",
           link: [65],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-12",
@@ -173,7 +177,7 @@ export default {
           tag: ["S"],
           name: "钢铁杀手",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-13",
@@ -181,7 +185,7 @@ export default {
           tag: ["S"],
           name: "阿斯特拉",
           link: [9],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-14",
@@ -189,7 +193,7 @@ export default {
           tag: ["S"],
           name: "戴拿奥特曼 闪亮型",
           link: [27],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-15",
@@ -197,7 +201,7 @@ export default {
           tag: ["S"],
           name: "爱迪奥特曼",
           link: [12],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-16",
@@ -205,7 +209,7 @@ export default {
           tag: ["S"],
           name: "高斯奥特曼 月神模式",
           link: [38],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-17",
@@ -213,7 +217,7 @@ export default {
           tag: ["S"],
           name: "奈克赛斯奥特曼",
           link: [46],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-18",
@@ -221,7 +225,7 @@ export default {
           tag: ["S"],
           name: "麦克斯奥特曼",
           link: [52],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-19",
@@ -229,7 +233,7 @@ export default {
           tag: ["S"],
           name: "梦比优斯奥特曼",
           link: [54],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-20",
@@ -237,7 +241,7 @@ export default {
           tag: ["S"],
           name: "希卡利奥特曼",
           link: [58],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-21",
@@ -245,7 +249,7 @@ export default {
           tag: ["S"],
           name: "赛罗奥特曼",
           link: [62],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-22",
@@ -253,7 +257,7 @@ export default {
           tag: ["S"],
           name: "纳伊斯奥特曼",
           link: [35],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-23",
@@ -261,7 +265,7 @@ export default {
           tag: ["S"],
           name: "奥特之父",
           link: [5],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-24",
@@ -269,7 +273,7 @@ export default {
           tag: ["S"],
           name: "奥特之王",
           link: [10],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-25",
@@ -277,7 +281,7 @@ export default {
           tag: ["S"],
           name: "赛迦奥特曼",
           link: [126],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-26",
@@ -285,7 +289,7 @@ export default {
           tag: ["S"],
           name: "黑暗迪迦",
           link: [24],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-27",
@@ -293,7 +297,7 @@ export default {
           tag: ["S"],
           name: "黑暗奥特曼",
           link: [0],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-28",
@@ -301,7 +305,7 @@ export default {
           tag: ["S"],
           name: "维克特利奥特曼",
           link: [66],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-29",
@@ -309,7 +313,7 @@ export default {
           tag: ["S"],
           name: "银河斯特利姆奥特曼",
           link: [90],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-30",
@@ -317,7 +321,7 @@ export default {
           tag: ["S"],
           name: "银河维克特利奥特曼",
           link: [92],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-31",
@@ -325,7 +329,7 @@ export default {
           tag: ["S"],
           name: "赛罗奥特曼 闪耀形态",
           link: [64],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-32",
@@ -333,7 +337,7 @@ export default {
           tag: ["S"],
           name: "奈克赛斯奥特曼 青年形态",
           link: [49],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-33",
@@ -341,7 +345,7 @@ export default {
           tag: ["S"],
           name: "高斯奥特曼 日蚀模式",
           link: [40],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-34",
@@ -349,7 +353,7 @@ export default {
           tag: ["S"],
           name: "维克特利奥特曼 骑士形态",
           link: [91],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-35",
@@ -357,7 +361,7 @@ export default {
           tag: ["S"],
           name: "艾克斯奥特曼",
           link: [67],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-36",
@@ -365,7 +369,7 @@ export default {
           tag: ["S"],
           name: "超越艾克斯",
           link: [93],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-37",
@@ -373,7 +377,7 @@ export default {
           tag: ["S"],
           name: "火焰骑士",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-38",
@@ -381,7 +385,7 @@ export default {
           tag: ["S"],
           name: "镜子骑士",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-39",
@@ -389,7 +393,7 @@ export default {
           tag: ["S"],
           name: "钢铁九号",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-40",
@@ -397,7 +401,7 @@ export default {
           tag: ["S"],
           name: "欧布奥特曼 煌闪形态",
           link: [100],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-41",
@@ -405,7 +409,7 @@ export default {
           tag: ["S"],
           name: "欧布奥特曼 智勇形态",
           link: [101],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-42",
@@ -413,7 +417,7 @@ export default {
           tag: ["S"],
           name: "捷德奥特曼",
           link: [103],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-43",
@@ -421,7 +425,7 @@ export default {
           tag: ["S"],
           name: "捷德奥特曼 刚燃形态",
           link: [104],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-44",
@@ -429,7 +433,7 @@ export default {
           tag: ["S"],
           name: "捷德奥特曼 机敏形态",
           link: [105],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-45",
@@ -437,7 +441,7 @@ export default {
           tag: ["S"],
           name: "赛罗奥特曼 无限形态",
           link: [88],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-46",
@@ -445,7 +449,7 @@ export default {
           tag: ["S"],
           name: "捷德奥特曼 豪勇形态",
           link: [106],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-47",
@@ -453,7 +457,7 @@ export default {
           tag: ["S"],
           name: "捷德奥特曼 尊皇形态",
           link: [107],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-48",
@@ -461,7 +465,7 @@ export default {
           tag: ["S"],
           name: "捷德奥特曼 终极形态",
           link: [108],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-49",
@@ -469,7 +473,7 @@ export default {
           tag: ["S"],
           name: "欧布奥特曼 重光形态",
           link: [96],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-50",
@@ -477,7 +481,7 @@ export default {
           tag: ["S"],
           name: "欧布奥特曼 暴炎形态",
           link: [97],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-51",
@@ -485,7 +489,7 @@ export default {
           tag: ["S"],
           name: "欧布奥特曼 疾风形态",
           link: [98],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-52",
@@ -493,7 +497,7 @@ export default {
           tag: ["S"],
           name: "欧布奥特曼 暗耀形态",
           link: [99],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-53",
@@ -501,7 +505,7 @@ export default {
           tag: ["S"],
           name: "欧布奥特曼 原生形态",
           link: [68],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-54",
@@ -509,7 +513,7 @@ export default {
           tag: ["S"],
           name: "罗索奥特曼",
           link: [72],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-55",
@@ -517,7 +521,7 @@ export default {
           tag: ["S"],
           name: "布鲁奥特曼",
           link: [73],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-56",
@@ -525,7 +529,7 @@ export default {
           tag: ["S"],
           name: "罗索奥特曼 跃水形态",
           link: [110],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-57",
@@ -533,7 +537,7 @@ export default {
           tag: ["S"],
           name: "布鲁奥特曼 烈火形态",
           link: [113],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-58",
@@ -541,7 +545,7 @@ export default {
           tag: ["S"],
           name: "罗索奥特曼 旋风形态",
           link: [111],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-59",
@@ -549,7 +553,7 @@ export default {
           tag: ["S"],
           name: "布鲁奥特曼 旋风形态",
           link: [114],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-60",
@@ -557,7 +561,7 @@ export default {
           tag: ["S"],
           name: "罗索奥特曼 大地形态",
           link: [112],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-61",
@@ -565,7 +569,7 @@ export default {
           tag: ["S"],
           name: "布鲁奥特曼 大地形态",
           link: [115],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-62",
@@ -573,7 +577,7 @@ export default {
           tag: ["S"],
           name: "罗布奥特曼",
           link: [116],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-63",
@@ -581,7 +585,7 @@ export default {
           tag: ["S"],
           name: "格丽乔奥特曼",
           link: [74],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-64",
@@ -589,7 +593,7 @@ export default {
           tag: ["S"],
           name: "格罗布奥特曼",
           link: [117],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-65",
@@ -597,7 +601,7 @@ export default {
           tag: ["S"],
           name: "泰迦奥特曼",
           link: [77],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-66",
@@ -605,7 +609,7 @@ export default {
           tag: ["S"],
           name: "泰塔斯奥特曼",
           link: [79],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-67",
@@ -613,7 +617,7 @@ export default {
           tag: ["S"],
           name: "风马奥特曼",
           link: [80],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-68",
@@ -621,7 +625,7 @@ export default {
           tag: ["S"],
           name: "泰迦奥特曼光子地球形态",
           link: [78],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-69",
@@ -629,7 +633,7 @@ export default {
           tag: ["S"],
           name: "泰迦奥特曼 三重斯特利姆形态",
           link: [118],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-70",
@@ -637,7 +641,7 @@ export default {
           tag: ["S"],
           name: "令迦奥特曼",
           link: [124],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-71",
@@ -645,7 +649,7 @@ export default {
           tag: ["S"],
           name: "奥特之母",
           link: [7],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-72",
@@ -653,7 +657,7 @@ export default {
           tag: ["S"],
           name: "诺亚奥特曼",
           link: [51],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-73",
@@ -661,7 +665,7 @@ export default {
           tag: ["S"],
           name: "贝利亚奥特曼 早期形态",
           link: [61],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-74",
@@ -669,7 +673,7 @@ export default {
           tag: ["S"],
           name: "泽塔奥特曼",
           link: [81],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-75",
@@ -677,7 +681,7 @@ export default {
           tag: ["S"],
           name: "泽塔奥特曼 阿尔法装甲",
           link: [119],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-76",
@@ -685,7 +689,7 @@ export default {
           tag: ["S"],
           name: "泽塔奥特曼 贝塔冲击",
           link: [120],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-77",
@@ -693,7 +697,7 @@ export default {
           tag: ["S"],
           name: "捷德奥特曼 银河初升",
           link: [109],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-78",
@@ -701,7 +705,7 @@ export default {
           tag: ["S"],
           name: "泽塔奥特曼 伽马未来",
           link: [121],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-79",
@@ -709,7 +713,7 @@ export default {
           tag: ["S"],
           name: "泽塔奥特曼 德尔塔天爪",
           link: [122],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-80",
@@ -717,7 +721,7 @@ export default {
           tag: ["S"],
           name: "特利迦奥特曼 复合型",
           link: [82],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-81",
@@ -725,7 +729,7 @@ export default {
           tag: ["S"],
           name: "特利迦奥特曼 强力型",
           link: [83],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "S-82",
@@ -733,7 +737,7 @@ export default {
           tag: ["S"],
           name: "特利迦奥特曼 空中型",
           link: [84],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "EX-01",
@@ -741,7 +745,7 @@ export default {
           tag: ["EX"],
           name: "赛罗奥特曼 强壮日冕型",
           link: [86],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "EX-02",
@@ -749,7 +753,7 @@ export default {
           tag: ["EX"],
           name: "究极赛罗",
           link: [63],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "EX-03",
@@ -757,7 +761,7 @@ export default {
           tag: ["EX"],
           name: "赛罗奥特曼 月神奇迹型",
           link: [87],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "EX-04",
@@ -765,7 +769,7 @@ export default {
           tag: ["EX"],
           name: "利布特奥特曼",
           link: [70],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "EX-05",
@@ -773,7 +777,7 @@ export default {
           tag: ["EX"],
           name: "葛雷奥特曼",
           link: [17],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "EX-06",
@@ -781,7 +785,7 @@ export default {
           tag: ["EX"],
           name: "乔尼亚斯奥特曼",
           link: [11],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "EX-07",
@@ -789,7 +793,7 @@ export default {
           tag: ["EX"],
           name: "帕瓦特奥特曼",
           link: [18],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "EX-08",
@@ -797,7 +801,7 @@ export default {
           tag: ["EX"],
           name: "迪迦奥特曼 复合型",
           link: [20],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "EX-09",
@@ -805,7 +809,7 @@ export default {
           tag: ["EX"],
           name: "迪迦奥特曼 强力型",
           link: [21],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "EX-10",
@@ -813,7 +817,7 @@ export default {
           tag: ["EX"],
           name: "迪迦奥特曼 空中型",
           link: [22],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "EX-11",
@@ -821,7 +825,7 @@ export default {
           tag: ["EX"],
           name: "泽塔奥特曼",
           link: [81],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "EX-12",
@@ -829,7 +833,7 @@ export default {
           tag: ["EX"],
           name: "特空机1号 赛文加",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-01",
@@ -837,7 +841,7 @@ export default {
           tag: ["K"],
           name: "巴尔坦星人",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-02",
@@ -845,7 +849,7 @@ export default {
           tag: ["K"],
           name: "哥莫拉",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-03",
@@ -853,7 +857,7 @@ export default {
           tag: ["K"],
           name: "杰顿",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-04",
@@ -861,7 +865,7 @@ export default {
           tag: ["K"],
           name: "扎拉加斯第一代",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-05",
@@ -869,7 +873,7 @@ export default {
           tag: ["K"],
           name: "艾雷王",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-06",
@@ -877,7 +881,7 @@ export default {
           tag: ["K"],
           name: "戈德拉星人",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-07",
@@ -885,7 +889,7 @@ export default {
           tag: ["K"],
           name: "金古桥",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-08",
@@ -893,7 +897,7 @@ export default {
           tag: ["K"],
           name: "保镖怪兽 布莱克王",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-09",
@@ -901,7 +905,7 @@ export default {
           tag: ["K"],
           name: "凯姆尔人",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-10",
@@ -909,7 +913,7 @@ export default {
           tag: ["K"],
           name: "庞顿王",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-11",
@@ -917,7 +921,7 @@ export default {
           tag: ["K"],
           name: "拉贡",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-12",
@@ -925,7 +929,7 @@ export default {
           tag: ["K"],
           name: "闪电达兰比尔",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-13",
@@ -933,7 +937,7 @@ export default {
           tag: ["K"],
           name: "安东拉",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-14",
@@ -941,7 +945,7 @@ export default {
           tag: ["K"],
           name: "雷德王",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-15",
@@ -949,7 +953,7 @@ export default {
           tag: ["K"],
           name: "加巴顿B",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-16",
@@ -957,7 +961,7 @@ export default {
           tag: ["K"],
           name: "西格拉斯",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-17",
@@ -965,7 +969,7 @@ export default {
           tag: ["K"],
           name: "贝蒙斯坦",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-18",
@@ -973,7 +977,7 @@ export default {
           tag: ["K"],
           name: "超兽 巴拉巴",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-19",
@@ -981,7 +985,7 @@ export default {
           tag: ["K"],
           name: "克拉勃王",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-20",
@@ -989,7 +993,7 @@ export default {
           tag: ["K"],
           name: "独角超兽 巴克西姆",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-21",
@@ -997,7 +1001,7 @@ export default {
           tag: ["K"],
           name: "蛾超兽 多拉格利",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-22",
@@ -1005,7 +1009,7 @@ export default {
           tag: ["K"],
           name: "莫奇隆",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-23",
@@ -1013,7 +1017,7 @@ export default {
           tag: ["K"],
           name: "马格马星人",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-24",
@@ -1021,7 +1025,7 @@ export default {
           tag: ["K"],
           name: "莎尔曼多拉",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-25",
@@ -1029,7 +1033,7 @@ export default {
           tag: ["K"],
           name: "超古代怪兽 哥尔赞",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-26",
@@ -1037,7 +1041,7 @@ export default {
           tag: ["K"],
           name: "黑暗扎基",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-27",
@@ -1045,7 +1049,7 @@ export default {
           tag: ["K"],
           name: "宇宙三面魔像 伽休莱因",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-28",
@@ -1053,7 +1057,7 @@ export default {
           tag: ["K"],
           name: "异次元宇宙人 伊卡尔斯星人",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-29",
@@ -1061,7 +1065,7 @@ export default {
           tag: ["K"],
           name: "分身宇宙人 嘎次星人",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-30",
@@ -1069,7 +1073,7 @@ export default {
           tag: ["K"],
           name: "雪女怪兽 斯诺格",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-31",
@@ -1077,7 +1081,7 @@ export default {
           tag: ["K"],
           name: "液汁超兽 汉扎基兰",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-32",
@@ -1085,7 +1089,7 @@ export default {
           tag: ["K"],
           name: "异次元人 亚波人",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-33",
@@ -1093,7 +1097,7 @@ export default {
           tag: ["K"],
           name: "宇宙海人 巴尔吉星人",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-34",
@@ -1101,7 +1105,7 @@ export default {
           tag: ["K"],
           name: "宇宙大怪兽 阿斯托罗姆斯",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-35",
@@ -1109,7 +1113,7 @@ export default {
           tag: ["K"],
           name: "希尔巴贡",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-36",
@@ -1117,7 +1121,7 @@ export default {
           tag: ["K"],
           name: "眼Q",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-37",
@@ -1125,7 +1129,7 @@ export default {
           tag: ["K"],
           name: "冷冻怪兽 拉格拉斯",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-38",
@@ -1133,7 +1137,7 @@ export default {
           tag: ["K"],
           name: "佐亚穆鲁奇",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-39",
@@ -1141,7 +1145,7 @@ export default {
           tag: ["K"],
           name: "罗贝拉格",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-40",
@@ -1149,7 +1153,7 @@ export default {
           tag: ["K"],
           name: "黑暗宇宙大皇帝 安培拉星人",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-41",
@@ -1157,7 +1161,7 @@ export default {
           tag: ["K"],
           name: "扎姆夏",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-42",
@@ -1165,7 +1169,7 @@ export default {
           tag: ["K"],
           name: "火焰哥尔赞",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-43",
@@ -1173,7 +1177,7 @@ export default {
           tag: ["K"],
           name: "贝利亚奥特曼",
           link: [60],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-44",
@@ -1181,7 +1185,7 @@ export default {
           tag: ["K"],
           name: "宇宙恐龙 海帕杰顿",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-45",
@@ -1189,7 +1193,7 @@ export default {
           tag: ["K"],
           name: "伽汝布斯",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-46",
@@ -1197,7 +1201,7 @@ export default {
           tag: ["K"],
           name: "纳克尔星人",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-47",
@@ -1205,7 +1209,7 @@ export default {
           tag: ["K"],
           name: "硬币怪兽 卡尼贡",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-48",
@@ -1213,7 +1217,7 @@ export default {
           tag: ["K"],
           name: "米拉克星人",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-49",
@@ -1221,7 +1225,7 @@ export default {
           tag: ["K"],
           name: "宇宙恶灵 阿库马尼亚星人",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-50",
@@ -1229,7 +1233,7 @@ export default {
           tag: ["K"],
           name: "彗星怪兽 多拉考",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-51",
@@ -1237,7 +1241,7 @@ export default {
           tag: ["K"],
           name: "地底怪兽 泰莱斯通",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-52",
@@ -1245,7 +1249,7 @@ export default {
           tag: ["K"],
           name: "邪恶迪迦",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-53",
@@ -1253,7 +1257,7 @@ export default {
           tag: ["K"],
           name: "宇宙战斗兽 超戈布",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-54",
@@ -1261,7 +1265,7 @@ export default {
           tag: ["K"],
           name: "新巴尔坦星人",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-55",
@@ -1269,7 +1273,7 @@ export default {
           tag: ["K"],
           name: "米克拉斯",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-56",
@@ -1277,7 +1281,7 @@ export default {
           tag: ["K"],
           name: "黑暗路基艾尔",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-57",
@@ -1285,7 +1289,7 @@ export default {
           tag: ["K"],
           name: "EX雷德王",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-58",
@@ -1293,7 +1297,7 @@ export default {
           tag: ["K"],
           name: "导弹超兽 贝劳克恩",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-59",
@@ -1301,7 +1305,7 @@ export default {
           tag: ["K"],
           name: "双尾怪",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-60",
@@ -1309,7 +1313,7 @@ export default {
           tag: ["K"],
           name: "古墩",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-61",
@@ -1317,7 +1321,7 @@ export default {
           tag: ["K"],
           name: "萨德拉",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-62",
@@ -1325,7 +1329,7 @@ export default {
           tag: ["K"],
           name: "超古代龙 美尔巴",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-63",
@@ -1333,7 +1337,7 @@ export default {
           tag: ["K"],
           name: "雷丘巴斯",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-64",
@@ -1341,7 +1345,7 @@ export default {
           tag: ["K"],
           name: "恐龙坦克",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-65",
@@ -1349,7 +1353,7 @@ export default {
           tag: ["K"],
           name: "宇宙怪兽 百慕拉",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-66",
@@ -1357,7 +1361,7 @@ export default {
           tag: ["K"],
           name: "谢帕顿",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-67",
@@ -1365,7 +1369,7 @@ export default {
           tag: ["K"],
           name: "英普莱扎",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-68",
@@ -1373,7 +1377,7 @@ export default {
           tag: ["K"],
           name: "梅特龙星人",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-69",
@@ -1381,7 +1385,7 @@ export default {
           tag: ["K"],
           name: "巴顿",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-70",
@@ -1389,7 +1393,7 @@ export default {
           tag: ["K"],
           name: "金古桥特装版",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-71",
@@ -1397,7 +1401,7 @@ export default {
           tag: ["K"],
           name: "大蚁超兽 阿里蓬塔",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-72",
@@ -1405,7 +1409,7 @@ export default {
           tag: ["K"],
           name: "维克特利杀手",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-73",
@@ -1413,7 +1417,7 @@ export default {
           tag: ["K"],
           name: "宙达",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-74",
@@ -1421,7 +1425,7 @@ export default {
           tag: ["K"],
           name: "迪玛伽",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-75",
@@ -1429,7 +1433,7 @@ export default {
           tag: ["K"],
           name: "机械怪兽 机械哥莫拉",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-76",
@@ -1437,7 +1441,7 @@ export default {
           tag: ["K"],
           name: "电子哥莫拉",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-77",
@@ -1445,7 +1449,7 @@ export default {
           tag: ["K"],
           name: "皮古蒙",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-78",
@@ -1453,7 +1457,7 @@ export default {
           tag: ["K"],
           name: "帝国机兵 雷吉内德",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-79",
@@ -1461,7 +1465,7 @@ export default {
           tag: ["K"],
           name: "黑暗洛普斯赛罗",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-80",
@@ -1469,7 +1473,7 @@ export default {
           tag: ["K"],
           name: "阿斯特隆",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-81",
@@ -1477,7 +1481,7 @@ export default {
           tag: ["K"],
           name: "泰兰特",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-82",
@@ -1485,7 +1489,7 @@ export default {
           tag: ["K"],
           name: "桑德里阿斯",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-83",
@@ -1493,7 +1497,7 @@ export default {
           tag: ["K"],
           name: "达达",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-84",
@@ -1501,7 +1505,7 @@ export default {
           tag: ["K"],
           name: "基耶龙星兽",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-85",
@@ -1509,7 +1513,7 @@ export default {
           tag: ["K"],
           name: "古维拉",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-86",
@@ -1517,7 +1521,7 @@ export default {
           tag: ["K"],
           name: "加拉特隆MK-2",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-87",
@@ -1525,7 +1529,7 @@ export default {
           tag: ["K"],
           name: "伽古拉斯·伽古拉",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-88",
@@ -1533,7 +1537,7 @@ export default {
           tag: ["K"],
           name: "海帕杰顿死镰",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-89",
@@ -1541,7 +1545,7 @@ export default {
           tag: ["K"],
           name: "魔格大蛇",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-90",
@@ -1549,7 +1553,7 @@ export default {
           tag: ["K"],
           name: "诺巴",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-91",
@@ -1557,7 +1561,7 @@ export default {
           tag: ["K"],
           name: "火炎骨兽 格鲁吉欧博恩",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-92",
@@ -1565,7 +1569,7 @@ export default {
           tag: ["K"],
           name: "石化魔兽 贾戈尔贡",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-93",
@@ -1573,7 +1577,7 @@ export default {
           tag: ["K"],
           name: "猛禽怪兽 古厄巴萨",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-94",
@@ -1581,7 +1585,7 @@ export default {
           tag: ["K"],
           name: "超级黑之王暗黑欧布奥特曼",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-95",
@@ -1589,7 +1593,7 @@ export default {
           tag: ["K"],
           name: "豪烈暴兽 霍洛波罗兹",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-96",
@@ -1597,7 +1601,7 @@ export default {
           tag: ["K"],
           name: "爆击骨兽 格尔吉欧王",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-97",
@@ -1605,7 +1609,7 @@ export default {
           tag: ["K"],
           name: "布斯卡",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-98",
@@ -1613,7 +1617,7 @@ export default {
           tag: ["K"],
           name: "超铠装兽 格鲁吉欧女王",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-99",
@@ -1621,7 +1625,7 @@ export default {
           tag: ["K"],
           name: "古兰德王",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-100",
@@ -1629,7 +1633,7 @@ export default {
           tag: ["K"],
           name: "次元凶兽 剃刀迪玛伽",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-101",
@@ -1637,7 +1641,7 @@ export default {
           tag: ["K"],
           name: "托雷基亚奥特曼",
           link: [75],
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-102",
@@ -1645,7 +1649,7 @@ export default {
           tag: ["K"],
           name: "超合体怪兽 法伊布王",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-103",
@@ -1653,7 +1657,7 @@ export default {
           tag: ["K"],
           name: "赛格古",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-104",
@@ -1661,7 +1665,7 @@ export default {
           tag: ["K"],
           name: "虚空怪兽 格利扎 最终形态",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-105",
@@ -1669,7 +1673,7 @@ export default {
           tag: ["K"],
           name: "文明裁决者 加拉特隆",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-106",
@@ -1677,7 +1681,7 @@ export default {
           tag: ["K"],
           name: "极恶贝利亚",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-107",
@@ -1685,7 +1689,7 @@ export default {
           tag: ["K"],
           name: "赫尔贝洛斯",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-108",
@@ -1693,7 +1697,7 @@ export default {
           tag: ["K"],
           name: "赛古梅戈尔",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-109",
@@ -1701,7 +1705,7 @@ export default {
           tag: ["K"],
           name: "暗夜毒牙",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-110",
@@ -1709,7 +1713,7 @@ export default {
           tag: ["K"],
           name: "奇玛伊拉",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-111",
@@ -1717,7 +1721,7 @@ export default {
           tag: ["K"],
           name: "机械迪洛斯",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-112",
@@ -1725,7 +1729,7 @@ export default {
           tag: ["K"],
           name: "骷髅哥莫拉",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-113",
@@ -1733,7 +1737,7 @@ export default {
           tag: ["K"],
           name: "爆雷闪电",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-114",
@@ -1741,7 +1745,7 @@ export default {
           tag: ["K"],
           name: "基斯特隆",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-115",
@@ -1749,7 +1753,7 @@ export default {
           tag: ["K"],
           name: "特贡",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-116",
@@ -1757,7 +1761,7 @@ export default {
           tag: ["K"],
           name: "格里姆特",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-117",
@@ -1765,7 +1769,7 @@ export default {
           tag: ["K"],
           name: "百体兽",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-118",
@@ -1773,7 +1777,7 @@ export default {
           tag: ["K"],
           name: "恺撒贝利亚",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-119",
@@ -1781,7 +1785,7 @@ export default {
           tag: ["K"],
           name: "终极贝利亚",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-120",
@@ -1789,7 +1793,7 @@ export default {
           tag: ["K"],
           name: "奇美拉柏洛斯",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-121",
@@ -1797,7 +1801,7 @@ export default {
           tag: ["K"],
           name: "赛文加",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-122",
@@ -1805,7 +1809,7 @@ export default {
           tag: ["K"],
           name: "凶暴宇宙鮫",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-123",
@@ -1813,7 +1817,7 @@ export default {
           tag: ["K"],
           name: "内隆嘎",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-124",
@@ -1821,7 +1825,7 @@ export default {
           tag: ["K"],
           name: "乌英达姆",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-125",
@@ -1829,7 +1833,7 @@ export default {
           tag: ["K"],
           name: "芝庞顿",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-126",
@@ -1837,7 +1841,7 @@ export default {
           tag: ["K"],
           name: "吉尔巴里斯",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-127",
@@ -1845,7 +1849,7 @@ export default {
           tag: ["K"],
           name: "闪电杀手",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-128",
@@ -1853,7 +1857,7 @@ export default {
           tag: ["K"],
           name: "佩丹杰顿",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-129",
@@ -1861,7 +1865,7 @@ export default {
           tag: ["K"],
           name: "帕罗萨星人",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-130",
@@ -1869,7 +1873,7 @@ export default {
           tag: ["K"],
           name: "布鲁顿",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-131",
@@ -1877,7 +1881,7 @@ export default {
           tag: ["K"],
           name: "格理扎",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-132",
@@ -1885,7 +1889,7 @@ export default {
           tag: ["K"],
           name: "M1号",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-133",
@@ -1893,7 +1897,7 @@ export default {
           tag: ["K"],
           name: "奥特人造机甲赛罗",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-134",
@@ -1901,7 +1905,7 @@ export default {
           tag: ["K"],
           name: "歼灭机甲兽 德斯特鲁多斯",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-135",
@@ -1909,7 +1913,7 @@ export default {
           tag: ["K"],
           name: "基里艾洛德人",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-136",
@@ -1917,7 +1921,7 @@ export default {
           tag: ["K"],
           name: "超合成兽人 吉尔加诺德",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-137",
@@ -1925,7 +1929,7 @@ export default {
           tag: ["K"],
           name: "电脑魔神 戴斯法萨",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-138",
@@ -1933,7 +1937,7 @@ export default {
           tag: ["K"],
           name: "哥美斯S",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-139",
@@ -1941,7 +1945,7 @@ export default {
           tag: ["K"],
           name: "基路伯",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-140",
@@ -1949,7 +1953,7 @@ export default {
           tag: ["K"],
           name: "盖迪",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-141",
@@ -1957,7 +1961,7 @@ export default {
           tag: ["K"],
           name: "宇宙有翼骨兽 盖朗达",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-142",
@@ -1965,7 +1969,7 @@ export default {
           tag: ["K"],
           name: "超古代先兵怪兽 佐加",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-143",
@@ -1973,7 +1977,7 @@ export default {
           tag: ["K"],
           name: "爱憎战士 卡蜜拉",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-144",
@@ -1981,7 +1985,7 @@ export default {
           tag: ["K"],
           name: "刚力战士 达拉姆",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-145",
@@ -1989,7 +1993,7 @@ export default {
           tag: ["K"],
           name: "俊敏战士 希特拉",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-146",
@@ -1997,7 +2001,7 @@ export default {
           tag: ["K"],
           name: "妖丽战士 卡尔蜜拉",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-147",
@@ -2005,7 +2009,7 @@ export default {
           tag: ["K"],
           name: "哥尔巴",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-148",
@@ -2013,7 +2017,7 @@ export default {
           tag: ["K"],
           name: "刚力斗士 达贡",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-149",
@@ -2021,7 +2025,7 @@ export default {
           tag: ["K"],
           name: "美特隆星人 玛露鲁",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-150",
@@ -2029,7 +2033,7 @@ export default {
           tag: ["K"],
           name: "俊敏策士 希特拉姆",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-151",
@@ -2037,7 +2041,7 @@ export default {
           tag: ["K"],
           name: "加佐特",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "K-152",
@@ -2045,7 +2049,7 @@ export default {
           tag: ["K"],
           name: "欧克古维拉",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "EX-K-01",
@@ -2053,7 +2057,7 @@ export default {
           tag: ["EX-K"],
           name: "佩盖萨星人 佩嘉",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "EX-K-02",
@@ -2061,7 +2065,7 @@ export default {
           tag: ["EX-K"],
           name: "黑暗艾克斯奥特曼",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "EX-K-03",
@@ -2069,7 +2073,7 @@ export default {
           tag: ["EX-K"],
           name: "黑暗捷德奥特曼",
           link: null,
-          color: "#F44336",
+          color: "#F44336"
         },
         {
           id: "EX-K-04",
@@ -2077,15 +2081,15 @@ export default {
           tag: ["EX-K"],
           name: "托雷基亚奥特曼 早期形态",
           link: [76],
-          color: "#F44336",
-        },
-      ],
+          color: "#F44336"
+        }
+      ]
     };
   },
   methods: {
     getDataByTag(tag) {
       if (tag == "ALL") {
-        this.nowList = this.sofubi500;
+        this.nowList = this.sofubi;
       } else {
         this.nowList = this.getListByTag(tag);
       }
@@ -2093,7 +2097,7 @@ export default {
     // 根据tag标签获取数据
     getListByTag(tag) {
       let arr = [];
-      this.sofubi500.forEach((item, index, array) => {
+      this.sofubi.forEach((item, index, array) => {
         if (item.tag.indexOf(tag) != -1) {
           arr.push(item);
         }
@@ -2109,7 +2113,7 @@ export default {
         } else {
           this.collectList.splice(this.collectList.indexOf(item.id), 1); //删除项
         }
-        this.$Tools.$setStroage("sofubi500", this.collectList); //保存最新数据
+        this.$Tools.$setStroage("sofubi", this.collectList); //保存最新数据
       } else {
         // 详情模式
         this.layerShow = true;
@@ -2123,8 +2127,8 @@ export default {
     // 加载收藏数据
     getCollectData() {
       this.collectList =
-        this.$Tools.$getStroage("sofubi500") != null
-          ? this.$Tools.$getStroage("sofubi500")
+        this.$Tools.$getStroage("sofubi") != null
+          ? this.$Tools.$getStroage("sofubi")
           : [];
     },
     // 切换收藏状态
@@ -2140,14 +2144,13 @@ export default {
       this.collectFilter = this.collectFilter ? false : true;
     },
     // 获取收藏进程
-    getCollectProgress() {},
+    getCollectProgress() {}
   },
   created() {
-    this.nowList = this.sofubi500;
+    this.nowList = this.sofubi;
     this.getCollectData();
-  },
+  }
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
