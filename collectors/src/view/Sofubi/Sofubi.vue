@@ -2087,7 +2087,7 @@ export default {
           id: "D-01",
           type: "M",
           tag: ["DX"],
-          name: "怪兽",
+          name: "超怪兽 超级古兰德王",
           link: null,
           color: "#F44336"
         },
@@ -2095,7 +2095,7 @@ export default {
           id: "D-02",
           type: "M",
           tag: ["DX"],
-          name: "怪兽",
+          name: "暴君怪兽 泰兰特",
           link: null,
           color: "#F44336"
         },
@@ -2103,7 +2103,7 @@ export default {
           id: "D-03",
           type: "M",
           tag: ["DX"],
-          name: "怪兽",
+          name: "根源破灭天使 佐格",
           link: null,
           color: "#F44336"
         },
@@ -2111,7 +2111,7 @@ export default {
           id: "D-04",
           type: "M",
           tag: ["DX"],
-          name: "怪兽",
+          name: "切布尔星人 战斗装甲",
           link: null,
           color: "#F44336"
         },
@@ -2119,7 +2119,7 @@ export default {
           id: "D-05",
           type: "M",
           tag: ["DX"],
-          name: "怪兽",
+          name: "超合体怪兽 法伊布王",
           link: null,
           color: "#F44336"
         },
@@ -2127,7 +2127,7 @@ export default {
           id: "D-06",
           type: "M",
           tag: ["DX"],
-          name: "怪兽",
+          name: "艾塔尔加",
           link: null,
           color: "#F44336"
         },
@@ -2135,7 +2135,7 @@ export default {
           id: "D-07",
           type: "M",
           tag: ["DX"],
-          name: "怪兽",
+          name: "怨灵超级古兰特王",
           link: null,
           color: "#F44336"
         },
@@ -2143,7 +2143,7 @@ export default {
           id: "D-08",
           type: "M",
           tag: ["DX"],
-          name: "怪兽",
+          name: "电弧贝利亚",
           link: null,
           color: "#F44336"
         },
@@ -2151,7 +2151,7 @@ export default {
           id: "D-09",
           type: "M",
           tag: ["DX"],
-          name: "怪兽",
+          name: "维克特路基艾尔",
           link: null,
           color: "#F44336"
         },
@@ -2159,7 +2159,7 @@ export default {
           id: "D-10",
           type: "M",
           tag: ["DX"],
-          name: "怪兽",
+          name: "石化魔兽 贾戈尔贡",
           link: null,
           color: "#F44336"
         },
@@ -2167,7 +2167,7 @@ export default {
           id: "D-11",
           type: "M",
           tag: ["DX"],
-          name: "怪兽",
+          name: "熔铁怪兽 迪玛迦",
           link: null,
           color: "#F44336"
         },
@@ -2175,7 +2175,7 @@ export default {
           id: "D-12",
           type: "M",
           tag: ["DX"],
-          name: "怪兽",
+          name: "格利扎",
           link: null,
           color: "#F44336"
         },
@@ -2183,7 +2183,7 @@ export default {
           id: "D-13",
           type: "M",
           tag: ["DX"],
-          name: "怪兽",
+          name: "格古火焰哥尔赞",
           link: null,
           color: "#F44336"
         },
@@ -2191,7 +2191,7 @@ export default {
           id: "D-14",
           type: "M",
           tag: ["DX"],
-          name: "怪兽",
+          name: "格古安东拉",
           link: null,
           color: "#F44336"
         },
@@ -2199,7 +2199,7 @@ export default {
           id: "D-15",
           type: "M",
           tag: ["DX"],
-          name: "怪兽",
+          name: "赛格古",
           link: null,
           color: "#F44336"
         },
@@ -2207,7 +2207,7 @@ export default {
           id: "D-16",
           type: "M",
           tag: ["DX"],
-          name: "怪兽",
+          name: "玛伽古兰特王",
           link: null,
           color: "#F44336"
         },
@@ -2215,7 +2215,7 @@ export default {
           id: "D-17",
           type: "M",
           tag: ["DX"],
-          name: "怪兽",
+          name: "玛伽贾巴",
           link: null,
           color: "#F44336"
         },
@@ -2223,7 +2223,7 @@ export default {
           id: "D-18",
           type: "M",
           tag: ["DX"],
-          name: "怪兽",
+          name: "玛伽庞敦",
           link: null,
           color: "#F44336"
         },
@@ -2231,7 +2231,7 @@ export default {
           id: "D-19",
           type: "M",
           tag: ["DX"],
-          name: "怪兽",
+          name: "风之魔王兽 玛伽巴萨",
           link: null,
           color: "#F44336"
         },
@@ -2239,7 +2239,7 @@ export default {
           id: "D-20",
           type: "M",
           tag: ["DX"],
-          name: "怪兽",
+          name: "玛伽大蛇",
           link: null,
           color: "#F44336"
         },
@@ -2247,7 +2247,7 @@ export default {
           id: "D-21",
           type: "M",
           tag: ["DX"],
-          name: "怪兽",
+          name: "文明裁决者 加拉特隆",
           link: null,
           color: "#F44336"
         },
@@ -2255,7 +2255,7 @@ export default {
           id: "D-22",
           type: "M",
           tag: ["DX"],
-          name: "怪兽",
+          name: "合体魔王兽 杰庞顿",
           link: null,
           color: "#F44336"
         },
@@ -2263,7 +2263,7 @@ export default {
           id: "D-23",
           type: "M",
           tag: ["DX"],
-          name: "怪兽",
+          name: "玛伽八岐大蛇",
           link: null,
           color: "#F44336"
         },
@@ -2271,7 +2271,7 @@ export default {
           id: "D-24",
           type: "M",
           tag: ["DX"],
-          name: "怪兽",
+          name: "迦比亚星人 萨迪斯",
           link: null,
           color: "#F44336"
         },
@@ -2279,7 +2279,7 @@ export default {
           id: "D-25",
           type: "M",
           tag: ["DX"],
-          name: "怪兽",
+          name: "戴亚博里古",
           link: null,
           color: "#F44336"
         },
@@ -2287,7 +2287,7 @@ export default {
           id: "D-26",
           type: "M",
           tag: ["DX"],
-          name: "怪兽",
+          name: "百体怪兽 贝琉多拉",
           link: null,
           color: "#F44336"
         },
@@ -2295,7 +2295,7 @@ export default {
           id: "D-27",
           type: "M",
           tag: ["DX"],
-          name: "怪兽",
+          name: "亡灵魔导士 雷伯特斯",
           link: null,
           color: "#F44336"
         },
@@ -2303,7 +2303,7 @@ export default {
           id: "D-28",
           type: "M",
           tag: ["DX"],
-          name: "怪兽",
+          name: "斯卡鲁哥莫拉",
           link: null,
           color: "#F44336"
         },
@@ -2311,7 +2311,7 @@ export default {
           id: "D-29",
           type: "M",
           tag: ["DX"],
-          name: "怪兽",
+          name: "闪电杀手",
           link: null,
           color: "#F44336"
         },
@@ -2319,7 +2319,7 @@ export default {
           id: "D-30",
           type: "M",
           tag: ["DX"],
-          name: "怪兽",
+          name: "佩丹尼姆杰顿",
           link: null,
           color: "#F44336"
         },
@@ -2327,7 +2327,7 @@ export default {
           id: "D-31",
           type: "M",
           tag: ["DX"],
-          name: "怪兽",
+          name: "时空破坏神 赛刚",
           link: null,
           color: "#F44336"
         },
@@ -2335,7 +2335,7 @@ export default {
           id: "D-32",
           type: "M",
           tag: ["DX"],
-          name: "怪兽",
+          name: "奇美拉柏洛斯",
           link: null,
           color: "#F44336"
         },
@@ -2343,7 +2343,7 @@ export default {
           id: "D-33",
           type: "M",
           tag: ["DX"],
-          name: "怪兽",
+          name: "极恶贝利亚",
           link: null,
           color: "#F44336"
         },
@@ -2351,7 +2351,7 @@ export default {
           id: "D-34",
           type: "M",
           tag: ["DX"],
-          name: "怪兽",
+          name: "加拉特隆王",
           link: null,
           color: "#F44336"
         },
@@ -2359,7 +2359,7 @@ export default {
           id: "D-35",
           type: "M",
           tag: ["DX"],
-          name: "怪兽",
+          name: "吉尔巴利斯",
           link: null,
           color: "#F44336"
         },
@@ -2367,7 +2367,7 @@ export default {
           id: "D-36",
           type: "M",
           tag: ["DX"],
-          name: "怪兽",
+          name: "鲁格赛特",
           link: null,
           color: "#F44336"
         },
@@ -2375,7 +2375,7 @@ export default {
           id: "D-37",
           type: "M",
           tag: ["DX"],
-          name: "怪兽",
+          name: "黑蜧",
           link: null,
           color: "#F44336"
         },
@@ -2391,7 +2391,7 @@ export default {
           id: "D-39",
           type: "M",
           tag: ["DX"],
-          name: "怪兽",
+          name: "莫奈拉女王",
           link: null,
           color: "#F44336"
         },
@@ -2399,7 +2399,7 @@ export default {
           id: "D-40",
           type: "M",
           tag: ["DX"],
-          name: "怪兽",
+          name: "佐格（第二形态）",
           link: null,
           color: "#F44336"
         },
@@ -2407,7 +2407,7 @@ export default {
           id: "D-41",
           type: "M",
           tag: ["DX"],
-          name: "怪兽",
+          name: "最强合体兽 玛斯王",
           link: null,
           color: "#F44336"
         }
