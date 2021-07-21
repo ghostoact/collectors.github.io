@@ -2082,6 +2082,334 @@ export default {
           name: "托雷基亚奥特曼 早期形态",
           link: [76],
           color: "#F44336"
+        },
+        {
+          id: "D-01",
+          type: "M",
+          tag: ["DX"],
+          name: "怪兽",
+          link: null,
+          color: "#F44336"
+        },
+        {
+          id: "D-02",
+          type: "M",
+          tag: ["DX"],
+          name: "怪兽",
+          link: null,
+          color: "#F44336"
+        },
+        {
+          id: "D-03",
+          type: "M",
+          tag: ["DX"],
+          name: "怪兽",
+          link: null,
+          color: "#F44336"
+        },
+        {
+          id: "D-04",
+          type: "M",
+          tag: ["DX"],
+          name: "怪兽",
+          link: null,
+          color: "#F44336"
+        },
+        {
+          id: "D-05",
+          type: "M",
+          tag: ["DX"],
+          name: "怪兽",
+          link: null,
+          color: "#F44336"
+        },
+        {
+          id: "D-06",
+          type: "M",
+          tag: ["DX"],
+          name: "怪兽",
+          link: null,
+          color: "#F44336"
+        },
+        {
+          id: "D-07",
+          type: "M",
+          tag: ["DX"],
+          name: "怪兽",
+          link: null,
+          color: "#F44336"
+        },
+        {
+          id: "D-08",
+          type: "M",
+          tag: ["DX"],
+          name: "怪兽",
+          link: null,
+          color: "#F44336"
+        },
+        {
+          id: "D-09",
+          type: "M",
+          tag: ["DX"],
+          name: "怪兽",
+          link: null,
+          color: "#F44336"
+        },
+        {
+          id: "D-10",
+          type: "M",
+          tag: ["DX"],
+          name: "怪兽",
+          link: null,
+          color: "#F44336"
+        },
+        {
+          id: "D-11",
+          type: "M",
+          tag: ["DX"],
+          name: "怪兽",
+          link: null,
+          color: "#F44336"
+        },
+        {
+          id: "D-12",
+          type: "M",
+          tag: ["DX"],
+          name: "怪兽",
+          link: null,
+          color: "#F44336"
+        },
+        {
+          id: "D-13",
+          type: "M",
+          tag: ["DX"],
+          name: "怪兽",
+          link: null,
+          color: "#F44336"
+        },
+        {
+          id: "D-14",
+          type: "M",
+          tag: ["DX"],
+          name: "怪兽",
+          link: null,
+          color: "#F44336"
+        },
+        {
+          id: "D-15",
+          type: "M",
+          tag: ["DX"],
+          name: "怪兽",
+          link: null,
+          color: "#F44336"
+        },
+        {
+          id: "D-16",
+          type: "M",
+          tag: ["DX"],
+          name: "怪兽",
+          link: null,
+          color: "#F44336"
+        },
+        {
+          id: "D-17",
+          type: "M",
+          tag: ["DX"],
+          name: "怪兽",
+          link: null,
+          color: "#F44336"
+        },
+        {
+          id: "D-18",
+          type: "M",
+          tag: ["DX"],
+          name: "怪兽",
+          link: null,
+          color: "#F44336"
+        },
+        {
+          id: "D-19",
+          type: "M",
+          tag: ["DX"],
+          name: "怪兽",
+          link: null,
+          color: "#F44336"
+        },
+        {
+          id: "D-20",
+          type: "M",
+          tag: ["DX"],
+          name: "怪兽",
+          link: null,
+          color: "#F44336"
+        },
+        {
+          id: "D-21",
+          type: "M",
+          tag: ["DX"],
+          name: "怪兽",
+          link: null,
+          color: "#F44336"
+        },
+        {
+          id: "D-22",
+          type: "M",
+          tag: ["DX"],
+          name: "怪兽",
+          link: null,
+          color: "#F44336"
+        },
+        {
+          id: "D-23",
+          type: "M",
+          tag: ["DX"],
+          name: "怪兽",
+          link: null,
+          color: "#F44336"
+        },
+        {
+          id: "D-24",
+          type: "M",
+          tag: ["DX"],
+          name: "怪兽",
+          link: null,
+          color: "#F44336"
+        },
+        {
+          id: "D-25",
+          type: "M",
+          tag: ["DX"],
+          name: "怪兽",
+          link: null,
+          color: "#F44336"
+        },
+        {
+          id: "D-26",
+          type: "M",
+          tag: ["DX"],
+          name: "怪兽",
+          link: null,
+          color: "#F44336"
+        },
+        {
+          id: "D-27",
+          type: "M",
+          tag: ["DX"],
+          name: "怪兽",
+          link: null,
+          color: "#F44336"
+        },
+        {
+          id: "D-28",
+          type: "M",
+          tag: ["DX"],
+          name: "怪兽",
+          link: null,
+          color: "#F44336"
+        },
+        {
+          id: "D-29",
+          type: "M",
+          tag: ["DX"],
+          name: "怪兽",
+          link: null,
+          color: "#F44336"
+        },
+        {
+          id: "D-30",
+          type: "M",
+          tag: ["DX"],
+          name: "怪兽",
+          link: null,
+          color: "#F44336"
+        },
+        {
+          id: "D-31",
+          type: "M",
+          tag: ["DX"],
+          name: "怪兽",
+          link: null,
+          color: "#F44336"
+        },
+        {
+          id: "D-32",
+          type: "M",
+          tag: ["DX"],
+          name: "怪兽",
+          link: null,
+          color: "#F44336"
+        },
+        {
+          id: "D-33",
+          type: "M",
+          tag: ["DX"],
+          name: "怪兽",
+          link: null,
+          color: "#F44336"
+        },
+        {
+          id: "D-34",
+          type: "M",
+          tag: ["DX"],
+          name: "怪兽",
+          link: null,
+          color: "#F44336"
+        },
+        {
+          id: "D-35",
+          type: "M",
+          tag: ["DX"],
+          name: "怪兽",
+          link: null,
+          color: "#F44336"
+        },
+        {
+          id: "D-36",
+          type: "M",
+          tag: ["DX"],
+          name: "怪兽",
+          link: null,
+          color: "#F44336"
+        },
+        {
+          id: "D-37",
+          type: "M",
+          tag: ["DX"],
+          name: "怪兽",
+          link: null,
+          color: "#F44336"
+        },
+        {
+          id: "D-38",
+          type: "M",
+          tag: ["DX"],
+          name: "邪神加坦杰厄",
+          link: null,
+          color: "#F44336"
+        },
+        {
+          id: "D-39",
+          type: "M",
+          tag: ["DX"],
+          name: "怪兽",
+          link: null,
+          color: "#F44336"
+        },
+        {
+          id: "D-40",
+          type: "M",
+          tag: ["DX"],
+          name: "怪兽",
+          link: null,
+          color: "#F44336"
+        },
+        {
+          id: "D-41",
+          type: "M",
+          tag: ["DX"],
+          name: "怪兽",
+          link: null,
+          color: "#F44336"
         }
       ]
     };
