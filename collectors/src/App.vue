@@ -40,7 +40,7 @@ export default {
           url: "/UltraMedal"
         },
         {
-          name: "500软胶",
+          name: "软胶",
           url: "/Sofubi"
         }
       ]
