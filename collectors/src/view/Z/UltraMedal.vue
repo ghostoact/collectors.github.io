@@ -53,70 +53,104 @@ export default {
         {
           name: "ALL",
           title: "全部",
+          count: 0,
+          own: 0,
         },
         {
           name: "XD",
           title: "限定",
+          count: 0,
+          own: 0,
         },
         {
           name: "DX",
           title: "DX",
+          count: 0,
+          own: 0,
         },
         {
           name: "EX01",
           title: "EX01",
+          count: 0,
+          own: 0,
         },
         {
           name: "EX02",
           title: "EX02",
+          count: 0,
+          own: 0,
         },
         {
           name: "EX03",
           title: "EX03",
+          count: 0,
+          own: 0,
         },
         {
           name: "EX04",
           title: "EX04",
+          count: 0,
+          own: 0,
         },
         {
           name: "SG01",
           title: "SG01",
+          count: 0,
+          own: 0,
         },
         {
           name: "SG02",
           title: "SG02",
+          count: 0,
+          own: 0,
         },
         {
           name: "GP01",
           title: "GP01",
+          count: 0,
+          own: 0,
         },
         {
           name: "GP02",
           title: "GP02",
+          count: 0,
+          own: 0,
         },
         {
           name: "GP03",
           title: "GP03",
+          count: 0,
+          own: 0,
         },
         {
           name: "GP04",
           title: "GP04",
+          count: 0,
+          own: 0,
         },
         {
           name: "GPEX",
           title: "GPEX",
+          count: 0,
+          own: 0,
         },
         {
           name: "SP",
           title: "SP",
+          count: 0,
+          own: 0,
         },
         {
           name: "PF",
           title: "披风",
+          count: 0,
+          own: 0,
         },
         {
           name: "PB",
           title: "PB",
+          count: 0,
+          own: 0,
         },
       ],
       nowList: null, //展示列表
@@ -1177,6 +1211,7 @@ export default {
           this.collectList.splice(this.collectList.indexOf(item.id), 1); //删除项
         }
         this.$Tools.$setStroage("ultramedal", this.collectList); //保存最新数据
+        this.getCollectProgress();
       } else {
         // 详情模式
         this.layerShow = true;
@@ -1206,10 +1241,34 @@ export default {
     getCollectFilter() {
       this.collectFilter = this.collectFilter ? false : true;
     },
+    // 获取收藏进程
+    // 表示有 !=-1
+    getCollectProgress() {
+      this.tags.forEach((i, num, arr) => {
+        this.tags[num].count = 0;
+        this.tags[num].own = 0;
+      });
+      this.ultramedal.forEach((item, index, array) => {
+        this.tags.forEach((i, num, arr) => {
+          //获得总数
+          if (item.tag[0].indexOf(i.name) != -1) {
+            this.tags[num].count = this.tags[num].count + 1;
+          }
+          //获得已拥有数
+          if (
+            this.collectList.indexOf(item.id) != -1 &&
+            this.tags[num].name == item.tag[0]
+          ) {
+            this.tags[num].own = this.tags[num].own + 1;
+          }
+        });
+      });
+    },
   },
   created() {
     this.nowList = this.ultramedal;
     this.getCollectData();
+    this.getCollectProgress();
   },
 };
 </script>

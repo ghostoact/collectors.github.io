@@ -23,20 +23,20 @@ export default {
   name: "TagBar",
   props: {
     tags: {
-      type: Array
-    }
+      type: Array,
+    },
   },
   data() {
     return {
       tagsData: this.tags,
-      nowTag: "ALL"
+      nowTag: "ALL",
     };
   },
   methods: {
     getDataByTag(tag) {
       this.nowTag = tag;
       this.$emit("parentEvent", tag);
-    }
+    },
   }
 };
 </script>
