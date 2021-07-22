@@ -53,27 +53,39 @@ export default {
       tags: [
         {
           name: "ALL",
-          title: "全部"
+          title: "全部",
+          count: 0,
+          own: 0
         },
         {
           name: "XD",
-          title: "限定"
+          title: "限定",
+          count: 0,
+          own: 0
         },
         {
           name: "DX",
-          title: "DX"
+          title: "DX",
+          count: 0,
+          own: 0
         },
         {
           name: "SG01",
-          title: "SG01"
+          title: "SG01",
+          count: 0,
+          own: 0
         },
         {
           name: "SG02",
-          title: "SG02"
+          title: "SG02",
+          count: 0,
+          own: 0
         },
         {
           name: "GP01",
-          title: "GP01"
+          title: "GP01",
+          count: 0,
+          own: 0
         }
       ],
       nowList: null, //展示列表
@@ -454,11 +466,29 @@ export default {
       this.collectFilter = this.collectFilter ? false : true;
     },
     // 获取收藏进程
-    getCollectProgress() {}
+    // 表示有 !=-1
+    getCollectProgress() {
+      this.hyperKey.forEach((item, index, array) => {
+        this.tags.forEach((i, num, arr) => {
+          //获得总数
+          if (item.tag[0].indexOf(i.name) != -1) {
+            this.tags[num].count = this.tags[num].count + 1;
+          }
+          //获得已拥有数
+          if (
+            this.collectList.indexOf(item.id) != -1 &&
+            this.tags[num].name == item.tag[0]
+          ) {
+            this.tags[num].own = this.tags[num].own + 1;
+          }
+        });
+      });
+    }
   },
   created() {
     this.nowList = this.hyperKey;
     this.getCollectData();
+    this.getCollectProgress();
   }
 };
 </script>

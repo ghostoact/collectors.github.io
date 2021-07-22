@@ -8,6 +8,12 @@
       @click="getDataByTag(tag.name)"
     >
       {{ tag.title }}
+      <div class="tag-progress">
+        <div
+          class="tag-prog"
+          :style="'width:' + (tag.own / tag.count) * 100 + '%'"
+        ></div>
+      </div>
     </div>
   </div>
 </template>
@@ -37,9 +43,9 @@ export default {
 
 <style scoped>
 .tags-bar {
-    margin-bottom: 10px;
-    overflow: hidden;
-    width: 100%;
+  margin-bottom: 10px;
+  display: inline-block;
+  width: 100%;
 }
 .tag-item {
   float: left;
@@ -50,10 +56,28 @@ export default {
   border-radius: 18px;
   margin-right: 2px;
   cursor: pointer;
+  position: relative;
 }
 .tag-item:hover,
 .tag-item.active {
   color: #fff;
   background-color: #cf3100;
+}
+.tag-progress {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #ffffff5c;
+}
+.tag-prog {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: red;
+  transition: width 0.8s;
 }
 </style>
