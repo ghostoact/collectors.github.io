@@ -1,7 +1,6 @@
 <template>
   <div class="item-list">
-    <EchartsCoponent :chartData="chartData1" />
-    <EchartsCoponent :chartData="chartData2" />
+    <EchartsCoponent :optionData="sparklence" />
   </div>
 </template>
 
@@ -10,21 +9,24 @@ import EchartsCoponent from "@/components/EchartsComponents";
 export default {
   name: "Trend",
   components: {
-    EchartsCoponent
+    EchartsCoponent,
   },
   data() {
     return {
-      chartData1: ["衬衫", "羊毛衫", "雪纺衫", "裤子", "高跟鞋", "袜子"],
-      chartData2: ["苹果", "香蕉", "橘子", "梨子", "樱桃", "哈密瓜"]
+      sparklence: {
+        title:"特利迦胜利神光棒标准版",
+        xAxis: ["2021.4.15", "2021.7.3", "2021.7.4", "2021.7.5"],
+        yAxis: [354, 279, 336, 386],
+      }
     };
   },
   components: {
-    EchartsCoponent
+    EchartsCoponent,
   },
-  mounted: function() {
+  mounted: function () {
     const vm = this;
     vm.$nextTick(() => {});
-  }
+  },
 };
 </script>
 
