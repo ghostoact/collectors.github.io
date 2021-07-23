@@ -42,6 +42,10 @@ export default {
         {
           name: "软胶",
           url: "/Sofubi"
+        },
+        {
+          name: "趋势",
+          url: "/Trend"
         }
       ]
     };

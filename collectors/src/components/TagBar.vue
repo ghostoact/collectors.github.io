@@ -11,6 +11,7 @@
       <div class="tag-progress">
         <div
           class="tag-prog"
+          :class="tag.own / tag.count == 1 ? 'full' : ''"
           :style="'width:' + (tag.own / tag.count) * 100 + '%'"
         ></div>
       </div>
@@ -23,20 +24,20 @@ export default {
   name: "TagBar",
   props: {
     tags: {
-      type: Array,
-    },
+      type: Array
+    }
   },
   data() {
     return {
       tagsData: this.tags,
-      nowTag: "ALL",
+      nowTag: "ALL"
     };
   },
   methods: {
     getDataByTag(tag) {
       this.nowTag = tag;
       this.$emit("parentEvent", tag);
-    },
+    }
   }
 };
 </script>
@@ -77,7 +78,10 @@ export default {
   top: 0;
   width: 0;
   height: 100%;
-  background-color: red;
+  background-color: #ffffff87;
   transition: width 0.8s;
+}
+.tag-prog.full {
+  background-color: #8bc34a;
 }
 </style>

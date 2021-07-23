@@ -2491,6 +2491,8 @@ export default {
         this.tags[num].count = 0;
         this.tags[num].own = 0;
       });
+      this.tags[0].count = this.sofubi.length;
+      this.tags[0].own = this.collectList.length;
       this.sofubi.forEach((item, index, array) => {
         this.tags.forEach((i, num, arr) => {
           //获得总数
