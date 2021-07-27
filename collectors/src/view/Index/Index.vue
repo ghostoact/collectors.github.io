@@ -1835,7 +1835,6 @@ export default {
           arr = this.ultraman;
           break;
       }
-      console.log(arr);
       return arr;
     },
     // 根据奥特曼的id获取基础信息，形态列表以及融合列表
