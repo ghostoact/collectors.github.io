@@ -53,15 +53,32 @@ export default {
       sparklence: {
         title: "特利迦胜利神光棒标准版",
         xAxis: ["2021.4.15", "2021.7.3", "2021.7.4", "2021.7.5"],
-        yAxis: [354, 279, 336, 386],
+        yAxis: [354, 279, 336, 386, 265],
       },
       modeltoy: [
         {
-          name: "特利迦胜利神光棒标准版", //名称
+          name: "特利迦·胜利神光棒 豪华版",
+          yenprice: 597,
+          pastprice: [597, 470],
+          des: "含胜利神光棒+复合型和强力型钥匙+腰带+特典",
+        },
+        {
+          name: "特利迦·胜利神光棒 标准版", //名称
           yenprice: 357, //官方参考价
-          pastprice: [354, 279, 336, 386], //历史价格
-          pic: "8eer5c1bzqaimqfusazr4axp5bdixo6gebpv1d.jpg",
+          pastprice: [354, 357, 279, 336, 386, 424], //历史价格
           des: "含胜利神光棒+特利迦复合型钥匙+特典",
+        },
+        {
+          name: "特利迦·圆环之臂",
+          yenprice: 258,
+          pastprice: [258, 269, 179, 299, 189],
+          des: "",
+        },
+        {
+          name: "特利迦·收纳腰带",
+          yenprice: 175,
+          pastprice: [175, 179, 199],
+          des: "",
         },
       ],
     };
