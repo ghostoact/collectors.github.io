@@ -1,13 +1,40 @@
 <template>
   <div class="item-list">
     <!-- <EchartsCoponent :optionData="sparklence" /> -->
-    <div class="model-toy">
-      <p class="toy-title">特利迦胜利神光棒标准版</p>
-      <div class="price-box">
-        <div class="price-item">
-          <p class="price-num">279</p>
-          <p class="price-name">最低价</p>
+    <div class="model-toy" v-for="toy in modeltoy" :key="toy.title">
+      <div class="toy-warp">
+        <p class="toy-title">{{ toy.name }}</p>
+        <div class="price-box">
+          <div class="price-item yen">
+            <p class="price-num">
+              <span v-html="toy.yenprice"></span>
+              <span class="unit">元</span>
+            </p>
+            <p class="price-name">发售时参考价</p>
+          </div>
+          <div class="price-item min">
+            <p class="price-num">
+              <span v-html="arrMinNum(toy.pastprice)"></span>
+              <span class="unit">元</span>
+            </p>
+            <p class="price-name">最低价</p>
+          </div>
+          <div class="price-item">
+            <p class="price-num">
+              <span v-html="getAverageNum(toy.pastprice)"></span>
+              <span class="unit">元</span>
+            </p>
+            <p class="price-name">平均价</p>
+          </div>
+          <div class="price-item max">
+            <p class="price-num">
+              <span v-html="getMaxNum(toy.pastprice)"></span>
+              <span class="unit">元</span>
+            </p>
+            <p class="price-name">最高价</p>
+          </div>
         </div>
+        <p class="toy-des">{{ toy.des }}</p>
       </div>
     </div>
   </div>
@@ -19,28 +46,30 @@ import EchartsCoponent from "@/components/EchartsComponents";
 export default {
   name: "Trend",
   components: {
-    EchartsCoponent
+    EchartsCoponent,
   },
   data() {
     return {
       sparklence: {
         title: "特利迦胜利神光棒标准版",
         xAxis: ["2021.4.15", "2021.7.3", "2021.7.4", "2021.7.5"],
-        yAxis: [354, 279, 336, 386]
+        yAxis: [354, 279, 336, 386],
       },
       modeltoy: [
         {
           name: "特利迦胜利神光棒标准版", //名称
-          yenprice: 500, //官方参考价
-          pastprice: [354, 279, 336, 386] //历史价格
-        }
-      ]
+          yenprice: 357, //官方参考价
+          pastprice: [354, 279, 336, 386], //历史价格
+          pic: "8eer5c1bzqaimqfusazr4axp5bdixo6gebpv1d.jpg",
+          des: "含胜利神光棒+特利迦复合型钥匙+特典",
+        },
+      ],
     };
   },
   components: {
-    EchartsCoponent
+    EchartsCoponent,
   },
-  mounted: function() {
+  mounted: function () {
     const vm = this;
     vm.$nextTick(() => {});
   },
@@ -56,33 +85,70 @@ export default {
     // 获取数组平均值
     getAverageNum(arr) {
       let sum = eval(arr.join("+"));
-      return ~~((sum / arr.length) * 100) / 100;
-    }
+      return Math.ceil(((sum / arr.length) * 100) / 100);
+    },
   },
-  created() {
-    console.log(this.getAverageNum(this.modeltoy[0].pastprice));
-  }
+  created() {},
 };
 </script>
 
 <style scoped>
 .model-toy {
-  width: 620px;
+  width: 610px;
   height: 150px;
-  background-color: #0f1f58;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0 10px 10px 0;
   float: left;
+}
+.toy-warp {
+  background-color: #00558cdb;
+  background-image: linear-gradient(-90deg, #168686 0, rgb(37 0 109) 100%);
+  -webkit-box-shadow: 0 2px 10px 3px rgba(0, 58, 124, 0.43);
+  box-shadow: 0 2px 10px 3px rgba(0, 58, 124, 0.43);
+  -webkit-filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+  -webkit-backdrop-filter: saturate(180%) blur(8px);
+  backdrop-filter: saturate(180%) blur(8px);
+  width: 100%;
+  height: 100%;
+  text-align: center;
 }
 .toy-title {
   color: #fff;
+  padding: 20px 0 15px;
+  font-size: 22px;
 }
 .price-item {
   text-align: center;
   width: 110px;
+  display: inline-block;
+}
+.price-item.yen .price-num {
+  color: #03a9f4;
+}
+.price-item.min .price-num {
+  color: #00ff72;
+}
+.price-item.max .price-num {
+  color: #ff9800;
 }
 .price-num {
-  color: aqua;
+  color: cyan;
+  font-size: 26px;
+  font-weight: 600;
+}
+.price-num .unit {
+  font-size: 12px;
+  color: #00b8d6;
 }
 .price-name {
-  color: red;
+  color: #00b8d6;
+  font-size: 14px;
+}
+.toy-des {
+  color: #ffffff73;
+  padding-top: 10px;
+  font-size: 14px;
 }
 </style>
