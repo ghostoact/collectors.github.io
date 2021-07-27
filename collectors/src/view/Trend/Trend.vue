@@ -112,7 +112,6 @@ export default {
 <style scoped>
 .model-toy {
   width: 610px;
-  height: 150px;
   border-radius: 10px;
   overflow: hidden;
   margin: 0 10px 10px 0;
@@ -127,6 +126,7 @@ export default {
   filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
   -webkit-backdrop-filter: saturate(180%) blur(8px);
   backdrop-filter: saturate(180%) blur(8px);
+  min-height: 150px;
   width: 100%;
   height: 100%;
   text-align: center;
