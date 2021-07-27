@@ -79,9 +79,9 @@
 // 3.周边列表 √
 // 4.形态对应相关周边,例如泽塔勋章和特利迦钥匙
 // 5.组合测试，选择不同的奥特曼，得出形态
-// 6.本地保存当前收集信息
-// 7.收集完成进度
-// 8.价格趋势，参考价
+// 6.本地保存当前收集信息 √
+// 7.收集完成进度 √
+// 8.历史报价，收集常见报价
 
 // 类型分别有：基础 base、形态 form、融合 fusion
 // 形态 form 有 baseId
@@ -89,8 +89,10 @@
 // ultraman 数组的下标与id是对应的，不可错误
 
 // 难题：
-// 欧布：涉及到欧布设定的基本形态切换问题，从最早的重光形态到欧布原生
 // 捷德：捷德的常见默认形态是融合形态，而这个融合形态没法在默认形态里展示
+// 1.展示列表（常态）
+// 2.同一奥特曼
+
 import CharacterItem from "@/components/CharacterItem";
 export default {
   name: "Index",
@@ -102,6 +104,7 @@ export default {
       ultraman: [
         {
           id: 0,
+          classic: true,
           type: "base",
           name: {
             zh: "奥特曼",
@@ -116,6 +119,7 @@ export default {
         },
         {
           id: 1,
+          classic: true,
           type: "base",
           name: {
             zh: "佐菲",
@@ -130,6 +134,7 @@ export default {
         },
         {
           id: 2,
+          classic: true,
           type: "base",
           name: {
             zh: "赛文奥特曼",
@@ -144,6 +149,7 @@ export default {
         },
         {
           id: 3,
+          classic: true,
           type: "base",
           name: {
             zh: "杰克奥特曼",
@@ -158,6 +164,7 @@ export default {
         },
         {
           id: 4,
+          classic: true,
           type: "base",
           name: {
             zh: "艾斯奥特曼",
@@ -172,6 +179,7 @@ export default {
         },
         {
           id: 5,
+          classic: true,
           type: "base",
           name: {
             zh: "奥特之父",
@@ -186,6 +194,7 @@ export default {
         },
         {
           id: 6,
+          classic: true,
           type: "base",
           name: {
             zh: "泰罗奥特曼",
@@ -200,6 +209,7 @@ export default {
         },
         {
           id: 7,
+          classic: true,
           type: "base",
           name: {
             zh: "奥特之母",
@@ -214,6 +224,7 @@ export default {
         },
         {
           id: 8,
+          classic: true,
           type: "base",
           name: {
             zh: "雷欧奥特曼",
@@ -228,6 +239,7 @@ export default {
         },
         {
           id: 9,
+          classic: true,
           type: "base",
           name: {
             zh: "阿斯特拉",
@@ -242,6 +254,7 @@ export default {
         },
         {
           id: 10,
+          classic: true,
           type: "base",
           name: {
             zh: "奥特之王",
@@ -256,6 +269,7 @@ export default {
         },
         {
           id: 11,
+          classic: true,
           type: "base",
           name: {
             zh: "乔尼亚斯奥特曼",
@@ -270,6 +284,7 @@ export default {
         },
         {
           id: 12,
+          classic: true,
           type: "base",
           name: {
             zh: "爱迪奥特曼",
@@ -284,6 +299,7 @@ export default {
         },
         {
           id: 13,
+          classic: true,
           type: "base",
           name: {
             zh: "尤莉安奥特曼",
@@ -298,6 +314,7 @@ export default {
         },
         {
           id: 14,
+          classic: true,
           type: "base",
           name: {
             zh: "史考特奥特曼",
@@ -312,6 +329,7 @@ export default {
         },
         {
           id: 15,
+          classic: true,
           type: "base",
           name: {
             zh: "察克奥特曼",
@@ -326,6 +344,7 @@ export default {
         },
         {
           id: 16,
+          classic: true,
           type: "base",
           name: {
             zh: "贝斯奥特曼",
@@ -340,6 +359,7 @@ export default {
         },
         {
           id: 17,
+          classic: true,
           type: "base",
           name: {
             zh: "葛雷奥特曼",
@@ -354,6 +374,7 @@ export default {
         },
         {
           id: 18,
+          classic: true,
           type: "base",
           name: {
             zh: "帕瓦特奥特曼",
@@ -368,6 +389,7 @@ export default {
         },
         {
           id: 19,
+          classic: true,
           type: "base",
           name: {
             zh: "哉阿斯奥特曼",
@@ -382,6 +404,7 @@ export default {
         },
         {
           id: 20,
+          classic: true,
           type: "base",
           name: {
             zh: "迪迦奥特曼 复合型",
@@ -462,6 +485,7 @@ export default {
         },
         {
           id: 27,
+          classic: true,
           type: "base",
           name: {
             zh: "戴拿奥特曼 闪亮型",
@@ -498,6 +522,7 @@ export default {
         },
         {
           id: 30,
+          classic: true,
           type: "base",
           name: {
             zh: "盖亚奥特曼 V2",
@@ -534,6 +559,7 @@ export default {
         },
         {
           id: 33,
+          classic: true,
           type: "base",
           name: {
             zh: "阿古茹奥特曼 V2",
@@ -559,6 +585,7 @@ export default {
         },
         {
           id: 35,
+          classic: true,
           type: "base",
           name: {
             zh: "纳伊斯奥特曼",
@@ -573,6 +600,7 @@ export default {
         },
         {
           id: 36,
+          classic: true,
           type: "base",
           name: {
             zh: "奈欧斯奥特曼",
@@ -587,6 +615,7 @@ export default {
         },
         {
           id: 37,
+          classic: true,
           type: "base",
           name: {
             zh: "赛文21奥特曼",
@@ -601,6 +630,7 @@ export default {
         },
         {
           id: 38,
+          classic: true,
           type: "base",
           name: {
             zh: "高斯奥特曼 月神模式",
@@ -659,6 +689,7 @@ export default {
         },
         {
           id: 43,
+          classic: true,
           type: "base",
           name: {
             zh: "杰斯提斯奥特曼 标准模式",
@@ -684,6 +715,7 @@ export default {
         },
         {
           id: 45,
+          classic: true,
           type: "base",
           name: {
             zh: "博伊奥特曼",
@@ -694,6 +726,7 @@ export default {
         },
         {
           id: 46,
+          classic: true,
           type: "base",
           name: {
             zh: "奈克赛斯奥特曼",
@@ -763,6 +796,7 @@ export default {
         },
         {
           id: 52,
+          classic: true,
           type: "base",
           name: {
             zh: "麦克斯奥特曼",
@@ -777,6 +811,7 @@ export default {
         },
         {
           id: 53,
+          classic: true,
           type: "base",
           name: {
             zh: "杰诺奥特曼",
@@ -791,6 +826,7 @@ export default {
         },
         {
           id: 54,
+          classic: true,
           type: "base",
           name: {
             zh: "梦比优斯奥特曼",
@@ -838,6 +874,7 @@ export default {
         },
         {
           id: 58,
+          classic: true,
           type: "base",
           name: {
             zh: "希卡利奥特曼",
@@ -852,6 +889,7 @@ export default {
         },
         {
           id: 59,
+          classic: true,
           type: "base",
           name: {
             zh: "赛文奥特曼X",
@@ -862,6 +900,7 @@ export default {
         },
         {
           id: 60,
+          classic: true,
           type: "base",
           name: {
             zh: "贝利亚奥特曼",
@@ -887,6 +926,7 @@ export default {
         },
         {
           id: 62,
+          classic: true,
           type: "base",
           name: {
             zh: "赛罗奥特曼",
@@ -923,6 +963,7 @@ export default {
         },
         {
           id: 65,
+          classic: true,
           type: "base",
           name: {
             zh: "银河奥特曼",
@@ -937,6 +978,7 @@ export default {
         },
         {
           id: 66,
+          classic: true,
           type: "base",
           name: {
             zh: "维克特利奥特曼",
@@ -951,6 +993,7 @@ export default {
         },
         {
           id: 67,
+          classic: true,
           type: "base",
           name: {
             zh: "艾克斯奥特曼",
@@ -965,6 +1008,7 @@ export default {
         },
         {
           id: 68,
+          classic: true,
           type: "base",
           name: {
             zh: "欧布奥特曼 原生形态",
@@ -990,6 +1034,7 @@ export default {
         },
         {
           id: 70,
+          classic: true,
           type: "base",
           name: {
             zh: "利布特奥特曼",
@@ -1004,23 +1049,23 @@ export default {
         },
         {
           id: 71,
-          type: "base",
+          classic: true,
+          type: "fusion",
+          fusionArr: [71, 0, 60],
           name: {
-            zh: "捷德奥特曼 原初形态",
+            zh: "捷德奥特曼 原始形态",
             jp: "ウルトラマンジード",
-            en: "Original Form"
+            en: "Ultraman Geed Primitive"
           },
-          first: 2017,
-          height: 51, //米
-          weight: null, //吨
-          maxSpeed: 9, //马赫
-          birthPlace: null
+          first: 2017
         },
         {
           id: 72,
-          type: "base",
+          classic: true,
+          type: "fusion",
+          fusionArr: [72, 6],
           name: {
-            zh: "罗索奥特曼",
+            zh: "罗索奥特曼 烈火形态",
             jp: "ウルトラマンロッソ",
             en: "Ultraman Rosso"
           },
@@ -1032,9 +1077,11 @@ export default {
         },
         {
           id: 73,
-          type: "base",
+          classic: true,
+          type: "fusion",
+          fusionArr: [73, 65],
           name: {
-            zh: "布鲁奥特曼",
+            zh: "布鲁奥特曼 跃水形态",
             jp: "ウルトラマンブル",
             en: "Ultraman Blu"
           },
@@ -1046,6 +1093,7 @@ export default {
         },
         {
           id: 74,
+          classic: true,
           type: "base",
           name: {
             zh: "格丽乔奥特曼",
@@ -1060,6 +1108,7 @@ export default {
         },
         {
           id: 75,
+          classic: true,
           type: "base",
           name: {
             zh: "托雷基亚奥特曼",
@@ -1085,6 +1134,7 @@ export default {
         },
         {
           id: 77,
+          classic: true,
           type: "base",
           name: {
             zh: "泰迦奥特曼",
@@ -1110,6 +1160,7 @@ export default {
         },
         {
           id: 79,
+          classic: true,
           type: "base",
           name: {
             zh: "泰塔斯奥特曼",
@@ -1124,6 +1175,7 @@ export default {
         },
         {
           id: 80,
+          classic: true,
           type: "base",
           name: {
             zh: "风马奥特曼",
@@ -1138,6 +1190,7 @@ export default {
         },
         {
           id: 81,
+          classic: true,
           type: "base",
           name: {
             zh: "泽塔奥特曼",
@@ -1152,6 +1205,7 @@ export default {
         },
         {
           id: 82,
+          classic: true,
           type: "base",
           name: {
             zh: "特利迦奥特曼 复合型",
@@ -1390,14 +1444,18 @@ export default {
         },
         {
           id: 103,
-          type: "fusion",
-          fusionArr: [71, 0, 60],
+          type: "form",
+          formId: 71,
           name: {
-            zh: "捷德奥特曼 原始形态",
+            zh: "捷德奥特曼 原初形态",
             jp: "ウルトラマンジード",
-            en: "Ultraman Geed Primitive"
+            en: "Original Form"
           },
-          first: 2017
+          first: 2017,
+          height: 51, //米
+          weight: null, //吨
+          maxSpeed: 9, //马赫
+          birthPlace: null
         },
         {
           id: 104,
@@ -1687,13 +1745,23 @@ export default {
     };
   },
   created() {
-    this.baseList = this.getUltraByType(null, "base");
+    this.baseList = this.getClassicList();
   },
   methods: {
     // 根据id获得该奥特曼的信息
     // 应用：获取迪迦的数据
     getUltraInfo(id) {
       return this.ultraman[id];
+    },
+    // 获取经典列表
+    getClassicList() {
+      let arr = [];
+      this.ultraman.forEach((item, index, array) => {
+        if (item.classic == true) {
+          arr.push(item);
+        }
+      });
+      return arr;
     },
     // 根据id获得该奥特曼的所属类型
     // 应用：迪迦强力型属于形态还是融合？
@@ -1751,9 +1819,6 @@ export default {
       this.nowUltra.info = this.getUltraInfo(id);
       this.nowUltra.form = this.getUltraByType(id, "form");
       this.nowUltra.fusion = this.getUltraByType(id, "fusion");
-      if (this.nowUltra.info.type == "base") {
-        this.nowId = id;
-      }
       this.isOpen = true;
       document.documentElement.classList.add("isOpen");
     },
