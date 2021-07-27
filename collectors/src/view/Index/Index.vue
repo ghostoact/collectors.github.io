@@ -84,7 +84,7 @@
 // 8.历史报价，收集常见报价
 
 // 类型分别有：基础 base、形态 form、融合 fusion
-// 形态 form 有 baseId
+// 形态 form 有 formId
 // 融合 fusion 有数组 fusionArr
 // ultraman 数组的下标与id是对应的，不可错误
 
@@ -406,6 +406,7 @@ export default {
           id: 20,
           classic: true,
           type: "base",
+          formId: 20,
           name: {
             zh: "迪迦奥特曼 复合型",
             jp: "ウルトラマンティガ",
@@ -487,6 +488,7 @@ export default {
           id: 27,
           classic: true,
           type: "base",
+          formId: 27,
           name: {
             zh: "戴拿奥特曼 闪亮型",
             jp: "ウルトラマンダイナ",
@@ -524,6 +526,7 @@ export default {
           id: 30,
           classic: true,
           type: "base",
+          formId: 30,
           name: {
             zh: "盖亚奥特曼 V2",
             jp: "ウルトラマンガイア",
@@ -561,6 +564,7 @@ export default {
           id: 33,
           classic: true,
           type: "base",
+          formId: 33,
           name: {
             zh: "阿古茹奥特曼 V2",
             jp: "ウルトラマンアグル",
@@ -632,6 +636,7 @@ export default {
           id: 38,
           classic: true,
           type: "base",
+          formId: 38,
           name: {
             zh: "高斯奥特曼 月神模式",
             jp: "ウルトラマンコスモス",
@@ -691,6 +696,7 @@ export default {
           id: 43,
           classic: true,
           type: "base",
+          formId: 43,
           name: {
             zh: "杰斯提斯奥特曼 标准模式",
             jp: "ウルトラマンジャスティス",
@@ -728,6 +734,7 @@ export default {
           id: 46,
           classic: true,
           type: "base",
+          formId: 46,
           name: {
             zh: "奈克赛斯奥特曼",
             jp: "ウルトラマンネクサス",
@@ -828,6 +835,7 @@ export default {
           id: 54,
           classic: true,
           type: "base",
+          formId: 54,
           name: {
             zh: "梦比优斯奥特曼",
             jp: "ウルトラマンメビウス",
@@ -902,6 +910,7 @@ export default {
           id: 60,
           classic: true,
           type: "base",
+          formId: 60,
           name: {
             zh: "贝利亚奥特曼",
             jp: "ウルトラマンベリアル",
@@ -928,6 +937,7 @@ export default {
           id: 62,
           classic: true,
           type: "base",
+          formId: 62,
           name: {
             zh: "赛罗奥特曼",
             jp: "ウルトラマンゼロ",
@@ -980,6 +990,7 @@ export default {
           id: 66,
           classic: true,
           type: "base",
+          formId: 66,
           name: {
             zh: "维克特利奥特曼",
             jp: "ウルトラマンビクトリー",
@@ -995,6 +1006,7 @@ export default {
           id: 67,
           classic: true,
           type: "base",
+          formId: 67,
           name: {
             zh: "艾克斯奥特曼",
             jp: "ウルトラマンX",
@@ -1010,6 +1022,7 @@ export default {
           id: 68,
           classic: true,
           type: "base",
+          formId: 68,
           name: {
             zh: "欧布奥特曼 原生形态",
             jp: "オーブオリジン",
@@ -1051,6 +1064,7 @@ export default {
           id: 71,
           classic: true,
           type: "fusion",
+          formId: 71,
           fusionArr: [71, 0, 60],
           name: {
             zh: "捷德奥特曼 原始形态",
@@ -1110,6 +1124,7 @@ export default {
           id: 75,
           classic: true,
           type: "base",
+          formId: 75,
           name: {
             zh: "托雷基亚奥特曼",
             jp: "ウルトラマントレギア",
@@ -1136,6 +1151,7 @@ export default {
           id: 77,
           classic: true,
           type: "base",
+          formId: 77,
           name: {
             zh: "泰迦奥特曼",
             jp: "ウルトラマンタイガ",
@@ -1207,6 +1223,7 @@ export default {
           id: 82,
           classic: true,
           type: "base",
+          formId: 82,
           name: {
             zh: "特利迦奥特曼 复合型",
             jp: "ウルトラマントリガー",
@@ -1795,7 +1812,14 @@ export default {
           break;
         case "form":
           this.ultraman.forEach((item, index, array) => {
-            if (item.type == "form" && item.formId == id) {
+            if (
+              (item.type == "base" &&
+                item.formId != undefined &&
+                item.id == this.getUltraInfo(id).formId) ||
+              (item.type != "base" &&
+                item.formId != undefined &&
+                item.formId == this.getUltraInfo(id).formId)
+            ) {
               arr.push(this.getUltraInfo(item.id));
             }
           });
@@ -1811,6 +1835,7 @@ export default {
           arr = this.ultraman;
           break;
       }
+      console.log(arr);
       return arr;
     },
     // 根据奥特曼的id获取基础信息，形态列表以及融合列表
@@ -1850,7 +1875,7 @@ export default {
   margin-bottom: 20px;
 }
 .detail-warp {
-  width: 890px;
+  width: 925px;
   margin: 15px auto;
   background-color: #ffffffc7;
   border-radius: 6px;
