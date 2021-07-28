@@ -7,8 +7,8 @@
         <div class="price-box">
           <div class="price-item yen">
             <p class="price-num">
-              <span v-html="toy.yenprice"></span>
-              <span class="unit">元</span>
+              <span v-html="toy.yenprice != 0 ? toy.yenprice : '-'"></span>
+              <span class="unit" v-if="toy.yenprice != 0">元</span>
             </p>
             <p class="price-name">发售时参考价</p>
           </div>
@@ -50,11 +50,6 @@ export default {
   },
   data() {
     return {
-      sparklence: {
-        title: "特利迦胜利神光棒标准版",
-        xAxis: ["2021.4.15", "2021.7.3", "2021.7.4", "2021.7.5"],
-        yAxis: [354, 279, 336, 386, 265]
-      },
       modeltoy: [
         {
           name: "特利迦·胜利神光棒 豪华版",
@@ -78,7 +73,8 @@ export default {
             450,
             275,
             329,
-            300
+            300,
+            290
           ], //历史出价
           des: "含胜利神光棒+特利迦复合型钥匙+特典"
         },
@@ -109,7 +105,7 @@ export default {
         {
           name: "特利迦·迪迦复合型钥匙",
           yenprice: 65,
-          pastprice: [65, 89, 68, 80],
+          pastprice: [65, 89, 68, 80, 64],
           des: null
         },
         {
@@ -127,32 +123,32 @@ export default {
         {
           name: "特利迦·人造赛罗钥匙童装附赠",
           yenprice: 0,
-          pastprice: [118],
-          des: "含童装内裤、人造赛罗钥匙一个"
+          pastprice: [118, 108, 110, 330],
+          des: "含童装内裤或体恤、人造赛罗钥匙一个"
         },
         {
           name: "特利迦·奥特曼55周年纪念钥匙",
           yenprice: 0,
-          pastprice: [120, 149],
+          pastprice: [120, 149, 185],
           des: null
         },
         {
           name: "特利迦·贝利亚奥特曼钥匙",
           yenprice: 0,
-          pastprice: [138],
+          pastprice: [138, 165],
           des: "包含講談社MOOK特利迦专刊一本、贝利亚奥特曼钥匙一个"
         },
         {
           name: "特利迦·食玩第一弹套装SG01",
           yenprice: 0,
-          pastprice: [139],
+          pastprice: [139, 149, 150, 185, 130, 138],
           des: "共6款特利迦·怪兽钥匙"
         },
         {
           name: "特利迦·食玩第二弹套装SG02",
           yenprice: 0,
-          pastprice: [0],
-          des: "一盒12款"
+          pastprice: [168],
+          des: "一套8款，含隐藏款"
         },
         {
           name: "特利迦·扭蛋第一弹套装GP01",
@@ -189,6 +185,30 @@ export default {
     getAverageNum(arr) {
       let sum = eval(arr.join("+"));
       return Math.ceil(((sum / arr.length) * 100) / 100);
+    },
+    // 获取价格区间数据
+    getPriceSection(arr) {
+      let arrSort = arr.sort();
+      let min = arrSort[0];
+      let max = arrSort[arrSort.length - 1];
+      let rt = {
+        x: [],
+        y: []
+      };
+      let sec = 30; //区间
+      let minSec = Math.floor(min / sec); //最小区间值
+      let maxSec = Math.ceil(max / sec); //最大区间值
+      for (let i = minSec; i <= maxSec; i++) {
+        let num = 0;
+        arr.forEach((it, ind, a) => {
+          if (it > i * sec && it < (i + 1) * sec) {
+            num++;
+          }
+        });
+        rt.x.push(i * sec + "~" + (i + 1) * sec); //区间段
+        rt.y.push(num); //对应数值
+      }
+      return rt;
     }
   },
   created() {}
