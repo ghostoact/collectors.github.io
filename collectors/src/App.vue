@@ -44,7 +44,7 @@ export default {
           url: "/Sofubi"
         },
         {
-          name: "趋势",
+          name: "模玩价格参考",
           url: "/Trend"
         }
       ]

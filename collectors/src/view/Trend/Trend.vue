@@ -59,7 +59,7 @@ export default {
         {
           name: "特利迦·胜利神光棒 豪华版",
           yenprice: 597,
-          pastprice: [597, 470, 615],
+          pastprice: [597, 470, 615, 495],
           des: "含胜利神光棒+复合型和强力型钥匙+腰带+特典"
         },
         {
@@ -77,7 +77,8 @@ export default {
             299,
             450,
             275,
-            329
+            329,
+            300
           ], //历史出价
           des: "含胜利神光棒+特利迦复合型钥匙+特典"
         },
@@ -90,8 +91,80 @@ export default {
         {
           name: "特利迦·收纳腰带",
           yenprice: 175,
-          pastprice: [175, 179, 199, 99],
+          pastprice: [175, 179, 199, 99, 108],
           des: null
+        },
+        {
+          name: "特利迦·强力型钥匙",
+          yenprice: 65,
+          pastprice: [65, 58, 89, 68],
+          des: null
+        },
+        {
+          name: "特利迦·空中型钥匙",
+          yenprice: 65,
+          pastprice: [65, 60, 89],
+          des: null
+        },
+        {
+          name: "特利迦·迪迦复合型钥匙",
+          yenprice: 65,
+          pastprice: [65, 89, 68, 80],
+          des: null
+        },
+        {
+          name: "特利迦·迪迦钥匙套装",
+          yenprice: 195,
+          pastprice: [195, 210],
+          des: "含迪迦强力型、迪迦空中型和闪耀迪迦"
+        },
+        {
+          name: "特利迦·泽塔原生形态钥匙",
+          yenprice: 65,
+          pastprice: [65, 60, 75, 89],
+          des: null
+        },
+        {
+          name: "特利迦·人造赛罗钥匙童装附赠",
+          yenprice: 0,
+          pastprice: [118],
+          des: "含童装内裤、人造赛罗钥匙一个"
+        },
+        {
+          name: "特利迦·奥特曼55周年纪念钥匙",
+          yenprice: 0,
+          pastprice: [120, 149],
+          des: null
+        },
+        {
+          name: "特利迦·贝利亚奥特曼钥匙",
+          yenprice: 0,
+          pastprice: [138],
+          des: "包含講談社MOOK特利迦专刊一本、贝利亚奥特曼钥匙一个"
+        },
+        {
+          name: "特利迦·食玩第一弹套装SG01",
+          yenprice: 0,
+          pastprice: [139],
+          des: "共6款特利迦·怪兽钥匙"
+        },
+        {
+          name: "特利迦·食玩第二弹套装SG02",
+          yenprice: 0,
+          pastprice: [0],
+          des: "一盒12款"
+        },
+        {
+          name: "特利迦·扭蛋第一弹套装GP01",
+          yenprice: 0,
+          pastprice: [250],
+          des: "一套7款，含隐藏款"
+        },
+        {
+          name: "特利迦·扭蛋第二弹套装GP02",
+          yenprice: 0,
+          pastprice: [120],
+          des: "一套8款"
         }
       ]
     };
@@ -131,14 +204,14 @@ export default {
   float: left;
 }
 .toy-warp {
-  background-color: #00558cdb;
-  background-image: linear-gradient(-90deg, #168686 0, rgb(37 0 109) 100%);
-  -webkit-box-shadow: 0 2px 10px 3px rgba(0, 58, 124, 0.43);
+  background-color: #003455c4;
+  background-image: linear-gradient(-90deg, #08a1a1 0, #00366d 100%);
+  /* -webkit-box-shadow: 0 2px 10px 3px rgba(0, 58, 124, 0.43);
   box-shadow: 0 2px 10px 3px rgba(0, 58, 124, 0.43);
   -webkit-filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
   filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
   -webkit-backdrop-filter: saturate(180%) blur(8px);
-  backdrop-filter: saturate(180%) blur(8px);
+  backdrop-filter: saturate(180%) blur(8px); */
   min-height: 150px;
   width: 100%;
   height: 100%;
