@@ -3,6 +3,13 @@
     <!-- <EchartsCoponent :optionData="sparklence" /> -->
     <div class="model-toy" v-for="toy in modeltoy" :key="toy.title">
       <div class="toy-warp">
+        <span
+          class="sale-date"
+          v-html="toy.saledate ? toy.saledate + ' 发售' : ''"
+        ></span>
+        <a class="website" :href="toy.url" target="_blank" title="跳转到官网">
+          <i class="iconfont icon-wangye"></i>
+        </a>
         <p class="toy-title">{{ toy.name }}</p>
         <div class="price-box">
           <div class="price-item yen">
@@ -46,129 +53,149 @@ import EchartsCoponent from "@/components/EchartsComponents";
 export default {
   name: "Trend",
   components: {
-    EchartsCoponent
+    EchartsCoponent,
   },
   data() {
     return {
       modeltoy: [
         {
           name: "特利迦·胜利神光棒 豪华版",
+          saledate: "2021.7.10",
           yenprice: 597,
-          pastprice: [597, 470, 615, 495],
-          des: "含胜利神光棒+复合型和强力型钥匙+腰带+特典"
+          pastprice: [597, 470, 615, 495, 485],
+          des: "含胜利神光棒+复合型和强力型钥匙+腰带+特典",
+          url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11947/",
         },
         {
           name: "特利迦·胜利神光棒 标准版", //名称
+          saledate: "2021.7.10",
           yenprice: 357, //官方参考价
           pastprice: [
-            354,
-            357,
-            279,
-            336,
-            386,
-            424,
-            289,
-            285,
-            299,
-            450,
-            275,
-            329,
-            300,
-            290
+            354, 357, 279, 336, 386, 424, 289, 285, 299, 450, 275, 329, 300,
+            290, 288, 286, 280, 295,
           ], //历史出价
-          des: "含胜利神光棒+特利迦复合型钥匙+特典"
+          des: "含胜利神光棒+特利迦复合型钥匙+特典",
+          url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11946/",
         },
         {
           name: "特利迦·圆环之臂",
+          saledate: "2021.7.24",
           yenprice: 258,
           pastprice: [258, 269, 179, 299, 189, 220, 190, 198, 256, 180],
-          des: null
+          des: null,
+          url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11950/",
         },
         {
           name: "特利迦·收纳腰带",
+          saledate: "2021.7.10",
           yenprice: 175,
           pastprice: [175, 179, 199, 99, 108],
-          des: null
+          des: null,
+          url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11943/",
         },
         {
           name: "特利迦·强力型钥匙",
+          saledate: "2021.7.10",
           yenprice: 65,
           pastprice: [65, 58, 89, 68],
-          des: null
+          des: null,
+          url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11944/",
         },
         {
           name: "特利迦·空中型钥匙",
+          saledate: "2021.7.24",
           yenprice: 65,
           pastprice: [65, 60, 89],
-          des: null
+          des: null,
+          url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11949/",
         },
         {
           name: "特利迦·迪迦复合型钥匙",
+          saledate: "2021.7.3",
           yenprice: 65,
           pastprice: [65, 89, 68, 80, 64],
-          des: null
+          des: null,
+          url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11945/",
         },
         {
           name: "特利迦·迪迦钥匙套装",
+          saledate: null,
           yenprice: 195,
           pastprice: [195, 210],
-          des: "含迪迦强力型、迪迦空中型和闪耀迪迦"
+          des: "含迪迦强力型、迪迦空中型和闪耀迪迦",
+          url: "https://p-bandai.jp/item/item-1000159699/",
         },
         {
           name: "特利迦·泽塔原生形态钥匙",
+          saledate: "2021.9",
           yenprice: 65,
           pastprice: [65, 60, 75, 89],
-          des: null
+          des: null,
+          url: "https://toy.bandai.co.jp/series/ultraman/item/detail/12055/",
         },
         {
           name: "特利迦·人造赛罗钥匙童装附赠",
-          yenprice: 0,
+          saledate: "2021.7.9",
+          yenprice: 89,
           pastprice: [118, 108, 110, 330],
-          des: "含童装内裤或体恤、人造赛罗钥匙一个"
+          des: "含童装内裤或体恤、人造赛罗钥匙一个",
+          url: "https://m-78.jp/news/post-5952",
         },
         {
           name: "特利迦·奥特曼55周年纪念钥匙",
-          yenprice: 0,
-          pastprice: [120, 149, 185],
-          des: null
+          saledate: "2021.7.10",
+          yenprice: 97,
+          pastprice: [97, 120, 149, 185],
+          des: null,
+          url: "https://m-78.jp/news/post-5907",
         },
         {
           name: "特利迦·贝利亚奥特曼钥匙",
-          yenprice: 0,
-          pastprice: [138, 165],
-          des: "包含講談社MOOK特利迦专刊一本、贝利亚奥特曼钥匙一个"
+          saledate: "2021.7.20",
+          yenprice: 70,
+          pastprice: [70, 138, 165],
+          des: "包含講談社MOOK特利迦专刊一本、贝利亚奥特曼钥匙一个",
+          url: "https://bookclub.kodansha.co.jp/buy?item=0000352821",
         },
         {
           name: "特利迦·食玩第一弹套装SG01",
-          yenprice: 0,
-          pastprice: [139, 149, 150, 185, 130, 138],
-          des: "共6款特利迦·怪兽钥匙"
+          saledate: "2021.7.19",
+          yenprice: 114,
+          pastprice: [114, 139, 149, 150, 185, 130, 138],
+          des: "共6款特利迦·怪兽钥匙",
+          url: "https://www.bandai.co.jp/candy/products/2021/4549660628194000.html",
         },
         {
           name: "特利迦·食玩第二弹套装SG02",
-          yenprice: 0,
-          pastprice: [168],
-          des: "一套8款，含隐藏款"
+          saledate: "2021.10",
+          yenprice: 152,
+          pastprice: [152, 168],
+          des: "一套8款，含隐藏款",
+          url: "https://www.bandai.co.jp/candy/products/2021/4549660700234000.html",
         },
         {
           name: "特利迦·扭蛋第一弹套装GP01",
-          yenprice: 0,
-          pastprice: [250],
-          des: "一套7款，含隐藏款"
+          saledate: "2021.7",
+          yenprice: 119,
+          pastprice: [119, 250],
+          des: "一套7款，含隐藏款",
+          url: "https://www.bandai.co.jp/catalog/item.php?jan_cd=4549660664239000",
         },
         {
           name: "特利迦·扭蛋第二弹套装GP02",
-          yenprice: 0,
-          pastprice: [120],
-          des: "一套8款"
-        }
-      ]
+          saledate: "2021.10",
+          yenprice: 136,
+          pastprice: [136, 120],
+          des: "一套8款",
+          url: "",
+        },
+      ],
     };
   },
   components: {
-    EchartsCoponent
+    EchartsCoponent,
   },
-  mounted: function() {
+  mounted: function () {
     const vm = this;
     vm.$nextTick(() => {});
   },
@@ -193,7 +220,7 @@ export default {
       let max = arrSort[arrSort.length - 1];
       let rt = {
         x: [],
-        y: []
+        y: [],
       };
       let sec = 30; //区间
       let minSec = Math.floor(min / sec); //最小区间值
@@ -209,9 +236,9 @@ export default {
         rt.y.push(num); //对应数值
       }
       return rt;
-    }
+    },
   },
-  created() {}
+  created() {},
 };
 </script>
 
@@ -224,6 +251,7 @@ export default {
   float: left;
 }
 .toy-warp {
+  position: relative;
   background-color: #003455c4;
   background-image: linear-gradient(-90deg, #08a1a1 0, #00366d 100%);
   /* -webkit-box-shadow: 0 2px 10px 3px rgba(0, 58, 124, 0.43);
@@ -242,6 +270,28 @@ export default {
   padding: 20px 0 15px;
   font-size: 22px;
 }
+.website {
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  color: #ffffffa6;
+  cursor: pointer;
+}
+.website:hover {
+  color: #fff;
+  background-color: #ffffff3b;
+}
+.sale-date {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  color: #ffffff8f;
+  font-size: 14px;
+}
 .price-item {
   text-align: center;
   width: 110px;
@@ -254,10 +304,10 @@ export default {
   color: #00ff72;
 }
 .price-item.max .price-num {
-  color: #ff9800;
+  color: #efa500;
 }
 .price-num {
-  color: cyan;
+  color: #fff25c;
   font-size: 26px;
   font-weight: 600;
 }
