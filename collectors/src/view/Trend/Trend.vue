@@ -184,9 +184,9 @@ export default {
         {
           name: "特利迦·扭蛋第二弹套装GP02",
           saledate: "2021.10",
-          yenprice: 136,
-          pastprice: [136, 120],
-          des: "一套8款",
+          yenprice: 153,
+          pastprice: [153, 240, 225, 235, 220, 248],
+          des: "一套9款，含隐藏款",
           url: "",
         },
       ],
