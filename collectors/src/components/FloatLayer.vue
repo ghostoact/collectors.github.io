@@ -7,6 +7,19 @@
       <img :src="showpic ? url + item.id + '.jpg' : ''" />
     </div>
     <div class="detail-info">
+      <div class="unique-code" v-if="item.code != null" title="通用万能识别码">
+        <div
+          class="code-line"
+          :class="'c-' + c"
+          v-for="c in item.code"
+          :key="c"
+        >
+          <div class="code-block"></div>
+          <div class="code-block"></div>
+          <div class="code-block"></div>
+        </div>
+        <p class="code-num" v-html="item.code.join('')"></p>
+      </div>
       <p class="b-title">{{ item.name }}</p>
       <p class="item-way" v-if="[0, 1].indexOf(urlType) != -1">
         {{ item.way }}
@@ -113,5 +126,58 @@ export default {
   font-size: 14px;
   margin: 4px 0;
   color: #4caf50;
+}
+.unique-code {
+  position: absolute;
+  left: 15px;
+  bottom: 10px;
+}
+.code-line {
+  height: 5px;
+  width: 30px;
+  margin-top: 2px;
+}
+.code-line:nth-child(4) {
+  height: 6px;
+  margin-top: 4px;
+}
+.code-block {
+  float: left;
+  width: 10px;
+  height: 100%;
+  background-color: #000;
+  opacity: 0;
+}
+.code-num {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 3px;
+  letter-spacing: 1px;
+}
+.code-line.c-0 .code-block:nth-child(2),
+.code-line.c-0 .code-block:nth-child(3) {
+  opacity: 1;
+}
+.code-line.c-1 .code-block:nth-child(3) {
+  opacity: 1;
+}
+.code-line.c-2 .code-block:nth-child(2) {
+  opacity: 1;
+}
+.code-line.c-3 .code-block:nth-child(1) {
+  opacity: 1;
+}
+.code-line.c-4 .code-block:nth-child(1),
+.code-line.c-4 .code-block:nth-child(2) {
+  opacity: 1;
+}
+.code-line.c-5 .code-block:nth-child(1),
+.code-line.c-5 .code-block:nth-child(3) {
+  opacity: 1;
+}
+.code-line.c-6 .code-block:nth-child(1),
+.code-line.c-6 .code-block:nth-child(2),
+.code-line.c-6 .code-block:nth-child(3) {
+  opacity: 1;
 }
 </style>
