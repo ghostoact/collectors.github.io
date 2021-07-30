@@ -62,6 +62,7 @@ export default {
         "./static/img/item/trigger/hyperkey/",
         "/static/img/item/z/ultramedal/",
         "/static/img/item/sofubi/500/",
+        "/static/img/item/SHF/",
       ],
     };
   },
@@ -98,6 +99,7 @@ export default {
 .full-pic {
   width: 500px;
   height: 500px;
+  text-align: center;
 }
 .full-pic img {
   max-width: 100%;

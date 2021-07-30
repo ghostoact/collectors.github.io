@@ -393,6 +393,7 @@ export default {
           name: "黑暗的支配者 邪神加坦杰厄",
           link: null,
           way: "",
+          code: [4, 1, 3, 0],
         },
         {
           id: "M-28",

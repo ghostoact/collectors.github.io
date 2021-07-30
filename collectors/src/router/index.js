@@ -6,6 +6,7 @@ import Index from '../view/Index/Index'
 import HyperKey from '../view/Trigger/HyperKey'
 import UltraMedal from '../view/Z/UltraMedal'
 import Sofubi from '../view/Sofubi/Sofubi'
+import SHF from '../view/SHF/SHF'
 import Trend from '../view/Trend/Trend'
 
 //安装路由，显示引用
@@ -38,6 +39,11 @@ export default new VueRouter({
       path: '/Sofubi',
       name: 'Sofubi',
       component: Sofubi
+    },
+    {
+      path: '/SHF',
+      name: 'SHF',
+      component: SHF
     },
     {
       path: '/Trend',

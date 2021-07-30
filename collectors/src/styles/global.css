@@ -81,6 +81,7 @@ body {
 
 .ctrl-panel {
   margin-bottom: 10px;
+  overflow: hidden;
 }
 
 .btn {
