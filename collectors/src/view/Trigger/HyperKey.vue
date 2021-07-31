@@ -279,6 +279,7 @@ export default {
           name: "石化魔兽 贾戈尔贡",
           link: null,
           way: "",
+          code: [3, 4, 6, 0],
         },
         {
           id: "M-11",
@@ -377,6 +378,7 @@ export default {
           name: "光热怪兽 奇拉",
           link: null,
           way: "",
+          code: [5, 2, 1, 0],
         },
         {
           id: "M-25",
@@ -385,6 +387,7 @@ export default {
           name: "凯姆尔人",
           link: null,
           way: "",
+          code: [5, 1, 4, 0],
         },
         {
           id: "M-27",
@@ -402,6 +405,7 @@ export default {
           name: "爱憎战士 卡蜜拉",
           link: null,
           way: "",
+          code: [5, 4, 6, 0],
         },
         {
           id: "M-29",
@@ -410,6 +414,7 @@ export default {
           name: "刚力战士 达拉姆",
           link: null,
           way: "",
+          code: [5, 6, 1, 0],
         },
         {
           id: "M-30",
@@ -418,6 +423,7 @@ export default {
           name: "俊敏战士 希特拉",
           link: null,
           way: "",
+          code: [5, 6, 2, 0],
         },
         {
           id: "M-31",
@@ -426,6 +432,7 @@ export default {
           name: "伽古拉斯·伽古拉",
           link: null,
           way: "",
+          code: [5, 4, 3, 0],
         },
       ],
     };

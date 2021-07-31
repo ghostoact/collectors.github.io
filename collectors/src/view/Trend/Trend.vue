@@ -145,7 +145,10 @@ export default {
           name: "特利迦·奥特曼55周年纪念钥匙",
           saledate: "2021.7.10",
           yenprice: 97,
-          pastprice: [120, 149, 185],
+          pastprice: [
+            145, 149, 185, 155, 170, 162, 169, 155, 175, 180, 165, 188, 165,
+            190, 179, 160,
+          ],
           des: null,
           url: "https://m-78.jp/news/post-5907",
         },
