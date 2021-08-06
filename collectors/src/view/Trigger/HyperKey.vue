@@ -287,7 +287,7 @@ export default {
           tag: ["GP01"],
           name: "特空机1号 赛文加",
           link: null,
-          way: "杂志赠送",
+          way: "",
           code: [5, 3, 2, 0],
         },
         {
@@ -296,7 +296,7 @@ export default {
           tag: ["XD"],
           name: "特空机1号 赛文加 超硬芯回旋铁拳",
           link: null,
-          way: "",
+          way: "杂志赠送",
           code: null,
         },
         {
