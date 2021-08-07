@@ -20,7 +20,10 @@
         </div>
         <p class="code-num" v-html="item.code.join('')"></p>
       </div>
-      <p class="b-title">{{ item.name }}</p>
+      <p class="b-title">
+        {{ item.name
+        }}<span v-if="[0].indexOf(urlType) != -1">&nbsp;{{ item.property }}</span>
+      </p>
       <p class="item-way" v-if="[0, 1].indexOf(urlType) != -1">
         {{ item.way }}
       </p>

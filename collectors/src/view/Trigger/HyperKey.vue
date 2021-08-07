@@ -235,6 +235,7 @@ export default {
           link: null,
           way: "",
           code: [3, 5, 4, 0],
+          property:"Shockwave"
         },
         {
           id: "M-02",
@@ -244,6 +245,7 @@ export default {
           link: null,
           way: "",
           code: [3, 5, 6, 0],
+          property:"Thunder"
         },
         {
           id: "M-03",
@@ -253,6 +255,7 @@ export default {
           link: null,
           way: "",
           code: [3, 4, 2, 0],
+          property:"Fireball"
         },
         {
           id: "M-03-2",
@@ -262,6 +265,7 @@ export default {
           link: null,
           way: "",
           code: [3, 4, 2, 0],
+          property:"Fireball"
         },
         {
           id: "M-04",
@@ -271,6 +275,7 @@ export default {
           link: null,
           way: "",
           code: [3, 4, 1, 0],
+          property:"Splash"
         },
         {
           id: "M-10",
@@ -280,6 +285,7 @@ export default {
           link: null,
           way: "",
           code: [3, 4, 6, 0],
+          property:"Gargorgon"
         },
         {
           id: "M-11",
@@ -289,6 +295,7 @@ export default {
           link: null,
           way: "",
           code: [5, 3, 2, 0],
+          property:"Iron Fist"
         },
         {
           id: "M-11-2",
@@ -298,6 +305,7 @@ export default {
           link: null,
           way: "杂志赠送",
           code: null,
+          property:"Iron Fist"
         },
         {
           id: "M-12",
@@ -307,6 +315,7 @@ export default {
           link: null,
           way: "",
           code: [5, 3, 6, 0],
+          property:"Fire Fist"
         },
         {
           id: "M-13",
@@ -316,6 +325,7 @@ export default {
           link: null,
           way: "",
           code: [5, 4, 1, 0],
+          property:"Pedanium"
         },
         {
           id: "M-14",
@@ -325,6 +335,7 @@ export default {
           link: null,
           way: "奥特曼联名童装附赠", //获取途径
           code: [5, 4, 2, 0],
+          property:"D4"
         },
         {
           id: "M-15",
@@ -334,6 +345,7 @@ export default {
           link: null,
           way: "",
           code: [3, 6, 1, 0],
+          property:"Frozen"
         },
         {
           id: "M-16",
@@ -343,6 +355,7 @@ export default {
           link: null,
           way: "",
           code: [5, 2, 3, 0],
+          property:"Ultrasonic"
         },
         {
           id: "M-17",
@@ -352,6 +365,7 @@ export default {
           link: null,
           way: "",
           code: [5, 2, 4, 0],
+          property:"Sonic Boom"
         },
         {
           id: "M-18",
@@ -361,6 +375,7 @@ export default {
           link: null,
           way: "",
           code: [4, 1, 2, 0],
+          property:"Fire"
         },
         {
           id: "M-19",
@@ -370,6 +385,7 @@ export default {
           link: null,
           way: "",
           code: [5, 6, 4, 0],
+          property:"Shadow"
         },
         {
           id: "M-20",
@@ -379,6 +395,7 @@ export default {
           link: [60],
           way: "講談社MOOK特利迦专刊附赠",
           code: [5, 6, 3, 0],
+          property:"Deathcium"
         },
         {
           id: "M-24",
@@ -388,6 +405,7 @@ export default {
           link: null,
           way: "",
           code: [5, 2, 1, 0],
+          property:"Flash"
         },
         {
           id: "M-25",
@@ -397,6 +415,7 @@ export default {
           link: null,
           way: "",
           code: [5, 1, 4, 0],
+          property:"Dissolve"
         },
         {
           id: "M-27",
@@ -406,6 +425,7 @@ export default {
           link: null,
           way: "",
           code: [4, 1, 3, 0],
+          property:"Darkness"
         },
         {
           id: "M-28",
@@ -415,6 +435,7 @@ export default {
           link: null,
           way: "",
           code: [5, 4, 6, 0],
+          property:"Whip"
         },
         {
           id: "M-29",
@@ -424,6 +445,7 @@ export default {
           link: null,
           way: "",
           code: [5, 6, 1, 0],
+          property:"Flame"
         },
         {
           id: "M-30",
@@ -433,6 +455,7 @@ export default {
           link: null,
           way: "",
           code: [5, 6, 2, 0],
+          property:"Gust"
         },
         {
           id: "M-31",
@@ -442,6 +465,7 @@ export default {
           link: null,
           way: "",
           code: [5, 4, 3, 0],
+          property:"Slash"
         },
       ],
     };
