@@ -194,7 +194,7 @@ export default {
           name: "特利迦·食玩第一弹套装SG01",
           saledate: "2021.7.19",
           yenprice: 114,
-          pastprice: [139, 149, 150, 185, 130, 138],
+          pastprice: [139, 149, 150, 185, 130, 138, 90, 130, 140],
           des: "一套6款",
           url:
             "https://www.bandai.co.jp/candy/products/2021/4549660628194000.html"
