@@ -228,6 +228,15 @@ export default {
           way: "",
         },
         {
+          id: "U-16",
+          type: "U",
+          tag: ["DX"],
+          name: "高斯奥特曼 月神模式",
+          link: [23],
+          color: "#50b0eb",
+          way: "奥特曼联名童装附赠",
+        },
+        {
           id: "M-01",
           type: "M",
           tag: ["SG01"],

@@ -53,45 +53,53 @@ import EchartsCoponent from "@/components/EchartsComponents";
 export default {
   name: "Trend",
   components: {
-    EchartsCoponent
+    EchartsCoponent,
   },
   data() {
     return {
       modeltoy: [
         {
+          name: "欧布奥特曼变身器",
+          saledate: "2022.2",
+          yenprice: 977,
+          pastprice: [977],
+          des: "欧布奥特曼变身器*1",
+          url: "https://p-bandai.jp/item/item-1000162085/",
+        },
+        {
+          name: "迪迦奥特曼变身器25周年UR",
+          saledate: "2021.12",
+          yenprice: 651,
+          pastprice: [651],
+          des: "迪迦奥特曼变身器25周年UR*1",
+          url: "https://p-bandai.jp/item/item-1000153643",
+        },
+        {
+          name: "特利迦·高斯奥特曼 月神模式钥匙",
+          saledate: "2021.12",
+          yenprice: 0,
+          pastprice: [0],
+          des: "高斯奥特曼 月神模式钥匙*1",
+          url: "https://m-78.jp/news/post-6013",
+        },
+        {
           name: "特利迦·胜利神光棒 豪华版",
           saledate: "2021.7.10",
           yenprice: 597,
-          pastprice: [470, 615, 495, 485],
+          pastprice: [470, 615, 495, 485, 432, 469, 460],
           des: "含胜利神光棒+复合型和强力型钥匙+腰带",
-          url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11947/"
+          url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11947/",
         },
         {
           name: "特利迦·胜利神光棒 标准版", //名称
           saledate: "2021.7.10",
           yenprice: 357, //官方参考价
           pastprice: [
-            354,
-            279,
-            336,
-            386,
-            424,
-            289,
-            285,
-            299,
-            450,
-            275,
-            329,
-            300,
-            290,
-            288,
-            286,
-            280,
-            295,
-            238
+            354, 279, 336, 386, 424, 289, 285, 299, 450, 275, 329, 300, 290,
+            288, 286, 280, 295, 238, 239, 221, 235,
           ], //历史出价
           des: "含胜利神光棒+特利迦复合型钥匙",
-          url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11946/"
+          url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11946/",
         },
         {
           name: "特利迦·圆环之臂",
@@ -99,7 +107,7 @@ export default {
           yenprice: 258,
           pastprice: [269, 179, 299, 189, 220, 190, 198, 256, 180],
           des: null,
-          url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11950/"
+          url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11950/",
         },
         {
           name: "特利迦·收纳腰带",
@@ -107,7 +115,7 @@ export default {
           yenprice: 175,
           pastprice: [179, 199, 99, 108],
           des: null,
-          url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11943/"
+          url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11943/",
         },
         {
           name: "特利迦·强力型钥匙",
@@ -115,7 +123,7 @@ export default {
           yenprice: 65,
           pastprice: [58, 89, 68, 56, 60],
           des: null,
-          url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11944/"
+          url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11944/",
         },
         {
           name: "特利迦·空中型钥匙",
@@ -123,7 +131,7 @@ export default {
           yenprice: 65,
           pastprice: [60, 89, 75],
           des: null,
-          url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11949/"
+          url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11949/",
         },
         {
           name: "特利迦·迪迦复合型钥匙",
@@ -131,7 +139,7 @@ export default {
           yenprice: 65,
           pastprice: [89, 68, 80, 64, 60],
           des: null,
-          url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11945/"
+          url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11945/",
         },
         {
           name: "特利迦·迪迦钥匙套装",
@@ -139,7 +147,7 @@ export default {
           yenprice: 195,
           pastprice: [210, 215, 235, 255, 225, 258, 259, 230],
           des: "含迪迦强力型+迪迦空中型+闪耀迪迦",
-          url: "https://p-bandai.jp/item/item-1000159699/"
+          url: "https://p-bandai.jp/item/item-1000159699/",
         },
         {
           name: "特利迦·泽塔原生形态钥匙",
@@ -147,7 +155,7 @@ export default {
           yenprice: 65,
           pastprice: [60, 75, 89],
           des: null,
-          url: "https://toy.bandai.co.jp/series/ultraman/item/detail/12055/"
+          url: "https://toy.bandai.co.jp/series/ultraman/item/detail/12055/",
         },
         {
           name: "特利迦·人造赛罗钥匙童装附赠",
@@ -155,32 +163,18 @@ export default {
           yenprice: 89,
           pastprice: [118, 108, 110, 330],
           des: "含童装内裤或体恤+人造赛罗钥匙",
-          url: "https://m-78.jp/news/post-5952"
+          url: "https://m-78.jp/news/post-5952",
         },
         {
           name: "特利迦·奥特曼55周年纪念钥匙",
           saledate: "2021.7.10",
           yenprice: 97,
           pastprice: [
-            145,
-            149,
-            185,
-            155,
-            170,
-            162,
-            169,
-            155,
-            175,
-            180,
-            165,
-            188,
-            165,
-            190,
-            179,
-            160
+            145, 149, 185, 155, 170, 162, 169, 155, 175, 180, 165, 188, 165,
+            190, 179, 160,
           ],
           des: null,
-          url: "https://m-78.jp/news/post-5907"
+          url: "https://m-78.jp/news/post-5907",
         },
         {
           name: "特利迦·贝利亚奥特曼钥匙",
@@ -188,7 +182,7 @@ export default {
           yenprice: 70,
           pastprice: [138, 165, 128, 150, 170, 199],
           des: "包含講談社MOOK特利迦专刊+贝利亚奥特曼钥匙",
-          url: "https://bookclub.kodansha.co.jp/buy?item=0000352821"
+          url: "https://bookclub.kodansha.co.jp/buy?item=0000352821",
         },
         {
           name: "特利迦·食玩第一弹套装SG01",
@@ -196,8 +190,7 @@ export default {
           yenprice: 114,
           pastprice: [139, 149, 150, 185, 130, 138, 90, 130, 140],
           des: "一套6款",
-          url:
-            "https://www.bandai.co.jp/candy/products/2021/4549660628194000.html"
+          url: "https://www.bandai.co.jp/candy/products/2021/4549660628194000.html",
         },
         {
           name: "特利迦·食玩第二弹套装SG02",
@@ -205,8 +198,7 @@ export default {
           yenprice: 152,
           pastprice: [168, 120, 205],
           des: "一套8款，含隐藏款",
-          url:
-            "https://www.bandai.co.jp/candy/products/2021/4549660700234000.html"
+          url: "https://www.bandai.co.jp/candy/products/2021/4549660700234000.html",
         },
         {
           name: "特利迦·扭蛋第一弹套装GP01",
@@ -214,8 +206,7 @@ export default {
           yenprice: 119,
           pastprice: [250, 280, 310, 175, 262],
           des: "一套7款，含隐藏款",
-          url:
-            "https://www.bandai.co.jp/catalog/item.php?jan_cd=4549660664239000"
+          url: "https://www.bandai.co.jp/catalog/item.php?jan_cd=4549660664239000",
         },
         {
           name: "特利迦·扭蛋第二弹套装GP02",
@@ -223,15 +214,15 @@ export default {
           yenprice: 153,
           pastprice: [240, 225, 235, 220, 248],
           des: "一套9款，含隐藏款",
-          url: ""
-        }
-      ]
+          url: "",
+        },
+      ],
     };
   },
   components: {
-    EchartsCoponent
+    EchartsCoponent,
   },
-  mounted: function() {
+  mounted: function () {
     const vm = this;
     vm.$nextTick(() => {});
   },
@@ -256,7 +247,7 @@ export default {
       let max = arrSort[arrSort.length - 1];
       let rt = {
         x: [],
-        y: []
+        y: [],
       };
       let sec = 30; //区间
       let minSec = Math.floor(min / sec); //最小区间值
@@ -272,9 +263,9 @@ export default {
         rt.y.push(num); //对应数值
       }
       return rt;
-    }
+    },
   },
-  created() {}
+  created() {},
 };
 </script>
 
