@@ -59,6 +59,14 @@ export default {
     return {
       modeltoy: [
         {
+          name: "黑暗迪迦卡蜜尔变身器套装",
+          saledate: "2022.3",
+          yenprice: 940,
+          pastprice: [940, 985, 1010, 954, 1070, 970, 1050, 1150, 1100, 1020],
+          des: "黑暗迪迦神光棒+卡蜜尔变身器",
+          url: "https://p-bandai.jp/item/item-1000162608/",
+        },
+        {
           name: "欧布奥特曼变身器UR",
           saledate: "2022.2",
           yenprice: 977,
@@ -69,6 +77,7 @@ export default {
           des: "欧布奥特曼变身器UR*1",
           url: "https://p-bandai.jp/item/item-1000162085/",
         },
+
         {
           name: "迪迦奥特曼变身器25周年UR",
           saledate: "2021.12",
@@ -111,7 +120,7 @@ export default {
           yenprice: 357, //官方参考价
           pastprice: [
             354, 279, 336, 386, 424, 289, 285, 299, 450, 275, 329, 300, 290,
-            288, 286, 280, 295, 238, 239, 221, 235,
+            288, 286, 280, 295, 238, 239, 221, 235, 219,
           ], //历史出价
           des: "含胜利神光棒+特利迦复合型钥匙",
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11946/",
@@ -120,7 +129,7 @@ export default {
           name: "特利迦·圆环之臂",
           saledate: "2021.7.24",
           yenprice: 258,
-          pastprice: [269, 179, 299, 189, 220, 190, 198, 256, 180, 149],
+          pastprice: [269, 179, 299, 189, 220, 190, 198, 256, 180, 149, 145],
           des: null,
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11950/",
         },
@@ -136,7 +145,7 @@ export default {
           name: "特利迦·强力型钥匙",
           saledate: "2021.7.10",
           yenprice: 65,
-          pastprice: [58, 89, 68, 56, 60, 55],
+          pastprice: [58, 89, 68, 56, 60, 55, 50],
           des: null,
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11944/",
         },
@@ -152,7 +161,7 @@ export default {
           name: "特利迦·迪迦复合型钥匙",
           saledate: "2021.7.3",
           yenprice: 65,
-          pastprice: [89, 68, 80, 64, 60, 55, 52],
+          pastprice: [89, 68, 80, 64, 60, 55, 52, 50],
           des: null,
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11945/",
         },
