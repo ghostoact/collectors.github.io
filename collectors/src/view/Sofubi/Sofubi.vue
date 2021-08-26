@@ -2064,6 +2064,22 @@ export default {
           color: "#F44336",
         },
         {
+          id: "K-153",
+          type: "M",
+          tag: ["K"],
+          name: "破坏黑暗暴龙 死亡德拉戈",
+          link: null,
+          color: "#F44336",
+        },
+        {
+          id: "K-154",
+          type: "M",
+          tag: ["K"],
+          name: "行星破坏神 撒旦迪洛斯",
+          link: null,
+          color: "#F44336",
+        },
+        {
           id: "EX-K-01",
           type: "M",
           tag: ["EX-K"],

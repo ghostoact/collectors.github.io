@@ -112,7 +112,7 @@ export default {
           name: "特利迦与泽塔",
           link: [82, 81],
           color: "#e29623",
-          way: "变身器套装附赠特典", //获取途径
+          way: "变身器套装附赠中国限定特典", //获取途径
           code: [4, 6, 5, 0],
         },
         {
@@ -230,11 +230,19 @@ export default {
         {
           id: "U-16",
           type: "U",
-          tag: ["DX"],
+          tag: ["XD"],
           name: "高斯奥特曼 月神模式",
-          link: [23],
+          link: [38],
           color: "#50b0eb",
           way: "奥特曼联名童装附赠",
+        },
+        {
+          id: "U-17",
+          type: "U",
+          tag: ["DX"],
+          name: "利布特奥特曼",
+          link: [70],
+          way: "",
         },
         {
           id: "M-01",
