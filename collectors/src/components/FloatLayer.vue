@@ -63,9 +63,9 @@ export default {
       showpic: this.showPic,
       thumbUrl: [
         "./static/img/item/trigger/hyperkey/",
-        "/static/img/item/z/ultramedal/",
-        "/static/img/item/sofubi/500/",
-        "/static/img/item/SHF/",
+        "./static/img/item/z/ultramedal/",
+        "./static/img/item/sofubi/500/",
+        "./static/img/item/SHF/",
       ],
     };
   },
