@@ -327,7 +327,7 @@ export default {
           des: "一套6款",
           url:
             "https://www.bandai.co.jp/candy/products/2021/4549660628194000.html",
-          pic: null
+          pic: "2321898692.jpg"
         },
         {
           name: "特利迦·食玩第二弹套装SG02",
@@ -337,7 +337,7 @@ export default {
           des: "一套8款，含隐藏款",
           url:
             "https://www.bandai.co.jp/candy/products/2021/4549660700234000.html",
-          pic: null
+          pic: "2931378532.jpg"
         },
         {
           name: "特利迦·扭蛋第一弹套装GP01",
