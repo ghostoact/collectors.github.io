@@ -2527,7 +2527,7 @@ export default {
     },
   },
   created() {
-    this.nowList = this.sofubi;
+    this.nowList = this.sofubi.reverse();
     this.getCollectData();
     this.getCollectProgress();
   },

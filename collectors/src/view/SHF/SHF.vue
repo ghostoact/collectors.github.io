@@ -971,7 +971,7 @@ export default {
     }
   },
   created() {
-    this.nowList = this.shfiguarts;
+    this.nowList = this.shfiguarts.reverse();
     this.getCollectData();
     this.getCollectProgress();
   }

@@ -1765,7 +1765,8 @@ export default {
     };
   },
   created() {
-    this.baseList = this.getClassicList();
+    this.baseList = this.getClassicList().reverse();
+    // reverse() 倒序方法
   },
   methods: {
     // 根据id获得该奥特曼的信息
