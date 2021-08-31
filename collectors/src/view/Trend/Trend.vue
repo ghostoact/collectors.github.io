@@ -489,6 +489,7 @@ export default {
   color: #ffffffa6;
   cursor: pointer;
   border-radius: 10px 0 0 0;
+  z-index: 3;
 }
 .website:hover {
   color: #fff;
