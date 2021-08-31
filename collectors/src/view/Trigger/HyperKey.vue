@@ -321,8 +321,8 @@ export default {
           name: "特空机1号 赛文加 超硬芯回旋铁拳",
           link: null,
           way: "杂志赠送",
-          code: null,
-          property:"Iron Fist"
+          code: [5, 3, 2, 0],
+          property:"Drill Knuckle"
         },
         {
           id: "M-12",
