@@ -15,38 +15,43 @@
             <img :src="'./static/img/item/trend/' + toy.pic" />
           </div>
           <div class="trend-right">
-            <p class="toy-title">{{ toy.name }}</p>
-            <div class="price-box">
-              <div class="price-item yen">
-                <p class="price-num">
-                  <span v-html="toy.yenprice != 0 ? toy.yenprice : '-'"></span>
-                  <span class="unit" v-if="toy.yenprice != 0">元</span>
-                </p>
-                <p class="price-name">发售参考价</p>
+            <div class="trend-info">
+              <p class="toy-title">{{ toy.name }}</p>
+              <div class="price-box">
+                <div class="price-item yen">
+                  <p class="price-num">
+                    <span
+                      v-html="toy.yenprice != 0 ? toy.yenprice : '-'"
+                    ></span>
+                    <span class="unit" v-if="toy.yenprice != 0">元</span>
+                  </p>
+                  <p class="price-name">发售参考价</p>
+                </div>
+                <div class="price-item min">
+                  <p class="price-num">
+                    <span v-html="arrMinNum(toy.pastprice)"></span>
+                    <span class="unit">元</span>
+                  </p>
+                  <p class="price-name">最低价</p>
+                </div>
+                <div class="price-item">
+                  <p class="price-num">
+                    <span v-html="getAverageNum(toy.pastprice)"></span>
+                    <span class="unit">元</span>
+                  </p>
+                  <p class="price-name">平均价</p>
+                </div>
+                <div class="price-item max">
+                  <p class="price-num">
+                    <span v-html="getMaxNum(toy.pastprice)"></span>
+                    <span class="unit">元</span>
+                  </p>
+                  <p class="price-name">最高价</p>
+                </div>
               </div>
-              <div class="price-item min">
-                <p class="price-num">
-                  <span v-html="arrMinNum(toy.pastprice)"></span>
-                  <span class="unit">元</span>
-                </p>
-                <p class="price-name">最低价</p>
-              </div>
-              <div class="price-item">
-                <p class="price-num">
-                  <span v-html="getAverageNum(toy.pastprice)"></span>
-                  <span class="unit">元</span>
-                </p>
-                <p class="price-name">平均价</p>
-              </div>
-              <div class="price-item max">
-                <p class="price-num">
-                  <span v-html="getMaxNum(toy.pastprice)"></span>
-                  <span class="unit">元</span>
-                </p>
-                <p class="price-name">最高价</p>
-              </div>
+              <p class="toy-des">{{ toy.des }}</p>
             </div>
-            <p class="toy-des">{{ toy.des }}</p>
+            <trendEcharts :xAxis="toy.pastprice"></trendEcharts>
           </div>
         </div>
       </div>
@@ -56,11 +61,11 @@
 
 <script>
 // 需要的信息：最低值、平均值、最高值、中位数
-import EchartsCoponent from "@/components/EchartsComponents";
+import TrendEcharts from "@/components/Echarts/TrendEcharts";
 export default {
   name: "Trend",
   components: {
-    EchartsCoponent
+    TrendEcharts
   },
   data() {
     return {
@@ -362,7 +367,7 @@ export default {
     };
   },
   components: {
-    EchartsCoponent
+    TrendEcharts
   },
   mounted: function() {
     const vm = this;
@@ -414,6 +419,7 @@ export default {
 <style scoped>
 .model-toy {
   width: 610px;
+  height: 150px;
   border-radius: 10px;
   overflow: hidden;
   margin: 0 10px 10px 0;
@@ -450,8 +456,22 @@ export default {
   height: 100%;
 }
 .trend-right {
+  position: relative;
   width: calc(100% - 130px - 10px);
   padding-left: 15px;
+}
+.trend-info {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.trend-echarts {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  opacity: 0.4;
 }
 .toy-title {
   color: #fff;

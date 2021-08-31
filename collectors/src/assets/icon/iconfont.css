@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 2661556 */
-  src: url('iconfont.woff2?t=1627478138368') format('woff2'),
-       url('iconfont.woff?t=1627478138368') format('woff'),
-       url('iconfont.ttf?t=1627478138368') format('truetype');
+  src: url('iconfont.woff2?t=1630375774333') format('woff2'),
+       url('iconfont.woff?t=1630375774333') format('woff'),
+       url('iconfont.ttf?t=1630375774333') format('truetype');
 }
 
 .iconfont {
@@ -11,6 +11,10 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-qushi:before {
+  content: "\e613";
 }
 
 .icon-wangye:before {
