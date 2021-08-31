@@ -33,7 +33,7 @@
         }}</span>
       </p>
       <p class="item-way" v-if="[3].indexOf(urlType) != -1">
-        {{ item.date }}
+        {{ item.date }} 首发
       </p>
       <p class="tag-box" v-if="[2].indexOf(urlType) != -1">
         <span class="tag-item">{{ item.id }}</span>

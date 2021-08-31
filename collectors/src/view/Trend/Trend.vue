@@ -71,6 +71,15 @@ export default {
     return {
       modeltoy: [
         {
+          name: "特空机1号 赛文加 超硬芯回旋铁拳钥匙",
+          saledate: "",
+          yenprice: null,
+          pastprice: [178, 140, 180],
+          des: "包含特空机1号 赛文加 超硬芯回旋铁拳钥匙+杂志",
+          url: "",
+          pic: "1256933658.jpg"
+        },
+        {
           name: "黑暗迪迦卡蜜尔变身器套装",
           saledate: "2022.3",
           yenprice: 940,
@@ -143,9 +152,11 @@ export default {
             820,
             670,
             668,
-            688,
             758,
-            688
+            688,
+            658,
+            638,
+            628
           ],
           des: "迪迦奥特曼复合型SHF真骨雕*1",
           url: "https://ultra.tamashii.jp/shinkocchou/",
@@ -218,7 +229,8 @@ export default {
             180,
             149,
             145,
-            143
+            143,
+            137
           ],
           des: null,
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11950/",
@@ -237,7 +249,7 @@ export default {
           name: "特利迦·强力型钥匙",
           saledate: "2021.7.10",
           yenprice: 65,
-          pastprice: [58, 89, 68, 56, 60, 55, 50],
+          pastprice: [58, 89, 68, 56, 60, 55, 50, 48],
           des: null,
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11944/",
           pic: "6089584307.jpg"
@@ -246,7 +258,7 @@ export default {
           name: "特利迦·空中型钥匙",
           saledate: "2021.7.24",
           yenprice: 65,
-          pastprice: [60, 89, 75],
+          pastprice: [60, 89, 75, 48],
           des: null,
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11949/",
           pic: "3911376470.jpg"
@@ -255,7 +267,7 @@ export default {
           name: "特利迦·迪迦复合型钥匙",
           saledate: "2021.7.3",
           yenprice: 65,
-          pastprice: [89, 68, 80, 64, 60, 55, 52, 50],
+          pastprice: [89, 68, 80, 64, 60, 55, 52, 50, 48],
           des: null,
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11945/",
           pic: "3044902212.jpg"
@@ -282,7 +294,7 @@ export default {
           name: "特利迦·人造赛罗钥匙童装附赠",
           saledate: "2021.7.9",
           yenprice: 89,
-          pastprice: [118, 108, 110, 330],
+          pastprice: [118, 108, 110, 330, 158, 180],
           des: "含童装内裤或体恤+人造赛罗钥匙",
           url: "https://m-78.jp/news/post-5952",
           pic: "4226628959.jpg"
@@ -319,7 +331,7 @@ export default {
           name: "特利迦·贝利亚奥特曼钥匙",
           saledate: "2021.7.20",
           yenprice: 70,
-          pastprice: [138, 165, 128, 150, 170, 199, 120, 125],
+          pastprice: [138, 165, 128, 150, 170, 199, 120, 125, 158, 115, 119],
           des: "包含講談社MOOK特利迦专刊+贝利亚奥特曼钥匙",
           url: "https://bookclub.kodansha.co.jp/buy?item=0000352821",
           pic: "5339720991.jpg"
@@ -348,7 +360,7 @@ export default {
           name: "特利迦·扭蛋第一弹套装GP01",
           saledate: "2021.7",
           yenprice: 119,
-          pastprice: [250, 280, 310, 175, 262],
+          pastprice: [250, 280, 310, 175, 262, 148],
           des: "一套7款，含隐藏款",
           url:
             "https://www.bandai.co.jp/catalog/item.php?jan_cd=4549660664239000",
