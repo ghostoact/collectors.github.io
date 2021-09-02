@@ -7,7 +7,13 @@
           class="sale-date"
           v-html="toy.saledate ? toy.saledate + ' 发售' : ''"
         ></span>
-        <a class="website" :href="toy.url" target="_blank" title="跳转到官网">
+        <a
+          class="website"
+          v-show="toy.url != null"
+          :href="toy.url"
+          target="_blank"
+          title="跳转到官网"
+        >
           <i class="iconfont icon-wangye"></i>
         </a>
         <div class="trend-box">
@@ -21,9 +27,9 @@
                 <div class="price-item yen">
                   <p class="price-num">
                     <span
-                      v-html="toy.yenprice != 0 ? toy.yenprice : '-'"
+                      v-html="toy.yenprice != null ? toy.yenprice : '-'"
                     ></span>
-                    <span class="unit" v-if="toy.yenprice != 0">元</span>
+                    <span class="unit" v-if="toy.yenprice != null">元</span>
                   </p>
                   <p class="price-name">发售参考价</p>
                 </div>
@@ -70,6 +76,24 @@ export default {
   data() {
     return {
       modeltoy: [
+        {
+          name: "国代胜利飞燕号EX-J",
+          saledate: "2021.12",
+          yenprice: null,
+          pastprice: [139, 110],
+          des: "胜利飞燕号EX-J*1",
+          url: null,
+          pic: "0475674147.jpg"
+        },
+        {
+          name: "国代黑暗迪迦神光棒",
+          saledate: "2021.10",
+          yenprice: null,
+          pastprice: [139, 150, 110],
+          des: "黑暗迪迦神光棒*1",
+          url: null,
+          pic: "1519215941.jpg"
+        },
         {
           name: "特空机1号 赛文加 超硬芯回旋铁拳钥匙",
           saledate: "",
@@ -175,7 +199,20 @@ export default {
           name: "特利迦·胜利神光棒 豪华版",
           saledate: "2021.7.10",
           yenprice: 597,
-          pastprice: [470, 615, 495, 499, 485, 432, 469, 460, 432, 422, 400],
+          pastprice: [
+            470,
+            615,
+            495,
+            499,
+            485,
+            432,
+            469,
+            460,
+            432,
+            422,
+            400,
+            399
+          ],
           des: "含胜利神光棒+复合型和强力型钥匙+腰带",
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11947/",
           pic: "6001453401.jpg"
