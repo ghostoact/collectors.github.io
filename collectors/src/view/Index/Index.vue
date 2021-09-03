@@ -968,7 +968,7 @@ export default {
           type: "form",
           formId: 62,
           name: {
-            zh: "赛罗奥特曼 闪耀形态",
+            zh: "光辉赛罗",
             jp: "シャイニングウルトラマンゼロ",
             en: "Shining Ultraman Zero"
           },
