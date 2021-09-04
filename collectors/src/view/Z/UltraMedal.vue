@@ -1116,7 +1116,7 @@ export default {
           id: "M-131",
           type: "M",
           tag: ["PB"],
-          name: "庞顿",
+          name: "庞敦",
           link: null,
         },
         {
