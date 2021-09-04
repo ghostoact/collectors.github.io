@@ -882,6 +882,16 @@ export default {
           color: null,
           date: "2022.1",
           way: null
+        },
+        {
+          id: "F-81",
+          type: "U",
+          tag: ["K"],
+          name: "特空机3号 金古桥军械库定制",
+          link: null,
+          color: null,
+          date: "2022.3",
+          way: null
         }
       ]
     };

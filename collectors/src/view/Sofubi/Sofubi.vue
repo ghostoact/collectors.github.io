@@ -2080,6 +2080,22 @@ export default {
           color: "#F44336",
         },
         {
+          id: "K-155",
+          type: "M",
+          tag: ["K"],
+          name: "特空机3号 金古桥军械库定制",
+          link: null,
+          color: "#F44336",
+        },
+        {
+          id: "K-156",
+          type: "M",
+          tag: ["K"],
+          name: "帕瓦特达达",
+          link: null,
+          color: "#F44336",
+        },
+        {
           id: "EX-K-01",
           type: "M",
           tag: ["EX-K"],
