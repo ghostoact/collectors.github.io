@@ -86,7 +86,16 @@ export default {
         //   pic: "def.jpg",
         // },
         {
-          name: "特利迦终极武器",
+          name: "泽塔奥特曼阿尔法、伽马、贝塔、德尔塔钥匙",
+          saledate: "",
+          yenprice: null,
+          pastprice: [0],
+          des: "含泽塔奥特曼阿尔法、伽马、贝塔和德尔塔共4款钥匙",
+          url: "",
+          pic: "def.jpg",
+        },
+        {
+          name: "特利迦奥特曼终极武器",
           saledate: "2021.10",
           yenprice: null,
           pastprice: [168, 170, 185, 169, 165],
@@ -95,7 +104,7 @@ export default {
           pic: "def.jpg",
         },
         {
-          name: "特利迦终极型态钥匙",
+          name: "特利迦奥特曼终极型态钥匙",
           saledate: "2021.10",
           yenprice: null,
           pastprice: [99, 60, 68, 52, 58],
@@ -104,7 +113,7 @@ export default {
           pic: "def.jpg",
         },
         {
-          name: "利布特钥匙",
+          name: "利布特奥特曼钥匙",
           saledate: "2021.10",
           yenprice: null,
           pastprice: [88, 58, 59, 55, 58, 60],
@@ -487,7 +496,7 @@ export default {
 }
 .toy-title {
   color: #fff;
-  padding: 20px 0 15px;
+  padding: 20px 0 10px;
   font-size: 22px;
 }
 .website {
@@ -543,6 +552,6 @@ export default {
 .toy-des {
   color: #ffffff73;
   padding-top: 10px;
-  font-size: 14px;
+  font-size: 12px;
 }
 </style>
