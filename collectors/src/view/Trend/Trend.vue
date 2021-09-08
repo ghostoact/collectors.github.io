@@ -261,7 +261,8 @@ export default {
             904,
             860,
             859,
-            838
+            838,
+            788
           ],
           des: "迪迦奥特曼变身器25周年UR*1",
           url: "https://p-bandai.jp/item/item-1000153643",
@@ -393,7 +394,7 @@ export default {
           name: "特利迦·强力型钥匙",
           saledate: "2021.7.10",
           yenprice: 65,
-          pastprice: [58, 89, 75, 68, 56, 60, 55, 50, 48, 42],
+          pastprice: [58, 89, 75, 68, 56, 60, 55, 50, 48, 42, 40],
           des: null,
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11944/",
           pic: "6089584307.jpg"
@@ -402,7 +403,7 @@ export default {
           name: "特利迦·空中型钥匙",
           saledate: "2021.7.24",
           yenprice: 65,
-          pastprice: [60, 89, 75, 48, 42],
+          pastprice: [60, 89, 75, 48, 42, 40],
           des: null,
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11949/",
           pic: "3911376470.jpg"
@@ -411,7 +412,7 @@ export default {
           name: "特利迦·迪迦复合型钥匙",
           saledate: "2021.7.3",
           yenprice: 65,
-          pastprice: [89, 68, 80, 75, 64, 60, 55, 52, 50, 48, 42],
+          pastprice: [89, 68, 80, 75, 64, 60, 55, 52, 50, 48, 42, 40],
           des: null,
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11945/",
           pic: "3044902212.jpg"
