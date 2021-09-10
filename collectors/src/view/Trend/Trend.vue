@@ -111,12 +111,12 @@ export default {
         // },
         {
           name: "泽塔奥特曼阿尔法、伽马、贝塔和德尔塔钥匙",
-          saledate: "",
-          yenprice: null,
+          saledate: "2022.2",
+          yenprice: 323,
           pastprice: [0],
           des: "含泽塔奥特曼阿尔法、伽马、贝塔和德尔塔共4款钥匙",
-          url: "",
-          pic: "def.jpg"
+          url: "https://p-bandai.jp/item/item-1000162971/",
+          pic: "6851391459.jpg"
         },
         {
           name: "特利迦奥特曼终极武器",

@@ -160,7 +160,7 @@ export default {
           tag: ["DX"],
           name: "泽塔奥特曼 阿尔法装甲",
           link: [119],
-          color: "#35b9e7",
+          color: "#406cec",
           way: "",
         },
         {
@@ -169,7 +169,7 @@ export default {
           tag: ["DX"],
           name: "泽塔奥特曼 贝塔冲击",
           link: [120],
-          color: "#35b9e7",
+          color: "#f13342",
           way: "",
         },
         {
@@ -178,7 +178,7 @@ export default {
           tag: ["DX"],
           name: "泽塔奥特曼 伽马未来",
           link: [121],
-          color: "#35b9e7",
+          color: "#ad3ec3",
           way: "",
         },
         {
@@ -187,7 +187,7 @@ export default {
           tag: ["DX"],
           name: "泽塔奥特曼 德尔塔天爪",
           link: [122],
-          color: "#35b9e7",
+          color: "#e29623",
           way: "",
         },
         {
