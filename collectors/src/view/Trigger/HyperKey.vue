@@ -112,8 +112,18 @@ export default {
           name: "特利迦与泽塔",
           link: [82, 81],
           color: "#e29623",
-          way: "变身器套装附赠中国限定特典", //获取途径
+          way: "变身器套装附赠中国限定特典",
           code: [4, 6, 5, 0],
+        },
+        {
+          id: "EX-3",
+          type: "U",
+          tag: ["XD"],
+          name: "特利迦与赛罗",
+          link: [82, 81],
+          color: "#e29623",
+          way: "奥特曼联名童装附赠",
+          code: null,
         },
         {
           id: "U-01",

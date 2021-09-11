@@ -892,6 +892,16 @@ export default {
           color: null,
           date: "2022.3",
           way: null
+        },
+        {
+          id: "F-82",
+          type: "U",
+          tag: ["U"],
+          name: "泽塔奥特曼 德尔塔天爪",
+          link: null,
+          color: null,
+          date: "2022.1",
+          way: null
         }
       ]
     };
