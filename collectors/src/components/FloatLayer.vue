@@ -22,7 +22,9 @@
       </div>
       <p class="b-title">
         {{ item.name
-        }}<span v-if="[0].indexOf(urlType) != -1">&nbsp;{{ item.property }}</span>
+        }}<span v-if="[0].indexOf(urlType) != -1"
+          >&nbsp;{{ item.property }}</span
+        >
       </p>
       <p class="item-way" v-if="[0, 1].indexOf(urlType) != -1">
         {{ item.way }}
@@ -105,11 +107,13 @@ export default {
 .full-pic {
   width: 500px;
   height: 500px;
+  line-height: 500px;
   text-align: center;
 }
 .full-pic img {
   max-width: 100%;
   max-height: 100%;
+  vertical-align: middle;
 }
 .detail-info {
   text-align: center;
