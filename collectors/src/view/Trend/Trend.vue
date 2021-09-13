@@ -581,9 +581,6 @@ export default {
       ]
     };
   },
-  components: {
-    TrendEcharts
-  },
   mounted: function() {
     const vm = this;
     vm.$nextTick(() => {});

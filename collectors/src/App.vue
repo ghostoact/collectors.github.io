@@ -22,36 +22,40 @@ import Index from "@/view/Index/Index";
 export default {
   name: "App",
   components: {
-    Index
+    Index,
   },
   data() {
     return {
       menu: [
         {
           name: "奥特曼",
-          url: "/"
+          url: "/",
         },
         {
           name: "特利迦·胜利超越之钥",
-          url: "/HyperKey"
+          url: "/HyperKey",
         },
         {
           name: "泽塔·奥特勋章",
-          url: "/UltraMedal"
+          url: "/UltraMedal",
         },
         {
           name: "软胶",
-          url: "/Sofubi"
+          url: "/Sofubi",
         },
         {
           name: "S.H.F",
-          url: "/SHF"
+          url: "/SHF",
         },
         {
           name: "模玩价格参考",
-          url: "/Trend"
-        }
-      ]
+          url: "/Trend",
+        },
+        {
+          name: "扭蛋机模拟器",
+          url: "/Gashapon",
+        },
+      ],
     };
   },
   methods: {
@@ -64,12 +68,12 @@ export default {
       script.id = "cnzz";
       document.body.appendChild(script);
     },
-    cnzzEvent: function(category, action, label, value, nodeid) {
+    cnzzEvent: function (category, action, label, value, nodeid) {
       //cnzz事件统计
       if (window._czc) {
         czc.push(["_trackEvent", category, action, label, value, nodeid]);
       }
-    }
+    },
   },
   mounted() {
     this.initCNZZ();
@@ -83,8 +87,8 @@ export default {
         let refererUrl = "/";
         window._czc.push(["_trackPageview", contentUrl, refererUrl]);
       }
-    }
-  }
+    },
+  },
 };
 </script>
 

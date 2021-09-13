@@ -8,6 +8,7 @@ import UltraMedal from '../view/Z/UltraMedal'
 import Sofubi from '../view/Sofubi/Sofubi'
 import SHF from '../view/SHF/SHF'
 import Trend from '../view/Trend/Trend'
+import Gashapon from '../view/Gashapon/Gashapon'
 
 //安装路由，显示引用
 Vue.use(VueRouter);
@@ -49,6 +50,11 @@ export default new VueRouter({
       path: '/Trend',
       name: 'Trend',
       component: Trend
+    },
+    {
+      path: '/Gashapon',
+      name: 'Gashapon',
+      component: Gashapon
     }
   ]
 });
