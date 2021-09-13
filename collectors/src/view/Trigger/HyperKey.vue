@@ -305,6 +305,16 @@ export default {
           property: "Splash",
         },
         {
+          id: "M-07",
+          type: "M",
+          tag: ["XD"],
+          name: "宇宙龙那斯",
+          link: null,
+          way: "DX纳斯第斯蒂斯号附赠限定钥匙",
+          code: null,
+          property: "",
+        },
+        {
           id: "M-10",
           type: "M",
           tag: ["SG02"],
