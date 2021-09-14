@@ -289,7 +289,8 @@ export default {
             860,
             859,
             838,
-            788
+            788,
+            699
           ],
           des: "迪迦奥特曼变身器25周年UR*1",
           url: "https://p-bandai.jp/item/item-1000153643",
