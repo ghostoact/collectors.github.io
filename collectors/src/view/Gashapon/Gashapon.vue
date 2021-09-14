@@ -126,7 +126,7 @@ export default {
             coinTotal: 0,
             rotate: 0,
             export: false,
-            stock: [0, 1, 2, 3, 4, 5, 5, 0, 1, 1, 3, 4, 5, 6, 1, 2, 3, 4, 4, 6],
+            stock: [4, 4, 6],
             color: ""
           }
         ]
@@ -178,6 +178,10 @@ export default {
   methods: {
     actionByClick(gas, step) {
       if (gas.step == 1 && step == 1) {
+        if (gas.stock.length == 0) {
+          alert("这台扭蛋机已经空了，请使用其它机器游玩~");
+          return;
+        }
         //投币阶段，点击一下投一个币，满需总币数即可进入下一阶段
         gas.coin = gas.coin + 1;
         console.log(gas.coin);
@@ -291,6 +295,31 @@ export default {
     transform: translate3d(0, 0, 0);
   }
 }
+
+@-webkit-keyframes light-cool {
+  0% {
+    transform: translateX(0) skewX(-25deg);
+  }
+  75% {
+    transform: translateX(150%) skewX(-25deg);
+  }
+  to {
+    transform: translateX(150%) skewX(-25deg);
+  }
+}
+
+@keyframes light-cool {
+  0% {
+    transform: translateX(0) skewX(-25deg);
+  }
+  75% {
+    transform: translateX(150%) skewX(-25deg);
+  }
+  to {
+    transform: translateX(150%) skewX(-25deg);
+  }
+}
+
 .group-item {
   float: left;
   width: 160px;
@@ -398,5 +427,28 @@ export default {
 .ball.show {
   top: 15px;
   animation: bounceInDown 1s;
+  transition: all 0.5s;
+}
+.ball.show:hover {
+  transform: scale(1.1);
+}
+.ball.show::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  top: 0;
+  left: -150%;
+  overflow: hidden;
+  background: linear-gradient(
+    270deg,
+    hsla(0, 0%, 100%, 0) 30%,
+    hsla(0, 0%, 100%, 0.5) 50%,
+    hsla(0, 0%, 100%, 0) 70%
+  );
+  transform: skewX(-25deg);
+  -webkit-animation: light-cool 5s ease-in-out infinite;
+  animation: light-cool 5s ease-in-out infinite;
+  z-index: 2;
 }
 </style>
