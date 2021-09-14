@@ -1,5 +1,8 @@
 <template>
   <div class="item-list">
+    <div class="">
+
+    </div>
     <div class="group-item" v-for="(group, index) in gashapons" :key="index">
       <div
         class="gashapon-item"
