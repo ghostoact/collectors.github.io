@@ -8,14 +8,16 @@
         :class="'type-' + gas.type"
       >
         <div class="gas-panel">
-          <div
-            class="gas-art"
-            :style="
-              'background-image: url(./static/img/item/gashapon/' +
-                eggData[gas.series].art +
-                ')'
-            "
-          ></div>
+          <div class="gas-box">
+            <div
+              class="gas-art"
+              :style="
+                'background-image: url(./static/img/item/gashapon/' +
+                  eggData[gas.series].art +
+                  ')'
+              "
+            ></div>
+          </div>
           <div class="step-1" @click="actionByClick(gas, 1)"></div>
           <div
             class="step-2"
@@ -27,7 +29,12 @@
               class="ball"
               @click="actionByClick(gas, 3)"
               :class="gas.export ? 'show' : ''"
-            ></div>
+            >
+              <div
+                class="ball-color"
+                :style="'background-color:' + gas.color"
+              ></div>
+            </div>
           </div>
         </div>
       </div>
@@ -52,7 +59,8 @@ export default {
             coinTotal: 0, //累计投币
             rotate: 0, //步骤2进程 0未扭动 1扭动一半 2扭动完成
             export: false, //出口数量 false没东西 true有
-            stock: [0, 1, 2, 3, 4, 5, 6, 6, 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6] //扭蛋内容
+            stock: [0, 1, 2, 3, 4, 5, 6, 6, 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6], //扭蛋内容
+            color: "" //颜色
           },
           {
             id: "GAS-2",
@@ -64,7 +72,8 @@ export default {
             coinTotal: 0,
             rotate: 0,
             export: false,
-            stock: [0, 1, 2, 4, 4, 5, 6, 0, 1, 2, 3, 4, 5, 6, 1, 2, 2, 4, 5, 6]
+            stock: [0, 1, 2, 4, 4, 5, 6, 0, 1, 2, 3, 4, 5, 6, 1, 2, 2, 4, 5, 6],
+            color: ""
           },
           {
             id: "GAS-3",
@@ -76,7 +85,49 @@ export default {
             coinTotal: 0,
             rotate: 0,
             export: false,
-            stock: [0, 1, 2, 3, 4, 5, 5, 0, 1, 1, 3, 4, 5, 6, 1, 2, 3, 4, 4, 6]
+            stock: [0, 1, 2, 3, 4, 5, 5, 0, 1, 1, 3, 4, 5, 6, 1, 2, 3, 4, 4, 6],
+            color: ""
+          }
+        ],
+        [
+          {
+            id: "GAS-4", //扭蛋机ID
+            type: "top", //扭蛋机类型top mid bot
+            series: "TLJGP01", //扭蛋系列
+            step: 1, //当前步骤 1投币 2扭动机器 3出货待取
+            needCoin: 3, //扭一次需要的总币数
+            coin: 0, //当前投币
+            coinTotal: 0, //累计投币
+            rotate: 0, //步骤2进程 0未扭动 1扭动一半 2扭动完成
+            export: false, //出口数量 false没东西 true有
+            stock: [0, 1, 2, 3, 4, 5, 6, 6, 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6], //扭蛋内容
+            color: "" //颜色
+          },
+          {
+            id: "GAS-5",
+            type: "mid",
+            series: "TLJGP01",
+            step: 1,
+            needCoin: 3,
+            coin: 0,
+            coinTotal: 0,
+            rotate: 0,
+            export: false,
+            stock: [0, 1, 2, 4, 4, 5, 6, 0, 1, 2, 3, 4, 5, 6, 1, 2, 2, 4, 5, 6],
+            color: ""
+          },
+          {
+            id: "GAS-6",
+            type: "bot",
+            series: "TLJGP01",
+            step: 1,
+            needCoin: 3,
+            coin: 0,
+            coinTotal: 0,
+            rotate: 0,
+            export: false,
+            stock: [0, 1, 2, 3, 4, 5, 5, 0, 1, 1, 3, 4, 5, 6, 1, 2, 3, 4, 4, 6],
+            color: ""
           }
         ]
       ],
@@ -86,26 +137,38 @@ export default {
           data: [
             {
               name: "宇宙恐龙 杰顿二世",
-              color: "",
+              color: "#754396c4",
               price: 0
             },
             {
-              name: "宇宙恐龙 杰顿"
+              name: "宇宙恐龙 杰顿",
+              color: "#b1701dd1",
+              price: 0
             },
             {
-              name: "蛤蜊怪兽 加玛库基拉"
+              name: "蛤蜊怪兽 加玛库基拉",
+              color: "#00cc2aa1",
+              price: 0
             },
             {
-              name: "特空机1号 赛文加"
+              name: "特空机1号 赛文加",
+              color: "#bbc4cfcf",
+              price: 0
             },
             {
-              name: "特空机3号 金古桥军械库定制"
+              name: "特空机3号 金古桥军械库定制",
+              color: "#b5ab1ac4",
+              price: 0
             },
             {
-              name: "超古代怪兽 哥尔赞"
+              name: "超古代怪兽 哥尔赞",
+              color: "#3982abd1",
+              price: 0
             },
             {
-              name: "邪恶迪迦"
+              name: "邪恶迪迦",
+              color: "#c34820ab",
+              price: 0
             }
           ]
         }
@@ -126,22 +189,26 @@ export default {
         //扭蛋阶段，点击一下扭一半，总共180°，扭半圈即可进入下一阶段
         gas.rotate = gas.rotate + 1;
         if (gas.rotate == 2) {
+          let num = Math.floor(Math.random() * gas.stock.length); //随机数
+          let it = gas.stock[num]; //取值
+          gas.color = this.eggData[gas.series].data[it].color;
+          gas.stock.splice(num, 1); //删除取到的这个
+          console.log(
+            "扭到 " + this.eggData[gas.series].data[it].name,
+            gas.color
+          );
           console.log("扭蛋已出，请取货~");
           setTimeout(() => {
             gas.step = 3;
+            gas.rotate = 0;
             gas.export = true;
           }, 800);
         }
       } else if (gas.step == 3 && step == 3) {
-        let num = Math.floor(Math.random() * gas.stock.length); //随机数
-        let it = gas.stock[num]; //取值
-        gas.stock.splice(num, 1); //删除取到的这个
-        console.log("扭到 " + this.eggData[gas.series].data[it].name);
         //取货阶段，初始化所有参数
         gas.step = 1;
         gas.coinTotal = gas.coinTotal + gas.coin;
         gas.coin = 0;
-        gas.rotate = 0;
         gas.export = false;
       }
     }
@@ -257,10 +324,17 @@ export default {
 .gashapon-item.type-bot .gas-panel {
   top: 0;
 }
+.gas-box {
+  position: absolute;
+  top: 2px;
+  left: -10px;
+  width: 145px;
+  height: 135px;
+}
 .gas-art {
   position: absolute;
   top: 2px;
-  left: 0;
+  left: 10px;
   width: 125px;
   height: 135px;
   background-size: cover;
@@ -277,7 +351,9 @@ export default {
   right: 18px;
   width: 20px;
   height: 20px;
-  background-color: #ff333354;
+}
+.step-1:active {
+  background-color: #6363638f;
 }
 .step-2 {
   top: 174px;
@@ -307,13 +383,20 @@ export default {
   width: 40px;
   height: 40px;
   border-radius: 50px;
-  background-color: red;
+  /* background-color: red; */
+  background-image: url("../../assets/img/gashapon/ball.png");
   position: absolute;
   top: -50px;
   left: 8px;
+  overflow: hidden;
+}
+.ball-color {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 .ball.show {
-  top: 14px;
+  top: 15px;
   animation: bounceInDown 1s;
 }
 </style>
