@@ -24,10 +24,16 @@
               class="gas-art"
               :style="
                 'background-image: url(./static/img/item/gashapon/' +
-                  eggData[gas.series].art +
-                  ')'
+                eggData[gas.series].art +
+                ')'
               "
             ></div>
+            <div class="gas-over" :class="gas.stock.length == 0 ? 'show' : ''">
+              售馨
+            </div>
+          </div>
+          <div class="gas-coin" :class="gas.needCoin == gas.coin ? 'ok' : ''">
+            {{ gas.needCoin }}00
           </div>
           <div class="step-1" @click="actionByClick(gas, 1)"></div>
           <div
@@ -78,7 +84,7 @@ export default {
             coinTotal: 0, //累计投币
             rotate: 0, //步骤2进程 0未扭动 1扭动一半 2扭动完成
             export: false, //出口数量 false没东西 true有
-            stock: [0, 1, 2, 3, 4, 5, 6, 6, 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6] //扭蛋内容
+            stock: [0, 1, 2, 3, 4, 5, 6, 6, 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6], //扭蛋内容
           },
           {
             id: "GAS-2",
@@ -90,7 +96,7 @@ export default {
             coinTotal: 0,
             rotate: 0,
             export: false,
-            stock: [0, 1, 2, 4, 4, 5, 6, 0, 1, 2, 3, 4, 5, 6, 1, 2, 2, 4, 5, 6]
+            stock: [0, 1, 2, 4, 4, 5, 6, 0, 1, 2, 3, 4, 5, 6, 1, 2, 2, 4, 5, 6],
           },
           {
             id: "GAS-3",
@@ -102,8 +108,8 @@ export default {
             coinTotal: 0,
             rotate: 0,
             export: false,
-            stock: [0, 1, 2, 3, 4, 5, 5, 0, 1, 1, 3, 4, 5, 6, 1, 2, 3, 4, 4, 6]
-          }
+            stock: [0, 6, 0],
+          },
         ],
         [
           {
@@ -116,7 +122,7 @@ export default {
             coinTotal: 0,
             rotate: 0,
             export: false,
-            stock: [0, 1, 2, 3, 4, 5, 6, 6, 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6] //扭蛋内容
+            stock: [0, 1, 2, 3, 4, 5, 6, 6, 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6], //扭蛋内容
           },
           {
             id: "GAS-5",
@@ -128,7 +134,7 @@ export default {
             coinTotal: 0,
             rotate: 0,
             export: false,
-            stock: [0, 1, 2, 4, 4, 5, 6, 0, 1, 2, 3, 4, 5, 6, 1, 2, 2, 4, 5, 6]
+            stock: [0, 1, 2, 4, 4, 5, 6, 0, 1, 2, 3, 4, 5, 6, 1, 2, 2, 4, 5, 6],
           },
           {
             id: "GAS-6",
@@ -140,8 +146,8 @@ export default {
             coinTotal: 0,
             rotate: 0,
             export: false,
-            stock: [0, 1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7, 4, 5, 6, 7, 7]
-          }
+            stock: [0, 1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7, 4, 5, 6, 7, 7],
+          },
         ],
         [
           {
@@ -154,7 +160,7 @@ export default {
             coinTotal: 0,
             rotate: 0,
             export: false,
-            stock: [0, 1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8, 6, 7, 8]
+            stock: [0, 1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8, 6, 7, 8],
           },
           {
             id: "GAS-8",
@@ -166,7 +172,7 @@ export default {
             coinTotal: 0,
             rotate: 0,
             export: false,
-            stock: [0, 1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7, 8, 4, 5, 6, 7]
+            stock: [0, 1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7, 8, 4, 5, 6, 7],
           },
           {
             id: "GAS-9",
@@ -178,9 +184,85 @@ export default {
             coinTotal: 0,
             rotate: 0,
             export: false,
-            stock: [0, 1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 6, 7, 8, 8, 4, 6, 8]
-          }
-        ]
+            stock: [0, 1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 6, 7, 8, 8, 4, 6, 8],
+          },
+        ],
+        [
+          {
+            id: "GAS-10",
+            type: "top",
+            series: "ZJYG13",
+            step: 1,
+            needCoin: 5,
+            coin: 0,
+            coinTotal: 0,
+            rotate: 0,
+            export: false,
+            stock: [0, 1, 2, 3, 4, 0, 1, 2, 3, 4, 2, 3, 4, 2, 3, 4, 2, 3, 4, 3],
+          },
+          {
+            id: "GAS-11",
+            type: "mid",
+            series: "TLJCQWQ",
+            step: 1,
+            needCoin: 2,
+            coin: 0,
+            coinTotal: 0,
+            rotate: 0,
+            export: false,
+            stock: [0, 1, 2, 3, 4, 0, 1, 2, 3, 4, 0, 1, 2, 3, 4, 0, 1, 2, 3, 4],
+          },
+          {
+            id: "GAS-12",
+            type: "bot",
+            series: "ATM_HASZ08",
+            step: 1,
+            needCoin: 3,
+            coin: 0,
+            coinTotal: 0,
+            rotate: 0,
+            export: false,
+            stock: [0, 1, 2, 3, 4, 5, 6, 7, 0, 1, 2, 3, 4, 5, 6, 7, 4, 5, 6, 7],
+          },
+        ],
+        [
+          {
+            id: "GAS-13",
+            type: "top",
+            series: "GSBLH",
+            step: 1,
+            needCoin: 5,
+            coin: 0,
+            coinTotal: 0,
+            rotate: 0,
+            export: false,
+            stock: [0, 1, 2, 3, 4, 5, 0, 1, 2, 3, 4, 5, 0, 1, 2, 3, 4, 5, 4, 5],
+          },
+          {
+            id: "GAS-14",
+            type: "mid",
+            series: "JLBYSQ",
+            step: 1,
+            needCoin: 3,
+            coin: 0,
+            coinTotal: 0,
+            rotate: 0,
+            export: false,
+            stock: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 7, 8, 9, 10],
+          },
+          {
+            id: "GAS-15",
+            type: "bot",
+            series: "CBQ",
+            step: 1,
+            needCoin: 3,
+            coin: 0,
+            coinTotal: 0,
+            rotate: 0,
+            export: false,
+            stock: [0, 1, 2, 3, 4, 0, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 3, 4],
+          },
+        ],
       ],
       eggData: {
         TLJGP01: {
@@ -190,45 +272,45 @@ export default {
               name: "宇宙恐龙 杰顿二世",
               color: "#754396c4",
               price: 0,
-              pic: "/trigger/hyperkey/M-03-2.jpg"
+              pic: "/trigger/hyperkey/M-03-2.jpg",
             },
             {
               name: "宇宙恐龙 杰顿",
               color: "#b1701dd1",
               price: 0,
-              pic: "/trigger/hyperkey/M-03.jpg"
+              pic: "/trigger/hyperkey/M-03.jpg",
             },
             {
               name: "蛤蜊怪兽 加玛库基拉",
               color: "#00cc2aa1",
               price: 0,
-              pic: "/trigger/hyperkey/M-04.jpg"
+              pic: "/trigger/hyperkey/M-04.jpg",
             },
             {
               name: "特空机1号 赛文加",
               color: "#bbc4cfcf",
               price: 0,
-              pic: "/trigger/hyperkey/M-11.jpg"
+              pic: "/trigger/hyperkey/M-11.jpg",
             },
             {
               name: "特空机3号 金古桥军械库定制",
               color: "#b5ab1ac4",
               price: 0,
-              pic: "/trigger/hyperkey/M-13.jpg"
+              pic: "/trigger/hyperkey/M-13.jpg",
             },
             {
               name: "超古代怪兽 哥尔赞",
               color: "#3982abd1",
               price: 0,
-              pic: "/trigger/hyperkey/M-16.jpg"
+              pic: "/trigger/hyperkey/M-16.jpg",
             },
             {
               name: "邪恶迪迦",
               color: "#c34820ab",
               price: 0,
-              pic: "/trigger/hyperkey/M-19.jpg"
-            }
-          ]
+              pic: "/trigger/hyperkey/M-19.jpg",
+            },
+          ],
         },
         ZGP01: {
           art: "Z_GP01.png",
@@ -237,51 +319,51 @@ export default {
               name: "赛文奥特曼 闪耀型",
               color: "#c32020ab",
               price: 0,
-              pic: "/z/ultramedal/M-046.jpg"
+              pic: "/z/ultramedal/M-046.jpg",
             },
             {
               name: "雷欧奥特曼",
               color: "#c32020ab",
               price: 0,
-              pic: "/z/ultramedal/M-003.jpg"
+              pic: "/z/ultramedal/M-003.jpg",
             },
             {
               name: "赛文奥特曼",
               color: "#c32020ab",
               price: 0,
-              pic: "/z/ultramedal/M-002.jpg"
+              pic: "/z/ultramedal/M-002.jpg",
             },
             {
               name: "赛罗奥特曼",
               color: "#c32020ab",
               price: 0,
-              pic: "/z/ultramedal/M-001.jpg"
+              pic: "/z/ultramedal/M-001.jpg",
             },
             {
               name: "葛雷奥特曼",
               color: "#c32020ab",
               price: 0,
-              pic: "/z/ultramedal/M-048.jpg"
+              pic: "/z/ultramedal/M-048.jpg",
             },
             {
               name: "赛罗奥特曼 强壮日冕型",
               color: "#c32020ab",
               price: 0,
-              pic: "/z/ultramedal/M-049.jpg"
+              pic: "/z/ultramedal/M-049.jpg",
             },
             {
               name: "阿古茹奥特曼",
               color: "#c32020ab",
               price: 0,
-              pic: "/z/ultramedal/M-050.jpg"
+              pic: "/z/ultramedal/M-050.jpg",
             },
             {
               name: "乔尼亚斯奥特曼",
               color: "#c32020ab",
               price: 0,
-              pic: "/z/ultramedal/M-051.jpg"
-            }
-          ]
+              pic: "/z/ultramedal/M-051.jpg",
+            },
+          ],
         },
         ZGP02: {
           art: "Z_GP02.png",
@@ -290,57 +372,57 @@ export default {
               name: "奥特曼 闪耀型",
               color: "#c32020ab",
               price: 0,
-              pic: "/z/ultramedal/M-047.jpg"
+              pic: "/z/ultramedal/M-047.jpg",
             },
             {
               name: "奥特曼",
               color: "#c32020ab",
               price: 0,
-              pic: "/z/ultramedal/M-004.jpg"
+              pic: "/z/ultramedal/M-004.jpg",
             },
             {
               name: "艾斯奥特曼",
               color: "#c32020ab",
               price: 0,
-              pic: "/z/ultramedal/M-005.jpg"
+              pic: "/z/ultramedal/M-005.jpg",
             },
             {
               name: "泰罗奥特曼",
               color: "#c32020ab",
               price: 0,
-              pic: "/z/ultramedal/M-006.jpg"
+              pic: "/z/ultramedal/M-006.jpg",
             },
             {
               name: "内隆嘎",
               color: "#c32020ab",
               price: 0,
-              pic: "/z/ultramedal/M-052.jpg"
+              pic: "/z/ultramedal/M-052.jpg",
             },
             {
               name: "盖内伽古",
               color: "#c32020ab",
               price: 0,
-              pic: "/z/ultramedal/M-053.jpg"
+              pic: "/z/ultramedal/M-053.jpg",
             },
             {
               name: "吉拉斯",
               color: "#c32020ab",
               price: 0,
-              pic: "/z/ultramedal/M-054.jpg"
+              pic: "/z/ultramedal/M-054.jpg",
             },
             {
               name: "奈克斯特奥特曼 蓝色青年形态",
               color: "#c32020ab",
               price: 0,
-              pic: "/z/ultramedal/M-055.jpg"
+              pic: "/z/ultramedal/M-055.jpg",
             },
             {
               name: "戴拿奥特曼 奇迹型",
               color: "#c32020ab",
               price: 0,
-              pic: "/z/ultramedal/M-056.jpg"
-            }
-          ]
+              pic: "/z/ultramedal/M-056.jpg",
+            },
+          ],
         },
         ZGP03: {
           art: "Z_GP03.png",
@@ -349,51 +431,51 @@ export default {
               name: "闪耀迪迦",
               color: "#c32020ab",
               price: 0,
-              pic: "/z/ultramedal/M-057.jpg"
+              pic: "/z/ultramedal/M-057.jpg",
             },
             {
               name: "迪迦奥特曼",
               color: "#c32020ab",
               price: 0,
-              pic: "/z/ultramedal/M-007.jpg"
+              pic: "/z/ultramedal/M-007.jpg",
             },
             {
               name: "戴拿奥特曼",
               color: "#c32020ab",
               price: 0,
-              pic: "/z/ultramedal/M-008.jpg"
+              pic: "/z/ultramedal/M-008.jpg",
             },
             {
               name: "盖亚奥特曼",
               color: "#c32020ab",
               price: 0,
-              pic: "/z/ultramedal/M-009.jpg"
+              pic: "/z/ultramedal/M-009.jpg",
             },
             {
               name: "帕瓦特奥特曼",
               color: "#c32020ab",
               price: 0,
-              pic: "/z/ultramedal/M-058.jpg"
+              pic: "/z/ultramedal/M-058.jpg",
             },
             {
               name: "奥特之王",
               color: "#c32020ab",
               price: 0,
-              pic: "/z/ultramedal/M-059.jpg"
+              pic: "/z/ultramedal/M-059.jpg",
             },
             {
               name: "伽古拉斯·伽古拉",
               color: "#c32020ab",
               price: 0,
-              pic: "/z/ultramedal/M-060.jpg"
+              pic: "/z/ultramedal/M-060.jpg",
             },
             {
               name: "金古桥",
               color: "#c32020ab",
               price: 0,
-              pic: "/z/ultramedal/M-061.jpg"
-            }
-          ]
+              pic: "/z/ultramedal/M-061.jpg",
+            },
+          ],
         },
         ZGP04: {
           art: "Z_GP04.png",
@@ -402,59 +484,353 @@ export default {
               name: "格丽乔奥特曼",
               color: "#c32020ab",
               price: 0,
-              pic: "/z/ultramedal/M-064.jpg"
+              pic: "/z/ultramedal/M-064.jpg",
             },
             {
               name: "哉阿斯奥特曼",
               color: "#c32020ab",
               price: 0,
-              pic: "/z/ultramedal/M-062.jpg"
+              pic: "/z/ultramedal/M-062.jpg",
             },
             {
               name: "纳伊斯奥特曼",
               color: "#c32020ab",
               price: 0,
-              pic: "/z/ultramedal/M-063.jpg"
+              pic: "/z/ultramedal/M-063.jpg",
             },
             {
               name: "特空机1号 赛文加",
               color: "#c32020ab",
               price: 0,
-              pic: "/z/ultramedal/M-065.jpg"
+              pic: "/z/ultramedal/M-065.jpg",
             },
             {
               name: "特空机2号 乌英达姆",
               color: "#c32020ab",
               price: 0,
-              pic: "/z/ultramedal/M-066.jpg"
+              pic: "/z/ultramedal/M-066.jpg",
             },
             {
               name: "特空机3号 金古桥军械库定制",
               color: "#c32020ab",
               price: 0,
-              pic: "/z/ultramedal/M-067.jpg"
+              pic: "/z/ultramedal/M-067.jpg",
             },
             {
               name: "特空机4号 奥特人造机甲赛罗",
               color: "#c32020ab",
               price: 0,
-              pic: "/z/ultramedal/M-068.jpg"
+              pic: "/z/ultramedal/M-068.jpg",
             },
             {
               name: "歼灭机甲兽德斯特鲁多斯",
               color: "#c32020ab",
               price: 0,
-              pic: "/z/ultramedal/M-069.jpg"
+              pic: "/z/ultramedal/M-069.jpg",
             },
             {
               name: "虚空怪兽 格利扎",
               color: "#c32020ab",
               price: 0,
-              pic: "/z/ultramedal/M-070.jpg"
-            }
-          ]
-        }
-      }
+              pic: "/z/ultramedal/M-070.jpg",
+            },
+          ],
+        },
+        ZJYG13: {
+          art: "ZJYG_13.png",
+          data: [
+            {
+              name: "雷欧奥特曼",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/gashapon/ZJYG/13/6541543036.jpg",
+            },
+            {
+              name: "希卡利奥特曼",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/gashapon/ZJYG/13/0402718172.jpg",
+            },
+            {
+              name: "房子A",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/gashapon/ZJYG/13/0212884785.jpg",
+            },
+            {
+              name: "房子B",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/gashapon/ZJYG/13/0333824952.jpg",
+            },
+            {
+              name: "房子C",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/gashapon/ZJYG/13/9957288641.jpg",
+            },
+          ],
+        },
+        TLJCQWQ: {
+          art: "TLJ_CQWQ.png",
+          data: [
+            {
+              name: "特利迦奥特曼 复合型",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/gashapon/TLJ/CQWQ/5344043214.jpg",
+            },
+            {
+              name: "特利迦奥特曼 强力型",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/gashapon/TLJ/CQWQ/9685115920.jpg",
+            },
+            {
+              name: "特利迦奥特曼 空中型",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/gashapon/TLJ/CQWQ/1746007252.jpg",
+            },
+            {
+              name: "胜利海帕枪",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/gashapon/TLJ/CQWQ/1517811218.jpg",
+            },
+            {
+              name: "胜利神光棒",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/gashapon/TLJ/CQWQ/8101508826.jpg",
+            },
+          ],
+        },
+        ATM_HASZ08: {
+          art: "HASZ_08.png",
+          data: [
+            {
+              name: "赛罗奥特曼",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/gashapon/ATM/08/4307423785.jpg",
+            },
+            {
+              name: "罗索奥特曼",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/gashapon/ATM/08/6296827182.jpg",
+            },
+            {
+              name: "布鲁奥特曼",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/gashapon/ATM/08/6384902861.jpg",
+            },
+            {
+              name: "布鲁奥特曼",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/gashapon/ATM/08/6384902861.jpg",
+            },
+            {
+              name: "格力乔奥特曼",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/gashapon/ATM/08/9235715024.jpg",
+            },
+            {
+              name: "黑暗赛罗",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/gashapon/ATM/08/1608274009.jpg",
+            },
+            {
+              name: "黑暗欧布奥特曼",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/gashapon/ATM/08/4946116683.jpg",
+            },
+            {
+              name: "黑暗奥特杀手",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/gashapon/ATM/08/9419197220.jpg",
+            },
+            {
+              name: "格尔吉欧波恩",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/gashapon/ATM/08/8780115710.jpg",
+            },
+          ],
+        },
+        GSBLH: {
+          art: "GSBLH.png",
+          data: [
+            {
+              name: "哥莫拉",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/gashapon/GSBLH/8556160725.jpg",
+            },
+            {
+              name: "佩刀暴君马格马星人A",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/gashapon/GSBLH/9072788524.jpg",
+            },
+            {
+              name: "佩刀暴君马格马星人B",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/gashapon/GSBLH/4057915124.jpg",
+            },
+            {
+              name: "夏德奥特曼",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/gashapon/GSBLH/1656399403.jpg",
+            },
+            {
+              name: "飞机A",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/gashapon/GSBLH/3447852389.jpg",
+            },
+            {
+              name: "飞机B",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/gashapon/GSBLH/2958244704.jpg",
+            },
+          ],
+        },
+        JLBYSQ: {
+          art: "JLBYSQ.png",
+          data: [
+            {
+              name: "泽塔奥特曼 夜光版",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/gashapon/YSQ/JLB/1711917337.jpg",
+            },
+            {
+              name: "赛文加 夜光版",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/gashapon/YSQ/JLB/6317631447.jpg",
+            },
+            {
+              name: "赛罗奥特曼 夜光版",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/gashapon/YSQ/JLB/4431639437.jpg",
+            },
+            {
+              name: "哉阿斯奥特曼 夜光版",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/gashapon/YSQ/JLB/5950221525.jpg",
+            },
+            {
+              name: "迪迦奥特曼 夜光版",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/gashapon/YSQ/JLB/9163882353.jpg",
+            },
+            {
+              name: "戴拿奥特曼 夜光版",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/gashapon/YSQ/JLB/7973570905.jpg",
+            },
+            {
+              name: "电脑魔神 戴斯法萨 夜光版",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/gashapon/YSQ/JLB/9170920115.jpg",
+            },
+            {
+              name: "泽塔奥特曼",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/gashapon/YSQ/JLB/6899468453.jpg",
+            },
+            {
+              name: "赛文加",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/gashapon/YSQ/JLB/9335889817.jpg",
+            },
+            {
+              name: "赛罗奥特曼",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/gashapon/YSQ/JLB/7663993632.jpg",
+            },
+            {
+              name: "哉阿斯奥特曼",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/gashapon/YSQ/JLB/9344661832.jpg",
+            },
+            {
+              name: "迪迦奥特曼",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/gashapon/YSQ/JLB/5832403645.jpg",
+            },
+            {
+              name: "戴拿奥特曼",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/gashapon/YSQ/JLB/4588498267.jpg",
+            },
+            {
+              name: "电脑魔神 戴斯法萨",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/gashapon/YSQ/JLB/3301742677.jpg",
+            },
+          ],
+        },
+        CBQ: {
+          art: "CBQ.png",
+          data: [
+            {
+              name: "胜利飞燕一号",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/gashapon/CBQ/7013090707.jpg",
+            },
+            {
+              name: "威托号",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/gashapon/CBQ/8517087786.jpg",
+            },
+            {
+              name: "TAC爱罗号",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/gashapon/CBQ/0224746970.jpg",
+            },
+            {
+              name: "哈马号",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/gashapon/CBQ/1659735335.jpg",
+            },
+            {
+              name: "麦基1号",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/gashapon/CBQ/3558244848.jpg",
+            },
+          ],
+        },
+      },
     };
   },
   methods: {
@@ -498,8 +874,8 @@ export default {
         gas.export = false;
         this.show = true;
       }
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -650,6 +1026,7 @@ export default {
   width: 125px;
   height: 135px;
   background-size: cover;
+  z-index: 2;
 }
 .step-1,
 .step-2,
@@ -767,5 +1144,37 @@ export default {
 .gash-info p {
   text-align: center;
   font-weight: 600;
+}
+.gas-over {
+  background-color: #ff5454;
+  font-size: 12px;
+  color: #ffeb3b;
+  text-align: center;
+  width: 22px;
+  height: 35px;
+  position: absolute;
+  bottom: 0;
+  right: 26px;
+  transition: all 0.3s;
+  z-index: 1;
+}
+.gas-over.show {
+  bottom: -37px;
+}
+.gas-coin {
+  position: absolute;
+  top: 144px;
+  left: 9px;
+  text-align: center;
+  width: 37px;
+  height: 22px;
+  line-height: 22px;
+  border-radius: 26px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #03a9f4;
+}
+.gas-coin.ok {
+  background-color: #4caf50;
 }
 </style>
