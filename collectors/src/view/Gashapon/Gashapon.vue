@@ -5,7 +5,7 @@
         <i class="iconfont icon-fanhuicopy"></i>
       </div>
       <div class="gash-view">
-        <img :src="'./static/img/item/' + nowGashapon.pic" />
+        <img :src="'./static/img/item' + nowGashapon.pic" />
       </div>
       <div class="gash-info">
         <p>{{ nowGashapon.name }}</p>
@@ -43,7 +43,7 @@
             >
               <div
                 class="ball-color"
-                :style="'background-color:' + gas.color"
+                :style="'background-color:' + nowGashapon.color"
               ></div>
             </div>
           </div>
@@ -59,6 +59,7 @@
 // 4.扭蛋壳垃圾桶
 // 5.还原万代扭蛋机外观细节
 // 6.兑换代币和回收扭蛋机制
+// 海报扭曲
 export default {
   name: "Gashapon",
   components: {},
@@ -78,8 +79,7 @@ export default {
             coinTotal: 0, //累计投币
             rotate: 0, //步骤2进程 0未扭动 1扭动一半 2扭动完成
             export: false, //出口数量 false没东西 true有
-            stock: [0, 1, 2, 3, 4, 5, 6, 6, 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6], //扭蛋内容
-            color: "" //颜色
+            stock: [0, 1, 2, 3, 4, 5, 6, 6, 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6] //扭蛋内容
           },
           {
             id: "GAS-2",
@@ -91,8 +91,7 @@ export default {
             coinTotal: 0,
             rotate: 0,
             export: false,
-            stock: [0, 1, 2, 4, 4, 5, 6, 0, 1, 2, 3, 4, 5, 6, 1, 2, 2, 4, 5, 6],
-            color: ""
+            stock: [0, 1, 2, 4, 4, 5, 6, 0, 1, 2, 3, 4, 5, 6, 1, 2, 2, 4, 5, 6]
           },
           {
             id: "GAS-3",
@@ -104,8 +103,7 @@ export default {
             coinTotal: 0,
             rotate: 0,
             export: false,
-            stock: [0, 1, 2, 3, 4, 5, 5, 0, 1, 1, 3, 4, 5, 6, 1, 2, 3, 4, 4, 6],
-            color: ""
+            stock: [0, 1, 2, 3, 4, 5, 5, 0, 1, 1, 3, 4, 5, 6, 1, 2, 3, 4, 4, 6]
           }
         ],
         [
@@ -119,8 +117,7 @@ export default {
             coinTotal: 0, //累计投币
             rotate: 0, //步骤2进程 0未扭动 1扭动一半 2扭动完成
             export: false, //出口数量 false没东西 true有
-            stock: [0, 1, 2, 3, 4, 5, 6, 6, 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6], //扭蛋内容
-            color: "" //颜色
+            stock: [0, 1, 2, 3, 4, 5, 6, 6, 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6] //扭蛋内容
           },
           {
             id: "GAS-5",
@@ -132,27 +129,25 @@ export default {
             coinTotal: 0,
             rotate: 0,
             export: false,
-            stock: [0, 1, 2, 4, 4, 5, 6, 0, 1, 2, 3, 4, 5, 6, 1, 2, 2, 4, 5, 6],
-            color: ""
+            stock: [0, 1, 2, 4, 4, 5, 6, 0, 1, 2, 3, 4, 5, 6, 1, 2, 2, 4, 5, 6]
           },
           {
             id: "GAS-6",
             type: "bot",
-            series: "TLJGP01",
+            series: "ZGP01",
             step: 1,
             needCoin: 3,
             coin: 0,
             coinTotal: 0,
             rotate: 0,
             export: false,
-            stock: [4, 4, 6],
-            color: ""
+            stock: [0, 1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7, 4, 5, 6, 7, 7]
           }
         ]
       ],
       eggData: {
         TLJGP01: {
-          art: "demo1.png",
+          art: "TLJ_GP01.png",
           data: [
             {
               name: "宇宙恐龙 杰顿二世",
@@ -197,6 +192,59 @@ export default {
               pic: "/trigger/hyperkey/M-19.jpg"
             }
           ]
+        },
+        ZGP01: {
+          art: "Z_GP01.png",
+          data: [
+            {
+              name: "赛文奥特曼 闪耀型",
+              color: "#754396c4",
+              price: 0,
+              pic: "/z/ultramedal/M-046.jpg"
+            },
+            {
+              name: "雷欧奥特曼",
+              color: "#754396c4",
+              price: 0,
+              pic: "/z/ultramedal/M-003.jpg"
+            },
+            {
+              name: "赛文奥特曼",
+              color: "#754396c4",
+              price: 0,
+              pic: "/z/ultramedal/M-002.jpg"
+            },
+            {
+              name: "赛罗奥特曼",
+              color: "#754396c4",
+              price: 0,
+              pic: "/z/ultramedal/M-001.jpg"
+            },
+            {
+              name: "葛雷奥特曼",
+              color: "#754396c4",
+              price: 0,
+              pic: "/z/ultramedal/M-048.jpg"
+            },
+            {
+              name: "赛罗奥特曼 强壮日冕型",
+              color: "#754396c4",
+              price: 0,
+              pic: "/z/ultramedal/M-049.jpg"
+            },
+            {
+              name: "阿古茹奥特曼",
+              color: "#754396c4",
+              price: 0,
+              pic: "/z/ultramedal/M-050.jpg"
+            },
+            {
+              name: "乔尼亚斯奥特曼",
+              color: "#754396c4",
+              price: 0,
+              pic: "/z/ultramedal/M-051.jpg"
+            }
+          ]
         }
       }
     };
@@ -224,12 +272,8 @@ export default {
         if (gas.rotate == 2) {
           let num = Math.floor(Math.random() * gas.stock.length); //随机数
           let it = gas.stock[num]; //取值
-          gas.color = this.eggData[gas.series].data[it].color;
           gas.stock.splice(num, 1); //删除取到的这个
-          console.log(
-            "扭到 " + this.eggData[gas.series].data[it].name,
-            gas.color
-          );
+          console.log("扭到 " + this.eggData[gas.series].data[it].name);
           this.nowGashapon = this.eggData[gas.series].data[it];
           console.log("扭蛋已出，请取货~");
           setTimeout(() => {
