@@ -658,7 +658,7 @@ export default {
           id: "M-070",
           type: "M",
           tag: ["GP04"],
-          name: "虚空怪兽格利扎",
+          name: "虚空怪兽 格利扎",
           link: null,
         },
         {

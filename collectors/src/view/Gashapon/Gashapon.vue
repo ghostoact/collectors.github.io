@@ -108,15 +108,15 @@ export default {
         ],
         [
           {
-            id: "GAS-4", //扭蛋机ID
-            type: "top", //扭蛋机类型top mid bot
-            series: "TLJGP01", //扭蛋系列
-            step: 1, //当前步骤 1投币 2扭动机器 3出货待取
-            needCoin: 3, //扭一次需要的总币数
-            coin: 0, //当前投币
-            coinTotal: 0, //累计投币
-            rotate: 0, //步骤2进程 0未扭动 1扭动一半 2扭动完成
-            export: false, //出口数量 false没东西 true有
+            id: "GAS-4",
+            type: "top",
+            series: "TLJGP01",
+            step: 1,
+            needCoin: 3,
+            coin: 0,
+            coinTotal: 0,
+            rotate: 0,
+            export: false,
             stock: [0, 1, 2, 3, 4, 5, 6, 6, 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6] //扭蛋内容
           },
           {
@@ -142,6 +142,44 @@ export default {
             rotate: 0,
             export: false,
             stock: [0, 1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7, 4, 5, 6, 7, 7]
+          }
+        ],
+        [
+          {
+            id: "GAS-7",
+            type: "top",
+            series: "ZGP02",
+            step: 1,
+            needCoin: 3,
+            coin: 0,
+            coinTotal: 0,
+            rotate: 0,
+            export: false,
+            stock: [0, 1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8, 6, 7, 8]
+          },
+          {
+            id: "GAS-8",
+            type: "mid",
+            series: "ZGP03",
+            step: 1,
+            needCoin: 3,
+            coin: 0,
+            coinTotal: 0,
+            rotate: 0,
+            export: false,
+            stock: [0, 1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7, 8, 4, 5, 6, 7]
+          },
+          {
+            id: "GAS-9",
+            type: "bot",
+            series: "ZGP04",
+            step: 1,
+            needCoin: 3,
+            coin: 0,
+            coinTotal: 0,
+            rotate: 0,
+            export: false,
+            stock: [0, 1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 6, 7, 8, 8, 4, 6, 8]
           }
         ]
       ],
@@ -198,51 +236,222 @@ export default {
           data: [
             {
               name: "赛文奥特曼 闪耀型",
-              color: "#754396c4",
+              color: "#c32020ab",
               price: 0,
               pic: "/z/ultramedal/M-046.jpg"
             },
             {
               name: "雷欧奥特曼",
-              color: "#754396c4",
+              color: "#c32020ab",
               price: 0,
               pic: "/z/ultramedal/M-003.jpg"
             },
             {
               name: "赛文奥特曼",
-              color: "#754396c4",
+              color: "#c32020ab",
               price: 0,
               pic: "/z/ultramedal/M-002.jpg"
             },
             {
               name: "赛罗奥特曼",
-              color: "#754396c4",
+              color: "#c32020ab",
               price: 0,
               pic: "/z/ultramedal/M-001.jpg"
             },
             {
               name: "葛雷奥特曼",
-              color: "#754396c4",
+              color: "#c32020ab",
               price: 0,
               pic: "/z/ultramedal/M-048.jpg"
             },
             {
               name: "赛罗奥特曼 强壮日冕型",
-              color: "#754396c4",
+              color: "#c32020ab",
               price: 0,
               pic: "/z/ultramedal/M-049.jpg"
             },
             {
               name: "阿古茹奥特曼",
-              color: "#754396c4",
+              color: "#c32020ab",
               price: 0,
               pic: "/z/ultramedal/M-050.jpg"
             },
             {
               name: "乔尼亚斯奥特曼",
-              color: "#754396c4",
+              color: "#c32020ab",
               price: 0,
               pic: "/z/ultramedal/M-051.jpg"
+            }
+          ]
+        },
+        ZGP02: {
+          art: "Z_GP02.png",
+          data: [
+            {
+              name: "奥特曼 闪耀型",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/z/ultramedal/M-047.jpg"
+            },
+            {
+              name: "奥特曼",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/z/ultramedal/M-004.jpg"
+            },
+            {
+              name: "艾斯奥特曼",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/z/ultramedal/M-005.jpg"
+            },
+            {
+              name: "泰罗奥特曼",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/z/ultramedal/M-006.jpg"
+            },
+            {
+              name: "内隆嘎",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/z/ultramedal/M-052.jpg"
+            },
+            {
+              name: "盖内伽古",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/z/ultramedal/M-053.jpg"
+            },
+            {
+              name: "吉拉斯",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/z/ultramedal/M-054.jpg"
+            },
+            {
+              name: "奈克斯特奥特曼 蓝色青年形态",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/z/ultramedal/M-055.jpg"
+            },
+            {
+              name: "戴拿奥特曼 奇迹型",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/z/ultramedal/M-056.jpg"
+            }
+          ]
+        },
+        ZGP03: {
+          art: "Z_GP03.png",
+          data: [
+            {
+              name: "闪耀迪迦",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/z/ultramedal/M-057.jpg"
+            },
+            {
+              name: "迪迦奥特曼",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/z/ultramedal/M-007.jpg"
+            },
+            {
+              name: "戴拿奥特曼",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/z/ultramedal/M-008.jpg"
+            },
+            {
+              name: "盖亚奥特曼",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/z/ultramedal/M-009.jpg"
+            },
+            {
+              name: "帕瓦特奥特曼",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/z/ultramedal/M-058.jpg"
+            },
+            {
+              name: "奥特之王",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/z/ultramedal/M-059.jpg"
+            },
+            {
+              name: "伽古拉斯·伽古拉",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/z/ultramedal/M-060.jpg"
+            },
+            {
+              name: "金古桥",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/z/ultramedal/M-061.jpg"
+            }
+          ]
+        },
+        ZGP04: {
+          art: "Z_GP04.png",
+          data: [
+            {
+              name: "格丽乔奥特曼",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/z/ultramedal/M-064.jpg"
+            },
+            {
+              name: "哉阿斯奥特曼",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/z/ultramedal/M-062.jpg"
+            },
+            {
+              name: "纳伊斯奥特曼",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/z/ultramedal/M-063.jpg"
+            },
+            {
+              name: "特空机1号 赛文加",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/z/ultramedal/M-065.jpg"
+            },
+            {
+              name: "特空机2号 乌英达姆",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/z/ultramedal/M-066.jpg"
+            },
+            {
+              name: "特空机3号 金古桥军械库定制",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/z/ultramedal/M-067.jpg"
+            },
+            {
+              name: "特空机4号 奥特人造机甲赛罗",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/z/ultramedal/M-068.jpg"
+            },
+            {
+              name: "歼灭机甲兽德斯特鲁多斯",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/z/ultramedal/M-069.jpg"
+            },
+            {
+              name: "虚空怪兽 格利扎",
+              color: "#c32020ab",
+              price: 0,
+              pic: "/z/ultramedal/M-070.jpg"
             }
           ]
         }
