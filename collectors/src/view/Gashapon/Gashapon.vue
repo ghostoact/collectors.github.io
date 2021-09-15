@@ -1,7 +1,15 @@
 <template>
   <div class="item-list">
-    <div class="">
-
+    <div class="item-detail" v-if="show">
+      <div class="close-layer" @click="closeThis">
+        <i class="iconfont icon-fanhuicopy"></i>
+      </div>
+      <div class="gash-view">
+        <img :src="'./static/img/item/' + nowGashapon.pic" />
+      </div>
+      <div class="gash-info">
+        <p>{{ nowGashapon.name }}</p>
+      </div>
     </div>
     <div class="group-item" v-for="(group, index) in gashapons" :key="index">
       <div
@@ -56,6 +64,8 @@ export default {
   components: {},
   data() {
     return {
+      show: false,
+      nowGashapon: {},
       gashapons: [
         [
           {
@@ -147,37 +157,44 @@ export default {
             {
               name: "宇宙恐龙 杰顿二世",
               color: "#754396c4",
-              price: 0
+              price: 0,
+              pic: "/trigger/hyperkey/M-03-2.jpg"
             },
             {
               name: "宇宙恐龙 杰顿",
               color: "#b1701dd1",
-              price: 0
+              price: 0,
+              pic: "/trigger/hyperkey/M-03.jpg"
             },
             {
               name: "蛤蜊怪兽 加玛库基拉",
               color: "#00cc2aa1",
-              price: 0
+              price: 0,
+              pic: "/trigger/hyperkey/M-04.jpg"
             },
             {
               name: "特空机1号 赛文加",
               color: "#bbc4cfcf",
-              price: 0
+              price: 0,
+              pic: "/trigger/hyperkey/M-11.jpg"
             },
             {
               name: "特空机3号 金古桥军械库定制",
               color: "#b5ab1ac4",
-              price: 0
+              price: 0,
+              pic: "/trigger/hyperkey/M-13.jpg"
             },
             {
               name: "超古代怪兽 哥尔赞",
               color: "#3982abd1",
-              price: 0
+              price: 0,
+              pic: "/trigger/hyperkey/M-16.jpg"
             },
             {
               name: "邪恶迪迦",
               color: "#c34820ab",
-              price: 0
+              price: 0,
+              pic: "/trigger/hyperkey/M-19.jpg"
             }
           ]
         }
@@ -185,6 +202,9 @@ export default {
     };
   },
   methods: {
+    closeThis() {
+      this.show = false;
+    },
     actionByClick(gas, step) {
       if (gas.step == 1 && step == 1) {
         if (gas.stock.length == 0) {
@@ -210,6 +230,7 @@ export default {
             "扭到 " + this.eggData[gas.series].data[it].name,
             gas.color
           );
+          this.nowGashapon = this.eggData[gas.series].data[it];
           console.log("扭蛋已出，请取货~");
           setTimeout(() => {
             gas.step = 3;
@@ -223,6 +244,7 @@ export default {
         gas.coinTotal = gas.coinTotal + gas.coin;
         gas.coin = 0;
         gas.export = false;
+        this.show = true;
       }
     }
   }
@@ -427,6 +449,7 @@ export default {
   top: -50px;
   left: 8px;
   overflow: hidden;
+  overflow: hidden;
 }
 .ball-color {
   position: absolute;
@@ -459,5 +482,38 @@ export default {
   -webkit-animation: light-cool 5s ease-in-out infinite;
   animation: light-cool 5s ease-in-out infinite;
   z-index: 2;
+}
+.item-detail {
+  width: 500px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 10px 20px -6px #ababab;
+  box-shadow: 0 10px 20px -6px #ababab;
+  overflow: hidden;
+  z-index: 9;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  border-radius: 8px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.gash-view {
+  width: 100%;
+}
+.gash-view img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.gash-info {
+  height: 50px;
+  background-color: #f5f8f9;
+  padding: 10px 0 20px;
+}
+.gash-info p {
+  text-align: center;
+  font-weight: 600;
 }
 </style>
