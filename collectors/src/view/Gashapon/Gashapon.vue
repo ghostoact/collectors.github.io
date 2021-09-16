@@ -28,11 +28,24 @@
                   ')'
               "
             ></div>
-            <div class="gas-over" :class="gas.stock.length == 0 ? 'show' : ''">
+            <div class="ball-box">
+              <div
+                class="ball-item"
+                :class="'b-' + index"
+                v-for="(ball, index) in gas.stock"
+                :key="index"
+              >
+                <div
+                  class="ball-item-color"
+                  :style="'background-color:' + getColorByNum(gas.series, ball)"
+                ></div>
+              </div>
+            </div>
+            <div class="gas-over" :class="{ show: gas.stock.length == 0 }">
               售馨
             </div>
           </div>
-          <div class="gas-coin" :class="gas.needCoin == gas.coin ? 'ok' : ''">
+          <div class="gas-coin" :class="{ ok: gas.needCoin == gas.coin }">
             {{ gas.needCoin }}00
           </div>
           <div class="step-1" @click="actionByClick(gas, 1)"></div>
@@ -45,7 +58,7 @@
             <div
               class="ball"
               @click="actionByClick(gas, 3)"
-              :class="gas.export ? 'show' : ''"
+              :class="{ show: gas.export }"
             >
               <div
                 class="ball-color"
@@ -72,7 +85,7 @@ export default {
     return {
       myBag: {
         money: 0, //钱
-        coin: 10, //拥有的
+        coin: 50, //拥有的
         stock: [] //我的包
       },
       show: false, //显示详情
@@ -177,7 +190,7 @@ export default {
             coinTotal: 0,
             rotate: 0,
             export: false,
-            stock: [0, 1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7, 8, 4, 5, 6, 7]
+            stock: [0, 1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7, 3, 4, 5, 6, 7]
           },
           {
             id: "GAS-9",
@@ -978,7 +991,93 @@ export default {
             }
           ]
         }
-      }
+      },
+      eggPosition: [
+        {
+          top: 55,
+          left: 25
+        },
+        {
+          top: 52,
+          left: 64
+        },
+        {
+          top: 47,
+          left: 0
+        },
+        {
+          top: 52,
+          left: 85
+        },
+        {
+          top: 35,
+          left: 19
+        },
+        {
+          top: 44,
+          left: 99
+        },
+        {
+          top: 43,
+          left: 45
+        },
+        {
+          top: 35,
+          left: 70
+        },
+        {
+          top: 27,
+          left: 0
+        },
+        {
+          top: 26,
+          left: 97
+        },
+        {
+          top: 14,
+          left: 19
+        },
+        {
+          top: 30,
+          left: 44
+        },
+        {
+          top: 20,
+          left: 75
+        },
+        {
+          top: 0,
+          left: 3
+        },
+        {
+          top: 9,
+          left: 56
+        },
+        {
+          top: 9,
+          left: 99
+        },
+        {
+          top: 17,
+          left: 43
+        },
+        {
+          top: 22,
+          left: 14
+        },
+        {
+          top: 30,
+          left: 92
+        },
+        {
+          top: 9,
+          left: 24
+        },
+        {
+          top: 12,
+          left: 74
+        }
+      ]
     };
   },
   methods: {
@@ -1032,6 +1131,9 @@ export default {
         gas.export = false;
         this.show = true;
       }
+    },
+    getColorByNum(series, num) {
+      return this.eggData[series].data[num]["color"];
     }
   }
 };
@@ -1184,7 +1286,119 @@ export default {
   width: 125px;
   height: 135px;
   background-size: cover;
+  z-index: 5;
+}
+.ball-box {
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  width: 135px;
+  height: 80px;
+  background-color: rgba(255, 0, 0, 0.11);
   z-index: 2;
+  overflow: hidden;
+}
+.ball-item {
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+  background-image: url("../../assets/img/gashapon/ball.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.ball-item-color {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.b-0 {
+  top: 55px;
+  left: 25px;
+}
+.b-1 {
+  top: 52px;
+  left: 64px;
+}
+.b-2 {
+  top: 47px;
+  left: 0;
+}
+.b-3 {
+  top: 52px;
+  left: 85px;
+}
+.b-4 {
+  top: 35px;
+  left: 19px;
+}
+.b-5 {
+  top: 44px;
+  left: 99px;
+}
+.b-6 {
+  top: 43px;
+  left: 45px;
+}
+.b-7 {
+  top: 35px;
+  left: 70px;
+}
+.b-8 {
+  top: 27px;
+  left: 0;
+}
+.b-9 {
+  top: 26px;
+  left: 97px;
+}
+.b-10 {
+  top: 14px;
+  left: 19px;
+}
+.b-11 {
+  top: 30px;
+  left: 44px;
+}
+.b-12 {
+  top: 20px;
+  left: 75px;
+}
+.b-13 {
+  top: 0;
+  left: 3px;
+}
+.b-14 {
+  top: 9px;
+  left: 56px;
+}
+.b-15 {
+  top: 9px;
+  left: 99px;
+}
+.b-16 {
+  top: 17px;
+  left: 43px;
+}
+.b-17 {
+  top: 22px;
+  left: 14px;
+}
+.b-18 {
+  top: 30px;
+  left: 92px;
+}
+.b-19 {
+  top: 9px;
+  left: 24px;
+}
+.b-20 {
+  top: 12px;
+  left: 74px;
 }
 .step-1,
 .step-2,
@@ -1207,7 +1421,6 @@ export default {
   right: 40px;
   width: 45px;
   height: 45px;
-  /* background-color: #ff333354; */
   transform: rotate(0deg);
   transition: all 1s;
   background-image: url("../../assets/img/gashapon/gas_rotate.png");
@@ -1223,19 +1436,16 @@ export default {
   right: 67px;
   width: 55px;
   height: 55px;
-  /* background-color: #ff333354; */
   overflow: hidden;
 }
 .ball {
   width: 40px;
   height: 40px;
   border-radius: 50px;
-  /* background-color: red; */
   background-image: url("../../assets/img/gashapon/ball.png");
   position: absolute;
   top: -50px;
   left: 8px;
-  overflow: hidden;
   overflow: hidden;
 }
 .ball-color {
@@ -1331,6 +1541,7 @@ export default {
   font-size: 14px;
   color: #fff;
   background-color: #03a9f4;
+  transition: all 0.3s;
 }
 .gas-coin.ok {
   background-color: #4caf50;
