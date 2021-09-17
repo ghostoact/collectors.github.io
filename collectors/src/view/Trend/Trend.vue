@@ -110,6 +110,15 @@ export default {
         //   pic: "def.jpg",
         // },
         {
+          name: "DX奥特勋章图鉴",
+          saledate: "2022.2",
+          yenprice: 271,
+          pastprice: [0],
+          des: "含奥特勋章图鉴+特利迦奥特 复合型勋章",
+          url: "https://p-bandai.jp/item/item-1000162972/",
+          pic: "2820227126.jpg",
+        },
+        {
           name: "DX纳斯第斯蒂斯号",
           saledate: "",
           yenprice: null,

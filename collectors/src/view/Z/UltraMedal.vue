@@ -1182,6 +1182,13 @@ export default {
           name: "骷髅怪兽 雷德王",
           link: null,
         },
+        {
+          id: "M-141",
+          type: "U",
+          tag: ["DX"],
+          name: "特利迦奥特曼 复合型",
+          link: [82],
+        }
       ],
     };
   },
