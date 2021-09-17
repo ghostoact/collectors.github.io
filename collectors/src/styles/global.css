@@ -42,7 +42,8 @@ body {
   margin-right: 10px;
 }
 
-.switch-label, .switch-btn {
+.switch-label,
+.switch-btn {
   height: 25px;
   line-height: 25px;
   float: left;
@@ -68,7 +69,7 @@ body {
   width: 22px;
   border-radius: 50px;
   background-color: #fff;
-  transition: left .3s;
+  transition: left 0.3s;
 }
 
 .switch-box.active .switch-btn::before {
@@ -76,7 +77,7 @@ body {
 }
 
 .switch-box.active .switch-btn {
-  background-color: #FF9800;
+  background-color: #ff9800;
 }
 
 .ctrl-panel {
@@ -125,4 +126,33 @@ body {
 .close-layer:hover {
   color: #ff6161;
   background-color: #ffeeee;
+}
+.sort-ctrl {
+  color: #fff;
+  background-color: #ffffff2b;
+  overflow: hidden;
+  padding-left: 10px;
+  float: left;
+  font-size: 14px;
+  height: 25px;
+  line-height: 25px;
+}
+.sort-label {
+  float: left;
+  color: gainsboro;
+  margin-right: 10px;
+  font-size: 12px;
+}
+.sort-item {
+  float: left;
+  padding: 0 10px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+.sort-item:hover {
+  background-color: #ffffff29;
+}
+.sort-item.active {
+  background-color: #ffffff54;
 }
