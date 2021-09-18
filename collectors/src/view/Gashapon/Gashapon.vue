@@ -1306,6 +1306,7 @@ export default {
       } else if (gas.step == 2 && step == 2) {
         //扭蛋阶段，点击一下扭一半，总共180°，扭半圈即可进入下一阶段
         gas.rotate = gas.rotate + 1;
+        this.soundForAction("turn");
         if (gas.rotate == 2) {
           let num = Math.floor(Math.random() * gas.stock.length); //随机数
           let it = gas.stock[num]; //取值
@@ -1322,6 +1323,7 @@ export default {
           setTimeout(() => {
             gas.step = 3;
             gas.rotate = 0;
+        this.soundForAction("turn");
             gas.export = true;
             this.soundForAction("ball-out");
           }, 800);
@@ -1343,6 +1345,9 @@ export default {
       switch (type) {
         case "insert-coin":
           audio.src = require("../../assets/sounds/insert-coin.mp3");
+          break;
+        case "turn":
+          audio.src = require("../../assets/sounds/turn.mp3");
           break;
         case "ball-out":
           audio.src = require("../../assets/sounds/ball-out.mp3");
