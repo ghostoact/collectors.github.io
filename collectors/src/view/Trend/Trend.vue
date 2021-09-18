@@ -138,7 +138,7 @@ export default {
           name: "DX奥特勋章图鉴",
           saledate: "2022.2",
           yenprice: 271,
-          pastprice: [388, 390, 368, 305, 340, 300, 318],
+          pastprice: [388, 390, 368, 305, 340, 300, 318, 279],
           des: "含奥特勋章图鉴+特利迦奥特 复合型勋章",
           url: "https://p-bandai.jp/item/item-1000162972/",
           pic: "2820227126.jpg",
@@ -258,7 +258,7 @@ export default {
           name: "国代黑暗迪迦神光棒",
           saledate: "2021.10",
           yenprice: null,
-          pastprice: [139, 150, 119, 120, 110],
+          pastprice: [139, 150, 119, 129, 120, 110],
           des: "黑暗迪迦神光棒*1",
           url: null,
           pic: "1519215941.jpg",
@@ -461,7 +461,8 @@ export default {
             135,
             131,
             129,
-            122
+            122,
+            116
           ],
           des: null,
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11950/",
