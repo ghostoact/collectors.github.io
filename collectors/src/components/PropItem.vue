@@ -1,7 +1,7 @@
 <template>
   <div
     class="prop-item"
-    v-lazy:background-image="showpic ? url + propitem.id + '.jpg' : ''"
+    v-lazy:background-image="showpic ? url + propitem.pic : ''"
   >
     <div class="item-title" :style="'background-color:' + color">
       {{ propitem.name }}
@@ -15,27 +15,27 @@ export default {
   props: {
     item: {
       //信息
-      type: Object,
+      type: Object
     },
     urlType: {
       //区别图片URL
-      type: Number,
+      type: Number
     },
     showPic: {
       //是否显示图片
       type: Boolean,
-      default: true,
+      default: true
     },
     defaultColor: {
       //默认barColor
       type: String,
-      default: "#c3370b",
+      default: "#c3370b"
     },
     barColor: {
       //设置color
       type: String,
-      default: null,
-    },
+      default: null
+    }
   },
   data() {
     return {
@@ -45,8 +45,8 @@ export default {
         "./static/img/item/trigger/hyperkey/",
         "./static/img/item/z/ultramedal/",
         "./static/img/item/sofubi/500/",
-        "./static/img/item/SHF/",
-      ],
+        "./static/img/item/SHF/"
+      ]
     };
   },
   methods: {},
@@ -56,8 +56,8 @@ export default {
     },
     color() {
       return this.barColor != null ? this.barColor : this.defaultColor;
-    },
-  },
+    }
+  }
 };
 </script>
 

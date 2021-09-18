@@ -91,7 +91,8 @@ export default {
           link: [0], //关联奥特曼或怪兽实体数组
           color: null, //自定义颜色
           date: "2016.7.23", //首次发售日期
-          way: null //获取途径
+          way: null, //获取途径
+          pic: "F-1.jpg"
         },
         {
           id: "F-2",
@@ -101,7 +102,8 @@ export default {
           link: [82],
           color: null,
           date: "2016.7.23",
-          way: null
+          way: null,
+          pic: "F-2.jpg"
         },
         {
           id: "F-3",
@@ -111,7 +113,8 @@ export default {
           link: [82],
           color: null,
           date: "2016.8.11",
-          way: null
+          way: null,
+          pic: "F-3.jpg"
         },
         {
           id: "F-4",
@@ -121,7 +124,8 @@ export default {
           link: [82],
           color: null,
           date: "2016.10.27",
-          way: null
+          way: null,
+          pic: "F-4.jpg"
         },
         {
           id: "F-5",
@@ -131,7 +135,8 @@ export default {
           link: [82],
           color: null,
           date: "2016.11.19",
-          way: null
+          way: null,
+          pic: "F-5.jpg"
         },
         {
           id: "F-6",
@@ -141,7 +146,8 @@ export default {
           link: [82],
           color: null,
           date: "2017.9.30",
-          way: null
+          way: null,
+          pic: "F-6.jpg"
         },
         {
           id: "F-7",
@@ -151,7 +157,8 @@ export default {
           link: [82],
           color: null,
           date: "2017.3.31",
-          way: null
+          way: null,
+          pic: "F-7.jpg"
         },
         {
           id: "F-8",
@@ -161,7 +168,8 @@ export default {
           link: [82],
           color: null,
           date: "2017.4",
-          way: null
+          way: null,
+          pic: "F-8.jpg"
         },
         {
           id: "F-9",
@@ -171,7 +179,8 @@ export default {
           link: [82],
           color: null,
           date: "2017.4.29",
-          way: null
+          way: null,
+          pic: "F-9.jpg"
         },
         {
           id: "F-10",
@@ -181,7 +190,8 @@ export default {
           link: [82],
           color: null,
           date: "2017.5",
-          way: null
+          way: null,
+          pic: "F-10.jpg"
         },
         {
           id: "F-11",
@@ -191,7 +201,8 @@ export default {
           link: [82],
           color: null,
           date: "2017.6.24",
-          way: null
+          way: null,
+          pic: "F-11.jpg"
         },
         {
           id: "F-12",
@@ -201,7 +212,8 @@ export default {
           link: [82],
           color: null,
           date: "2017.7.21",
-          way: null
+          way: null,
+          pic: "F-12.jpg"
         },
         {
           id: "F-13",
@@ -211,7 +223,8 @@ export default {
           link: [82],
           color: null,
           date: "2017.8.11",
-          way: null
+          way: null,
+          pic: "F-13.jpg"
         },
         {
           id: "F-14",
@@ -221,7 +234,8 @@ export default {
           link: [82],
           color: null,
           date: "2017.8",
-          way: null
+          way: null,
+          pic: "F-14.jpg"
         },
         {
           id: "F-15",
@@ -231,7 +245,8 @@ export default {
           link: [82],
           color: null,
           date: "2017.11",
-          way: null
+          way: null,
+          pic: "F-15.jpg"
         },
         {
           id: "F-16",
@@ -241,7 +256,8 @@ export default {
           link: [82],
           color: null,
           date: "2017.12.29",
-          way: null
+          way: null,
+          pic: "F-16.jpg"
         },
         {
           id: "F-17",
@@ -251,7 +267,8 @@ export default {
           link: [82],
           color: null,
           date: "2018.1",
-          way: null
+          way: null,
+          pic: "F-17.jpg"
         },
         {
           id: "F-18",
@@ -261,7 +278,8 @@ export default {
           link: [82],
           color: null,
           date: "2018.2.24",
-          way: null
+          way: null,
+          pic: "F-18.jpg"
         },
         {
           id: "F-19",
@@ -271,7 +289,8 @@ export default {
           link: [82],
           color: null,
           date: "2018.3.31",
-          way: null
+          way: null,
+          pic: "F-19.jpg"
         },
         {
           id: "F-20",
@@ -281,7 +300,8 @@ export default {
           link: [82],
           color: null,
           date: "2018.4.27",
-          way: null
+          way: null,
+          pic: "F-20.jpg"
         },
         {
           id: "F-21",
@@ -291,7 +311,8 @@ export default {
           link: [82],
           color: null,
           date: "2018.4",
-          way: null
+          way: null,
+          pic: "F-21.jpg"
         },
         {
           id: "F-22",
@@ -301,7 +322,8 @@ export default {
           link: [82],
           color: null,
           date: "2018.5",
-          way: null
+          way: null,
+          pic: "F-22.jpg"
         },
         {
           id: "F-23",
@@ -311,7 +333,8 @@ export default {
           link: [82],
           color: null,
           date: "2018.6.23",
-          way: null
+          way: null,
+          pic: "F-23.jpg"
         },
         {
           id: "F-24",
@@ -321,7 +344,8 @@ export default {
           link: [82],
           color: null,
           date: "2018.6",
-          way: null
+          way: null,
+          pic: "F-24.jpg"
         },
         {
           id: "F-25",
@@ -331,7 +355,8 @@ export default {
           link: [82],
           color: null,
           date: "2018.7",
-          way: null
+          way: null,
+          pic: "F-25.jpg"
         },
         {
           id: "F-26",
@@ -341,7 +366,8 @@ export default {
           link: [82],
           color: null,
           date: "2018.8",
-          way: null
+          way: null,
+          pic: "F-26.jpg"
         },
         {
           id: "F-27",
@@ -351,7 +377,8 @@ export default {
           link: [82],
           color: null,
           date: "2018.9",
-          way: null
+          way: null,
+          pic: "F-27.jpg"
         },
         {
           id: "F-28",
@@ -361,7 +388,8 @@ export default {
           link: [82],
           color: null,
           date: "2018.10.27",
-          way: null
+          way: null,
+          pic: "F-28.jpg"
         },
         {
           id: "F-29",
@@ -371,7 +399,8 @@ export default {
           link: [82],
           color: null,
           date: "2018.10",
-          way: null
+          way: null,
+          pic: "F-29.jpg"
         },
         {
           id: "F-30",
@@ -381,7 +410,8 @@ export default {
           link: [82],
           color: null,
           date: "2018.11",
-          way: null
+          way: null,
+          pic: "F-30.jpg"
         },
         {
           id: "F-31",
@@ -391,7 +421,8 @@ export default {
           link: [82],
           color: null,
           date: "2018.12",
-          way: null
+          way: null,
+          pic: "F-31.jpg"
         },
         {
           id: "F-32",
@@ -401,7 +432,8 @@ export default {
           link: [82],
           color: null,
           date: "2018.12.15",
-          way: null
+          way: null,
+          pic: "F-32.jpg"
         },
         {
           id: "F-33",
@@ -411,7 +443,8 @@ export default {
           link: [82],
           color: null,
           date: "2018.12.15",
-          way: null
+          way: null,
+          pic: "F-33.jpg"
         },
         {
           id: "F-34",
@@ -421,7 +454,8 @@ export default {
           link: [82],
           color: null,
           date: "2019.1.19",
-          way: null
+          way: null,
+          pic: "F-34.jpg"
         },
         {
           id: "F-35",
@@ -431,7 +465,8 @@ export default {
           link: [82],
           color: null,
           date: "2019.1.19",
-          way: null
+          way: null,
+          pic: "F-35.jpg"
         },
         {
           id: "F-36",
@@ -441,7 +476,8 @@ export default {
           link: [82],
           color: null,
           date: "2019.2.16",
-          way: null
+          way: null,
+          pic: "F-36.jpg"
         },
         {
           id: "F-37",
@@ -451,7 +487,8 @@ export default {
           link: [82],
           color: null,
           date: "2019.4.27",
-          way: null
+          way: null,
+          pic: "F-37.jpg"
         },
         {
           id: "F-38",
@@ -461,7 +498,8 @@ export default {
           link: [82],
           color: null,
           date: "2019.5",
-          way: null
+          way: null,
+          pic: "F-38.jpg"
         },
         {
           id: "F-39",
@@ -471,7 +509,8 @@ export default {
           link: [82],
           color: null,
           date: "2019.5",
-          way: null
+          way: null,
+          pic: "F-39.jpg"
         },
         {
           id: "F-40",
@@ -481,7 +520,8 @@ export default {
           link: [82],
           color: null,
           date: "2019.6",
-          way: null
+          way: null,
+          pic: "F-40.jpg"
         },
         {
           id: "F-41",
@@ -491,7 +531,8 @@ export default {
           link: [82],
           color: null,
           date: "2019.6.15",
-          way: null
+          way: null,
+          pic: "F-41.jpg"
         },
         {
           id: "F-42",
@@ -501,7 +542,8 @@ export default {
           link: [82],
           color: null,
           date: "2019.7",
-          way: null
+          way: null,
+          pic: "F-42.jpg"
         },
         {
           id: "F-43",
@@ -511,7 +553,8 @@ export default {
           link: [82],
           color: null,
           date: "2019.8",
-          way: null
+          way: null,
+          pic: "F-43.jpg"
         },
         {
           id: "F-44",
@@ -521,7 +564,8 @@ export default {
           link: [82],
           color: null,
           date: "2019.3",
-          way: null
+          way: null,
+          pic: "F-44.jpg"
         },
         {
           id: "F-45",
@@ -531,7 +575,8 @@ export default {
           link: [82],
           color: null,
           date: "2019.3",
-          way: null
+          way: null,
+          pic: "F-45.jpg"
         },
         {
           id: "F-46",
@@ -541,7 +586,8 @@ export default {
           link: [82],
           color: null,
           date: "2019.10.19",
-          way: null
+          way: null,
+          pic: "F-46.jpg"
         },
         {
           id: "F-47",
@@ -551,7 +597,8 @@ export default {
           link: [82],
           color: null,
           date: "2019.11.30",
-          way: null
+          way: null,
+          pic: "F-47.jpg"
         },
         {
           id: "F-48",
@@ -561,7 +608,8 @@ export default {
           link: [82],
           color: null,
           date: "2019.12.14",
-          way: null
+          way: null,
+          pic: "F-48.jpg"
         },
         {
           id: "F-49",
@@ -571,7 +619,8 @@ export default {
           link: [82],
           color: null,
           date: "2019.10.25",
-          way: null
+          way: null,
+          pic: "F-49.jpg"
         },
         {
           id: "F-50",
@@ -581,7 +630,8 @@ export default {
           link: [82],
           color: null,
           date: "2020.3",
-          way: null
+          way: null,
+          pic: "F-50.jpg"
         },
         {
           id: "F-51",
@@ -591,7 +641,8 @@ export default {
           link: [82],
           color: null,
           date: "2020.4",
-          way: null
+          way: null,
+          pic: "F-51.jpg"
         },
         {
           id: "F-52",
@@ -601,7 +652,8 @@ export default {
           link: [82],
           color: null,
           date: "2020.6",
-          way: null
+          way: null,
+          pic: "F-52.jpg"
         },
         {
           id: "F-53",
@@ -611,7 +663,8 @@ export default {
           link: [82],
           color: null,
           date: "2020.6",
-          way: null
+          way: null,
+          pic: "F-53.jpg"
         },
         {
           id: "F-54",
@@ -621,7 +674,8 @@ export default {
           link: [82],
           color: null,
           date: "2020.6.13",
-          way: null
+          way: null,
+          pic: "F-54.jpg"
         },
         {
           id: "F-55",
@@ -631,7 +685,8 @@ export default {
           link: [82],
           color: null,
           date: "2020.7.18",
-          way: null
+          way: null,
+          pic: "F-55.jpg"
         },
         {
           id: "F-56",
@@ -641,7 +696,8 @@ export default {
           link: [82],
           color: null,
           date: "2020.7",
-          way: null
+          way: null,
+          pic: "F-56.jpg"
         },
         {
           id: "F-57",
@@ -651,7 +707,8 @@ export default {
           link: [82],
           color: null,
           date: "2020.9",
-          way: null
+          way: null,
+          pic: "F-57.jpg"
         },
         {
           id: "F-58",
@@ -661,7 +718,8 @@ export default {
           link: [82],
           color: null,
           date: "2020.10",
-          way: null
+          way: null,
+          pic: "F-58.jpg"
         },
         {
           id: "F-59",
@@ -671,7 +729,8 @@ export default {
           link: [82],
           color: null,
           date: "2020.12.19",
-          way: null
+          way: null,
+          pic: "F-59.jpg"
         },
         {
           id: "F-60",
@@ -681,7 +740,8 @@ export default {
           link: [82],
           color: null,
           date: "2020.12.19",
-          way: null
+          way: null,
+          pic: "F-60.jpg"
         },
         {
           id: "F-61",
@@ -691,7 +751,8 @@ export default {
           link: [82],
           color: null,
           date: "2021.1",
-          way: null
+          way: null,
+          pic: "F-61.jpg"
         },
         {
           id: "F-62",
@@ -701,7 +762,8 @@ export default {
           link: [82],
           color: null,
           date: "2021.1",
-          way: null
+          way: null,
+          pic: "F-62.jpg"
         },
         {
           id: "F-63",
@@ -711,7 +773,8 @@ export default {
           link: [82],
           color: null,
           date: "2021.4",
-          way: null
+          way: null,
+          pic: "F-63.jpg"
         },
         {
           id: "F-64",
@@ -721,7 +784,8 @@ export default {
           link: [82],
           color: null,
           date: "2021.2",
-          way: null
+          way: null,
+          pic: "F-64.jpg"
         },
         {
           id: "F-65",
@@ -731,7 +795,8 @@ export default {
           link: [82],
           color: null,
           date: "2021.6",
-          way: null
+          way: null,
+          pic: "F-65.jpg"
         },
         {
           id: "F-66",
@@ -741,7 +806,8 @@ export default {
           link: [82],
           color: null,
           date: "2020.12",
-          way: null
+          way: null,
+          pic: "F-66.jpg"
         },
         {
           id: "F-67",
@@ -751,7 +817,8 @@ export default {
           link: [82],
           color: null,
           date: "2021.4",
-          way: null
+          way: null,
+          pic: "F-67.jpg"
         },
         {
           id: "F-68",
@@ -761,7 +828,8 @@ export default {
           link: [82],
           color: null,
           date: "2021.5",
-          way: null
+          way: null,
+          pic: "F-68.jpg"
         },
         {
           id: "F-69",
@@ -771,7 +839,8 @@ export default {
           link: [82],
           color: null,
           date: "2021.6.26",
-          way: null
+          way: null,
+          pic: "F-69.jpg"
         },
         {
           id: "F-70",
@@ -781,7 +850,8 @@ export default {
           link: [82],
           color: null,
           date: "2021.7",
-          way: null
+          way: null,
+          pic: "F-70.jpg"
         },
         {
           id: "F-71",
@@ -791,7 +861,8 @@ export default {
           link: [82],
           color: null,
           date: "2021.9",
-          way: null
+          way: null,
+          pic: "F-71.jpg"
         },
         {
           id: "F-72",
@@ -801,7 +872,8 @@ export default {
           link: [82],
           color: null,
           date: "2021.9.18",
-          way: null
+          way: null,
+          pic: "F-72.jpg"
         },
         {
           id: "F-73",
@@ -811,7 +883,8 @@ export default {
           link: [82],
           color: null,
           date: "2021.11",
-          way: null
+          way: null,
+          pic: "F-73.jpg"
         },
         {
           id: "F-74",
@@ -821,7 +894,8 @@ export default {
           link: [82],
           color: null,
           date: "2021.11",
-          way: null
+          way: null,
+          pic: "F-74.jpg"
         },
         {
           id: "F-75",
@@ -831,7 +905,8 @@ export default {
           link: [82],
           color: null,
           date: "2021.11",
-          way: null
+          way: null,
+          pic: "F-75.jpg"
         },
         {
           id: "F-76",
@@ -841,7 +916,8 @@ export default {
           link: [82],
           color: null,
           date: "2021.12",
-          way: null
+          way: null,
+          pic: "F-76.jpg"
         },
         {
           id: "F-77",
@@ -851,7 +927,8 @@ export default {
           link: [82],
           color: null,
           date: "2021.7.31",
-          way: null
+          way: null,
+          pic: "F-77.jpg"
         },
         {
           id: "F-78",
@@ -861,7 +938,8 @@ export default {
           link: [82],
           color: null,
           date: "2021.11",
-          way: null
+          way: null,
+          pic: "F-78.jpg"
         },
         {
           id: "F-79",
@@ -871,7 +949,8 @@ export default {
           link: null,
           color: null,
           date: "2022.1",
-          way: null
+          way: null,
+          pic: "F-79.jpg"
         },
         {
           id: "F-80",
@@ -881,7 +960,8 @@ export default {
           link: null,
           color: null,
           date: "2022.1",
-          way: null
+          way: null,
+          pic: "F-80.jpg"
         },
         {
           id: "F-81",
@@ -891,7 +971,8 @@ export default {
           link: null,
           color: null,
           date: "2022.3",
-          way: null
+          way: null,
+          pic: "F-81.jpg"
         },
         {
           id: "F-82",
@@ -901,7 +982,8 @@ export default {
           link: null,
           color: null,
           date: "2022.1",
-          way: null
+          way: null,
+          pic: "F-82.jpg"
         }
       ]
     };

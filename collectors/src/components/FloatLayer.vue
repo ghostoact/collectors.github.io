@@ -4,7 +4,7 @@
       <i class="iconfont icon-fanhuicopy"></i>
     </div>
     <div class="full-pic">
-      <img :src="showpic ? url + item.id + '.jpg' : ''" />
+      <img :src="showpic ? url + item.pic : ''" />
     </div>
     <div class="detail-info">
       <div class="unique-code" v-if="item.code != null" title="通用万能识别码">
@@ -50,18 +50,18 @@ export default {
   props: {
     item: {
       type: Object,
-      default: {},
+      default: {}
     },
     show: {
-      type: Boolean,
+      type: Boolean
     },
     urlType: {
-      type: Number,
+      type: Number
     },
     showPic: {
       type: Boolean,
-      default: true,
-    },
+      default: true
+    }
   },
   data() {
     return {
@@ -70,20 +70,20 @@ export default {
         "./static/img/item/trigger/hyperkey/",
         "./static/img/item/z/ultramedal/",
         "./static/img/item/sofubi/500/",
-        "./static/img/item/SHF/",
-      ],
+        "./static/img/item/SHF/"
+      ]
     };
   },
   methods: {
     closeThis() {
       this.$emit("parentEvent", false);
-    },
+    }
   },
   computed: {
     url() {
       return this.thumbUrl[this.urlType];
-    },
-  },
+    }
+  }
 };
 </script>
 
