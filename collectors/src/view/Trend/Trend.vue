@@ -362,8 +362,8 @@ export default {
           saledate: "2021.7.10",
           yenprice: 142,
           pastprice: [
-            169, 152, 142, 127, 139, 130, 127, 108, 106, 99, 98, 95, 89, 85, 79,69,
-            63,
+            169, 152, 142, 127, 139, 130, 127, 108, 106, 99, 98, 95, 89, 85, 79,
+            69, 63,
           ],
           des: null,
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11997/",
