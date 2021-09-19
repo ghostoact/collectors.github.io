@@ -826,85 +826,85 @@ export default {
           data: [
             {
               name: "泽塔奥特曼 夜光版",
-              color: "#c32020ab",
+              color: "#bbc4cfcf",
               price: 0,
               pic: "/gashapon/YSQ/JLB/1711917337.jpg",
             },
             {
               name: "赛文加 夜光版",
-              color: "#c32020ab",
+              color: "#bbc4cfcf",
               price: 0,
               pic: "/gashapon/YSQ/JLB/6317631447.jpg",
             },
             {
               name: "赛罗奥特曼 夜光版",
-              color: "#c32020ab",
+              color: "#bbc4cfcf",
               price: 0,
               pic: "/gashapon/YSQ/JLB/4431639437.jpg",
             },
             {
               name: "哉阿斯奥特曼 夜光版",
-              color: "#c32020ab",
+              color: "#bbc4cfcf",
               price: 0,
               pic: "/gashapon/YSQ/JLB/5950221525.jpg",
             },
             {
               name: "迪迦奥特曼 夜光版",
-              color: "#c32020ab",
+              color: "#bbc4cfcf",
               price: 0,
               pic: "/gashapon/YSQ/JLB/9163882353.jpg",
             },
             {
               name: "戴拿奥特曼 夜光版",
-              color: "#c32020ab",
+              color: "#bbc4cfcf",
               price: 0,
               pic: "/gashapon/YSQ/JLB/7973570905.jpg",
             },
             {
               name: "电脑魔神 戴斯法萨 夜光版",
-              color: "#c32020ab",
+              color: "#bbc4cfcf",
               price: 0,
               pic: "/gashapon/YSQ/JLB/9170920115.jpg",
             },
             {
               name: "泽塔奥特曼",
-              color: "#c32020ab",
+              color: "#bbc4cfcf",
               price: 0,
               pic: "/gashapon/YSQ/JLB/6899468453.jpg",
             },
             {
               name: "赛文加",
-              color: "#c32020ab",
+              color: "#bbc4cfcf",
               price: 0,
               pic: "/gashapon/YSQ/JLB/9335889817.jpg",
             },
             {
               name: "赛罗奥特曼",
-              color: "#c32020ab",
+              color: "#bbc4cfcf",
               price: 0,
               pic: "/gashapon/YSQ/JLB/7663993632.jpg",
             },
             {
               name: "哉阿斯奥特曼",
-              color: "#c32020ab",
+              color: "#bbc4cfcf",
               price: 0,
               pic: "/gashapon/YSQ/JLB/9344661832.jpg",
             },
             {
               name: "迪迦奥特曼",
-              color: "#c32020ab",
+              color: "#bbc4cfcf",
               price: 0,
               pic: "/gashapon/YSQ/JLB/5832403645.jpg",
             },
             {
               name: "戴拿奥特曼",
-              color: "#c32020ab",
+              color: "#bbc4cfcf",
               price: 0,
               pic: "/gashapon/YSQ/JLB/4588498267.jpg",
             },
             {
               name: "电脑魔神 戴斯法萨",
-              color: "#c32020ab",
+              color: "#bbc4cfcf",
               price: 0,
               pic: "/gashapon/YSQ/JLB/3301742677.jpg",
             },
@@ -1323,7 +1323,7 @@ export default {
           setTimeout(() => {
             gas.step = 3;
             gas.rotate = 0;
-        this.soundForAction("turn");
+            this.soundForAction("turn");
             gas.export = true;
             this.soundForAction("ball-out");
           }, 800);
