@@ -29,6 +29,10 @@ body {
 }
 
 @media (max-width: 1024px) {
+  .logo {
+    top: -55px;
+    left: 15px;
+  }
   .item-list {
     width: 100%;
   }
@@ -88,6 +92,12 @@ body {
 .ctrl-panel {
   margin-bottom: 10px;
   overflow: hidden;
+}
+
+@media (max-width: 1024px) {
+  .ctrl-panel {
+    padding: 0 5px;
+  }
 }
 
 .btn {

@@ -6,6 +6,20 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "1494551",
+      "name": "菜单",
+      "font_class": "caidan",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
+      "icon_id": "4866726",
+      "name": "关 闭",
+      "font_class": "guanbi",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    },
+    {
       "icon_id": "12246254",
       "name": "趋势",
       "font_class": "qushi",

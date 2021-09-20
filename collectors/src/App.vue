@@ -1,10 +1,14 @@
 <template>
   <div id="app">
     <div class="logo"></div>
-    <div class="menu-box">
+    <div class="menu-btn" @click="showMenuByMT">
+      <i class="iconfont icon-caidan"></i>
+    </div>
+    <div class="menu-box" :class="{ show: showMenu }">
       <div class="menu-warp">
         <router-link
           class="menu-item"
+          @click.native="showMenuByMT"
           v-for="(m, i) in menu"
           :to="m.url"
           :key="i"
@@ -26,6 +30,7 @@ export default {
   },
   data() {
     return {
+      showMenu: false,
       menu: [
         {
           name: "奥特曼",
@@ -74,6 +79,10 @@ export default {
         czc.push(["_trackEvent", category, action, label, value, nodeid]);
       }
     },
+    showMenuByMT() {
+      this.showMenu = this.showMenu ? false : true;
+      console.log(this.showMenu);
+    },
   },
   mounted() {
     this.initCNZZ();
@@ -115,7 +124,18 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
 }
-
+.menu-btn {
+  position: fixed;
+  color: #fff;
+  right: 0;
+  top: 0;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: none;
+  z-index: 9999;
+}
 .menu-box {
   text-align: center;
   height: 100px;
@@ -135,5 +155,44 @@ body {
 }
 .menu-item:hover {
   background-color: #ffffff24;
+}
+@media (max-width: 1024px) {
+  .menu-btn {
+    display: block;
+  }
+  .menu-box {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9998;
+    background-color: rgb(89 89 89 / 53%);
+    -webkit-filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+    -webkit-backdrop-filter: saturate(180%) blur(8px);
+    backdrop-filter: saturate(180%) blur(8px);
+  }
+  .menu-box.show {
+    display: block;
+  }
+  .menu-warp {
+    width: 100%;
+    height: 100%;
+    padding-top: 60px;
+  }
+  .menu-item {
+    width: 79%;
+    background-color: #ffffff2b;
+    margin: 0 auto 14px;
+    float: unset;
+    /* padding: 27px 0; */
+    display: block;
+    padding: 0;
+    height: 55px;
+    line-height: 55px;
+    border-radius: 6px;
+  }
 }
 </style>

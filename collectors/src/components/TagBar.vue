@@ -44,7 +44,6 @@ export default {
 
 <style scoped>
 .tags-bar {
-  margin-bottom: 10px;
   display: inline-block;
   width: 100%;
 }
