@@ -24,21 +24,21 @@ export default {
   name: "TagBar",
   props: {
     tags: {
-      type: Array
-    }
+      type: Array,
+    },
   },
   data() {
     return {
       tagsData: this.tags,
-      nowTag: "ALL"
+      nowTag: "ALL",
     };
   },
   methods: {
     getDataByTag(tag) {
       this.nowTag = tag;
       this.$emit("parentEvent", tag);
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -83,5 +83,12 @@ export default {
 }
 .tag-prog.full {
   background-color: #8bc34a;
+}
+@media (max-width: 1024px) {
+  .tag-item {
+    font-size: 12px;
+    padding: 0 4px;
+    margin-bottom: 10px;
+  }
 }
 </style>

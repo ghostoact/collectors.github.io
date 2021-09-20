@@ -690,6 +690,13 @@ export default {
   margin: 0 10px 10px 0;
   float: left;
 }
+@media (max-width: 1024px) {
+  .model-toy {
+    width: calc(100% - 4px);
+    margin: 0 auto 4px;
+    float: unset;
+  }
+}
 .toy-warp {
   position: relative;
   background-color: #003455c4;
@@ -800,5 +807,14 @@ export default {
   color: #ffffff73;
   padding-top: 10px;
   font-size: 12px;
+}
+@media (max-width: 1024px) {
+  .toy-title {
+    font-size: 16px;
+    padding: 20px 0 4px;
+  }
+  .price-num {
+    font-size: 16px;
+  }
 }
 </style>

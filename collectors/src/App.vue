@@ -94,14 +94,20 @@ export default {
 
 <style>
 body {
-  background-size: cover;
+  background-size: contain;
   position: relative;
   width: 100%;
   max-width: 1920px;
   min-width: 1240px;
-  height: 1200px;
   margin: 0 auto;
   z-index: 1;
+}
+
+@media (max-width: 1024px) {
+  body {
+    max-width: unset;
+    min-width: unset;
+  }
 }
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;

@@ -50,18 +50,18 @@ export default {
   props: {
     item: {
       type: Object,
-      default: {}
+      default: {},
     },
     show: {
-      type: Boolean
+      type: Boolean,
     },
     urlType: {
-      type: Number
+      type: Number,
     },
     showPic: {
       type: Boolean,
-      default: true
-    }
+      default: true,
+    },
   },
   data() {
     return {
@@ -70,20 +70,20 @@ export default {
         "./static/img/item/trigger/hyperkey/",
         "./static/img/item/z/ultramedal/",
         "./static/img/item/sofubi/500/",
-        "./static/img/item/SHF/"
-      ]
+        "./static/img/item/SHF/",
+      ],
     };
   },
   methods: {
     closeThis() {
       this.$emit("parentEvent", false);
-    }
+    },
   },
   computed: {
     url() {
       return this.thumbUrl[this.urlType];
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -114,6 +114,15 @@ export default {
   max-width: 100%;
   max-height: 100%;
   vertical-align: middle;
+}
+@media (max-width: 1024px) {
+  .float-layer {
+    width: calc(100% - 6px);
+    margin: 0;
+  }
+  .full-pic {
+    width: 100%;
+  }
 }
 .detail-info {
   text-align: center;

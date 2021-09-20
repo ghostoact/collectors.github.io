@@ -15,27 +15,27 @@ export default {
   props: {
     item: {
       //信息
-      type: Object
+      type: Object,
     },
     urlType: {
       //区别图片URL
-      type: Number
+      type: Number,
     },
     showPic: {
       //是否显示图片
       type: Boolean,
-      default: true
+      default: true,
     },
     defaultColor: {
       //默认barColor
       type: String,
-      default: "#c3370b"
+      default: "#c3370b",
     },
     barColor: {
       //设置color
       type: String,
-      default: null
-    }
+      default: null,
+    },
   },
   data() {
     return {
@@ -45,8 +45,8 @@ export default {
         "./static/img/item/trigger/hyperkey/",
         "./static/img/item/z/ultramedal/",
         "./static/img/item/sofubi/500/",
-        "./static/img/item/SHF/"
-      ]
+        "./static/img/item/SHF/",
+      ],
     };
   },
   methods: {},
@@ -56,8 +56,8 @@ export default {
     },
     color() {
       return this.barColor != null ? this.barColor : this.defaultColor;
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -91,5 +91,12 @@ export default {
   font-size: 12px;
   padding: 4px;
   box-sizing: border-box;
+}
+@media (max-width: 1024px) {
+  .prop-item {
+    width: calc(33% - 4px);
+    height: 125px;
+    margin: 0 2px 4px;
+  }
 }
 </style>

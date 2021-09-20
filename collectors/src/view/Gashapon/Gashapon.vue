@@ -1465,6 +1465,12 @@ export default {
   float: left;
   width: 160px;
 }
+@media (max-width: 1024px) {
+  .group-item {
+    float: unset;
+    margin: 0 auto;
+  }
+}
 .gashapon-item {
   width: 160px;
   height: 415px;

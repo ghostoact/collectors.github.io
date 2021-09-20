@@ -28,6 +28,12 @@ body {
   margin: 60px auto 0;
 }
 
+@media (max-width: 1024px) {
+  .item-list {
+    width: 100%;
+  }
+}
+
 /* @font-face {
   font-family: "飞驰标题体";
   src: url("../assets/fonts/飞驰标题体.ttf") format("truetype");
@@ -42,8 +48,7 @@ body {
   margin-right: 10px;
 }
 
-.switch-label,
-.switch-btn {
+.switch-label, .switch-btn {
   height: 25px;
   line-height: 25px;
   float: left;
@@ -127,6 +132,7 @@ body {
   color: #ff6161;
   background-color: #ffeeee;
 }
+
 .sort-ctrl {
   color: #fff;
   background-color: #ffffff2b;
@@ -137,12 +143,14 @@ body {
   height: 25px;
   line-height: 25px;
 }
+
 .sort-label {
   float: left;
   color: gainsboro;
   margin-right: 10px;
   font-size: 12px;
 }
+
 .sort-item {
   float: left;
   padding: 0 10px;
@@ -150,9 +158,11 @@ body {
   cursor: pointer;
   user-select: none;
 }
+
 .sort-item:hover {
   background-color: #ffffff29;
 }
+
 .sort-item.active {
   background-color: #ffffff54;
 }
