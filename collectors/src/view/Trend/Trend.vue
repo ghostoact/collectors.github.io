@@ -684,21 +684,14 @@ export default {
 <style scoped>
 .model-toy {
   width: 610px;
-  height: 150px;
   border-radius: 10px;
   overflow: hidden;
   margin: 0 10px 10px 0;
   float: left;
 }
-@media (max-width: 1024px) {
-  .model-toy {
-    width: calc(100% - 4px);
-    margin: 0 auto 4px;
-    float: unset;
-  }
-}
 .toy-warp {
   position: relative;
+  overflow: hidden;
   background-color: #003455c4;
   background-image: linear-gradient(-90deg, #08a1a1 0, #00366d 100%);
   /* -webkit-box-shadow: 0 2px 10px 3px rgba(0, 58, 124, 0.43);
@@ -707,9 +700,18 @@ export default {
   filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
   -webkit-backdrop-filter: saturate(180%) blur(8px);
   backdrop-filter: saturate(180%) blur(8px); */
-  min-height: 150px;
   width: 100%;
   height: 100%;
+}
+@media (max-width: 1024px) {
+  .model-toy {
+    width: calc(100% - 4px);
+    margin: 0 auto 4px;
+    float: unset;
+  }
+  .toy-warp {
+    min-height: 115px;
+  }
 }
 .trend-left,
 .trend-right {
@@ -731,6 +733,17 @@ export default {
   position: relative;
   width: calc(100% - 130px - 10px);
   padding-left: 15px;
+}
+@media (max-width: 1024px) {
+  .trend-left {
+    width: 80px;
+    height: 80px;
+    margin: 20px 0 0 10px;
+  }
+  .trend-right {
+    width: calc(100% - 80px - 10px);
+    padding-left: 10px;
+  }
 }
 .trend-info {
   position: absolute;
@@ -790,6 +803,14 @@ export default {
 .price-item.max .price-num {
   color: #efa500;
 }
+@media (max-width: 1024px) {
+  .sale-date {
+    font-size: 12px;
+  }
+  .price-item {
+    width: 23%;
+  }
+}
 .price-num {
   color: #fff25c;
   font-size: 26px;
@@ -810,11 +831,19 @@ export default {
 }
 @media (max-width: 1024px) {
   .toy-title {
-    font-size: 16px;
+    font-size: 14px;
     padding: 20px 0 4px;
   }
   .price-num {
     font-size: 16px;
+  }
+  .price-name {
+    font-size: 12px;
+  }
+  .toy-des {
+    color: #ffffff52;
+    padding-top: 2px;
+    padding-right: 40px;
   }
 }
 </style>

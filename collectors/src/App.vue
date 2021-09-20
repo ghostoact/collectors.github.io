@@ -2,7 +2,7 @@
   <div id="app">
     <div class="logo"></div>
     <div class="menu-btn" @click="showMenuByMT">
-      <i class="iconfont icon-caidan"></i>
+      <i class="iconfont" :class="showMenu ? 'icon-guanbi' : 'icon-caidan'"></i>
     </div>
     <div class="menu-box" :class="{ show: showMenu }">
       <div class="menu-warp">
@@ -81,7 +81,6 @@ export default {
     },
     showMenuByMT() {
       this.showMenu = this.showMenu ? false : true;
-      console.log(this.showMenu);
     },
   },
   mounted() {
