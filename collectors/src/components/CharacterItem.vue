@@ -11,16 +11,16 @@ export default {
   name: "CharacterItem",
   props: {
     character: {
-      type: Object,
-    },
+      type: Object
+    }
   },
   data() {
     return {
       char: this.character,
-      thumbUrl: "./static/img/ultraman/thumb/",
+      thumbUrl: "./static/img/ultraman/thumb/"
     };
   },
-  methods: {},
+  methods: {}
 };
 </script>
 <style scoped>
@@ -56,6 +56,9 @@ export default {
   .item-box {
     width: calc(33% - 4px);
     margin: 0 2px 4px;
+  }
+  .item-box .item-title {
+    font-size: 12px;
   }
 }
 </style>

@@ -1,6 +1,7 @@
 <template>
   <div
     class="prop-item"
+    :class="'grid-' + gridNum"
     v-lazy:background-image="showpic ? url + propitem.pic : ''"
   >
     <div class="item-title" :style="'background-color:' + color">
@@ -15,27 +16,32 @@ export default {
   props: {
     item: {
       //信息
-      type: Object,
+      type: Object
     },
     urlType: {
       //区别图片URL
-      type: Number,
+      type: Number
     },
     showPic: {
       //是否显示图片
       type: Boolean,
-      default: true,
+      default: true
     },
     defaultColor: {
       //默认barColor
       type: String,
-      default: "#c3370b",
+      default: "#c3370b"
     },
     barColor: {
       //设置color
       type: String,
-      default: null,
+      default: null
     },
+    gridNum: {
+      //设置一排数量
+      type: Number,
+      default: 3
+    }
   },
   data() {
     return {
@@ -45,8 +51,8 @@ export default {
         "./static/img/item/trigger/hyperkey/",
         "./static/img/item/z/ultramedal/",
         "./static/img/item/sofubi/500/",
-        "./static/img/item/SHF/",
-      ],
+        "./static/img/item/SHF/"
+      ]
     };
   },
   methods: {},
@@ -56,8 +62,8 @@ export default {
     },
     color() {
       return this.barColor != null ? this.barColor : this.defaultColor;
-    },
-  },
+    }
+  }
 };
 </script>
 
@@ -94,9 +100,25 @@ export default {
 }
 @media (max-width: 1024px) {
   .prop-item {
+    margin: 0 2px 4px;
+  }
+  .prop-item .item-title {
+    font-size: 12px;
+  }
+  .prop-item.grid-3 {
     width: calc(33% - 4px);
     height: 125px;
-    margin: 0 2px 4px;
+  }
+  .prop-item.grid-4 {
+    width: calc(25% - 4px);
+    height: 80px;
+  }
+  .prop-item.grid-5 {
+    width: calc(20% - 4px);
+    height: 60px;
+  }
+  .prop-item.grid-5 .item-title {
+    display: none;
   }
 }
 </style>

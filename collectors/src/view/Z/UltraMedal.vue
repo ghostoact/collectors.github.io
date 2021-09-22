@@ -29,6 +29,7 @@
       :urlType="1"
       :showPic="true"
       :key="um.id"
+      :gridNum="4"
       :barColor="um.color"
       @click.native="showDetail(um)"
       v-show="collectFilter == false || !getCollect(um.id)"
