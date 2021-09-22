@@ -176,7 +176,7 @@ export default {
           name: "泽塔奥特曼阿尔法、伽马、贝塔和德尔塔钥匙",
           saledate: "2022.2",
           yenprice: 323,
-          pastprice: [349, 350, 398, 388, 368, 335],
+          pastprice: [349, 350, 398, 388, 368, 335, 329],
           des: "含泽塔奥特曼阿尔法、伽马、贝塔和德尔塔共4款钥匙",
           url: "https://p-bandai.jp/item/item-1000162971/",
           pic: "6851391459.jpg",
@@ -315,7 +315,7 @@ export default {
           yenprice: 390,
           pastprice: [
             639, 850, 718, 999, 660, 820, 670, 668, 758, 688, 658, 638, 628,
-            618,
+            618, 619,
           ],
           des: "迪迦奥特曼复合型SHF真骨雕*1",
           url: "https://ultra.tamashii.jp/shinkocchou/",
@@ -337,7 +337,7 @@ export default {
           saledate: "2021.7.10",
           yenprice: 597,
           pastprice: [
-            470, 615, 495, 499, 485, 432, 469, 460, 432, 422, 400, 388,
+            470, 615, 495, 499, 485, 432, 469, 460, 432, 422, 400, 388, 370,
           ],
           des: "含胜利神光棒+复合型和强力型钥匙+腰带",
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11947/",
@@ -350,7 +350,7 @@ export default {
           yenprice: 357, //官方参考价
           pastprice: [
             354, 279, 336, 386, 424, 289, 285, 299, 450, 275, 329, 300, 290,
-            288, 286, 280, 295, 238, 239, 221, 235, 219, 208, 198,
+            288, 286, 280, 295, 238, 239, 221, 235, 219, 208, 198, 185,
           ], //历史出价
           des: "含胜利神光棒+特利迦复合型钥匙+中国限定钥匙",
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11946/",
@@ -397,7 +397,7 @@ export default {
           name: "特利迦·强力型钥匙",
           saledate: "2021.7.10",
           yenprice: 65,
-          pastprice: [58, 89, 75, 68, 56, 60, 55, 50, 48, 42, 40],
+          pastprice: [58, 89, 75, 68, 56, 60, 55, 50, 48, 42, 40, 38],
           des: null,
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11944/",
           pic: "6089584307.jpg",
