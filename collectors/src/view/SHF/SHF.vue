@@ -984,6 +984,17 @@ export default {
           date: "2022.1",
           way: null,
           pic: "F-82.jpg"
+        },
+        {
+          id: "F-83",
+          type: "U",
+          tag: ["U"],
+          name: "泰迦奥特曼 彩虹三重斯特利姆形态",
+          link: null,
+          color: null,
+          date: "2022.2",
+          way: null,
+          pic: "F-83.jpg"
         }
       ]
     };

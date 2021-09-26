@@ -133,6 +133,16 @@ export default {
         //   saleDateSort: 99999999
         // },
         {
+          name: "泰迦奥特曼 彩虹三重斯特利姆形态",
+          saledate: "2022.02",
+          yenprice: 417,
+          pastprice: [0],
+          des: "",
+          url: "https://tamashii.jp/item/13780/",
+          pic: "9501525247.jpg",
+          saleDateSort: 20220201,
+        },
+        {
           name: "DX奥特勋章图鉴",
           saledate: "2022.2",
           yenprice: 271,
@@ -302,7 +312,8 @@ export default {
           yenprice: 651,
           pastprice: [
             890, 950, 1200, 680, 825, 749, 850, 858, 815, 825, 800, 840, 1076,
-            930, 899, 894, 729, 750, 868, 898, 904, 860, 859, 838, 788, 699,730,739
+            930, 899, 894, 729, 750, 868, 898, 904, 860, 859, 838, 788, 699,
+            730, 739,
           ],
           des: "迪迦奥特曼变身器25周年UR*1",
           url: "https://p-bandai.jp/item/item-1000153643",
