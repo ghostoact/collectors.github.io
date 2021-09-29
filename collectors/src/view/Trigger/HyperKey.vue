@@ -86,6 +86,12 @@ export default {
           title: "GP01",
           count: 0,
           own: 0
+        },
+        {
+          name: "GP02",
+          title: "GP02",
+          count: 0,
+          own: 0
         }
       ],
       nowList: null, //展示列表
@@ -212,6 +218,16 @@ export default {
           pic: "U-08.jpg"
         },
         {
+          id: "U-09",
+          type: "U",
+          tag: ["DX"],
+          name: "特利迦奥特曼 闪耀型",
+          link: null,
+          color: "#e4b51f",
+          way: "",
+          pic: "def.jpg"
+        },
+        {
           id: "U-10",
           type: "U",
           tag: ["DX"],
@@ -269,7 +285,7 @@ export default {
           name: "利布特奥特曼",
           link: [70],
           way: "",
-          pic: "U-17.jpg"
+          pic: "def.jpg"
         },
         {
           id: "M-01",
@@ -545,6 +561,17 @@ export default {
           code: [5, 4, 3, 0],
           property: "Slash",
           pic: "M-31.jpg"
+        },
+        {
+          id: "M-32",
+          type: "M",
+          tag: ["GP02"],
+          name: "变形怪兽 加佐特",
+          link: null,
+          way: "",
+          code: null,
+          property: "",
+          pic: "def.jpg"
         }
       ]
     };
