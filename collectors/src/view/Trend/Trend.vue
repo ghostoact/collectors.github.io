@@ -326,7 +326,7 @@ export default {
           yenprice: 390,
           pastprice: [
             639, 850, 718, 999, 660, 820, 670, 668, 758, 688, 658, 638, 628,
-            618, 619,
+            618, 619, 550,
           ],
           des: "迪迦奥特曼复合型SHF真骨雕*1",
           url: "https://ultra.tamashii.jp/shinkocchou/",
@@ -361,7 +361,7 @@ export default {
           yenprice: 357, //官方参考价
           pastprice: [
             354, 279, 336, 386, 424, 289, 285, 299, 450, 275, 329, 300, 290,
-            288, 286, 280, 295, 238, 239, 221, 235, 219, 208, 198, 185,
+            288, 286, 280, 295, 238, 239, 221, 235, 219, 208, 198, 185, 179,
           ], //历史出价
           des: "含胜利神光棒+特利迦复合型钥匙+中国限定钥匙",
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11946/",
@@ -408,7 +408,7 @@ export default {
           name: "特利迦·强力型钥匙",
           saledate: "2021.7.10",
           yenprice: 65,
-          pastprice: [58, 89, 75, 68, 56, 60, 55, 50, 48, 42, 40, 38],
+          pastprice: [58, 89, 75, 68, 56, 60, 55, 50, 48, 42, 40, 38, 35],
           des: null,
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11944/",
           pic: "6089584307.jpg",
@@ -418,7 +418,7 @@ export default {
           name: "特利迦·空中型钥匙",
           saledate: "2021.7.24",
           yenprice: 65,
-          pastprice: [60, 89, 75, 48, 42, 40],
+          pastprice: [60, 89, 75, 48, 42, 40, 39],
           des: null,
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11949/",
           pic: "3911376470.jpg",
@@ -428,7 +428,7 @@ export default {
           name: "特利迦·迪迦复合型钥匙",
           saledate: "2021.7.3",
           yenprice: 65,
-          pastprice: [89, 68, 80, 75, 64, 60, 55, 52, 50, 48, 42, 40],
+          pastprice: [89, 68, 80, 75, 64, 60, 55, 52, 50, 48, 42, 40, 35],
           des: null,
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11945/",
           pic: "3044902212.jpg",
