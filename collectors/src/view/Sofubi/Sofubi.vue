@@ -834,6 +834,24 @@ export default {
           pic: "S-82.jpg"
         },
         {
+          id: "S-83",
+          type: "U",
+          tag: ["S"],
+          name: "黑暗特利迦奥特曼",
+          link: [84],
+          color: "#F44336",
+          pic: "S-83.jpg"
+        },
+        {
+          id: "S-84",
+          type: "U",
+          tag: ["S"],
+          name: "特利迦奥特曼 闪耀型",
+          link: [84],
+          color: "#F44336",
+          pic: "S-84.jpg"
+        },
+        {
           id: "EX-01",
           type: "U",
           tag: ["EX"],
@@ -940,6 +958,42 @@ export default {
           link: null,
           color: "#F44336",
           pic: "EX-12.jpg"
+        },
+        {
+          id: "EX-13",
+          type: "U",
+          tag: ["EX"],
+          name: "闪耀迪迦",
+          link: null,
+          color: "#F44336",
+          pic: "EX-13.jpg"
+        },
+        {
+          id: "EX-14",
+          type: "U",
+          tag: ["EX"],
+          name: "究极赛罗 闪耀形态",
+          link: null,
+          color: "#F44336",
+          pic: "EX-14.jpg"
+        },
+        {
+          id: "EX-15",
+          type: "U",
+          tag: ["EX"],
+          name: "安杜鲁·美洛斯",
+          link: null,
+          color: "#F44336",
+          pic: "EX-15.jpg"
+        },
+        {
+          id: "EX-16",
+          type: "U",
+          tag: ["EX"],
+          name: "雷格洛斯奥特曼",
+          link: null,
+          color: "#F44336",
+          pic: "EX-16.jpg"
         },
         {
           id: "K-01",
@@ -2344,6 +2398,24 @@ export default {
           link: null,
           color: "#F44336",
           pic: "K-156.jpg"
+        },
+        {
+          id: "K-157",
+          type: "M",
+          tag: ["K"],
+          name: "奇机械怪兽 戴亚博里古",
+          link: null,
+          color: "#F44336",
+          pic: "K-157.jpg"
+        },
+        {
+          id: "K-158",
+          type: "M",
+          tag: ["K"],
+          name: "宇宙龙 那斯(圆盘形态)",
+          link: null,
+          color: "#F44336",
+          pic: "K-158.jpg"
         },
         {
           id: "EX-K-01",

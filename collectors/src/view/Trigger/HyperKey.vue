@@ -218,14 +218,24 @@ export default {
           pic: "U-08.jpg"
         },
         {
-          id: "U-09",
+          id: "U-14",
           type: "U",
           tag: ["DX"],
           name: "特利迦奥特曼 闪耀型",
           link: null,
-          color: "#e4b51f",
+          color: "#ebc351",
           way: "",
-          pic: "def.jpg"
+          pic: "U-14.jpg"
+        },
+        {
+          id: "U-09",
+          type: "U",
+          tag: ["DX"],
+          name: "利布特奥特曼",
+          link: [70],
+          color: "#01aaab",
+          way: "",
+          pic: "U-09.jpg"
         },
         {
           id: "U-10",
@@ -277,15 +287,6 @@ export default {
           color: "#50b0eb",
           way: "奥特曼联名童装附赠",
           pic: "U-16.jpg"
-        },
-        {
-          id: "U-17",
-          type: "U",
-          tag: ["DX"],
-          name: "利布特奥特曼",
-          link: [70],
-          way: "",
-          pic: "def.jpg"
         },
         {
           id: "M-01",

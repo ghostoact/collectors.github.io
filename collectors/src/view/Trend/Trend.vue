@@ -199,7 +199,7 @@ export default {
           pastprice: [168, 170, 185, 169, 165],
           des: "",
           url: null,
-          pic: "def.jpg",
+          pic: "3773402717.jpg",
           saleDateSort: 20211001,
         },
         {
@@ -209,7 +209,7 @@ export default {
           pastprice: [99, 85, 60, 68, 52, 58, 45],
           des: "",
           url: null,
-          pic: "def.jpg",
+          pic: "7700826964.jpg",
           saleDateSort: 20211001,
         },
         {
@@ -219,7 +219,7 @@ export default {
           pastprice: [88, 58, 59, 55, 58, 60],
           des: "",
           url: null,
-          pic: "def.jpg",
+          pic: "5161201316.jpg",
           saleDateSort: 20211001,
         },
         {
