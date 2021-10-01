@@ -133,6 +133,16 @@ export default {
         //   saleDateSort: 99999999
         // },
         {
+          name: "特利迦可发声扭蛋GP01",
+          saledate: "2022.1",
+          yenprice: 232,
+          pastprice: [0],
+          des: "含戴拿+戴拿特别版+赛罗+赛罗特别版",
+          url: null,
+          pic: "4816999436.jpg",
+          saleDateSort: 20220101,
+        },
+        {
           name: "泰迦奥特曼 彩虹三重斯特利姆形态",
           saledate: "2022.02",
           yenprice: 417,

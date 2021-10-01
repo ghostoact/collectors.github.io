@@ -1753,6 +1753,36 @@ export default {
           maxSpeed: 35, //马赫
           birthPlace: "无",
         },
+        {
+          id: 128,
+          classic: true,
+          type: "base",
+          name: {
+            zh: "雷格洛斯奥特曼",
+            jp: "ウルトラマンレグロス",
+            en: "Ultraman Regulos",
+          },
+          first: 2021,
+          height: 52, //米
+          weight: 47000, //吨
+          maxSpeed: "", //马赫
+          birthPlace: "",
+        },
+        {
+          id: 129,
+          type: "form",
+          formId: 82,
+          name: {
+            zh: "闪耀 特利迦 永恒",
+            jp: "グリッタートリガーエタニティ",
+            en: "Glitter Trigger Eternity",
+          },
+          first: 2021,
+          height: null, //米
+          weight: null, //吨
+          maxSpeed: "", //马赫
+          birthPlace: "",
+        },
       ], //奥特曼数据
       baseList: null, //基础形态列表
       nowId: null, //当前ID

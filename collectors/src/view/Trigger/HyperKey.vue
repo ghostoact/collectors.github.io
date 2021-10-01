@@ -46,7 +46,7 @@ export default {
   components: {
     PropItem,
     TagBar,
-    FloatLayer
+    FloatLayer,
   },
   data() {
     return {
@@ -55,44 +55,50 @@ export default {
           name: "ALL",
           title: "全部",
           count: 0,
-          own: 0
+          own: 0,
         },
         {
           name: "XD",
           title: "限定",
           count: 0,
-          own: 0
+          own: 0,
         },
         {
           name: "DX",
           title: "DX",
           count: 0,
-          own: 0
+          own: 0,
         },
         {
           name: "SG01",
           title: "SG01",
           count: 0,
-          own: 0
+          own: 0,
         },
         {
           name: "SG02",
           title: "SG02",
           count: 0,
-          own: 0
+          own: 0,
         },
         {
           name: "GP01",
           title: "GP01",
           count: 0,
-          own: 0
+          own: 0,
         },
         {
           name: "GP02",
           title: "GP02",
           count: 0,
-          own: 0
-        }
+          own: 0,
+        },
+        {
+          name: "SGP01",
+          title: "发声GP01",
+          count: 0,
+          own: 0,
+        },
       ],
       nowList: null, //展示列表
       nowDetail: null,
@@ -110,7 +116,7 @@ export default {
           color: "#F44336", //自定义颜色
           way: "奥特曼M78商店限定", //获取途径
           code: [2, 3, 4, 0], //唯一识别码
-          pic: "EX-1.jpg" //图片
+          pic: "EX-1.jpg", //图片
         },
         {
           id: "EX-2",
@@ -121,7 +127,7 @@ export default {
           color: "#e29623",
           way: "变身器套装附赠中国限定特典",
           code: [4, 6, 5, 0],
-          pic: "EX-2.jpg"
+          pic: "EX-2.jpg",
         },
         {
           id: "EX-3",
@@ -132,7 +138,7 @@ export default {
           color: "#59b04d",
           way: "奥特曼联名童装附赠",
           code: [6, 1, 3, 0],
-          pic: "EX-3.jpg"
+          pic: "EX-3.jpg",
         },
         {
           id: "U-01",
@@ -143,7 +149,7 @@ export default {
           color: "#ad3ec3",
           way: "",
           code: [1, 2, 3, 0],
-          pic: "U-01.jpg"
+          pic: "U-01.jpg",
         },
         {
           id: "U-02",
@@ -154,7 +160,7 @@ export default {
           color: "#f13342",
           way: "",
           code: [1, 2, 5, 0],
-          pic: "U-02.jpg"
+          pic: "U-02.jpg",
         },
         {
           id: "U-03",
@@ -165,7 +171,7 @@ export default {
           color: "#406cec",
           way: "",
           code: [1, 2, 4, 0],
-          pic: "U-03.jpg"
+          pic: "U-03.jpg",
         },
         {
           id: "U-04",
@@ -175,7 +181,7 @@ export default {
           link: [81],
           color: "#35b9e7",
           way: "",
-          pic: "U-04.jpg"
+          pic: "U-04.jpg",
         },
         {
           id: "U-05",
@@ -185,7 +191,7 @@ export default {
           link: [119],
           color: "#406cec",
           way: "",
-          pic: "U-05.jpg"
+          pic: "U-05.jpg",
         },
         {
           id: "U-06",
@@ -195,7 +201,7 @@ export default {
           link: [120],
           color: "#f13342",
           way: "",
-          pic: "U-06.jpg"
+          pic: "U-06.jpg",
         },
         {
           id: "U-07",
@@ -205,7 +211,7 @@ export default {
           link: [121],
           color: "#ad3ec3",
           way: "",
-          pic: "U-07.jpg"
+          pic: "U-07.jpg",
         },
         {
           id: "U-08",
@@ -215,17 +221,7 @@ export default {
           link: [122],
           color: "#e29623",
           way: "",
-          pic: "U-08.jpg"
-        },
-        {
-          id: "U-14",
-          type: "U",
-          tag: ["DX"],
-          name: "特利迦奥特曼 闪耀型",
-          link: null,
-          color: "#ebc351",
-          way: "",
-          pic: "U-14.jpg"
+          pic: "U-08.jpg",
         },
         {
           id: "U-09",
@@ -235,7 +231,7 @@ export default {
           link: [70],
           color: "#01aaab",
           way: "",
-          pic: "U-09.jpg"
+          pic: "U-09.jpg",
         },
         {
           id: "U-10",
@@ -246,7 +242,7 @@ export default {
           color: "#ad3ec3",
           way: "",
           code: [2, 1, 3, 0],
-          pic: "U-10.jpg"
+          pic: "U-10.jpg",
         },
         {
           id: "U-11",
@@ -256,7 +252,7 @@ export default {
           link: [21],
           color: "#f13342",
           way: "",
-          pic: "U-11.jpg"
+          pic: "U-11.jpg",
         },
         {
           id: "U-12",
@@ -266,7 +262,7 @@ export default {
           link: [22],
           color: "#406cec",
           way: "",
-          pic: "U-12.jpg"
+          pic: "U-12.jpg",
         },
         {
           id: "U-13",
@@ -276,7 +272,47 @@ export default {
           link: [23],
           color: "#e4b51f",
           way: "",
-          pic: "U-13.jpg"
+          pic: "U-13.jpg",
+        },
+        {
+          id: "U-14",
+          type: "U",
+          tag: ["SGP01"],
+          name: "戴拿奥特曼",
+          link: [23],
+          color: "#0266c8",
+          way: "",
+          pic: "U-14.jpg",
+        },
+        {
+          id: "U-14-2",
+          type: "U",
+          tag: ["SGP01"],
+          name: "戴拿奥特曼 特别版",
+          link: [23],
+          color: "#0266c8",
+          way: "",
+          pic: "U-14-2.jpg",
+        },
+        {
+          id: "U-15",
+          type: "U",
+          tag: ["SGP01"],
+          name: "赛罗奥特曼",
+          link: [23],
+          color: "#16227b",
+          way: "",
+          pic: "U-15.jpg",
+        },
+        {
+          id: "U-15-2",
+          type: "U",
+          tag: ["SGP01"],
+          name: "赛罗奥特曼 特别版",
+          link: [23],
+          color: "#16227b",
+          way: "",
+          pic: "U-15-2.jpg",
         },
         {
           id: "U-16",
@@ -286,7 +322,17 @@ export default {
           link: [38],
           color: "#50b0eb",
           way: "奥特曼联名童装附赠",
-          pic: "U-16.jpg"
+          pic: "U-16.jpg",
+        },
+        {
+          id: "U-17",
+          type: "U",
+          tag: ["DX"],
+          name: "特利迦奥特曼 闪耀型",
+          link: null,
+          color: "#dd9d02",
+          way: "",
+          pic: "U-17.jpg",
         },
         {
           id: "M-01",
@@ -297,7 +343,7 @@ export default {
           way: "",
           code: [3, 5, 4, 0],
           property: "Shockwave",
-          pic: "M-01.jpg"
+          pic: "M-01.jpg",
         },
         {
           id: "M-02",
@@ -308,7 +354,7 @@ export default {
           way: "",
           code: [3, 5, 6, 0],
           property: "Thunder",
-          pic: "M-02.jpg"
+          pic: "M-02.jpg",
         },
         {
           id: "M-03",
@@ -319,7 +365,7 @@ export default {
           way: "",
           code: [3, 4, 2, 0],
           property: "Fireball",
-          pic: "M-03.jpg"
+          pic: "M-03.jpg",
         },
         {
           id: "M-03-2",
@@ -330,7 +376,7 @@ export default {
           way: "",
           code: [3, 4, 2, 0],
           property: "Fireball",
-          pic: "M-03-2.jpg"
+          pic: "M-03-2.jpg",
         },
         {
           id: "M-04",
@@ -341,7 +387,7 @@ export default {
           way: "",
           code: [3, 4, 1, 0],
           property: "Splash",
-          pic: "M-04.jpg"
+          pic: "M-04.jpg",
         },
         {
           id: "M-07",
@@ -352,7 +398,7 @@ export default {
           way: "DX纳斯第斯蒂斯号附赠限定钥匙",
           code: null,
           property: "",
-          pic: "M-07.jpg"
+          pic: "M-07.jpg",
         },
         {
           id: "M-10",
@@ -363,7 +409,7 @@ export default {
           way: "",
           code: [3, 4, 6, 0],
           property: "Gargorgon",
-          pic: "M-10.jpg"
+          pic: "M-10.jpg",
         },
         {
           id: "M-11",
@@ -374,7 +420,7 @@ export default {
           way: "",
           code: [5, 3, 2, 0],
           property: "Iron Fist",
-          pic: "M-11.jpg"
+          pic: "M-11.jpg",
         },
         {
           id: "M-11-2",
@@ -385,7 +431,7 @@ export default {
           way: "杂志赠送",
           code: [5, 3, 4, 0],
           property: "Drill Knuckle",
-          pic: "M-11-2.jpg"
+          pic: "M-11-2.jpg",
         },
         {
           id: "M-12",
@@ -396,7 +442,7 @@ export default {
           way: "",
           code: [5, 3, 6, 0],
           property: "Fire Fist",
-          pic: "M-12.jpg"
+          pic: "M-12.jpg",
         },
         {
           id: "M-13",
@@ -407,7 +453,7 @@ export default {
           way: "",
           code: [5, 4, 1, 0],
           property: "Pedanium",
-          pic: "M-13.jpg"
+          pic: "M-13.jpg",
         },
         {
           id: "M-14",
@@ -418,7 +464,7 @@ export default {
           way: "奥特曼联名童装附赠", //获取途径
           code: [5, 4, 2, 0],
           property: "D4",
-          pic: "M-14.jpg"
+          pic: "M-14.jpg",
         },
         {
           id: "M-15",
@@ -429,7 +475,7 @@ export default {
           way: "",
           code: [3, 6, 1, 0],
           property: "Frozen",
-          pic: "M-15.jpg"
+          pic: "M-15.jpg",
         },
         {
           id: "M-16",
@@ -440,7 +486,7 @@ export default {
           way: "",
           code: [5, 2, 3, 0],
           property: "Ultrasonic",
-          pic: "M-16.jpg"
+          pic: "M-16.jpg",
         },
         {
           id: "M-17",
@@ -451,7 +497,7 @@ export default {
           way: "",
           code: [5, 2, 4, 0],
           property: "Sonic Boom",
-          pic: "M-17.jpg"
+          pic: "M-17.jpg",
         },
         {
           id: "M-18",
@@ -462,7 +508,7 @@ export default {
           way: "",
           code: [4, 1, 2, 0],
           property: "Fire",
-          pic: "M-18.jpg"
+          pic: "M-18.jpg",
         },
         {
           id: "M-19",
@@ -473,7 +519,7 @@ export default {
           way: "",
           code: [5, 6, 4, 0],
           property: "Shadow",
-          pic: "M-19.jpg"
+          pic: "M-19.jpg",
         },
         {
           id: "M-20",
@@ -484,7 +530,7 @@ export default {
           way: "講談社MOOK特利迦专刊附赠",
           code: [5, 6, 3, 0],
           property: "Deathcium",
-          pic: "M-20.jpg"
+          pic: "M-20.jpg",
         },
         {
           id: "M-24",
@@ -495,7 +541,7 @@ export default {
           way: "",
           code: [5, 2, 1, 0],
           property: "Flash",
-          pic: "M-24.jpg"
+          pic: "M-24.jpg",
         },
         {
           id: "M-25",
@@ -506,7 +552,7 @@ export default {
           way: "",
           code: [5, 1, 4, 0],
           property: "Dissolve",
-          pic: "M-25.jpg"
+          pic: "M-25.jpg",
         },
         {
           id: "M-27",
@@ -517,7 +563,7 @@ export default {
           way: "",
           code: [4, 1, 3, 0],
           property: "Darkness",
-          pic: "M-27.jpg"
+          pic: "M-27.jpg",
         },
         {
           id: "M-28",
@@ -528,7 +574,7 @@ export default {
           way: "",
           code: [5, 4, 6, 0],
           property: "Whip",
-          pic: "M-28.jpg"
+          pic: "M-28.jpg",
         },
         {
           id: "M-29",
@@ -539,7 +585,7 @@ export default {
           way: "",
           code: [5, 6, 1, 0],
           property: "Flame",
-          pic: "M-29.jpg"
+          pic: "M-29.jpg",
         },
         {
           id: "M-30",
@@ -550,7 +596,7 @@ export default {
           way: "",
           code: [5, 6, 2, 0],
           property: "Gust",
-          pic: "M-30.jpg"
+          pic: "M-30.jpg",
         },
         {
           id: "M-31",
@@ -561,7 +607,7 @@ export default {
           way: "",
           code: [5, 4, 3, 0],
           property: "Slash",
-          pic: "M-31.jpg"
+          pic: "M-31.jpg",
         },
         {
           id: "M-32",
@@ -572,9 +618,9 @@ export default {
           way: "",
           code: null,
           property: "",
-          pic: "def.jpg"
-        }
-      ]
+          pic: "def.jpg",
+        },
+      ],
     };
   },
   methods: {
@@ -659,13 +705,13 @@ export default {
           }
         });
       });
-    }
+    },
   },
   created() {
     this.nowList = this.hyperKey;
     this.getCollectData();
     this.getCollectProgress();
-  }
+  },
 };
 </script>
 
