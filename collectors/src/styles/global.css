@@ -143,7 +143,7 @@ body {
   background-color: #ffeeee;
 }
 
-.sort-ctrl {
+.switch-ctrl {
   color: #fff;
   background-color: #ffffff2b;
   overflow: hidden;
@@ -154,14 +154,14 @@ body {
   line-height: 25px;
 }
 
-.sort-label {
+.switch-label {
   float: left;
   color: gainsboro;
   margin-right: 10px;
   font-size: 12px;
 }
 
-.sort-item {
+.switch-item {
   float: left;
   padding: 0 10px;
   text-align: center;
@@ -169,10 +169,18 @@ body {
   user-select: none;
 }
 
-.sort-item:hover {
+.switch-item:hover {
   background-color: #ffffff29;
 }
 
-.sort-item.active {
+.switch-item.active {
   background-color: #ffffff54;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
 }

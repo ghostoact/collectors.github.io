@@ -1,21 +1,38 @@
 <template>
-  <div class="item-list">
+  <div class="item-list" :class="{ grid: ctrl.view == 1 }">
     <div class="ctrl-panel">
-      <div class="sort-ctrl">
-        <div class="sort-label">排序</div>
+      <div class="switch-ctrl">
+        <div class="switch-label">排序</div>
         <div
-          class="sort-item"
+          class="switch-item"
           :class="{ active: ctrl.sort == 0 }"
           @click="getListBySort(0)"
         >
           默认
         </div>
         <div
-          class="sort-item"
+          class="switch-item"
           :class="{ active: ctrl.sort == 1 }"
           @click="getListBySort(1)"
         >
           发售
+        </div>
+      </div>
+      <div class="switch-ctrl right">
+        <div class="switch-label">视图</div>
+        <div
+          class="switch-item"
+          :class="{ active: ctrl.view == 0 }"
+          @click="changeViewType(0)"
+        >
+          <i class="iconfont icon-list"></i>
+        </div>
+        <div
+          class="switch-item"
+          :class="{ active: ctrl.view == 1 }"
+          @click="changeViewType(1)"
+        >
+          <i class="iconfont icon-jiugongge"></i>
         </div>
       </div>
     </div>
@@ -119,6 +136,7 @@ export default {
     return {
       ctrl: {
         sort: 0,
+        view: 0,
       },
       nowList: null,
       modeltoy: [
@@ -680,6 +698,12 @@ export default {
           break;
       }
     },
+    changeViewType(type) {
+      this.ctrl.view = type;
+      let temp = this.nowList;
+      this.nowList = null;
+      this.nowList = temp;
+    },
     /**数组根据数组对象中的某个属性值进行排序的方法
      * 使用例子：newArray.sort(sortBy('number',false)) //表示根据number属性降序排列;若第二个参数不传递，默认表示升序排序
      * @param attr 排序的属性 如number属性
@@ -734,6 +758,33 @@ export default {
   width: 100%;
   height: 100%;
 }
+
+.grid .model-toy {
+  width: 400px;
+}
+.grid .trend-left,
+.grid .trend-right {
+  float: unset;
+  width: 100%;
+}
+.grid .trend-left {
+  height: 400px;
+  margin: 0;
+  border-radius: 4px 4px 0 0;
+}
+.grid .trend-right {
+  height: 130px;
+  padding-left: 10px;
+}
+.grid .toy-title {
+  padding: 10px 0 10px;
+}
+.grid .price-item {
+  width: 95px;
+}
+.grid .sale-date {
+  color: #08959b;
+}
 @media (max-width: 1024px) {
   .model-toy {
     width: calc(100% - 4px);
@@ -742,6 +793,17 @@ export default {
   }
   .toy-warp {
     min-height: 115px;
+  }
+  .grid .model-toy {
+    width: calc(100% - 10px);
+    margin: 0 5px 10px;
+    box-sizing: border-box;
+  }
+  .grid .trend-right {
+    height: 100px;
+  }
+  .grid .price-item {
+    width: 24%;
   }
 }
 .trend-left,
