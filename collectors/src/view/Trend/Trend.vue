@@ -133,6 +133,16 @@ export default {
         //   saleDateSort: 99999999
         // },
         {
+          name: "DX特利迦青铜神光棒",
+          saledate: "2022.3",
+          yenprice: 319,
+          pastprice: [0],
+          des: "含特利迦青铜神光棒+原始钥匙",
+          url: "https://p-bandai.jp/item/item-1000163882/",
+          pic: "3341588337.jpg",
+          saleDateSort: 20220301,
+        },
+        {
           name: "特利迦可发声扭蛋GP01",
           saledate: "2022.1",
           yenprice: 232,
@@ -446,13 +456,13 @@ export default {
         },
         {
           name: "特利迦·迪迦钥匙套装",
-          saledate: null,
+          saledate: "2021.12",
           yenprice: 195,
           pastprice: [210, 215, 235, 255, 225, 258, 259, 230],
           des: "含迪迦强力型+迪迦空中型+闪耀迪迦",
           url: "https://p-bandai.jp/item/item-1000159699/",
           pic: "7463135507.jpg",
-          saleDateSort: 99999999,
+          saleDateSort: 20211201,
         },
         {
           name: "特利迦·泽塔原生形态钥匙",

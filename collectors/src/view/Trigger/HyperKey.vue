@@ -108,6 +108,17 @@ export default {
       collectList: [], //收藏列表
       hyperKey: [
         {
+          id: "EX-0",
+          type: "U",
+          tag: ["XD"],
+          name: "原始钥匙",
+          link: null,
+          color: "#018dd1",
+          way: "特利迦青铜变身器附带",
+          code: null,
+          pic: "EX-0.jpg",
+        },
+        {
           id: "EX-1", //唯一ID
           type: "U", //U 奥特曼  M 怪兽  O 其它
           tag: ["XD"], //标签：XD限定 DX SG食玩 GP扭蛋
