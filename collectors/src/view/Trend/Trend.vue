@@ -151,11 +151,11 @@ export default {
         //   saleDateSort: 99999999
         // },
         {
-          name: "DX特利迦青铜神光棒",
+          name: "DX特利迦远古胜利神光棒",
           saledate: "2022.3",
           yenprice: 319,
-          pastprice: [349, 340],
-          des: "含特利迦青铜神光棒+原始钥匙",
+          pastprice: [388, 378, 350, 349, 340, 358, 328],
+          des: "含特利迦远古胜利神光棒+原始钥匙",
           url: "https://p-bandai.jp/item/item-1000163882/",
           pic: "3341588337.jpg",
           saleDateSort: 20220301,
