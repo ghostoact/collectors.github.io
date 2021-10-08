@@ -95,7 +95,7 @@ export default {
           {
             id: "GAS-1", //扭蛋机ID
             type: "top", //扭蛋机类型top mid bot
-            series: "TLJGP01", //扭蛋系列
+            series: "TLJGP02", //扭蛋系列
             step: 1, //当前步骤 1投币 2扭动机器 3出货待取
             needCoin: 3, //扭一次需要的总币数
             coin: 0, //当前投币
@@ -103,12 +103,12 @@ export default {
             rotate: 0, //步骤2进程 0未扭动 1扭动一半 2扭动完成
             export: false, //出口数量 false没东西 true有
             color: null, //输出扭蛋颜色
-            stock: [0, 1, 2, 3, 4, 5, 6, 6, 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6], //扭蛋内容
+            stock: [0, 1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8, 6, 7, 8], //扭蛋内容
           },
           {
             id: "GAS-2",
             type: "mid",
-            series: "TLJGP01",
+            series: "TLJGP02",
             step: 1,
             needCoin: 3,
             coin: 0,
@@ -116,7 +116,7 @@ export default {
             rotate: 0,
             export: false,
             color: null,
-            stock: [0, 1, 2, 4, 4, 5, 6, 0, 1, 2, 3, 4, 5, 6, 1, 2, 2, 4, 5, 6],
+            stock: [0, 1, 2, 4, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8, 6, 7, 8],
           },
           {
             id: "GAS-3",
@@ -129,7 +129,7 @@ export default {
             rotate: 0,
             export: false,
             color: null,
-            stock: [0, 6, 0],
+            stock: [0, 1, 2, 4, 4, 5, 6, 0, 1, 2, 3, 4, 5, 6, 1, 2, 2, 4, 5, 6],
           },
         ],
         [
@@ -424,6 +424,66 @@ export default {
               color: "#c34820ab",
               price: 0,
               pic: "/trigger/hyperkey/M-19.jpg",
+            },
+          ],
+        },
+        TLJGP02: {
+          art: "TLJ_GP02.png",
+          data: [
+            {
+              name: "奇兽眼Q 二代",
+              color: "#bbc4cfcf",
+              price: 0,
+              pic: "/trigger/hyperkey/M-06-2.jpg",
+            },
+            {
+              name: "变形怪兽 加佐特",
+              color: "#754396c4",
+              price: 0,
+              pic: "/trigger/hyperkey/M-05.jpg",
+            },
+            {
+              name: "奇兽眼Q",
+              color: "#d4cf67a8",
+              price: 0,
+              pic: "/trigger/hyperkey/M-06.jpg",
+            },
+
+            {
+              name: "奥加古维拉",
+              color: "#23853cb5",
+              price: 0,
+              pic: "/trigger/hyperkey/M-21.jpg",
+            },
+            {
+              name: "古维拉",
+              color: "#1f1f21b0",
+              price: 0,
+              pic: "/trigger/hyperkey/M-22.jpg",
+            },
+            {
+              name: "达达 A",
+              color: "#b13a56c9",
+              price: 0,
+              pic: "/trigger/hyperkey/M-23.jpg",
+            },
+            {
+              name: "达达 B",
+              color: "#b33830c4",
+              price: 0,
+              pic: "/trigger/hyperkey/M-23-2.jpg",
+            },
+            {
+              name: "达达 C",
+              color: "#b754359c",
+              price: 0,
+              pic: "/trigger/hyperkey/M-23-3.jpg",
+            },
+            {
+              name: "嘎地",
+              color: "#2c67ddbf",
+              price: 0,
+              pic: "/trigger/hyperkey/M-26.jpg",
             },
           ],
         },
