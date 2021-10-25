@@ -485,8 +485,7 @@ export default {
             219,
             208,
             198,
-            185,
-            179
+            193
           ], //历史出价
           des: "含胜利神光棒+特利迦复合型钥匙+中国限定钥匙",
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11946/",
@@ -554,7 +553,7 @@ export default {
           name: "特利迦·收纳腰带",
           saledate: "2021.7.10",
           yenprice: 175,
-          pastprice: [179, 199, 99, 108, 89],
+          pastprice: [179, 199, 99, 108, 89, 85],
           des: null,
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11943/",
           pic: "4566708603.jpg",
