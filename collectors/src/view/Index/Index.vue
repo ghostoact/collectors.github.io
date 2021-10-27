@@ -1758,7 +1758,7 @@ export default {
           classic: true,
           type: "base",
           name: {
-            zh: "雷格洛斯奥特曼",
+            zh: "雷古洛思奥特曼",
             jp: "ウルトラマンレグロス",
             en: "Ultraman Regulos",
           },
