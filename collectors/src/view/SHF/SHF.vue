@@ -995,6 +995,17 @@ export default {
           date: "2022.2",
           way: null,
           pic: "F-83.jpg"
+        },
+        {
+          id: "F-84",
+          type: "U",
+          tag: ["U"],
+          name: "泽塔奥特曼 贝塔冲击",
+          link: null,
+          color: null,
+          date: "2022.4",
+          way: null,
+          pic: "F-84.jpg"
         }
       ]
     };
