@@ -21,6 +21,7 @@
         <p class="code-num" v-html="item.code.join('')"></p>
       </div>
       <div
+        v-if="[0].indexOf(urlType) != -1"
         class="sounds-mode"
         :class="{ key: item.selfSound }"
         :title="item.selfSound ? '自发声' : '海帕枪发声'"

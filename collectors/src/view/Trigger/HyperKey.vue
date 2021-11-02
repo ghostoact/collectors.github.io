@@ -156,6 +156,18 @@ export default {
           pic: "EX-3.jpg",
         },
         {
+          id: "EX-4",
+          type: "U",
+          tag: ["XD"],
+          name: "TDG25周年",
+          selfSound: false,
+          link: [],
+          color: "#8a66b8",
+          way: "特典",
+          code: null,
+          pic: "EX-4.jpg",
+        },
+        {
           id: "U-01",
           type: "U",
           tag: ["DX"],
