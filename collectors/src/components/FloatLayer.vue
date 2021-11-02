@@ -20,6 +20,11 @@
         </div>
         <p class="code-num" v-html="item.code.join('')"></p>
       </div>
+      <div
+        class="sounds-mode"
+        :class="{ key: item.selfSound }"
+        :title="item.selfSound ? '自发声' : '海帕枪发声'"
+      ></div>
       <p class="b-title">
         {{ item.name
         }}<span v-if="[0].indexOf(urlType) != -1"
@@ -200,5 +205,17 @@ export default {
 .code-line.c-6 .code-block:nth-child(2),
 .code-line.c-6 .code-block:nth-child(3) {
   opacity: 1;
+}
+.sounds-mode {
+  position: absolute;
+  right: 22px;
+  bottom: 25px;
+  background-image: url("../assets/img/trigger/sounds_mode.png");
+  width: 34px;
+  height: 30px;
+  background-position: 0 0;
+}
+.sounds-mode.key {
+  background-position: -34px 0;
 }
 </style>
