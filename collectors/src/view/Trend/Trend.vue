@@ -264,7 +264,7 @@ export default {
           name: "特利迦奥特曼终极型态钥匙",
           saledate: "2021.10.09",
           yenprice: 63,
-          pastprice: [99, 85, 60, 68, 52, 58, 45],
+          pastprice: [99, 85, 60, 68, 58, 55],
           des: "",
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/12175/",
           pic: "7700826964.jpg",
@@ -324,7 +324,7 @@ export default {
           name: "国代黑暗迪迦神光棒",
           saledate: "2021.10",
           yenprice: null,
-          pastprice: [139, 150, 119, 129, 120, 110],
+          pastprice: [139, 150, 119, 129, 120, 118],
           des: "黑暗迪迦神光棒*1",
           url: null,
           pic: "1519215941.jpg",
@@ -419,7 +419,8 @@ export default {
           yenprice: 357, //官方参考价
           pastprice: [
             354, 279, 336, 386, 424, 289, 285, 299, 450, 275, 329, 300, 290,
-            288, 286, 280, 295, 238, 239, 221, 235, 219, 208, 198, 193,
+            288, 286, 280, 295, 238, 239, 221, 235, 219, 208, 198, 193, 191,
+            189,
           ], //历史出价
           des: "含胜利神光棒+特利迦复合型钥匙+中国限定钥匙",
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11946/",
@@ -586,7 +587,7 @@ export default {
           pastprice: [240, 225, 235, 220, 248],
           des: "一套9款，含隐藏款",
           url: "",
-          pic: "def.jpg",
+          pic: "9809389683.jpg",
           saleDateSort: 20211001,
         },
         {
