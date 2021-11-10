@@ -151,17 +151,17 @@ export default {
         //   saleDateSort: 99999999
         // },
         {
-          name: "泽塔奥特曼 贝塔冲击SHF",
+          name: "SHF泽塔奥特曼 贝塔冲击",
           saledate: "2022.4",
-          yenprice: 400,
+          yenprice: 404,
           pastprice: [0],
           des: "",
-          url: "https://ultra.tamashii.jp/z/#item1000165283",
+          url: "https://tamashii.jp/item/13829/",
           pic: "8442580298.jpg",
           saleDateSort: 20220401
         },
         {
-          name: "黑暗特利迦胜利神光棒",
+          name: "DX黑暗特利迦胜利神光棒PB",
           saledate: "2022.5",
           yenprice: 493,
           pastprice: [569, 579, 598, 578, 575, 509],
@@ -191,7 +191,7 @@ export default {
           saleDateSort: 20220101
         },
         {
-          name: "泰迦奥特曼 彩虹三重斯特利姆形态",
+          name: "SHF泰迦奥特曼 彩虹三重斯特利姆形态",
           saledate: "2022.02",
           yenprice: 417,
           pastprice: [498, 528, 550, 520, 540],
@@ -231,7 +231,7 @@ export default {
           saleDateSort: 20211001
         },
         {
-          name: "泽塔奥特曼 德尔塔天爪SHF",
+          name: "SHF泽塔奥特曼 德尔塔天爪",
           saledate: "2022.1",
           yenprice: 420,
           pastprice: [485, 430, 425, 409, 415, 445, 460, 390, 380],
