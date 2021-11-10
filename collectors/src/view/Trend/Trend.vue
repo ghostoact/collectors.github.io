@@ -816,6 +816,16 @@ export default {
           saleDateSort: 20210616
         },
         {
+          name: "迪迦奥特曼25周年最终圣战软胶套装",
+          saledate: "2021.10.11",
+          yenprice: 155,
+          pastprice: [0],
+          des: "含三款迪迦软胶",
+          url: "https://p-bandai.jp/item/item-1000155889/",
+          pic: "0976180621.jpg",
+          saleDateSort: 20211011
+        },
+        {
           name: "DX黑暗泽塔升华器",
           saledate: "2021.3.12",
           yenprice: 436,
@@ -824,6 +834,46 @@ export default {
           url: "https://p-bandai.jp/item/item-1000146933/",
           pic: "2481612558.jpg",
           saleDateSort: 20210312
+        },
+        {
+          name: "迪迦奥特曼25周年软胶套装",
+          saledate: "2021.01.16",
+          yenprice: 137,
+          pastprice: [0],
+          des: "含三款迪迦软胶",
+          url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11745/",
+          pic: "7230541311.jpg",
+          saleDateSort: 20210116
+        },
+        {
+          name: "SHF泽塔奥特曼 伽马未来",
+          saledate: "2021.9",
+          yenprice: 404,
+          pastprice: [0],
+          des: "含泽塔奥特曼 伽马未来SHF+配件",
+          url: "https://tamashii.jp/item/13616/",
+          pic: "7349880577.jpg",
+          saleDateSort: 20210901
+        },
+        {
+          name: "SHF泽塔奥特曼 阿尔法装甲",
+          saledate: "2020.12.19",
+          yenprice: 217,
+          pastprice: [0],
+          des: "含泽塔奥特曼 阿尔法装甲SHF+配件",
+          url: "https://tamashii.jp/item/13328/",
+          pic: "5944963397.jpg",
+          saleDateSort: 20201219
+        },
+        {
+          name: "SHF泽塔奥特曼 原生形态",
+          saledate: "2021.9.18",
+          yenprice: 280,
+          pastprice: [0],
+          des: "含泽塔奥特曼 原生形态SHF+配件",
+          url: "https://tamashii.jp/item/13596/",
+          pic: "0654177742.jpg",
+          saleDateSort: 20210918
         }
       ]
     };
