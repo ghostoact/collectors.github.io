@@ -902,6 +902,7 @@ export default {
           type: "U",
           tag: ["U"],
           name: "特利迦奥特曼 复合形态",
+          gallery: 8,
           link: [82],
           color: null,
           date: "2021.11",

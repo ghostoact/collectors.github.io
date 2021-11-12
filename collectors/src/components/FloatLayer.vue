@@ -4,7 +4,17 @@
       <i class="iconfont icon-fanhuicopy"></i>
     </div>
     <div class="full-pic">
-      <img :src="showpic ? url + item.pic : ''" />
+      <div class="ctrl-left" @click="toPre" v-if="item.gallery != null">
+        <i class="iconfont icon-left"></i>
+      </div>
+      <div class="ctrl-right" @click="toNext" v-if="item.gallery != null">
+        <i class="iconfont icon-right"></i>
+      </div>
+      <img :src="showpic ? url + item.pic : ''" v-if="item.gallery == null" />
+      <img
+        :src="showpic ? galleryUrl + item.id + '/' + galleryIndex + '.jpg' : ''"
+        v-if="item.gallery != null"
+      />
     </div>
     <div class="detail-info">
       <div class="unique-code" v-if="item.code != null" title="通用万能识别码">
@@ -56,40 +66,56 @@ export default {
   props: {
     item: {
       type: Object,
-      default: {},
+      default: {}
     },
     show: {
-      type: Boolean,
+      type: Boolean
     },
     urlType: {
-      type: Number,
+      type: Number
     },
     showPic: {
       type: Boolean,
-      default: true,
-    },
+      default: true
+    }
   },
   data() {
     return {
       showpic: this.showPic,
+      galleryIndex: 1,
+      galleryUrl: "./static/img/item/SHF/gallery/",
       thumbUrl: [
         "./static/img/item/trigger/hyperkey/",
         "./static/img/item/z/ultramedal/",
         "./static/img/item/sofubi/500/",
-        "./static/img/item/SHF/",
-      ],
+        "./static/img/item/SHF/"
+      ]
     };
   },
   methods: {
     closeThis() {
       this.$emit("parentEvent", false);
     },
+    toPre() {
+      if (this.galleryIndex == 1) {
+        this.galleryIndex = this.item.gallery;
+      } else {
+        this.galleryIndex--;
+      }
+    },
+    toNext() {
+      if (this.galleryIndex == this.item.gallery) {
+        this.galleryIndex = 1;
+      } else {
+        this.galleryIndex++;
+      }
+    }
   },
   computed: {
     url() {
       return this.thumbUrl[this.urlType];
-    },
-  },
+    }
+  }
 };
 </script>
 
@@ -218,5 +244,24 @@ export default {
 }
 .sounds-mode.key {
   background-position: -34px 0;
+}
+.ctrl-left,
+.ctrl-right {
+  width: 40px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  cursor: pointer;
+}
+.ctrl-left:hover,
+.ctrl-right:hover {
+  background-color: #00000014;
+}
+.ctrl-right {
+  left: auto;
+  right: 0;
 }
 </style>

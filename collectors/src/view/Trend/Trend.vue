@@ -154,7 +154,21 @@ export default {
           name: "SHF泽塔奥特曼 贝塔冲击",
           saledate: "2022.4",
           yenprice: 404,
-          pastprice: [440],
+          pastprice: [
+            440,
+            458,
+            478,
+            488,
+            485,
+            455,
+            475,
+            450,
+            470,
+            465,
+            420,
+            460,
+            480
+          ],
           des: "",
           url: "https://tamashii.jp/item/13829/",
           pic: "8442580298.jpg",
@@ -452,6 +466,16 @@ export default {
           url: "https://m-78.jp/news/post-6013",
           pic: "0613853457.jpg",
           saleDateSort: 20211201
+        },
+        {
+          name: "SHF特利迦奥特曼 复合型",
+          saledate: "2021.11.13",
+          yenprice: 215,
+          pastprice: [250],
+          des: "",
+          url: "https://tamashii.jp/item/13674/",
+          pic: "2482221258.jpg",
+          saleDateSort: 20211113
         },
         {
           name: "特利迦·胜利神光棒 豪华版",
