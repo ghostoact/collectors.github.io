@@ -471,7 +471,7 @@ export default {
           name: "SHF特利迦奥特曼 复合型",
           saledate: "2021.11.13",
           yenprice: 215,
-          pastprice: [250],
+          pastprice: [270,250,255,249,258,215,229],
           des: "",
           url: "https://tamashii.jp/item/13674/",
           pic: "2482221258.jpg",
