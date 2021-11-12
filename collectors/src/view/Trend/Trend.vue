@@ -154,7 +154,7 @@ export default {
           name: "SHF泽塔奥特曼 贝塔冲击",
           saledate: "2022.4",
           yenprice: 404,
-          pastprice: [0],
+          pastprice: [440],
           des: "",
           url: "https://tamashii.jp/item/13829/",
           pic: "8442580298.jpg",
@@ -281,7 +281,7 @@ export default {
           saleDateSort: 20211023
         },
         {
-          name: "特空机3号 金古桥军械库定制SHF",
+          name: "SHF特空机3号 金古桥军械库定制",
           saledate: "2022.3",
           yenprice: 505,
           pastprice: [555, 535, 589, 595, 580, 545, 530],
@@ -301,7 +301,7 @@ export default {
           saleDateSort: 20220101
         },
         {
-          name: "超古代怪兽 哥尔赞SHF",
+          name: "SHF超古代怪兽 哥尔赞",
           saledate: "2022.1",
           yenprice: 420,
           pastprice: [440, 468, 518, 519, 539, 485, 470],
@@ -417,7 +417,7 @@ export default {
           saleDateSort: 20211201
         },
         {
-          name: "迪迦奥特曼复合型SHF真骨雕",
+          name: "SHF迪迦奥特曼复合型真骨雕",
           saledate: "2021.7.31",
           yenprice: 390,
           pastprice: [
