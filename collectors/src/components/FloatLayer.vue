@@ -94,6 +94,7 @@ export default {
   },
   methods: {
     closeThis() {
+      this.galleryIndex = 1;
       this.$emit("parentEvent", false);
     },
     toPre() {
@@ -255,10 +256,12 @@ export default {
   top: 40%;
   left: 0;
   cursor: pointer;
+  color: #fff;
+  background-color: #00000030;
 }
 .ctrl-left:hover,
 .ctrl-right:hover {
-  background-color: #00000014;
+  background-color: #00000042;
 }
 .ctrl-right {
   left: auto;
