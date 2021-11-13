@@ -46,7 +46,7 @@ export default {
   components: {
     PropItem,
     TagBar,
-    FloatLayer
+    FloatLayer,
   },
   data() {
     return {
@@ -55,26 +55,26 @@ export default {
           name: "ALL",
           title: "全部",
           count: 0,
-          own: 0
+          own: 0,
         },
         {
           name: "U",
           title: "奥特曼",
           count: 0,
-          own: 0
+          own: 0,
         },
         {
           name: "K",
           title: "怪兽",
           count: 0,
-          own: 0
+          own: 0,
         },
         {
           name: "O",
           title: "其它",
           count: 0,
-          own: 0
-        }
+          own: 0,
+        },
       ],
       nowList: null, //展示列表
       nowDetail: null,
@@ -92,7 +92,7 @@ export default {
           color: null, //自定义颜色
           date: "2016.7.23", //首次发售日期
           way: null, //获取途径
-          pic: "F-1.jpg"
+          pic: "F-1.jpg",
         },
         {
           id: "F-2",
@@ -103,7 +103,7 @@ export default {
           color: null,
           date: "2016.7.23",
           way: null,
-          pic: "F-2.jpg"
+          pic: "F-2.jpg",
         },
         {
           id: "F-3",
@@ -114,7 +114,7 @@ export default {
           color: null,
           date: "2016.8.11",
           way: null,
-          pic: "F-3.jpg"
+          pic: "F-3.jpg",
         },
         {
           id: "F-4",
@@ -125,7 +125,7 @@ export default {
           color: null,
           date: "2016.10.27",
           way: null,
-          pic: "F-4.jpg"
+          pic: "F-4.jpg",
         },
         {
           id: "F-5",
@@ -136,7 +136,7 @@ export default {
           color: null,
           date: "2016.11.19",
           way: null,
-          pic: "F-5.jpg"
+          pic: "F-5.jpg",
         },
         {
           id: "F-6",
@@ -147,7 +147,7 @@ export default {
           color: null,
           date: "2017.9.30",
           way: null,
-          pic: "F-6.jpg"
+          pic: "F-6.jpg",
         },
         {
           id: "F-7",
@@ -158,7 +158,7 @@ export default {
           color: null,
           date: "2017.3.31",
           way: null,
-          pic: "F-7.jpg"
+          pic: "F-7.jpg",
         },
         {
           id: "F-8",
@@ -169,7 +169,7 @@ export default {
           color: null,
           date: "2017.4",
           way: null,
-          pic: "F-8.jpg"
+          pic: "F-8.jpg",
         },
         {
           id: "F-9",
@@ -180,7 +180,7 @@ export default {
           color: null,
           date: "2017.4.29",
           way: null,
-          pic: "F-9.jpg"
+          pic: "F-9.jpg",
         },
         {
           id: "F-10",
@@ -191,7 +191,7 @@ export default {
           color: null,
           date: "2017.5",
           way: null,
-          pic: "F-10.jpg"
+          pic: "F-10.jpg",
         },
         {
           id: "F-11",
@@ -202,7 +202,7 @@ export default {
           color: null,
           date: "2017.6.24",
           way: null,
-          pic: "F-11.jpg"
+          pic: "F-11.jpg",
         },
         {
           id: "F-12",
@@ -213,7 +213,7 @@ export default {
           color: null,
           date: "2017.7.21",
           way: null,
-          pic: "F-12.jpg"
+          pic: "F-12.jpg",
         },
         {
           id: "F-13",
@@ -224,7 +224,7 @@ export default {
           color: null,
           date: "2017.8.11",
           way: null,
-          pic: "F-13.jpg"
+          pic: "F-13.jpg",
         },
         {
           id: "F-14",
@@ -235,7 +235,7 @@ export default {
           color: null,
           date: "2017.8",
           way: null,
-          pic: "F-14.jpg"
+          pic: "F-14.jpg",
         },
         {
           id: "F-15",
@@ -246,7 +246,7 @@ export default {
           color: null,
           date: "2017.11",
           way: null,
-          pic: "F-15.jpg"
+          pic: "F-15.jpg",
         },
         {
           id: "F-16",
@@ -257,7 +257,7 @@ export default {
           color: null,
           date: "2017.12.29",
           way: null,
-          pic: "F-16.jpg"
+          pic: "F-16.jpg",
         },
         {
           id: "F-17",
@@ -268,7 +268,7 @@ export default {
           color: null,
           date: "2018.1",
           way: null,
-          pic: "F-17.jpg"
+          pic: "F-17.jpg",
         },
         {
           id: "F-18",
@@ -279,7 +279,7 @@ export default {
           color: null,
           date: "2018.2.24",
           way: null,
-          pic: "F-18.jpg"
+          pic: "F-18.jpg",
         },
         {
           id: "F-19",
@@ -290,7 +290,7 @@ export default {
           color: null,
           date: "2018.3.31",
           way: null,
-          pic: "F-19.jpg"
+          pic: "F-19.jpg",
         },
         {
           id: "F-20",
@@ -301,7 +301,7 @@ export default {
           color: null,
           date: "2018.4.27",
           way: null,
-          pic: "F-20.jpg"
+          pic: "F-20.jpg",
         },
         {
           id: "F-21",
@@ -312,7 +312,7 @@ export default {
           color: null,
           date: "2018.4",
           way: null,
-          pic: "F-21.jpg"
+          pic: "F-21.jpg",
         },
         {
           id: "F-22",
@@ -323,7 +323,7 @@ export default {
           color: null,
           date: "2018.5",
           way: null,
-          pic: "F-22.jpg"
+          pic: "F-22.jpg",
         },
         {
           id: "F-23",
@@ -334,7 +334,7 @@ export default {
           color: null,
           date: "2018.6.23",
           way: null,
-          pic: "F-23.jpg"
+          pic: "F-23.jpg",
         },
         {
           id: "F-24",
@@ -345,7 +345,7 @@ export default {
           color: null,
           date: "2018.6",
           way: null,
-          pic: "F-24.jpg"
+          pic: "F-24.jpg",
         },
         {
           id: "F-25",
@@ -356,7 +356,7 @@ export default {
           color: null,
           date: "2018.7",
           way: null,
-          pic: "F-25.jpg"
+          pic: "F-25.jpg",
         },
         {
           id: "F-26",
@@ -367,7 +367,7 @@ export default {
           color: null,
           date: "2018.8",
           way: null,
-          pic: "F-26.jpg"
+          pic: "F-26.jpg",
         },
         {
           id: "F-27",
@@ -378,7 +378,7 @@ export default {
           color: null,
           date: "2018.9",
           way: null,
-          pic: "F-27.jpg"
+          pic: "F-27.jpg",
         },
         {
           id: "F-28",
@@ -389,7 +389,7 @@ export default {
           color: null,
           date: "2018.10.27",
           way: null,
-          pic: "F-28.jpg"
+          pic: "F-28.jpg",
         },
         {
           id: "F-29",
@@ -400,7 +400,7 @@ export default {
           color: null,
           date: "2018.10",
           way: null,
-          pic: "F-29.jpg"
+          pic: "F-29.jpg",
         },
         {
           id: "F-30",
@@ -411,7 +411,7 @@ export default {
           color: null,
           date: "2018.11",
           way: null,
-          pic: "F-30.jpg"
+          pic: "F-30.jpg",
         },
         {
           id: "F-31",
@@ -422,7 +422,7 @@ export default {
           color: null,
           date: "2018.12",
           way: null,
-          pic: "F-31.jpg"
+          pic: "F-31.jpg",
         },
         {
           id: "F-32",
@@ -433,7 +433,7 @@ export default {
           color: null,
           date: "2018.12.15",
           way: null,
-          pic: "F-32.jpg"
+          pic: "F-32.jpg",
         },
         {
           id: "F-33",
@@ -444,7 +444,7 @@ export default {
           color: null,
           date: "2018.12.15",
           way: null,
-          pic: "F-33.jpg"
+          pic: "F-33.jpg",
         },
         {
           id: "F-34",
@@ -455,7 +455,7 @@ export default {
           color: null,
           date: "2019.1.19",
           way: null,
-          pic: "F-34.jpg"
+          pic: "F-34.jpg",
         },
         {
           id: "F-35",
@@ -466,7 +466,7 @@ export default {
           color: null,
           date: "2019.1.19",
           way: null,
-          pic: "F-35.jpg"
+          pic: "F-35.jpg",
         },
         {
           id: "F-36",
@@ -477,7 +477,7 @@ export default {
           color: null,
           date: "2019.2.16",
           way: null,
-          pic: "F-36.jpg"
+          pic: "F-36.jpg",
         },
         {
           id: "F-37",
@@ -488,7 +488,7 @@ export default {
           color: null,
           date: "2019.4.27",
           way: null,
-          pic: "F-37.jpg"
+          pic: "F-37.jpg",
         },
         {
           id: "F-38",
@@ -499,7 +499,7 @@ export default {
           color: null,
           date: "2019.5",
           way: null,
-          pic: "F-38.jpg"
+          pic: "F-38.jpg",
         },
         {
           id: "F-39",
@@ -510,7 +510,7 @@ export default {
           color: null,
           date: "2019.5",
           way: null,
-          pic: "F-39.jpg"
+          pic: "F-39.jpg",
         },
         {
           id: "F-40",
@@ -521,7 +521,7 @@ export default {
           color: null,
           date: "2019.6",
           way: null,
-          pic: "F-40.jpg"
+          pic: "F-40.jpg",
         },
         {
           id: "F-41",
@@ -532,7 +532,7 @@ export default {
           color: null,
           date: "2019.6.15",
           way: null,
-          pic: "F-41.jpg"
+          pic: "F-41.jpg",
         },
         {
           id: "F-42",
@@ -543,7 +543,7 @@ export default {
           color: null,
           date: "2019.7",
           way: null,
-          pic: "F-42.jpg"
+          pic: "F-42.jpg",
         },
         {
           id: "F-43",
@@ -554,7 +554,7 @@ export default {
           color: null,
           date: "2019.8",
           way: null,
-          pic: "F-43.jpg"
+          pic: "F-43.jpg",
         },
         {
           id: "F-44",
@@ -565,7 +565,7 @@ export default {
           color: null,
           date: "2019.3",
           way: null,
-          pic: "F-44.jpg"
+          pic: "F-44.jpg",
         },
         {
           id: "F-45",
@@ -576,7 +576,7 @@ export default {
           color: null,
           date: "2019.3",
           way: null,
-          pic: "F-45.jpg"
+          pic: "F-45.jpg",
         },
         {
           id: "F-46",
@@ -587,7 +587,7 @@ export default {
           color: null,
           date: "2019.10.19",
           way: null,
-          pic: "F-46.jpg"
+          pic: "F-46.jpg",
         },
         {
           id: "F-47",
@@ -598,7 +598,7 @@ export default {
           color: null,
           date: "2019.11.30",
           way: null,
-          pic: "F-47.jpg"
+          pic: "F-47.jpg",
         },
         {
           id: "F-48",
@@ -609,7 +609,7 @@ export default {
           color: null,
           date: "2019.12.14",
           way: null,
-          pic: "F-48.jpg"
+          pic: "F-48.jpg",
         },
         {
           id: "F-49",
@@ -620,7 +620,7 @@ export default {
           color: null,
           date: "2019.10.25",
           way: null,
-          pic: "F-49.jpg"
+          pic: "F-49.jpg",
         },
         {
           id: "F-50",
@@ -631,7 +631,7 @@ export default {
           color: null,
           date: "2020.3",
           way: null,
-          pic: "F-50.jpg"
+          pic: "F-50.jpg",
         },
         {
           id: "F-51",
@@ -642,150 +642,163 @@ export default {
           color: null,
           date: "2020.4",
           way: null,
-          pic: "F-51.jpg"
+          pic: "F-51.jpg",
         },
         {
           id: "F-52",
           type: "U",
           tag: ["K"],
           name: "托雷基亚奥特曼",
+          gallery: 8,
           link: [82],
           color: null,
           date: "2020.6",
           way: null,
-          pic: "F-52.jpg"
+          pic: "F-52.jpg",
         },
         {
           id: "F-53",
           type: "U",
           tag: ["U"],
           name: "泰迦奥特曼 三重斯特利姆形态",
+          gallery: 6,
           link: [82],
           color: null,
           date: "2020.6",
           way: null,
-          pic: "F-53.jpg"
+          pic: "F-53.jpg",
         },
         {
           id: "F-54",
           type: "U",
           tag: ["U"],
           name: "奥特曼[BEST SELECTION]",
+          gallery: 6,
           link: [82],
           color: null,
           date: "2020.6.13",
           way: null,
-          pic: "F-54.jpg"
+          pic: "F-54.jpg",
         },
         {
           id: "F-55",
           type: "U",
           tag: ["U"],
           name: "艾斯奥特曼",
+          gallery: 6,
           link: [82],
           color: null,
           date: "2020.7.18",
           way: null,
-          pic: "F-55.jpg"
+          pic: "F-55.jpg",
         },
         {
           id: "F-56",
           type: "U",
           tag: ["U"],
           name: "捷德奥特曼 究极最终形态",
+          gallery: 6,
           link: [82],
           color: null,
           date: "2020.7",
           way: null,
-          pic: "F-56.jpg"
+          pic: "F-56.jpg",
         },
         {
           id: "F-57",
           type: "U",
           tag: ["U"],
           name: "泰塔斯奥特曼",
+          gallery: 7,
           link: [82],
           color: null,
           date: "2020.9",
           way: null,
-          pic: "F-57.jpg"
+          pic: "F-57.jpg",
         },
         {
           id: "F-58",
           type: "U",
           tag: ["U"],
-          name: "赛罗奥特曼 闪耀形态",
+          name: "赛罗奥特曼 光辉形态",
+          gallery: 7,
           link: [82],
           color: null,
           date: "2020.10",
           way: null,
-          pic: "F-58.jpg"
+          pic: "F-58.jpg",
         },
         {
           id: "F-59",
           type: "U",
           tag: ["U"],
           name: "泽塔奥特曼 阿尔法装甲",
+          gallery: 6,
           link: [82],
           color: null,
           date: "2020.12.19",
           way: null,
-          pic: "F-59.jpg"
+          pic: "F-59.jpg",
         },
         {
           id: "F-60",
           type: "U",
           tag: ["U"],
           name: "捷德奥特曼 原始形态(NEW GENERATION版)",
+          gallery: 10,
           link: [82],
           color: null,
           date: "2020.12.19",
           way: null,
-          pic: "F-60.jpg"
+          pic: "F-60.jpg",
         },
         {
           id: "F-61",
           type: "U",
           tag: ["U"],
           name: "银河奥特曼(斯特利姆形态)",
+          gallery: 7,
           link: [82],
           color: null,
           date: "2021.1",
           way: null,
-          pic: "F-61.jpg"
+          pic: "F-61.jpg",
         },
         {
           id: "F-62",
           type: "U",
           tag: ["U"],
-          name: "赛罗奥特曼(银河闪耀无限形态)",
+          name: "赛罗奥特曼(银河光辉无限形态)",
+          gallery: 5,
           link: [82],
           color: null,
           date: "2021.1",
           way: null,
-          pic: "F-62.jpg"
+          pic: "F-62.jpg",
         },
         {
           id: "F-63",
           type: "U",
           tag: ["U"],
           name: "赛罗奥特曼 十周年特别配色ver.",
+          gallery: 7,
           link: [82],
           color: null,
           date: "2021.4",
           way: null,
-          pic: "F-63.jpg"
+          pic: "F-63.jpg",
         },
         {
           id: "F-64",
           type: "U",
           tag: ["U"],
           name: "风马奥特曼",
+          gallery: 6,
           link: [82],
           color: null,
           date: "2021.2",
           way: null,
-          pic: "F-64.jpg"
+          pic: "F-64.jpg",
         },
         {
           id: "F-65",
@@ -797,40 +810,43 @@ export default {
           color: null,
           date: "2021.6",
           way: null,
-          pic: "F-65.jpg"
+          pic: "F-65.jpg",
         },
         {
           id: "F-66",
           type: "U",
           tag: ["U"],
           name: "泰迦奥特曼 Special Clear Color Ver.",
+          gallery: 6,
           link: [82],
           color: null,
           date: "2020.12",
           way: null,
-          pic: "F-66.jpg"
+          pic: "F-66.jpg",
         },
         {
           id: "F-67",
           type: "U",
           tag: ["K"],
           name: "杰顿 一兆度火球ver.",
+          gallery: 6,
           link: [82],
           color: null,
           date: "2021.4",
           way: null,
-          pic: "F-67.jpg"
+          pic: "F-67.jpg",
         },
         {
           id: "F-68",
           type: "U",
           tag: ["K"],
           name: "伽古拉斯.伽古拉（新生代版）",
+          gallery: 9,
           link: [82],
           color: null,
           date: "2021.5",
           way: null,
-          pic: "F-68.jpg"
+          pic: "F-68.jpg",
         },
         {
           id: "F-69",
@@ -842,7 +858,7 @@ export default {
           color: null,
           date: "2021.6.26",
           way: null,
-          pic: "F-69.jpg"
+          pic: "F-69.jpg",
         },
         {
           id: "F-70",
@@ -854,7 +870,7 @@ export default {
           color: null,
           date: "2021.7",
           way: null,
-          pic: "F-70.jpg"
+          pic: "F-70.jpg",
         },
         {
           id: "F-71",
@@ -866,7 +882,7 @@ export default {
           color: null,
           date: "2021.9",
           way: null,
-          pic: "F-71.jpg"
+          pic: "F-71.jpg",
         },
         {
           id: "F-72",
@@ -878,7 +894,7 @@ export default {
           color: null,
           date: "2021.9.18",
           way: null,
-          pic: "F-72.jpg"
+          pic: "F-72.jpg",
         },
         {
           id: "F-73",
@@ -890,7 +906,7 @@ export default {
           color: null,
           date: "2021.11",
           way: null,
-          pic: "F-73.jpg"
+          pic: "F-73.jpg",
         },
         {
           id: "F-74",
@@ -902,7 +918,7 @@ export default {
           color: null,
           date: "2021.11",
           way: null,
-          pic: "F-74.jpg"
+          pic: "F-74.jpg",
         },
         {
           id: "F-75",
@@ -914,7 +930,7 @@ export default {
           color: null,
           date: "2021.11",
           way: null,
-          pic: "F-75.jpg"
+          pic: "F-75.jpg",
         },
         {
           id: "F-76",
@@ -926,7 +942,7 @@ export default {
           color: null,
           date: "2021.12",
           way: null,
-          pic: "F-76.jpg"
+          pic: "F-76.jpg",
         },
         {
           id: "F-77",
@@ -938,7 +954,7 @@ export default {
           color: null,
           date: "2021.7.31",
           way: null,
-          pic: "F-77.jpg"
+          pic: "F-77.jpg",
         },
         {
           id: "F-78",
@@ -950,7 +966,7 @@ export default {
           color: null,
           date: "2021.11",
           way: null,
-          pic: "F-78.jpg"
+          pic: "F-78.jpg",
         },
         {
           id: "F-79",
@@ -962,7 +978,7 @@ export default {
           color: null,
           date: "2022.1",
           way: null,
-          pic: "F-79.jpg"
+          pic: "F-79.jpg",
         },
         {
           id: "F-80",
@@ -974,7 +990,7 @@ export default {
           color: null,
           date: "2022.1",
           way: null,
-          pic: "F-80.jpg"
+          pic: "F-80.jpg",
         },
         {
           id: "F-81",
@@ -986,7 +1002,7 @@ export default {
           color: null,
           date: "2022.3",
           way: null,
-          pic: "F-81.jpg"
+          pic: "F-81.jpg",
         },
         {
           id: "F-82",
@@ -998,7 +1014,7 @@ export default {
           color: null,
           date: "2022.1",
           way: null,
-          pic: "F-82.jpg"
+          pic: "F-82.jpg",
         },
         {
           id: "F-83",
@@ -1010,7 +1026,7 @@ export default {
           color: null,
           date: "2022.2",
           way: null,
-          pic: "F-83.jpg"
+          pic: "F-83.jpg",
         },
         {
           id: "F-84",
@@ -1022,9 +1038,9 @@ export default {
           color: null,
           date: "2022.4",
           way: null,
-          pic: "F-84.jpg"
-        }
-      ]
+          pic: "F-84.jpg",
+        },
+      ],
     };
   },
   methods: {
@@ -1109,13 +1125,13 @@ export default {
           }
         });
       });
-    }
+    },
   },
   created() {
     this.nowList = this.shfiguarts.reverse();
     this.getCollectData();
     this.getCollectProgress();
-  }
+  },
 };
 </script>
 
