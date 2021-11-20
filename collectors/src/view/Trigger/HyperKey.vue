@@ -794,6 +794,18 @@ export default {
           property: "Slash",
           pic: "M-31.jpg",
         },
+        {
+          id: "M-32",
+          type: "M",
+          tag: ["XD"],
+          name: "磁力怪兽 安东拉",
+          selfSound: false,
+          link: "https://m-78.jp/news/post-6134",
+          code: [],
+          way: "奥特曼联名童装附赠",
+          property: "",
+          pic: "M-32.jpg",
+        },
       ],
     };
   },

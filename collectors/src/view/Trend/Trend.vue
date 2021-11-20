@@ -152,6 +152,16 @@ export default {
         //   saleDateSort: 99999999
         // },
         {
+          name: "磁力怪兽 安东拉钥匙童装附赠",
+          saledate: "2022.1",
+          yenprice: 85,
+          pastprice: [0],
+          des: "奥特曼联名童装附赠",
+          url: "https://m-78.jp/news/post-6134",
+          pic: "1372578717.jpg",
+          saleDateSort: 20220101,
+        },
+        {
           name: "SHF利布特奥特曼",
           saledate: "2022.4",
           yenprice: 340,
