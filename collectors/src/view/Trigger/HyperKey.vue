@@ -161,10 +161,10 @@ export default {
           tag: ["XD"],
           name: "TDG迪迦25周年",
           selfSound: true,
-          link: [],
+          link: null,
           color: "#8a66b8",
           way: "奥特曼M78商店限定",
-          code: null,
+          code: [2, 1, 3, 0],
           pic: "EX-4.jpg",
         },
         {
