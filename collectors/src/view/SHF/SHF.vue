@@ -970,7 +970,7 @@ export default {
         },
         {
           id: "F-79",
-          type: "U",
+          type: "M",
           tag: ["K"],
           name: "超古代怪兽 哥尔赞",
           gallery: 6,
@@ -1051,6 +1051,18 @@ export default {
           date: "2022.4",
           way: null,
           pic: "F-85.jpg",
+        },
+        {
+          id: "F-86",
+          type: "M",
+          tag: ["K"],
+          name: "基里艾洛德人",
+          gallery: 7,
+          link: "https://tamashii.jp/item/13867/",
+          color: null,
+          date: "2022.5",
+          way: null,
+          pic: "F-86.jpg",
         },
       ],
     };
