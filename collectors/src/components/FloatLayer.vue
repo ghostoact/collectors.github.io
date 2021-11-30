@@ -1,5 +1,5 @@
 <template>
-  <div class="float-layer" v-if="show">
+  <div class="float-layer" :class="{ active: show }">
     <div class="close-layer" @click="closeThis">
       <i class="iconfont icon-fanhuicopy"></i>
     </div>
@@ -134,9 +134,17 @@ export default {
   border-radius: 8px;
   -webkit-justify-content: center;
   justify-content: center;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(0.7);
+  transition: transform 0.3s, opacity 0.3s;
+  opacity: 0;
+  visibility: hidden;
 }
+.float-layer.active {
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
 .full-pic {
   width: 500px;
   height: 500px;
