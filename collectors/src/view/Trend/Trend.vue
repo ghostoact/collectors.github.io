@@ -155,7 +155,7 @@ export default {
           name: "SHF基里艾洛德人",
           saledate: "2022.5",
           yenprice: 372,
-          pastprice: [0],
+          pastprice: [460, 480, 440, 429, 410, 435, 415, 428],
           des: "",
           url: "https://tamashii.jp/item/13867/",
           pic: "7600487532.jpg",
@@ -1024,7 +1024,7 @@ export default {
   top: 5px;
   color: #ffffff8f;
   font-size: 14px;
-      z-index: 2;
+  z-index: 2;
 }
 .price-item {
   width: 110px;
