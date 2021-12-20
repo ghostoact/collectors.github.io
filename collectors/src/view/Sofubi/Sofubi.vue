@@ -2526,6 +2526,15 @@ export default {
           pic: "EX-K-06.jpg",
         },
         {
+          id: "EX-K-07",
+          type: "M",
+          tag: ["EX-K"],
+          name: "邪恶特利迦",
+          link: null,
+          color: "#F44336",
+          pic: "EX-K-07.jpg",
+        },
+        {
           id: "D-01",
           type: "M",
           tag: ["DX"],
