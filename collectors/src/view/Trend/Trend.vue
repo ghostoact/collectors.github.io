@@ -152,6 +152,16 @@ export default {
         //   saleDateSort: 99999999
         // },
         {
+          name: "黑暗特利迦",
+          saledate: "2022.6",
+          yenprice: 416,
+          pastprice: [485, 465, 450, 440],
+          des: "",
+          url: "https://tamashii.jp/item/13890/",
+          pic: "8542908695.jpg",
+          saleDateSort: 20220601,
+        },
+        {
           name: "特利迦新生代钥匙套装Vol.2",
           saledate: "2022.6",
           yenprice: 388,
@@ -175,7 +185,7 @@ export default {
           name: "SHF迪迦奥特曼强力型真骨雕",
           saledate: "2022.5",
           yenprice: 401,
-          pastprice: [610,480, 470, 450],
+          pastprice: [610, 480, 470, 450],
           des: "",
           url: "https://tamashii.jp/item/13821/",
           pic: "3937344485.jpg",

@@ -1088,6 +1088,18 @@ export default {
           way: null,
           pic: "F-88.jpg",
         },
+        {
+          id: "F-89",
+          type: "U",
+          tag: ["U"],
+          name: "黑暗特利迦",
+          gallery: 8,
+          link: null,
+          color: null,
+          date: "2022.6",
+          way: null,
+          pic: "F-89.jpg",
+        },
       ],
     };
   },
