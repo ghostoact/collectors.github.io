@@ -211,6 +211,7 @@ export default {
           selfSound: true,
           link: [81],
           color: "#35b9e7",
+          code: [1, 4, 2, 0],
           property: "Zestium",
           pic: "U-04.jpg"
         },
@@ -290,6 +291,7 @@ export default {
           selfSound: true,
           link: [21],
           color: "#f13342",
+          code: [2, 3, 4, 0],
           property: "Deracium",
           pic: "U-11.jpg"
         },
@@ -301,6 +303,7 @@ export default {
           selfSound: true,
           link: [22],
           color: "#406cec",
+          code: [2, 1, 6, 0],
           property: "Runboldt",
           pic: "U-12.jpg"
         },
@@ -312,6 +315,7 @@ export default {
           selfSound: true,
           link: [23],
           color: "#e4b51f",
+          code: [2, 5, 1, 0],
           property: "Glitter",
           pic: "U-13.jpg"
         },
@@ -323,6 +327,7 @@ export default {
           selfSound: true,
           link: [23],
           color: "#0266c8",
+          code: [2, 1, 4, 0],
           pic: "U-14.jpg"
         },
         {
@@ -333,6 +338,7 @@ export default {
           selfSound: true,
           link: [23],
           color: "#0266c8",
+          code: [2, 1, 4, 0],
           pic: "U-14-2.jpg"
         },
         {
@@ -343,6 +349,7 @@ export default {
           selfSound: true,
           link: [23],
           color: "#16227b",
+          code: [2, 5, 6, 0],
           property: "Emerium",
           pic: "U-15.jpg"
         },
@@ -354,6 +361,7 @@ export default {
           selfSound: true,
           link: [23],
           color: "#16227b",
+          code: [2, 5, 6, 0],
           pic: "U-15-2.jpg"
         },
         {
@@ -365,6 +373,7 @@ export default {
           link: [38],
           property: "Full Moon",
           color: "#50b0eb",
+          code: [2, 1, 6, 0],
           way: "奥特曼联名童装附赠",
           pic: "U-16.jpg"
         },
@@ -499,6 +508,102 @@ export default {
           code: [],
           property: "",
           pic: "U-29.jpg"
+        },
+        {
+          id: "U-30",
+          type: "U",
+          tag: ["DX"],
+          name: "初代奥特曼",
+          selfSound: true,
+          link: null,
+          color: "#f13342",
+          code: [],
+          property: "",
+          pic: "U-30.jpg"
+        },
+        {
+          id: "U-31",
+          type: "U",
+          tag: ["DX"],
+          name: "佐菲奥特曼",
+          selfSound: true,
+          link: null,
+          color: "#e29623",
+          code: [],
+          property: "",
+          pic: "U-31.jpg"
+        },
+        {
+          id: "U-32",
+          type: "U",
+          tag: ["DX"],
+          name: "赛文奥特曼",
+          selfSound: true,
+          link: null,
+          color: "#e4b51f",
+          code: [],
+          property: "",
+          pic: "U-32.jpg"
+        },
+        {
+          id: "U-33",
+          type: "U",
+          tag: ["DX"],
+          name: "杰克奥特曼",
+          selfSound: true,
+          link: null,
+          color: "#7cbd2c",
+          code: [],
+          property: "",
+          pic: "U-33.jpg"
+        },
+        {
+          id: "U-34",
+          type: "U",
+          tag: ["DX"],
+          name: "艾斯奥特曼",
+          selfSound: true,
+          link: null,
+          color: "#00a14e",
+          code: [],
+          property: "",
+          pic: "U-34.jpg"
+        },
+        {
+          id: "U-35",
+          type: "U",
+          tag: ["DX"],
+          name: "泰罗奥特曼",
+          selfSound: true,
+          link: null,
+          color: "#01b9d9",
+          code: [],
+          property: "",
+          pic: "U-35.jpg"
+        },
+        {
+          id: "U-36",
+          type: "U",
+          tag: ["DX"],
+          name: "雷欧奥特曼",
+          selfSound: true,
+          link: null,
+          color: "#6c6fdc",
+          code: [],
+          property: "",
+          pic: "U-36.jpg"
+        },
+        {
+          id: "U-37",
+          type: "U",
+          tag: ["DX"],
+          name: "艾迪奥特曼",
+          selfSound: true,
+          link: null,
+          color: "#e5609f",
+          code: [],
+          property: "",
+          pic: "U-37.jpg"
         },
         {
           id: "10-U",
@@ -921,7 +1026,7 @@ export default {
           name: "磁力怪兽 安东拉",
           selfSound: false,
           link: "https://m-78.jp/news/post-6134",
-          code: [],
+          code: [3, 6, 2, 0],
           way: "奥特曼联名童装附赠",
           property: "",
           pic: "M-32.jpg"
