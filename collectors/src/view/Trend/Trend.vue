@@ -152,6 +152,26 @@ export default {
         //   saleDateSort: 99999999
         // },
         {
+          name: "SHF妖丽战士 卡尔蜜拉",
+          saledate: "2022.8",
+          yenprice: 394,
+          pastprice: [0],
+          des: "",
+          url: "https://tamashii.jp/item/13910/",
+          pic: "8790263940.jpg",
+          saleDateSort: 20220801
+        },
+        {
+          name: "SHF特利迦奥特曼 空中型",
+          saledate: "2022.7",
+          yenprice: 394,
+          pastprice: [0],
+          des: "",
+          url: "https://tamashii.jp/item/13891/",
+          pic: "9083867813.jpg",
+          saleDateSort: 20220701
+        },
+        {
           name: "PB特利迦·奥特兄弟钥匙套装",
           saledate: "2022.7",
           yenprice: 668,
@@ -162,7 +182,7 @@ export default {
           saleDateSort: 20220701
         },
         {
-          name: "黑暗特利迦",
+          name: "SHF黑暗特利迦",
           saledate: "2022.6",
           yenprice: 416,
           pastprice: [485, 480, 465, 460, 450, 440, 430, 420, 410],
@@ -410,7 +430,7 @@ export default {
           name: "GUTS胜利飞燕1号&2号SHF配件",
           saledate: "2022.1",
           yenprice: 130,
-          pastprice: [160, 140, 150, 159, 135],
+          pastprice: [160, 140, 150, 159, 135, 190, 149, 178, 138, 155, 164],
           des: "含飞燕1号+飞燕2号",
           url: "https://tamashii.jp/item/13703/",
           pic: "7285354079.jpg",
@@ -420,7 +440,7 @@ export default {
           name: "SHF超古代怪兽 哥尔赞",
           saledate: "2022.1",
           yenprice: 420,
-          pastprice: [440, 399, 468, 518, 519, 539, 485, 470],
+          pastprice: [440, 399, 468, 518, 519, 539, 485, 470, 550, 528, 538],
           des: "哥尔赞SHF*1",
           url: "https://tamashii.jp/item/13704/",
           pic: "0604167183.jpg",
