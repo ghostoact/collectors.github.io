@@ -180,6 +180,18 @@ export default {
           pic: "U-01.jpg"
         },
         {
+          id: "U-01-2",
+          type: "U",
+          tag: ["DX"],
+          name: "特利迦奥特曼 复合型PB",
+          selfSound: true,
+          link: [82],
+          color: "#ad3ec3",
+          code: [1, 2, 3, 0],
+          property: "Zeperion",
+          pic: "U-01-2.jpg"
+        },
+        {
           id: "U-02",
           type: "U",
           tag: ["DX"],
@@ -192,6 +204,18 @@ export default {
           pic: "U-02.jpg"
         },
         {
+          id: "U-02-2",
+          type: "U",
+          tag: ["DX"],
+          name: "特利迦奥特曼 强力型PB",
+          selfSound: true,
+          link: [83],
+          color: "#f13342",
+          code: [1, 2, 5, 0],
+          property: "Deracium",
+          pic: "U-02-2.jpg"
+        },
+        {
           id: "U-03",
           type: "U",
           tag: ["DX"],
@@ -202,6 +226,18 @@ export default {
           code: [1, 2, 4, 0],
           property: "Runboldt",
           pic: "U-03.jpg"
+        },
+        {
+          id: "U-03-2",
+          type: "U",
+          tag: ["DX"],
+          name: "特利迦奥特曼 空中型PB",
+          selfSound: true,
+          link: [84],
+          color: "#406cec",
+          code: [1, 2, 4, 0],
+          property: "Runboldt",
+          pic: "U-03-2.jpg"
         },
         {
           id: "U-04",
@@ -388,6 +424,30 @@ export default {
           code: [1, 2, 6, 0],
           property: "Glitter Zeperion",
           pic: "U-17.jpg"
+        },
+        {
+          id: "U-17-2",
+          type: "U",
+          tag: ["DX"],
+          name: "特利迦奥特曼 闪耀型PB",
+          selfSound: true,
+          link: null,
+          color: "#dd9d02",
+          code: [1, 2, 6, 0],
+          property: "Glitter Zeperion",
+          pic: "U-17-2.jpg"
+        },
+        {
+          id: "U-18",
+          type: "U",
+          tag: ["DX"],
+          name: "特利迦奥特曼 光与暗PB",
+          selfSound: true,
+          link: null,
+          color: "#dd9d02",
+          code: [],
+          property: "",
+          pic: "U-18.jpg"
         },
         {
           id: "U-20",
@@ -1025,11 +1085,47 @@ export default {
           tag: ["XD"],
           name: "磁力怪兽 安东拉",
           selfSound: false,
-          link: "https://m-78.jp/news/post-6134",
+          link: null,
           code: [3, 6, 2, 0],
           way: "奥特曼联名童装附赠",
           property: "",
           pic: "M-32.jpg"
+        },
+        {
+          id: "M-33",
+          type: "M",
+          tag: ["DX"],
+          name: "妖丽战士 卡尔蜜拉",
+          selfSound: true,
+          link: null,
+          code: [],
+          way: "",
+          property: "",
+          pic: "M-33.jpg"
+        },
+        {
+          id: "M-34",
+          type: "M",
+          tag: ["DX"],
+          name: "刚力斗士 达贡",
+          selfSound: true,
+          link: null,
+          code: [],
+          way: "",
+          property: "",
+          pic: "M-34.jpg"
+        },
+        {
+          id: "M-35",
+          type: "M",
+          tag: ["DX"],
+          name: "俊敏策士 希特拉姆",
+          selfSound: true,
+          link: null,
+          code: [],
+          way: "",
+          property: "",
+          pic: "M-35.jpg"
         }
       ]
     };

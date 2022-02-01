@@ -151,6 +151,26 @@ export default {
         //   pic: "def.jpg",
         //   saleDateSort: 99999999
         // },
+         {
+          name: "PB特利迦黑暗三巨人纪念套装钥匙DX",
+          saledate: "2022.8",
+          yenprice: 228,
+          pastprice: [0],
+          des: "含PB版希特拉姆、卡尔蜜拉和达贡",
+          url: "https://p-bandai.jp/item/item-1000169478/",
+          pic: "9753094469.jpg",
+          saleDateSort: 20220801
+        },
+         {
+          name: "PB特利迦奥特曼纪念套装钥匙DX",
+          saledate: "2022.8",
+          yenprice: 380,
+          pastprice: [0],
+          des: "含PB版光暗特利迦、闪耀特利迦、复合型、强力型和空中型",
+          url: "https://p-bandai.jp/item/item-1000169439/",
+          pic: "2323474899.jpg",
+          saleDateSort: 20220801
+        },
         {
           name: "SHF妖丽战士 卡尔蜜拉",
           saledate: "2022.8",
