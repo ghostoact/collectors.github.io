@@ -1777,8 +1777,38 @@ export default {
             en: "Glitter Trigger Eternity"
           },
           first: 2021,
-          height: null, //米
-          weight: null, //吨
+          height: 53, //米
+          weight: 44000, //吨
+          maxSpeed: "", //马赫
+          birthPlace: ""
+        },
+        {
+          id: 130,
+          type: "form",
+          formId: 82,
+          name: {
+            zh: "黑暗特利迦",
+            jp: "トリガーダーク",
+            en: "Trigger Dark"
+          },
+          first: 2021,
+          height: 53, //米
+          weight: 44000, //吨
+          maxSpeed: "", //马赫
+          birthPlace: ""
+        },
+        {
+          id: 131,
+          type: "form",
+          formId: 82,
+          name: {
+            zh: "真理特利迦",
+            jp: "トリガートゥルース",
+            en: "Trigger Truth"
+          },
+          first: 2021,
+          height: 53, //米
+          weight: 44000, //吨
           maxSpeed: "", //马赫
           birthPlace: ""
         }
