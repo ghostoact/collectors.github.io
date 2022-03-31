@@ -37,6 +37,10 @@ export default {
           url: "/",
         },
         {
+          name: "德凯·奥特次元卡牌",
+          url: "/Decker",
+        },
+        {
           name: "特利迦·胜利超越之钥",
           url: "/HyperKey",
         },

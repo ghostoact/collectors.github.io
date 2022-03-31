@@ -88,7 +88,8 @@ export default {
         "./static/img/item/trigger/hyperkey/",
         "./static/img/item/z/ultramedal/",
         "./static/img/item/sofubi/500/",
-        "./static/img/item/SHF/"
+        "./static/img/item/SHF/",
+        "./static/img/item/decker/decker/"
       ]
     };
   },

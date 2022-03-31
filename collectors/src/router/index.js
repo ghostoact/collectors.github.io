@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 
 //导入自定义组件
 import Index from '../view/Index/Index'
+import Decker from '../view/Decker/Decker'
 import HyperKey from '../view/Trigger/HyperKey'
 import UltraMedal from '../view/Z/UltraMedal'
 import Sofubi from '../view/Sofubi/Sofubi'
@@ -25,6 +26,11 @@ export default new VueRouter({
       name: 'Index',
       //路由跳转的组件
       component: Index
+    },
+    {
+      path: '/Decker',
+      name: 'Decker',
+      component: Decker
     },
     {
       path: '/HyperKey',

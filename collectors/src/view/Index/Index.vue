@@ -1842,6 +1842,52 @@ export default {
           maxSpeed: "", //马赫
           birthPlace: "",
         },
+        {
+          id: 134,
+          classic: true,
+          type: "base",
+          formId: 134,
+          name: {
+            zh: "德凯奥特曼 闪亮型",
+            jp: "ウルトラマンデッカー　フラッシュタイプ",
+            en: "Ultraman Decker",
+          },
+          first: 2022,
+          height: 55, //米
+          weight: 45000, //吨
+          maxSpeed: "", //马赫
+          birthPlace: "",
+        },
+        {
+          id: 135,
+          type: "form",
+          formId: 134,
+          name: {
+            zh: "德凯奥特曼 强壮型",
+            jp: "ウルトラマンデッカー　ストロングタイプ",
+            en: "Ultraman Decker",
+          },
+          first: 2022,
+          height: 55, //米
+          weight: 45000, //吨
+          maxSpeed: "", //马赫
+          birthPlace: "",
+        },
+        {
+          id: 136,
+          type: "form",
+          formId: 134,
+          name: {
+            zh: "德凯奥特曼 奇迹型",
+            jp: "ウルトラマンデッカー　ミラクルタイプ",
+            en: "Ultraman Decker",
+          },
+          first: 2022,
+          height: 55, //米
+          weight: 45000, //吨
+          maxSpeed: "", //马赫
+          birthPlace: "",
+        },
       ], //奥特曼数据
       baseList: null, //基础形态列表
       nowId: null, //当前ID
