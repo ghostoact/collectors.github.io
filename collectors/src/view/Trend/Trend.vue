@@ -131,13 +131,13 @@ import TrendEcharts from "@/components/Echarts/TrendEcharts";
 export default {
   name: "Trend",
   components: {
-    TrendEcharts,
+    TrendEcharts
   },
   data() {
     return {
       ctrl: {
         sort: 0,
-        view: 0,
+        view: 0
       },
       nowList: null,
       modeltoy: [
@@ -159,7 +159,7 @@ export default {
           des: "含6张卡片",
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/12472/",
           pic: "1548161075.jpg",
-          saleDateSort: 20220806,
+          saleDateSort: 20220806
         },
         {
           name: "德凯奥特曼卡片套装01",
@@ -169,7 +169,7 @@ export default {
           des: "含6张卡片",
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/12469/",
           pic: "0638530477.jpg",
-          saleDateSort: 20220709,
+          saleDateSort: 20220709
         },
         {
           name: "德凯奥特曼 变身器豪华套装",
@@ -179,7 +179,7 @@ export default {
           des: "含变身器+收纳盒+11张卡片",
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/12470/",
           pic: "1235082600.jpg",
-          saleDateSort: 20220709,
+          saleDateSort: 20220709
         },
         {
           name: "德凯奥特曼 卡片收纳盒",
@@ -189,7 +189,7 @@ export default {
           des: "含卡片收藏盒+3张卡片",
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/12468/",
           pic: "2837545135.jpg",
-          saleDateSort: 20220709,
+          saleDateSort: 20220709
         },
         {
           name: "德凯奥特曼 变身器标准版",
@@ -199,7 +199,7 @@ export default {
           des: "含变身器+2张卡片",
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/12467/",
           pic: "1723730232.jpg",
-          saleDateSort: 20220709,
+          saleDateSort: 20220709
         },
         {
           name: "德凯奥特曼 闪亮型软胶·附赠特别版卡片",
@@ -209,7 +209,7 @@ export default {
           des: "含德凯奥特曼 闪亮型软胶+特别版卡片",
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/12466/",
           pic: "9982631301.jpg",
-          saleDateSort: 20220604,
+          saleDateSort: 20220604
         },
         {
           name: "PB盖亚&阿古茹奥特曼套装DX",
@@ -219,7 +219,7 @@ export default {
           des: "含PB版盖亚V2、阿古茹V2、阿古茹至高型",
           url: "https://p-bandai.jp/item/item-1000171224/",
           pic: "7871157012.jpg",
-          saleDateSort: 20220901,
+          saleDateSort: 20220901
         },
         {
           name: "PB特利迦黑暗三巨人纪念套装钥匙DX",
@@ -229,7 +229,7 @@ export default {
           des: "含PB版希特拉姆、卡尔蜜拉和达贡",
           url: "https://p-bandai.jp/item/item-1000169478/",
           pic: "9753094469.jpg",
-          saleDateSort: 20220801,
+          saleDateSort: 20220801
         },
         {
           name: "PB特利迦奥特曼纪念套装钥匙DX",
@@ -239,7 +239,7 @@ export default {
           des: "含PB版光暗特利迦、闪耀特利迦、复合型、强力型和空中型",
           url: "https://p-bandai.jp/item/item-1000169439/",
           pic: "2323474899.jpg",
-          saleDateSort: 20220801,
+          saleDateSort: 20220801
         },
         {
           name: "SHF妖丽战士 卡尔蜜拉",
@@ -249,7 +249,7 @@ export default {
           des: "",
           url: "https://tamashii.jp/item/13910/",
           pic: "8790263940.jpg",
-          saleDateSort: 20220801,
+          saleDateSort: 20220801
         },
         {
           name: "SHF特利迦奥特曼 空中型",
@@ -259,7 +259,7 @@ export default {
           des: "",
           url: "https://tamashii.jp/item/13891/",
           pic: "9083867813.jpg",
-          saleDateSort: 20220701,
+          saleDateSort: 20220701
         },
         {
           name: "PB特利迦·奥特兄弟钥匙套装",
@@ -269,7 +269,7 @@ export default {
           des: "共8款钥匙，含初代、佐菲、赛文、杰克、艾斯、泰罗、雷欧和艾迪",
           url: "https://p-bandai.jp/item/item-1000167638/",
           pic: "9236776245.jpg",
-          saleDateSort: 20220701,
+          saleDateSort: 20220701
         },
         {
           name: "SHF黑暗特利迦",
@@ -279,7 +279,7 @@ export default {
           des: "",
           url: "https://tamashii.jp/item/13890/",
           pic: "8542908695.jpg",
-          saleDateSort: 20220601,
+          saleDateSort: 20220601
         },
         {
           name: "特利迦新生代钥匙套装Vol.2",
@@ -289,7 +289,7 @@ export default {
           des: "含艾克斯、捷德、泰迦、泰塔斯、风马",
           url: "https://p-bandai.jp/item/item-1000167088/",
           pic: "6582630675.jpg",
-          saleDateSort: 20220601,
+          saleDateSort: 20220601
         },
         {
           name: "特利迦新生代钥匙套装Vol.1",
@@ -299,7 +299,7 @@ export default {
           des: "含银河、维克特利、欧布、罗索、布鲁",
           url: "https://p-bandai.jp/item/item-1000167087/",
           pic: "5501806536.jpg",
-          saleDateSort: 20220601,
+          saleDateSort: 20220601
         },
         {
           name: "SHF迪迦奥特曼强力型真骨雕",
@@ -309,7 +309,7 @@ export default {
           des: "",
           url: "https://tamashii.jp/item/13821/",
           pic: "3937344485.jpg",
-          saleDateSort: 20220501,
+          saleDateSort: 20220501
         },
         {
           name: "SHF风马奥特曼 Special Clear Color Ver.",
@@ -319,7 +319,7 @@ export default {
           des: "",
           url: "https://tamashii.jp/item/13872/",
           pic: "8414329854.jpg",
-          saleDateSort: 20211201,
+          saleDateSort: 20211201
         },
         {
           name: "SHF基里艾洛德人",
@@ -329,7 +329,7 @@ export default {
           des: "",
           url: "https://tamashii.jp/item/13867/",
           pic: "7600487532.jpg",
-          saleDateSort: 20220501,
+          saleDateSort: 20220501
         },
         {
           name: "磁力怪兽 安东拉钥匙童装附赠",
@@ -339,7 +339,7 @@ export default {
           des: "童装+安东拉钥匙",
           url: "https://m-78.jp/news/post-6134",
           pic: "1372578717.jpg",
-          saleDateSort: 20220101,
+          saleDateSort: 20220101
         },
         {
           name: "SHF利布特奥特曼",
@@ -349,19 +349,32 @@ export default {
           des: "",
           url: "https://tamashii.jp/item/13803/",
           pic: "0942972170.jpg",
-          saleDateSort: 20220401,
+          saleDateSort: 20220401
         },
         {
           name: "SHF泽塔奥特曼 贝塔冲击",
           saledate: "2022.4",
           yenprice: 404,
           pastprice: [
-            440, 458, 478, 488, 485, 455, 475, 450, 470, 465, 420, 460, 480,
+            440,
+            458,
+            478,
+            488,
+            485,
+            455,
+            475,
+            450,
+            470,
+            465,
+            420,
+            460,
+            480,
+            390
           ],
           des: "",
           url: "https://tamashii.jp/item/13829/",
           pic: "8442580298.jpg",
-          saleDateSort: 20220401,
+          saleDateSort: 20220401
         },
         {
           name: "TDG迪迦25周年",
@@ -369,9 +382,10 @@ export default {
           yenprice: 93,
           pastprice: [130, 149, 150, 159],
           des: "",
-          url: "https://www.m78-online.net/products/detail.php?product_id=12121&utm_source=tsuinfo&utm_campaign=20211118_25key&utm_medium=hp",
+          url:
+            "https://www.m78-online.net/products/detail.php?product_id=12121&utm_source=tsuinfo&utm_campaign=20211118_25key&utm_medium=hp",
           pic: "3220640722.jpg",
-          saleDateSort: 20211120,
+          saleDateSort: 20211120
         },
         {
           name: "DX黑暗特利迦胜利神光棒PB",
@@ -381,17 +395,30 @@ export default {
           des: "含黑暗特利迦神光棒+黑暗特利迦钥匙+2个怪兽钥匙",
           url: "https://p-bandai.jp/item/item-1000164539/",
           pic: "4749566994.jpg",
-          saleDateSort: 20220501,
+          saleDateSort: 20220501
         },
         {
           name: "DX特利迦远古青铜胜利神光棒",
           saledate: "2022.3",
           yenprice: 319,
-          pastprice: [388, 378, 350, 349, 340, 339, 358, 328, 288, 279, 270],
+          pastprice: [
+            388,
+            378,
+            350,
+            349,
+            340,
+            339,
+            358,
+            328,
+            288,
+            279,
+            270,
+            258
+          ],
           des: "含特利迦远古胜利神光棒+原始钥匙",
           url: "https://p-bandai.jp/item/item-1000163882/",
           pic: "3341588337.jpg",
-          saleDateSort: 20220301,
+          saleDateSort: 20220301
         },
         {
           name: "特利迦可发声扭蛋GP01",
@@ -401,7 +428,7 @@ export default {
           des: "含戴拿+戴拿特别版+赛罗+赛罗特别版",
           url: "https://p-bandai.jp/item/item-1000162686/",
           pic: "4816999436.jpg",
-          saleDateSort: 20220101,
+          saleDateSort: 20220101
         },
         {
           name: "SHF泰迦奥特曼 彩虹三重斯特利姆形态",
@@ -411,7 +438,7 @@ export default {
           des: "",
           url: "https://tamashii.jp/item/13780/",
           pic: "9501525247.jpg",
-          saleDateSort: 20220201,
+          saleDateSort: 20220201
         },
         {
           name: "DX泽塔奥特曼奥特勋章图鉴",
@@ -421,7 +448,7 @@ export default {
           des: "含奥特勋章图鉴+特利迦奥特 复合型勋章",
           url: "https://p-bandai.jp/item/item-1000162972/",
           pic: "2820227126.jpg",
-          saleDateSort: 20220201,
+          saleDateSort: 20220201
         },
         {
           name: "DX纳斯第斯号基地",
@@ -431,7 +458,7 @@ export default {
           des: "含DX纳斯第斯号+限定钥匙",
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/12183/",
           pic: "1545467545.jpg",
-          saleDateSort: 20211030,
+          saleDateSort: 20211030
         },
         {
           name: "特利迦与赛罗童装限定钥匙",
@@ -441,7 +468,7 @@ export default {
           des: "",
           url: "https://m-78.jp/news/post-6054",
           pic: "5163017078.jpg",
-          saleDateSort: 20211001,
+          saleDateSort: 20211001
         },
         {
           name: "SHF泽塔奥特曼 德尔塔天爪",
@@ -451,19 +478,30 @@ export default {
           des: "含泽塔奥特曼 德尔塔SHF+配件",
           url: "https://tamashii.jp/item/13765/",
           pic: "4049904576.jpg",
-          saleDateSort: 20220101,
+          saleDateSort: 20220101
         },
         {
           name: "泽塔奥特曼阿尔法、伽马、贝塔和德尔塔钥匙",
           saledate: "2022.2",
           yenprice: 323,
           pastprice: [
-            349, 350, 398, 388, 368, 359, 349, 335, 330, 329, 320, 315,
+            349,
+            350,
+            398,
+            388,
+            368,
+            359,
+            349,
+            335,
+            330,
+            329,
+            320,
+            315
           ],
           des: "含泽塔奥特曼阿尔法、伽马、贝塔和德尔塔共4款钥匙",
           url: "https://p-bandai.jp/item/item-1000162971/",
           pic: "6851391459.jpg",
-          saleDateSort: 20220201,
+          saleDateSort: 20220201
         },
         {
           name: "特利迦奥特曼闪耀之刃",
@@ -473,7 +511,7 @@ export default {
           des: "",
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/12173/",
           pic: "3773402717.jpg",
-          saleDateSort: 20211009,
+          saleDateSort: 20211009
         },
         {
           name: "特利迦奥特曼永恒闪耀钥匙",
@@ -483,7 +521,7 @@ export default {
           des: "",
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/12175/",
           pic: "7700826964.jpg",
-          saleDateSort: 20211009,
+          saleDateSort: 20211009
         },
         {
           name: "利布特奥特曼钥匙",
@@ -493,7 +531,7 @@ export default {
           des: "",
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/12178/",
           pic: "5161201316.jpg",
-          saleDateSort: 20211023,
+          saleDateSort: 20211023
         },
         {
           name: "SHF特空机3号 金古桥军械库定制",
@@ -503,7 +541,7 @@ export default {
           des: "特空机3号 金古桥军械库定制*1",
           url: "https://tamashii.jp/item/13764/",
           pic: "0919064488.jpg",
-          saleDateSort: 20220301,
+          saleDateSort: 20220301
         },
         {
           name: "GUTS胜利飞燕1号&2号SHF配件",
@@ -513,20 +551,35 @@ export default {
           des: "含飞燕1号+飞燕2号",
           url: "https://tamashii.jp/item/13703/",
           pic: "7285354079.jpg",
-          saleDateSort: 20220101,
+          saleDateSort: 20220101
         },
         {
           name: "SHF超古代怪兽 哥尔赞",
           saledate: "2022.1",
           yenprice: 420,
           pastprice: [
-            440, 468, 518, 519, 539, 485, 470, 550, 528, 538, 495, 489, 490,
-            460, 459, 450, 439,
+            440,
+            468,
+            518,
+            519,
+            539,
+            485,
+            470,
+            550,
+            528,
+            538,
+            495,
+            489,
+            490,
+            460,
+            459,
+            450,
+            439
           ],
           des: "哥尔赞SHF*1",
           url: "https://tamashii.jp/item/13704/",
           pic: "0604167183.jpg",
-          saleDateSort: 20220101,
+          saleDateSort: 20220101
         },
         {
           name: "国代胜利飞燕号EX-J",
@@ -536,7 +589,7 @@ export default {
           des: "胜利飞燕号EX-J*1",
           url: null,
           pic: "0475674147.jpg",
-          saleDateSort: 20220401,
+          saleDateSort: 20220401
         },
         {
           name: "国代黑暗迪迦神光棒",
@@ -546,7 +599,7 @@ export default {
           des: "黑暗迪迦神光棒*1",
           url: null,
           pic: "1519215941.jpg",
-          saleDateSort: 20211001,
+          saleDateSort: 20211001
         },
         {
           name: "特空机1号 赛文加 超硬芯回旋铁拳钥匙",
@@ -556,33 +609,59 @@ export default {
           des: "包含特空机1号 赛文加 超硬芯回旋铁拳钥匙+杂志",
           url: "https://www.amazon.co.jp/dp/B09CRQHQ2J",
           pic: "1256933658.jpg",
-          saleDateSort: 20210901,
+          saleDateSort: 20210901
         },
         {
           name: "黑暗迪迦卡蜜尔变身器套装",
           saledate: "2022.3",
           yenprice: 940,
           pastprice: [
-            985, 1010, 954, 1070, 970, 1050, 1150, 1100, 1020, 874, 865, 850,
-            846, 838, 825,
+            985,
+            1010,
+            954,
+            1070,
+            970,
+            1050,
+            1150,
+            1100,
+            1020,
+            874,
+            865,
+            850,
+            846,
+            838,
+            825
           ],
           des: "黑暗迪迦神光棒+卡蜜尔变身器",
           url: "https://p-bandai.jp/item/item-1000162608/",
           pic: "6364924795.jpg",
-          saleDateSort: 20220301,
+          saleDateSort: 20220301
         },
         {
           name: "欧布奥特曼变身器UR",
           saledate: "2022.2",
           yenprice: 977,
           pastprice: [
-            1049, 1119, 1108, 1110, 1050, 1040, 1108, 1098, 959, 1030, 1080,
-            1099, 1030, 1130, 988,
+            1049,
+            1119,
+            1108,
+            1110,
+            1050,
+            1040,
+            1108,
+            1098,
+            959,
+            1030,
+            1080,
+            1099,
+            1030,
+            1130,
+            988
           ],
           des: "欧布奥特曼变身器UR*1",
           url: "https://p-bandai.jp/item/item-1000162085/",
           pic: "0945140992.jpg",
-          saleDateSort: 20220201,
+          saleDateSort: 20220201
         },
 
         {
@@ -590,27 +669,67 @@ export default {
           saledate: "2021.12",
           yenprice: 651,
           pastprice: [
-            890, 950, 1200, 825, 749, 850, 858, 815, 825, 800, 840, 1076, 930,
-            899, 894, 799, 729, 750, 868, 898, 904, 860, 859, 838, 788, 750,
-            748, 728, 699,
+            890,
+            950,
+            1200,
+            825,
+            749,
+            850,
+            858,
+            815,
+            825,
+            800,
+            840,
+            1076,
+            930,
+            899,
+            894,
+            799,
+            729,
+            750,
+            868,
+            898,
+            904,
+            860,
+            859,
+            838,
+            788,
+            750,
+            748,
+            728,
+            699
           ],
           des: "迪迦奥特曼变身器25周年UR*1",
           url: "https://p-bandai.jp/item/item-1000153643",
           pic: "9985374184.jpg",
-          saleDateSort: 20211201,
+          saleDateSort: 20211201
         },
         {
           name: "SHF迪迦奥特曼复合型真骨雕",
           saledate: "2021.7.31",
           yenprice: 390,
           pastprice: [
-            639, 850, 718, 999, 660, 820, 670, 668, 758, 688, 658, 638, 628,
-            618, 619, 550,
+            639,
+            850,
+            718,
+            999,
+            660,
+            820,
+            670,
+            668,
+            758,
+            688,
+            658,
+            638,
+            628,
+            618,
+            619,
+            550
           ],
           des: "迪迦奥特曼复合型SHF真骨雕*1",
           url: "https://ultra.tamashii.jp/shinkocchou/",
           pic: "4110236948.jpg",
-          saleDateSort: 20210731,
+          saleDateSort: 20210731
         },
         {
           name: "特利迦·高斯奥特曼 月神模式钥匙",
@@ -620,7 +739,7 @@ export default {
           des: "高斯奥特曼 月神模式钥匙+童装(内裤、体恤最终价格不同)",
           url: "https://m-78.jp/news/post-6013",
           pic: "0613853457.jpg",
-          saleDateSort: 20211201,
+          saleDateSort: 20211201
         },
         {
           name: "SHF特利迦奥特曼 复合型",
@@ -630,59 +749,130 @@ export default {
           des: "",
           url: "https://tamashii.jp/item/13674/",
           pic: "2482221258.jpg",
-          saleDateSort: 20211113,
+          saleDateSort: 20211113
         },
         {
           name: "特利迦·胜利神光棒 豪华版",
           saledate: "2021.7.10",
           yenprice: 597,
           pastprice: [
-            470, 615, 495, 499, 485, 432, 469, 460, 432, 422, 400, 388, 370,
+            470,
+            615,
+            495,
+            499,
+            485,
+            432,
+            469,
+            460,
+            432,
+            422,
+            400,
+            388,
+            370
           ],
           des: "含胜利神光棒+复合型和强力型钥匙+腰带",
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11947/",
           pic: "6001453401.jpg",
-          saleDateSort: 20210710,
+          saleDateSort: 20210710
         },
         {
           name: "特利迦·胜利神光棒 标准版", //名称
           saledate: "2021.7.10",
           yenprice: 357, //官方参考价
           pastprice: [
-            354, 279, 336, 386, 424, 289, 285, 299, 450, 275, 329, 300, 290,
-            288, 286, 280, 295, 238, 239, 221, 235, 219, 208, 198, 193, 191,
-            189, 176, 160,
+            354,
+            279,
+            336,
+            386,
+            424,
+            289,
+            285,
+            299,
+            450,
+            275,
+            329,
+            300,
+            290,
+            288,
+            286,
+            280,
+            295,
+            238,
+            239,
+            221,
+            235,
+            219,
+            208,
+            198,
+            193,
+            191,
+            189,
+            176,
+            160
           ], //历史出价
           des: "含胜利神光棒+特利迦复合型钥匙+中国限定钥匙",
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11946/",
           pic: "6023439238.jpg",
-          saleDateSort: 20210710,
+          saleDateSort: 20210710
         },
         {
           name: "特利迦·多功能无人变形机 胜利猎鹰",
           saledate: "2021.7.10",
           yenprice: 142,
           pastprice: [
-            169, 152, 142, 127, 139, 130, 127, 108, 106, 99, 98, 95, 89, 85, 79,
-            69, 63, 59, 51,
+            169,
+            152,
+            142,
+            127,
+            139,
+            130,
+            127,
+            108,
+            106,
+            99,
+            98,
+            95,
+            89,
+            85,
+            79,
+            69,
+            63,
+            59,
+            51
           ],
           des: null,
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11997/",
           pic: "9216715703.jpg",
-          saleDateSort: 20210710,
+          saleDateSort: 20210710
         },
         {
           name: "特利迦·圆环之臂",
           saledate: "2021.7.24",
           yenprice: 258,
           pastprice: [
-            269, 179, 299, 189, 220, 190, 198, 256, 180, 149, 145, 143, 137,
-            135, 131, 129, 122, 116,
+            269,
+            179,
+            299,
+            189,
+            220,
+            190,
+            198,
+            256,
+            180,
+            149,
+            145,
+            143,
+            137,
+            135,
+            131,
+            129,
+            122,
+            116
           ],
           des: null,
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11950/",
           pic: "2444468603.jpg",
-          saleDateSort: 20210724,
+          saleDateSort: 20210724
         },
         {
           name: "特利迦·收纳腰带",
@@ -692,7 +882,7 @@ export default {
           des: null,
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11943/",
           pic: "4566708603.jpg",
-          saleDateSort: 20210710,
+          saleDateSort: 20210710
         },
         {
           name: "特利迦·强力型钥匙",
@@ -702,7 +892,7 @@ export default {
           des: null,
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11944/",
           pic: "6089584307.jpg",
-          saleDateSort: 20210710,
+          saleDateSort: 20210710
         },
         {
           name: "特利迦·空中型钥匙",
@@ -712,7 +902,7 @@ export default {
           des: null,
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11949/",
           pic: "3911376470.jpg",
-          saleDateSort: 20210724,
+          saleDateSort: 20210724
         },
         {
           name: "特利迦·迪迦复合型钥匙",
@@ -722,7 +912,7 @@ export default {
           des: null,
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11945/",
           pic: "3044902212.jpg",
-          saleDateSort: 20210703,
+          saleDateSort: 20210703
         },
         {
           name: "特利迦·迪迦钥匙套装",
@@ -732,7 +922,7 @@ export default {
           des: "含迪迦强力型+迪迦空中型+闪耀迪迦",
           url: "https://p-bandai.jp/item/item-1000159699/",
           pic: "7463135507.jpg",
-          saleDateSort: 20211201,
+          saleDateSort: 20211201
         },
         {
           name: "特利迦·泽塔原生形态钥匙",
@@ -742,7 +932,7 @@ export default {
           des: null,
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/12055/",
           pic: "2230315171.jpg",
-          saleDateSort: 20210901,
+          saleDateSort: 20210901
         },
         {
           name: "特利迦·人造赛罗钥匙童装附赠",
@@ -752,32 +942,66 @@ export default {
           des: "含童装内裤或体恤+人造赛罗钥匙",
           url: "https://m-78.jp/news/post-5952",
           pic: "4226628959.jpg",
-          saleDateSort: 20210709,
+          saleDateSort: 20210709
         },
         {
           name: "特利迦·初代奥特曼55周年纪念钥匙",
           saledate: "2021.7.10",
           yenprice: 97,
           pastprice: [
-            145, 149, 185, 155, 170, 162, 169, 155, 175, 180, 165, 188, 165,
-            193, 190, 179, 160, 125, 130, 134, 120, 260, 210,
+            145,
+            149,
+            185,
+            155,
+            170,
+            162,
+            169,
+            155,
+            175,
+            180,
+            165,
+            188,
+            165,
+            193,
+            190,
+            179,
+            160,
+            125,
+            130,
+            134,
+            120,
+            260,
+            210
           ],
           des: null,
           url: "https://m-78.jp/news/post-5907",
           pic: "9767919038.jpg",
-          saleDateSort: 20210710,
+          saleDateSort: 20210710
         },
         {
           name: "特利迦·贝利亚奥特曼钥匙",
           saledate: "2021.7.20",
           yenprice: 70,
           pastprice: [
-            138, 165, 128, 150, 170, 199, 135, 120, 125, 158, 115, 119, 95, 80,
+            138,
+            165,
+            128,
+            150,
+            170,
+            199,
+            135,
+            120,
+            125,
+            158,
+            115,
+            119,
+            95,
+            80
           ],
           des: "包含講談社MOOK特利迦专刊+贝利亚奥特曼钥匙",
           url: "https://bookclub.kodansha.co.jp/buy?item=0000352821",
           pic: "5339720991.jpg",
-          saleDateSort: 20210720,
+          saleDateSort: 20210720
         },
         {
           name: "特利迦·食玩第一弹套装SG01",
@@ -785,9 +1009,10 @@ export default {
           yenprice: 114,
           pastprice: [139, 149, 150, 185, 130, 138, 90, 130, 140],
           des: "一套6款",
-          url: "https://www.bandai.co.jp/candy/products/2021/4549660628194000.html",
+          url:
+            "https://www.bandai.co.jp/candy/products/2021/4549660628194000.html",
           pic: "2321898692.jpg",
-          saleDateSort: 20210719,
+          saleDateSort: 20210719
         },
         {
           name: "特利迦·食玩第二弹套装SG02",
@@ -795,21 +1020,35 @@ export default {
           yenprice: 152,
           pastprice: [168, 120, 205, 140],
           des: "一套8款，含隐藏款",
-          url: "https://www.bandai.co.jp/candy/products/2021/4549660700234000.html",
+          url:
+            "https://www.bandai.co.jp/candy/products/2021/4549660700234000.html",
           pic: "2931378532.jpg",
-          saleDateSort: 20211001,
+          saleDateSort: 20211001
         },
         {
           name: "特利迦·扭蛋第一弹套装GP01",
           saledate: "2021.7",
           yenprice: 119,
           pastprice: [
-            250, 280, 288, 310, 215, 175, 178, 262, 188, 180, 159, 148, 135,
+            250,
+            280,
+            288,
+            310,
+            215,
+            175,
+            178,
+            262,
+            188,
+            180,
+            159,
+            148,
+            135
           ],
           des: "一套7款，含隐藏款",
-          url: "https://www.bandai.co.jp/catalog/item.php?jan_cd=4549660664239000",
+          url:
+            "https://www.bandai.co.jp/catalog/item.php?jan_cd=4549660664239000",
           pic: "4042932634.jpg",
-          saleDateSort: 20210701,
+          saleDateSort: 20210701
         },
         {
           name: "特利迦·扭蛋第二弹套装GP02",
@@ -819,7 +1058,7 @@ export default {
           des: "一套9款，含隐藏款",
           url: "",
           pic: "9809389683.jpg",
-          saleDateSort: 20211001,
+          saleDateSort: 20211001
         },
         {
           name: "DX特空机3号金古桥军械库定制发声变形",
@@ -829,7 +1068,7 @@ export default {
           des: "",
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11575/",
           pic: "6137193599.jpg",
-          saleDateSort: 20200919,
+          saleDateSort: 20200919
         },
         {
           name: "特空机2号乌英达姆+格纳库套装PB",
@@ -839,7 +1078,7 @@ export default {
           des: "乌英达姆软件+格纳库",
           url: "https://p-bandai.jp/item/item-1000157343/",
           pic: "0188389793.jpg",
-          saleDateSort: 20211013,
+          saleDateSort: 20211013
         },
         {
           name: "DX特空机1号赛文加发声PB",
@@ -849,7 +1088,7 @@ export default {
           des: "",
           url: "https://p-bandai.jp/item/item-1000150984",
           pic: "4953195715.jpg",
-          saleDateSort: 20210422,
+          saleDateSort: 20210422
         },
         {
           name: "迪迦25周年胜利飞燕2号",
@@ -859,7 +1098,7 @@ export default {
           des: "",
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11755/",
           pic: "9012643663.jpg",
-          saleDateSort: 20210227,
+          saleDateSort: 20210227
         },
         {
           name: "迪迦25周年胜利飞燕1号",
@@ -869,7 +1108,7 @@ export default {
           des: "",
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11754/",
           pic: "4548201767.jpg",
-          saleDateSort: 20210227,
+          saleDateSort: 20210227
         },
         {
           name: "令人卡&赛罗和奥特六兄弟披风版",
@@ -879,7 +1118,7 @@ export default {
           des: "含令人卡+赛罗和奥特六兄弟披风版勋章",
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11756/",
           pic: "4283482170.jpg",
-          saleDateSort: 20210212,
+          saleDateSort: 20210212
         },
         {
           name: "新生代奥特勋章",
@@ -889,7 +1128,7 @@ export default {
           des: "含9枚奥特勋章",
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11757/",
           pic: "9364578321.jpg",
-          saleDateSort: 20210212,
+          saleDateSort: 20210212
         },
         {
           name: "DX幻世魔剑台词版",
@@ -899,7 +1138,7 @@ export default {
           des: "",
           url: "https://p-bandai.jp/item/item-1000154403/",
           pic: "1884598198.jpg",
-          saleDateSort: 20210818,
+          saleDateSort: 20210818
         },
         {
           name: "泽塔升华器PB纪念版",
@@ -909,7 +1148,7 @@ export default {
           des: "含泽塔升华器纪念版+三张认证卡+4枚奥特勋章",
           url: "https://p-bandai.jp/item/item-1000152765/",
           pic: "6152566804.jpg",
-          saleDateSort: 20210616,
+          saleDateSort: 20210616
         },
         {
           name: "迪迦奥特曼25周年最终圣战软胶套装",
@@ -919,7 +1158,7 @@ export default {
           des: "含三款迪迦软胶",
           url: "https://p-bandai.jp/item/item-1000155889/",
           pic: "0976180621.jpg",
-          saleDateSort: 20211011,
+          saleDateSort: 20211011
         },
         {
           name: "DX黑暗泽塔升华器",
@@ -929,7 +1168,7 @@ export default {
           des: "含黑暗泽塔升华器+伽古拉认证卡+8枚怪兽勋章",
           url: "https://p-bandai.jp/item/item-1000146933/",
           pic: "2481612558.jpg",
-          saleDateSort: 20210312,
+          saleDateSort: 20210312
         },
         {
           name: "迪迦奥特曼25周年软胶套装",
@@ -939,7 +1178,7 @@ export default {
           des: "含三款迪迦软胶",
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11745/",
           pic: "7230541311.jpg",
-          saleDateSort: 20210116,
+          saleDateSort: 20210116
         },
         {
           name: "SHF军械库特空机1号赛文加",
@@ -949,7 +1188,7 @@ export default {
           des: "",
           url: "https://p-bandai.jp/item/item-1000152173/",
           pic: "5092368925.jpg",
-          saleDateSort: 20210624,
+          saleDateSort: 20210624
         },
         {
           name: "SHF泽塔奥特曼 伽马未来",
@@ -959,7 +1198,7 @@ export default {
           des: "含泽塔奥特曼 伽马未来SHF+配件",
           url: "https://tamashii.jp/item/13616/",
           pic: "7349880577.jpg",
-          saleDateSort: 20210901,
+          saleDateSort: 20210901
         },
         {
           name: "SHF泽塔奥特曼 阿尔法装甲",
@@ -969,7 +1208,7 @@ export default {
           des: "含泽塔奥特曼 阿尔法装甲SHF+配件",
           url: "https://tamashii.jp/item/13328/",
           pic: "5944963397.jpg",
-          saleDateSort: 20201219,
+          saleDateSort: 20201219
         },
         {
           name: "SHF泽塔奥特曼 原生形态",
@@ -979,7 +1218,7 @@ export default {
           des: "含泽塔奥特曼 原生形态SHF+配件",
           url: "https://tamashii.jp/item/13596/",
           pic: "0654177742.jpg",
-          saleDateSort: 20210918,
+          saleDateSort: 20210918
         },
         {
           name: "SHF泰塔斯奥特曼",
@@ -989,12 +1228,12 @@ export default {
           des: "",
           url: "https://tamashii.jp/item/13245/",
           pic: "5344829216.jpg",
-          saleDateSort: 20200901,
-        },
-      ],
+          saleDateSort: 20200901
+        }
+      ]
     };
   },
-  mounted: function () {
+  mounted: function() {
     const vm = this;
     vm.$nextTick(() => {});
   },
@@ -1019,7 +1258,7 @@ export default {
       let max = arrSort[arrSort.length - 1];
       let rt = {
         x: [],
-        y: [],
+        y: []
       };
       let sec = 30; //区间
       let minSec = Math.floor(min / sec); //最小区间值
@@ -1069,7 +1308,7 @@ export default {
         rev = rev ? 1 : -1;
       }
 
-      return function (a, b) {
+      return function(a, b) {
         a = a[attr];
         b = b[attr];
         if (a < b) {
@@ -1080,11 +1319,11 @@ export default {
         }
         return 0;
       };
-    },
+    }
   },
   created() {
     this.nowList = this.modeltoy;
-  },
+  }
 };
 </script>
 
