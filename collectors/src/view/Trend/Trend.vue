@@ -152,6 +152,16 @@ export default {
         //   saleDateSort: 99999999
         // },
         {
+          name: "欧布奥特曼UR奥特卡牌SPECIAL SET",
+          saledate: "2022.12",
+          yenprice: 417,
+          pastprice: [450, 499, 489, 498, 508, 478, 475, 448],
+          des: "含35张新规奥特卡牌",
+          url: "https://p-bandai.jp/item/item-1000172276/",
+          pic: "0682287033.jpg",
+          saleDateSort: 20221201
+        },
+        {
           name: "德凯奥特曼卡片套装02",
           saledate: "2022.8.6",
           yenprice: 34,
