@@ -168,6 +168,18 @@ export default {
           pic: "EX-4.jpg"
         },
         {
+          id: "EX-5",
+          type: "U",
+          tag: ["XD"],
+          name: "德凯奥特曼",
+          selfSound: false,
+          link: null,
+          color: "#e29623",
+          way: "德凯奥特曼套装特典",
+          code: [],
+          pic: "EX-5.jpg"
+        },
+        {
           id: "U-01",
           type: "U",
           tag: ["DX"],
