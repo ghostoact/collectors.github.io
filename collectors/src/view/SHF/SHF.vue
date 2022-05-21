@@ -1148,6 +1148,18 @@ export default {
           way: null,
           pic: "F-93.jpg",
         },
+        {
+          id: "F-94",
+          type: "U",
+          tag: ["U"],
+          name: "特空机1号 宇宙赛文加",
+          gallery: 7,
+          link: null,
+          color: null,
+          date: "2022.12",
+          way: null,
+          pic: "F-94.jpg",
+        },
       ],
     };
   },
