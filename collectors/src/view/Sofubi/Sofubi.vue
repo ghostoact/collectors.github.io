@@ -1,39 +1,17 @@
 <template>
   <div class="item-list" :class="collectStatus ? 'collect-status' : ''">
-    <floatLayer
-      :show="layerShow"
-      :item="nowDetail"
-      :urlType="2"
-      @parentEvent="hideDetail"
-    />
+    <floatLayer :show="layerShow" :item="nowDetail" :urlType="2" @parentEvent="hideDetail" />
     <div class="ctrl-panel">
-      <div
-        class="switch-box"
-        :class="collectFilter ? 'active' : ''"
-        @click="getCollectFilter"
-      >
+      <div class="switch-box" :class="collectFilter ? 'active' : ''" @click="getCollectFilter">
         <div class="switch-label">过滤已拥有的</div>
         <div class="switch-btn"></div>
       </div>
-      <div
-        class="btn"
-        v-text="collectStatus ? '退出标记模式' : '标记我已拥有的'"
-        @click="collectToggle"
-      ></div>
+      <div class="btn" v-text="collectStatus ? '退出标记模式' : '标记我已拥有的'" @click="collectToggle"></div>
       <tagBar v-bind:tags="tags" @parentEvent="getDataByTag" />
     </div>
-    <propItem
-      v-for="hk in nowList"
-      v-bind:item="hk"
-      :class="getCollect(hk.id) ? 'collect' : ''"
-      :urlType="2"
-      :showPic="true"
-      :key="hk.id"
-      :defaultColor="'#5420ae'"
-      :barColor="hk.color"
-      @click.native="showDetail(hk)"
-      v-show="collectFilter == false || !getCollect(hk.id)"
-    />
+    <propItem v-for="hk in nowList" v-bind:item="hk" :class="getCollect(hk.id) ? 'collect' : ''" :urlType="2"
+      :showPic="true" :key="hk.id" :defaultColor="'#5420ae'" :barColor="hk.color" @click.native="showDetail(hk)"
+      v-show="collectFilter == false || !getCollect(hk.id)" />
   </div>
 </template>
 
@@ -1075,6 +1053,51 @@ export default {
           link: null,
           color: "#F44336",
           pic: "EX-21.jpg",
+        },
+        {
+          id: "EX-22",
+          type: "U",
+          tag: ["EX"],
+          name: "尤莉安",
+          link: null,
+          color: "#F44336",
+          pic: "EX-22.jpg",
+        },
+        {
+          id: "EX-23",
+          type: "U",
+          tag: ["EX"],
+          name: "史考特奥特曼",
+          link: null,
+          color: "#F44336",
+          pic: "EX-23.jpg",
+        },
+        {
+          id: "EX-24",
+          type: "U",
+          tag: ["EX"],
+          name: "察克奥特曼",
+          link: null,
+          color: "#F44336",
+          pic: "EX-24.jpg",
+        },
+        {
+          id: "EX-25",
+          type: "U",
+          tag: ["EX"],
+          name: "贝斯奥特曼",
+          link: null,
+          color: "#F44336",
+          pic: "EX-25.jpg",
+        },
+        {
+          id: "EX-26",
+          type: "U",
+          tag: ["EX"],
+          name: "杰斯提斯奥特曼",
+          link: null,
+          color: "#F44336",
+          pic: "EX-26.jpg",
         },
         {
           id: "K-01",
@@ -2579,6 +2602,66 @@ export default {
           color: "#F44336",
           pic: "K-167.jpg",
         },
+
+        {
+          id: "K-168",
+          type: "M",
+          tag: ["K"],
+          name: "宇宙赛文加",
+          link: null,
+          color: "#F44336",
+          pic: "K-168.jpg",
+        },
+
+        {
+          id: "K-169",
+          type: "M",
+          tag: ["K"],
+          name: "加拉翁",
+          link: null,
+          color: "#F44336",
+          pic: "K-169.jpg",
+        },
+
+        {
+          id: "K-170",
+          type: "M",
+          tag: ["K"],
+          name: "加里巴山5号",
+          link: null,
+          color: "#F44336",
+          pic: "K-170.jpg",
+        },
+
+        {
+          id: "K-171",
+          type: "M",
+          tag: ["K"],
+          name: "达兰比尔",
+          link: null,
+          color: "#F44336",
+          pic: "K-171.jpg",
+        },
+
+        {
+          id: "K-172",
+          type: "M",
+          tag: ["K"],
+          name: "泰拉诺伊德",
+          link: null,
+          color: "#F44336",
+          pic: "K-172.jpg",
+        },
+
+        {
+          id: "K-173",
+          type: "M",
+          tag: ["K"],
+          name: "斯菲亚合成兽",
+          link: null,
+          color: "#F44336",
+          pic: "K-173.jpg",
+        },
         {
           id: "EX-K-01",
           type: "M",
@@ -2641,6 +2724,15 @@ export default {
           link: null,
           color: "#F44336",
           pic: "EX-K-07.jpg",
+        },
+        {
+          id: "EX-K-08",
+          type: "M",
+          tag: ["EX-K"],
+          name: "阿布索留特·泰坦",
+          link: null,
+          color: "#F44336",
+          pic: "EX-K-08.jpg",
         },
         {
           id: "D-01",
@@ -3124,4 +3216,5 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+</style>

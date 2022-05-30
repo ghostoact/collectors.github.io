@@ -1160,6 +1160,18 @@ export default {
           way: null,
           pic: "F-94.jpg",
         },
+        {
+          id: "F-95",
+          type: "U",
+          tag: ["U"],
+          name: "阿斯特拉",
+          gallery: 7,
+          link: null,
+          color: null,
+          date: "2022.10",
+          way: null,
+          pic: "F-95.jpg",
+        },
       ],
     };
   },
