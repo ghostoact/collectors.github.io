@@ -7,6 +7,9 @@ import '@/styles/global.css'
 import router from './router'//导入自定义路由配置
 import VueLazyload from 'vue-lazyload'
 import tools from '@/utils/tools.js'
+import 'echarts'
+import  ECharts from 'vue-echarts'
+Vue.component('v-chart', ECharts)
 
 Vue.prototype.$Tools= tools
 
