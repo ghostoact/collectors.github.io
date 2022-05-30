@@ -13,12 +13,12 @@ export default {
   props: {
     xAxis: {
       type: Array,
-      default: () => [],
-    },
+      default: () => []
+    }
   },
   data() {
     return {
-      count: 1,
+      count: 1
     };
   },
   methods: {
@@ -28,22 +28,27 @@ export default {
       // 绘制图表
       myChart.setOption({
         title: {
-          show: false,
+          show: false
+        },
+        tooltip: {
+          show: true,
+          trigger: "axis",
+          formatter: "{b}<br>{c} 元"
         },
         grid: {
           top: "20px",
           left: "0",
           right: "0",
-          bottom: "0",
+          bottom: "0"
         },
         xAxis: {
           type: "category",
           boundaryGap: false,
-          show: false,
+          show: false
         },
         yAxis: {
           type: "value",
-          show: false,
+          show: false
         },
         series: [
           {
@@ -51,7 +56,7 @@ export default {
             type: "line",
             symbol: "none",
             lineStyle: {
-              color: "#01fefe",
+              color: "#01fefe"
             },
             smooth: true, //true 为平滑曲线，false为直线
             areaStyle: {
@@ -59,21 +64,21 @@ export default {
               color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
                 {
                   offset: 0,
-                  color: "rgba(8,228,210, 1)",
+                  color: "rgba(8,228,210, 1)"
                 },
                 {
                   offset: 1,
-                  color: "rgba(8,228,210,  0)",
-                },
-              ]),
-            },
-          },
-        ],
+                  color: "rgba(8,228,210,  0)"
+                }
+              ])
+            }
+          }
+        ]
       });
-    },
+    }
   },
   computed: {},
-  mounted: function () {
+  mounted: function() {
     const vm = this;
     vm.$nextTick(() => {
       vm.drawChart(this.$refs.echarts);
@@ -83,10 +88,10 @@ export default {
     xAxis: {
       handler(newVal, oldVal) {
         this.drawChart(this.$refs.echarts);
-      },
-    },
+      }
+    }
   },
-  created: () => {},
+  created: () => {}
 };
 </script>
 

@@ -175,7 +175,7 @@ export default {
           name: "SHF格力乔奥特曼",
           saledate: "2022.9",
           yenprice: 363,
-          pastprice: [450],
+          pastprice: [450, 410],
           des: "",
           url: "https://tamashii.jp/item/14006/",
           pic: "7590152850.jpg",
@@ -1497,6 +1497,9 @@ export default {
   height: 100%;
   z-index: 2;
 }
+/* .model-toy:hover .trend-info {
+  display: none;
+} */
 .trend-echarts {
   position: absolute;
   top: 0;
