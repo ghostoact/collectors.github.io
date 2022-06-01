@@ -3,126 +3,80 @@
     <div class="ctrl-panel">
       <div class="switch-ctrl">
         <div class="switch-label">排序</div>
-        <div
-          class="switch-item"
-          :class="{ active: ctrl.sort == 0 }"
-          @click="getListBySort(0)"
-        >
+        <div class="switch-item" :class="{ active: ctrl.sort == 0 }" @click="getListBySort(0)">
           默认
         </div>
-        <div
-          class="switch-item"
-          :class="{ active: ctrl.sort == 1 }"
-          @click="getListBySort(1)"
-        >
+        <div class="switch-item" :class="{ active: ctrl.sort == 1 }" @click="getListBySort(1)">
           发售
         </div>
       </div>
       <div class="switch-ctrl right">
         <div class="switch-label">视图</div>
-        <div
-          class="switch-item"
-          :class="{ active: ctrl.view == 0 }"
-          @click="changeViewType(0)"
-        >
+        <div class="switch-item" :class="{ active: ctrl.view == 0 }" @click="changeViewType(0)">
           <i class="iconfont icon-list"></i>
         </div>
-        <div
-          class="switch-item"
-          :class="{ active: ctrl.view == 1 }"
-          @click="changeViewType(1)"
-        >
+        <div class="switch-item" :class="{ active: ctrl.view == 1 }" @click="changeViewType(1)">
           <i class="iconfont icon-jiugongge"></i>
         </div>
       </div>
     </div>
     <div class="model-toy" v-for="toy in nowList" :key="toy.title">
       <div class="toy-warp">
-        <span
-          class="sale-date"
-          v-html="toy.saledate ? toy.saledate + ' 发售' : ''"
-        ></span>
-        <a
-          class="website"
-          v-show="toy.url != null"
-          :href="toy.url"
-          target="_blank"
-          title="跳转到官网"
-        >
+        <span class="sale-date" v-html="toy.saledate ? toy.saledate + ' 发售' : ''"></span>
+        <a class="website" v-show="toy.url != null" :href="toy.url" target="_blank" title="跳转到官网">
           <i class="iconfont icon-wangye"></i>
         </a>
         <div class="trend-box">
-          <div
-            class="trend-left"
-            v-lazy:background-image="'./static/img/item/trend/' + toy.pic"
-          ></div>
+          <div class="trend-left" v-lazy:background-image="'./static/img/item/trend/' + toy.pic"></div>
           <div class="trend-right">
             <div class="trend-info">
               <p class="toy-title" :title="toy.name">{{ toy.name }}</p>
               <div class="price-box">
                 <div class="price-item yen">
                   <p class="price-num">
-                    <span
-                      v-html="toy.yenprice != null ? toy.yenprice : '-'"
-                    ></span>
+                    <span v-html="toy.yenprice != null ? toy.yenprice : '-'"></span>
                     <span class="unit" v-if="toy.yenprice != null">元</span>
                   </p>
                   <p class="price-name">发售参考价</p>
                 </div>
                 <div class="price-item min">
                   <p class="price-num">
-                    <span
-                      v-html="
-                        arrMinNum(toy.pastprice) != 0
-                          ? arrMinNum(toy.pastprice)
-                          : '-'
-                      "
-                    ></span>
-                    <span class="unit" v-if="arrMinNum(toy.pastprice) != 0"
-                      >元</span
-                    >
+                    <span v-html="
+                      arrMinNum(toy.pastprice) != 0
+                        ? arrMinNum(toy.pastprice)
+                        : '-'
+                    "></span>
+                    <span class="unit" v-if="arrMinNum(toy.pastprice) != 0">元</span>
                   </p>
                   <p class="price-name">最低价</p>
                 </div>
                 <div class="price-item">
                   <p class="price-num">
-                    <span
-                      v-html="
-                        getAverageNum(toy.pastprice) != 0
-                          ? getAverageNum(toy.pastprice)
-                          : '-'
-                      "
-                    ></span>
-                    <span class="unit" v-if="getAverageNum(toy.pastprice) != 0"
-                      >元</span
-                    >
+                    <span v-html="
+                      getAverageNum(toy.pastprice) != 0
+                        ? getAverageNum(toy.pastprice)
+                        : '-'
+                    "></span>
+                    <span class="unit" v-if="getAverageNum(toy.pastprice) != 0">元</span>
                   </p>
                   <p class="price-name">平均价</p>
                 </div>
                 <div class="price-item max">
                   <p class="price-num">
-                    <span
-                      v-html="
-                        getMaxNum(toy.pastprice) != 0
-                          ? getMaxNum(toy.pastprice)
-                          : '-'
-                      "
-                    ></span>
-                    <span class="unit" v-if="getMaxNum(toy.pastprice) != 0"
-                      >元</span
-                    >
+                    <span v-html="
+                      getMaxNum(toy.pastprice) != 0
+                        ? getMaxNum(toy.pastprice)
+                        : '-'
+                    "></span>
+                    <span class="unit" v-if="getMaxNum(toy.pastprice) != 0">元</span>
                   </p>
                   <p class="price-name">最高价</p>
                 </div>
               </div>
               <p class="toy-des">{{ toy.des }}</p>
             </div>
-            <v-chart
-              class="trend-echarts"
-              autoresize
-              :option="getOption(toy.pastprice)"
-              style="width: 100%; height: 100%"
-            />
+            <v-chart class="trend-echarts" autoresize :option="getOption(toy.pastprice)"
+              style="width: 100%; height: 100%" />
           </div>
         </div>
       </div>
@@ -167,7 +121,7 @@ export default {
           name: "DYNACTION巨型新奥特曼40CM",
           saledate: "2021.9.18",
           yenprice: 1161,
-          pastprice: [699, 1290, 1249, 1208, 1198, 1099],
+          pastprice: [699, 1290, 1249, 1208, 1198, 1099, 1057],
           des: "",
           url: "https://tamashii.jp/item/13595/",
           pic: "9146883902.jpg",
@@ -357,7 +311,7 @@ export default {
           name: "SHF迪迦奥特曼强力型真骨雕",
           saledate: "2022.5",
           yenprice: 401,
-          pastprice: [610, 480, 470, 498, 450, 518, 530, 548, 557, 627],
+          pastprice: [610, 480, 470, 498, 450, 518, 530, 548, 557, 627, 538, 520, 505],
           des: "",
           url: "https://tamashii.jp/item/13821/",
           pic: "3937344485.jpg",
@@ -497,7 +451,7 @@ export default {
           name: "DX泽塔奥特曼奥特勋章图鉴",
           saledate: "2022.2",
           yenprice: 271,
-          pastprice: [388, 390, 368, 305, 340, 300, 318, 279, 259, 241, 223],
+          pastprice: [388, 390, 368, 305, 340, 300, 318, 279, 259, 241, 223, 196, 176],
           des: "含奥特勋章图鉴+特利迦奥特 复合型勋章",
           url: "https://p-bandai.jp/item/item-1000162972/",
           pic: "2820227126.jpg",
@@ -549,7 +503,8 @@ export default {
             330,
             329,
             320,
-            315
+            315,
+            298, 295
           ],
           des: "含泽塔奥特曼阿尔法、伽马、贝塔和德尔塔共4款钥匙",
           url: "https://p-bandai.jp/item/item-1000162971/",
@@ -712,7 +667,12 @@ export default {
             1099,
             1030,
             1130,
-            988
+            988,
+            949,
+            948,
+            938,
+            935,
+            930
           ],
           des: "欧布奥特曼变身器UR*1",
           url: "https://p-bandai.jp/item/item-1000162085/",
@@ -894,7 +854,8 @@ export default {
             69,
             63,
             59,
-            51
+            51,
+            49.5
           ],
           des: null,
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/11997/",
@@ -974,7 +935,7 @@ export default {
           name: "特利迦·迪迦钥匙套装",
           saledate: "2021.12",
           yenprice: 195,
-          pastprice: [210, 215, 235, 255, 225, 258, 259, 230],
+          pastprice: [210, 215, 235, 255, 225, 258, 259, 230, 165, 153],
           des: "含迪迦强力型+迪迦空中型+闪耀迪迦",
           url: "https://p-bandai.jp/item/item-1000159699/",
           pic: "7463135507.jpg",
@@ -1177,7 +1138,7 @@ export default {
           saleDateSort: 20210212
         },
         {
-          name: "新生代奥特勋章",
+          name: "泽塔奥特曼新生代奥特勋章",
           saledate: "2021.2.12",
           yenprice: 145,
           pastprice: [209, 178, 163, 140, 149, 148, 145, 168, 158, 130, 99],
@@ -1280,7 +1241,7 @@ export default {
           name: "SHF泰塔斯奥特曼",
           saledate: "2020.9",
           yenprice: 399,
-          pastprice: [480, 2600, 2700, 2780, 2299, 2280, 2000],
+          pastprice: [480, 2600, 2700, 2780, 2299, 2280, 2000, 3145, 2450, 2100],
           des: "",
           url: "https://tamashii.jp/item/13245/",
           pic: "5344829216.jpg",
@@ -1289,9 +1250,9 @@ export default {
       ]
     };
   },
-  mounted: function() {
+  mounted: function () {
     const vm = this;
-    vm.$nextTick(() => {});
+    vm.$nextTick(() => { });
   },
   methods: {
     // 获取数组最大值
@@ -1364,7 +1325,7 @@ export default {
         rev = rev ? 1 : -1;
       }
 
-      return function(a, b) {
+      return function (a, b) {
         a = a[attr];
         b = b[attr];
         if (a < b) {
@@ -1443,6 +1404,7 @@ export default {
   margin: 0 10px 10px 0;
   float: left;
 }
+
 .toy-warp {
   position: relative;
   overflow: hidden;
@@ -1461,55 +1423,68 @@ export default {
 .grid .model-toy {
   width: 400px;
 }
+
 .grid .trend-left,
 .grid .trend-right {
   float: unset;
   width: 100%;
 }
+
 .grid .trend-left {
   height: 400px;
   margin: 0;
   border-radius: 4px 4px 0 0;
 }
+
 .grid .trend-right {
   height: 130px;
   padding-left: 10px;
 }
+
 .grid .toy-title {
   padding: 10px 0 10px;
 }
+
 .grid .price-item {
   width: 95px;
 }
+
 .grid .sale-date {
   color: #08959b;
 }
+
 @media (max-width: 1024px) {
   .model-toy {
     width: calc(100% - 4px);
     margin: 0 auto 4px;
     float: unset;
   }
+
   .toy-warp {
     min-height: 115px;
   }
+
   .grid .model-toy {
     width: calc(100% - 10px);
     margin: 0 5px 10px;
     box-sizing: border-box;
   }
+
   .grid .trend-right {
     height: 100px;
   }
+
   .grid .price-item {
     width: 24%;
   }
 }
+
 .trend-left,
 .trend-right {
   float: left;
   height: 100%;
 }
+
 .trend-left {
   width: 130px;
   height: 130px;
@@ -1525,38 +1500,46 @@ export default {
   background-size: contain;
   background-repeat: no-repeat;
 }
+
 .trend-left img {
   width: 100%;
   height: 100%;
 }
+
 .trend-right {
   position: relative;
   width: calc(100% - 130px - 10px);
   padding-left: 15px;
 }
+
 @media (max-width: 1024px) {
   .trend-left {
     width: 80px;
     height: 80px;
     margin: 20px 0 0 10px;
   }
+
   .trend-right {
     width: calc(100% - 80px - 10px);
     padding-left: 10px;
   }
 }
+
 .trend-info {
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: 2;
 }
+
 .model-toy:hover .trend-info {
   display: none;
 }
+
 .model-toy:hover .trend-echarts {
   opacity: 1;
 }
+
 .trend-echarts {
   position: absolute;
   top: 0;
@@ -1565,6 +1548,7 @@ export default {
   opacity: 0.4;
   transition: opacity 1s;
 }
+
 .toy-title {
   color: #fff;
   padding: 20px 0 10px;
@@ -1573,6 +1557,7 @@ export default {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 .website {
   position: absolute;
   right: 0;
@@ -1586,10 +1571,12 @@ export default {
   border-radius: 10px 0 0 0;
   z-index: 3;
 }
+
 .website:hover {
   color: #fff;
   background-color: #ffffff3b;
 }
+
 .sale-date {
   position: absolute;
   right: 10px;
@@ -1598,56 +1585,70 @@ export default {
   font-size: 14px;
   z-index: 2;
 }
+
 .price-item {
   width: 110px;
   display: inline-block;
 }
+
 .price-item.yen .price-num {
   color: #03a9f4;
 }
+
 .price-item.min .price-num {
   color: #00ff72;
 }
+
 .price-item.max .price-num {
   color: #efa500;
 }
+
 @media (max-width: 1024px) {
   .sale-date {
     font-size: 12px;
   }
+
   .price-item {
     width: 23%;
   }
 }
+
 .price-num {
   color: #fff25c;
   font-size: 26px;
   font-weight: 600;
 }
+
 .price-num .unit {
   font-size: 12px;
   color: #00b8d6;
 }
+
 .price-name {
   color: #00b8d6;
   font-size: 14px;
 }
+
 .toy-des {
   color: #ffffff73;
   padding-top: 10px;
   font-size: 12px;
 }
+
 @media (max-width: 1024px) {
   .toy-title {
     font-size: 14px;
     padding: 20px 0 4px;
   }
+
   .price-num {
     font-size: 16px;
   }
+
   .price-name {
     font-size: 12px;
   }
+
   .toy-des {
     color: #ffffff52;
     padding-top: 2px;
