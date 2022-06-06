@@ -289,23 +289,23 @@ export default {
         },
         {
           name: "特利迦新生代钥匙套装Vol.2",
-          saledate: "2022.6",
+          saledate: "2022.6.22",
           yenprice: 388,
           pastprice: [455, 449, 429, 410, 400, 399, 395, 390, 385],
           des: "含艾克斯、捷德、泰迦、泰塔斯、风马",
           url: "https://p-bandai.jp/item/item-1000167088/",
           pic: "6582630675.jpg",
-          saleDateSort: 20220601
+          saleDateSort: 20220622
         },
         {
           name: "特利迦新生代钥匙套装Vol.1",
-          saledate: "2022.6",
+          saledate: "2022.6.22",
           yenprice: 388,
           pastprice: [455, 449, 429, 410, 400, 399, 395, 390, 385],
           des: "含银河、维克特利、欧布、罗索、布鲁",
           url: "https://p-bandai.jp/item/item-1000167087/",
           pic: "5501806536.jpg",
-          saleDateSort: 20220601
+          saleDateSort: 20220622
         },
         {
           name: "SHF迪迦奥特曼强力型真骨雕",
@@ -395,13 +395,13 @@ export default {
         },
         {
           name: "DX黑暗特利迦胜利神光棒PB",
-          saledate: "2022.5",
+          saledate: "2022.5.23",
           yenprice: 493,
           pastprice: [569, 579, 598, 578, 575, 509],
           des: "含黑暗特利迦神光棒+黑暗特利迦钥匙+2个怪兽钥匙",
           url: "https://p-bandai.jp/item/item-1000164539/",
           pic: "4749566994.jpg",
-          saleDateSort: 20220501
+          saleDateSort: 20220523
         },
         {
           name: "DX特利迦远古青铜胜利神光棒",
