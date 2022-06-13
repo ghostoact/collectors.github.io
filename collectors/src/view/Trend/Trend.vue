@@ -3,80 +3,126 @@
     <div class="ctrl-panel">
       <div class="switch-ctrl">
         <div class="switch-label">排序</div>
-        <div class="switch-item" :class="{ active: ctrl.sort == 0 }" @click="getListBySort(0)">
+        <div
+          class="switch-item"
+          :class="{ active: ctrl.sort == 0 }"
+          @click="getListBySort(0)"
+        >
           默认
         </div>
-        <div class="switch-item" :class="{ active: ctrl.sort == 1 }" @click="getListBySort(1)">
+        <div
+          class="switch-item"
+          :class="{ active: ctrl.sort == 1 }"
+          @click="getListBySort(1)"
+        >
           发售
         </div>
       </div>
       <div class="switch-ctrl right">
         <div class="switch-label">视图</div>
-        <div class="switch-item" :class="{ active: ctrl.view == 0 }" @click="changeViewType(0)">
+        <div
+          class="switch-item"
+          :class="{ active: ctrl.view == 0 }"
+          @click="changeViewType(0)"
+        >
           <i class="iconfont icon-list"></i>
         </div>
-        <div class="switch-item" :class="{ active: ctrl.view == 1 }" @click="changeViewType(1)">
+        <div
+          class="switch-item"
+          :class="{ active: ctrl.view == 1 }"
+          @click="changeViewType(1)"
+        >
           <i class="iconfont icon-jiugongge"></i>
         </div>
       </div>
     </div>
     <div class="model-toy" v-for="toy in nowList" :key="toy.title">
       <div class="toy-warp">
-        <span class="sale-date" v-html="toy.saledate ? toy.saledate + ' 发售' : ''"></span>
-        <a class="website" v-show="toy.url != null" :href="toy.url" target="_blank" title="跳转到官网">
+        <span
+          class="sale-date"
+          v-html="toy.saledate ? toy.saledate + ' 发售' : ''"
+        ></span>
+        <a
+          class="website"
+          v-show="toy.url != null"
+          :href="toy.url"
+          target="_blank"
+          title="跳转到官网"
+        >
           <i class="iconfont icon-wangye"></i>
         </a>
         <div class="trend-box">
-          <div class="trend-left" v-lazy:background-image="'./static/img/item/trend/' + toy.pic"></div>
+          <div
+            class="trend-left"
+            v-lazy:background-image="'./static/img/item/trend/' + toy.pic"
+          ></div>
           <div class="trend-right">
             <div class="trend-info">
               <p class="toy-title" :title="toy.name">{{ toy.name }}</p>
               <div class="price-box">
                 <div class="price-item yen">
                   <p class="price-num">
-                    <span v-html="toy.yenprice != null ? toy.yenprice : '-'"></span>
+                    <span
+                      v-html="toy.yenprice != null ? toy.yenprice : '-'"
+                    ></span>
                     <span class="unit" v-if="toy.yenprice != null">元</span>
                   </p>
                   <p class="price-name">发售参考价</p>
                 </div>
                 <div class="price-item min">
                   <p class="price-num">
-                    <span v-html="
-                      arrMinNum(toy.pastprice) != 0
-                        ? arrMinNum(toy.pastprice)
-                        : '-'
-                    "></span>
-                    <span class="unit" v-if="arrMinNum(toy.pastprice) != 0">元</span>
+                    <span
+                      v-html="
+                        arrMinNum(toy.pastprice) != 0
+                          ? arrMinNum(toy.pastprice)
+                          : '-'
+                      "
+                    ></span>
+                    <span class="unit" v-if="arrMinNum(toy.pastprice) != 0"
+                      >元</span
+                    >
                   </p>
                   <p class="price-name">最低价</p>
                 </div>
                 <div class="price-item">
                   <p class="price-num">
-                    <span v-html="
-                      getAverageNum(toy.pastprice) != 0
-                        ? getAverageNum(toy.pastprice)
-                        : '-'
-                    "></span>
-                    <span class="unit" v-if="getAverageNum(toy.pastprice) != 0">元</span>
+                    <span
+                      v-html="
+                        getAverageNum(toy.pastprice) != 0
+                          ? getAverageNum(toy.pastprice)
+                          : '-'
+                      "
+                    ></span>
+                    <span class="unit" v-if="getAverageNum(toy.pastprice) != 0"
+                      >元</span
+                    >
                   </p>
                   <p class="price-name">平均价</p>
                 </div>
                 <div class="price-item max">
                   <p class="price-num">
-                    <span v-html="
-                      getMaxNum(toy.pastprice) != 0
-                        ? getMaxNum(toy.pastprice)
-                        : '-'
-                    "></span>
-                    <span class="unit" v-if="getMaxNum(toy.pastprice) != 0">元</span>
+                    <span
+                      v-html="
+                        getMaxNum(toy.pastprice) != 0
+                          ? getMaxNum(toy.pastprice)
+                          : '-'
+                      "
+                    ></span>
+                    <span class="unit" v-if="getMaxNum(toy.pastprice) != 0"
+                      >元</span
+                    >
                   </p>
                   <p class="price-name">最高价</p>
                 </div>
               </div>
               <p class="toy-des">{{ toy.des }}</p>
             </div>
-            <v-chart class="trend-echarts" autoresize :option="getOption(toy.pastprice)"
-              style="width: 100%; height: 100%" />
+            <v-chart
+              class="trend-echarts"
+              autoresize
+              :option="getOption(toy.pastprice)"
+              style="width: 100%; height: 100%"
+            />
           </div>
         </div>
       </div>
@@ -211,7 +257,7 @@ export default {
           name: "德凯奥特曼 闪亮型软胶·附赠特别版卡片",
           saledate: "2022.6.4",
           yenprice: 34,
-          pastprice: [35, 31],
+          pastprice: [60, 35, 31],
           des: "含德凯奥特曼 闪亮型软胶+特别版卡片",
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/12466/",
           pic: "9982631301.jpg",
@@ -311,7 +357,21 @@ export default {
           name: "SHF迪迦奥特曼强力型真骨雕",
           saledate: "2022.5",
           yenprice: 401,
-          pastprice: [610, 480, 470, 498, 450, 518, 530, 548, 557, 627, 538, 520, 505],
+          pastprice: [
+            610,
+            480,
+            470,
+            498,
+            450,
+            518,
+            530,
+            548,
+            557,
+            627,
+            538,
+            520,
+            505
+          ],
           des: "",
           url: "https://tamashii.jp/item/13821/",
           pic: "3937344485.jpg",
@@ -451,7 +511,21 @@ export default {
           name: "DX泽塔奥特曼奥特勋章图鉴",
           saledate: "2022.2",
           yenprice: 271,
-          pastprice: [388, 390, 368, 305, 340, 300, 318, 279, 259, 241, 223, 196, 176],
+          pastprice: [
+            388,
+            390,
+            368,
+            305,
+            340,
+            300,
+            318,
+            279,
+            259,
+            241,
+            223,
+            196,
+            176
+          ],
           des: "含奥特勋章图鉴+特利迦奥特 复合型勋章",
           url: "https://p-bandai.jp/item/item-1000162972/",
           pic: "2820227126.jpg",
@@ -504,7 +578,8 @@ export default {
             329,
             320,
             315,
-            298, 295
+            298,
+            295
           ],
           des: "含泽塔奥特曼阿尔法、伽马、贝塔和德尔塔共4款钥匙",
           url: "https://p-bandai.jp/item/item-1000162971/",
@@ -641,7 +716,8 @@ export default {
             825,
             798,
             794,
-            771
+            771,
+            719
           ],
           des: "黑暗迪迦神光棒+卡蜜尔变身器",
           url: "https://p-bandai.jp/item/item-1000162608/",
@@ -668,6 +744,7 @@ export default {
             1030,
             1130,
             988,
+            968,
             949,
             948,
             938,
@@ -1241,7 +1318,18 @@ export default {
           name: "SHF泰塔斯奥特曼",
           saledate: "2020.9",
           yenprice: 399,
-          pastprice: [480, 2600, 2700, 2780, 2299, 2280, 2000, 3145, 2450, 2100],
+          pastprice: [
+            480,
+            2600,
+            2700,
+            2780,
+            2299,
+            2280,
+            2000,
+            3145,
+            2450,
+            2100
+          ],
           des: "",
           url: "https://tamashii.jp/item/13245/",
           pic: "5344829216.jpg",
@@ -1250,9 +1338,9 @@ export default {
       ]
     };
   },
-  mounted: function () {
+  mounted: function() {
     const vm = this;
-    vm.$nextTick(() => { });
+    vm.$nextTick(() => {});
   },
   methods: {
     // 获取数组最大值
@@ -1325,7 +1413,7 @@ export default {
         rev = rev ? 1 : -1;
       }
 
-      return function (a, b) {
+      return function(a, b) {
         a = a[attr];
         b = b[attr];
         if (a < b) {
