@@ -44,7 +44,7 @@
         ></span>
         <a
           class="website"
-          v-show="toy.url != null"
+          v-show="toy.url != ''"
           :href="toy.url"
           target="_blank"
           title="跳转到官网"
@@ -153,6 +153,16 @@ export default {
         //   pic: "def.jpg",
         //   saleDateSort: 99999999
         // },
+        {
+          name: "英雄勇像 邪恶迪迦",
+          saledate: "",
+          yenprice: 109,
+          pastprice: [0],
+          des: "",
+          url: "",
+          pic: "8797725516.jpg",
+          saleDateSort: 99999999
+        },
         {
           name: "SHF特空机1号 宇宙赛文加",
           saledate: "2022.12",
@@ -370,7 +380,8 @@ export default {
             627,
             538,
             520,
-            505
+            505,
+            585
           ],
           des: "",
           url: "https://tamashii.jp/item/13821/",
@@ -391,7 +402,7 @@ export default {
           name: "SHF基里艾洛德人",
           saledate: "2022.5",
           yenprice: 372,
-          pastprice: [460, 480, 440, 429, 410, 435, 415, 428],
+          pastprice: [460, 480, 440, 429, 410, 435, 415, 428, 399],
           des: "",
           url: "https://tamashii.jp/item/13867/",
           pic: "7600487532.jpg",
@@ -590,7 +601,7 @@ export default {
           name: "特利迦奥特曼闪耀之刃",
           saledate: "2021.10.09",
           yenprice: 242,
-          pastprice: [168, 170, 185, 169, 165, 158, 142, 139, 136],
+          pastprice: [168, 170, 185, 169, 165, 158, 142, 139, 136, 129],
           des: "",
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/12173/",
           pic: "3773402717.jpg",
@@ -828,7 +839,7 @@ export default {
           name: "特利迦·高斯奥特曼 月神模式钥匙",
           saledate: "2021.12",
           yenprice: 322,
-          pastprice: [450, 386, 354, 322],
+          pastprice: [450, 386, 354, 322, 280],
           des: "高斯奥特曼 月神模式钥匙+童装(内裤、体恤最终价格不同)",
           url: "https://m-78.jp/news/post-6013",
           pic: "0613853457.jpg",
@@ -1022,7 +1033,7 @@ export default {
           name: "特利迦·泽塔原生形态钥匙",
           saledate: "2021.9",
           yenprice: 65,
-          pastprice: [75, 89, 64, 63, 62, 61, 60, 59, 49, 41, 38],
+          pastprice: [75, 89, 64, 63, 62, 61, 60, 59, 49, 41, 38, 35],
           des: null,
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/12055/",
           pic: "2230315171.jpg",
