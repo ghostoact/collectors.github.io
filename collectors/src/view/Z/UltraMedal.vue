@@ -153,6 +153,12 @@ export default {
           count: 0,
           own: 0,
         },
+        {
+          name: "TPC",
+          title: "国代",
+          count: 0,
+          own: 0,
+        },
       ],
       nowList: null, //展示列表
       nowDetail: null,
@@ -1330,6 +1336,54 @@ export default {
           name: "特利迦奥特曼 复合型",
           link: [82],
           pic:"M-141.jpg"
+        },
+        {
+          id: "M-142",
+          type: "M",
+          tag: ["TPC"],
+          name: "加拉特隆",
+          link: [82],
+          pic:"M-142.jpg"
+        },
+        {
+          id: "M-143",
+          type: "U",
+          tag: ["TPC"],
+          name: "新生代勋章",
+          link: [82],
+          pic:"M-143.jpg"
+        },
+        {
+          id: "M-144",
+          type: "U",
+          tag: ["TPC"],
+          name: "赛迦奥特曼",
+          link: [82],
+          pic:"M-144.jpg"
+        },
+        {
+          id: "M-145",
+          type: "U",
+          tag: ["TPC"],
+          name: "泰莱斯通",
+          link: [82],
+          pic:"M-145.jpg"
+        },
+        {
+          id: "M-146",
+          type: "U",
+          tag: ["TPC"],
+          name: "梦比优斯 炽热勇气",
+          link: [82],
+          pic:"M-146.jpg"
+        },
+        {
+          id: "M-147",
+          type: "U",
+          tag: ["TPC"],
+          name: "诺亚奥特曼",
+          link: [82],
+          pic:"M-147.jpg"
         }
       ],
     };

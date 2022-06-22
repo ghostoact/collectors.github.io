@@ -108,6 +108,16 @@ export default {
         //   saleDateSort: 99999999
         // },
         {
+          name: "DX德凯奥特曼胜利猎隼",
+          saledate: "2022.7.9",
+          yenprice: 119,
+          pastprice: [109, 99, 93, 92, 89],
+          des: "",
+          url: "https://toy.bandai.co.jp/series/ultraman/item/detail/12604/",
+          pic: "4174650803.jpg",
+          saleDateSort: 20220709
+        },
+        {
           name: "英雄勇像 邪恶迪迦",
           saledate: "",
           yenprice: 109,
