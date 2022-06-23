@@ -1172,6 +1172,18 @@ export default {
           way: null,
           pic: "F-95.jpg",
         },
+        {
+          id: "F-96",
+          type: "M",
+          tag: ["K"],
+          name: "美菲拉斯星人 55th Anniversary Ver.",
+          gallery: 9,
+          link: null,
+          color: null,
+          date: "2022.1",
+          way: null,
+          pic: "F-96.jpg",
+        },
       ],
     };
   },
