@@ -1,39 +1,17 @@
 <template>
   <div class="item-list" :class="{ 'collect-status': collectStatus }">
-    <floatLayer
-      :show="layerShow"
-      :item="nowDetail"
-      :urlType="4"
-      @parentEvent="hideDetail"
-    />
+    <floatLayer :show="layerShow" :item="nowDetail" :urlType="4" @parentEvent="hideDetail" />
     <div class="ctrl-panel">
-      <div
-        class="switch-box"
-        :class="{ active: collectFilter }"
-        @click="getCollectFilter"
-      >
+      <div class="switch-box" :class="{ active: collectFilter }" @click="getCollectFilter">
         <div class="switch-label">过滤已拥有的</div>
         <div class="switch-btn"></div>
       </div>
-      <div
-        class="btn"
-        v-text="collectStatus ? '退出标记模式' : '标记我已拥有的'"
-        @click="collectToggle"
-      ></div>
+      <div class="btn" v-text="collectStatus ? '退出标记模式' : '标记我已拥有的'" @click="collectToggle"></div>
       <tagBar :tags="tags" @parentEvent="getDataByTag" />
     </div>
-    <propItem
-      v-for="hk in nowList"
-      v-bind:item="hk"
-      :class="{ collect: getCollect(hk.id) }"
-      :urlType="4"
-      :showPic="true"
-      :key="hk.id"
-      :defaultColor="'#5420ae'"
-      :barColor="hk.color"
-      @click.native="showDetail(hk)"
-      v-show="collectFilter == false || !getCollect(hk.id)"
-    />
+    <propItem v-for="hk in nowList" v-bind:item="hk" :class="{ collect: getCollect(hk.id) }" :urlType="4"
+      :showPic="true" :key="hk.id" :defaultColor="'#5420ae'" :barColor="hk.color" @click.native="showDetail(hk)"
+      v-show="collectFilter == false || !getCollect(hk.id)" />
   </div>
 </template>
 
@@ -54,6 +32,11 @@ export default {
         {
           name: "ALL",
           title: "全部",
+          count: 0,
+          own: 0,
+        }, {
+          name: "XD",
+          title: "限定",
           count: 0,
           own: 0,
         },
@@ -187,7 +170,7 @@ export default {
           id: "D-11",
           type: "U",
           tag: ["DX"],
-          name: "卡片11",
+          name: "米克拉斯",
           link: null,
           color: "#018dd1",
           way: "",
@@ -252,6 +235,36 @@ export default {
           color: "#018dd1",
           way: "",
           pic: "D-17.jpg",
+        },
+        {
+          id: "D-18",
+          type: "U",
+          tag: ["XD"],
+          name: "奥特曼",
+          link: null,
+          color: "#018dd1",
+          way: "",
+          pic: "D-18.jpg",
+        },
+        {
+          id: "D-19",
+          type: "U",
+          tag: ["XD"],
+          name: "特利迦奥特曼",
+          link: null,
+          color: "#018dd1",
+          way: "",
+          pic: "D-19.jpg",
+        },
+        {
+          id: "D-20",
+          type: "U",
+          tag: ["XD"],
+          name: "泽塔奥特曼",
+          link: null,
+          color: "#018dd1",
+          way: "",
+          pic: "D-20.jpg",
         },
       ],
     };
@@ -348,4 +361,5 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+</style>
