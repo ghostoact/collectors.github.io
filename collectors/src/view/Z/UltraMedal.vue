@@ -180,7 +180,7 @@ export default {
           id: "M-002",
           type: "U",
           tag: ["DX"],
-          name: "赛文奥特曼",
+          name: "奥特赛文",
           link: [2],
           pic:"M-002.jpg"
         },
@@ -542,7 +542,7 @@ export default {
           id: "M-046",
           type: "U",
           tag: ["GP01"],
-          name: "赛文奥特曼 闪耀型",
+          name: "奥特赛文 闪耀型",
           link: [2],
           pic:"M-046.jpg"
         },
@@ -1047,7 +1047,7 @@ export default {
           id: "M-106",
           type: "U",
           tag: ["PF"],
-          name: "佐菲奥特曼",
+          name: "佐菲",
           link: [1],
           color: "#5dbc9c",
           pic:"M-106.jpg"
@@ -1056,7 +1056,7 @@ export default {
           id: "M-107",
           type: "U",
           tag: ["PF"],
-          name: "赛文奥特曼",
+          name: "奥特赛文",
           link: [2],
           color: "#5dbc9c",
           pic:"M-107.jpg"
@@ -1335,6 +1335,7 @@ export default {
           tag: ["DX"],
           name: "特利迦奥特曼 复合型",
           link: [82],
+          way: "DX奥特勋章分析图鉴附赠",
           pic:"M-141.jpg"
         },
         {
@@ -1343,22 +1344,25 @@ export default {
           tag: ["TPC"],
           name: "加拉特隆",
           link: [82],
+          way: "第二弹推广勋章",
           pic:"M-142.jpg"
         },
         {
           id: "M-143",
           type: "U",
           tag: ["TPC"],
-          name: "新生代勋章",
+          name: "新生代英雄勋章",
           link: [82],
+          way: "奥特基地专属勋章",
           pic:"M-143.jpg"
         },
         {
           id: "M-144",
           type: "U",
           tag: ["TPC"],
-          name: "赛迦奥特曼",
+          name: "赛迦",
           link: [82],
+          way: "第三弹推广勋章",
           pic:"M-144.jpg"
         },
         {
@@ -1367,6 +1371,7 @@ export default {
           tag: ["TPC"],
           name: "泰莱斯通",
           link: [82],
+          way: "第四弹推广勋章",
           pic:"M-145.jpg"
         },
         {
@@ -1375,6 +1380,7 @@ export default {
           tag: ["TPC"],
           name: "梦比优斯 炽热勇气",
           link: [82],
+          way: "奥特勋章第三弹",
           pic:"M-146.jpg"
         },
         {
@@ -1383,6 +1389,7 @@ export default {
           tag: ["TPC"],
           name: "诺亚奥特曼",
           link: [82],
+          way: "奥特基地专属勋章",
           pic:"M-147.jpg"
         }
       ],

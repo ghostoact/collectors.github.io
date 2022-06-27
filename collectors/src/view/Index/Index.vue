@@ -139,7 +139,7 @@ export default {
           classic: true,
           type: "base",
           name: {
-            zh: "赛文奥特曼",
+            zh: "奥特赛文",
             jp: "ウルトラセブン",
             en: "UltraSeven",
           },
@@ -902,7 +902,7 @@ export default {
           classic: true,
           type: "base",
           name: {
-            zh: "赛文奥特曼X",
+            zh: "奥特赛文X",
             jp: "ウルトラセブン X",
             en: "Ultra Seven X",
           },

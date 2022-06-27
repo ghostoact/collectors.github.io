@@ -86,7 +86,7 @@ export default {
           id: "S-02",
           type: "U",
           tag: ["S"],
-          name: "赛文奥特曼",
+          name: "奥特赛文",
           link: [2],
           color: "#F44336",
           pic: "S-02.jpg",

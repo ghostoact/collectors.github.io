@@ -153,7 +153,7 @@ export default {
           id: "F-7",
           type: "U",
           tag: ["U"],
-          name: "赛文奥特曼",
+          name: "奥特赛文",
           link: [82],
           color: null,
           date: "2017.3.31",

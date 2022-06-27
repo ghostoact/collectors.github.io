@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 
 //导入自定义组件
 import Index from '../view/Index/Index'
-import Decker from '../view/Decker/Decker'
+import UltraDimensionCard from '../view/Decker/UltraDimensionCard'
 import HyperKey from '../view/Trigger/HyperKey'
 import UltraMedal from '../view/Z/UltraMedal'
 import Sofubi from '../view/Sofubi/Sofubi'
@@ -28,9 +28,9 @@ export default new VueRouter({
       component: Index
     },
     {
-      path: '/Decker',
-      name: 'Decker',
-      component: Decker
+      path: '/UltraDimensionCard',
+      name: 'UltraDimensionCard',
+      component: UltraDimensionCard
     },
     {
       path: '/HyperKey',

@@ -491,7 +491,7 @@ export default {
           art: "Z_GP01.png",
           data: [
             {
-              name: "赛文奥特曼 闪耀型",
+              name: "奥特赛文 闪耀型",
               color: "#c32020ab",
               price: 0,
               pic: "/z/ultramedal/M-046.jpg"
@@ -503,7 +503,7 @@ export default {
               pic: "/z/ultramedal/M-003.jpg"
             },
             {
-              name: "赛文奥特曼",
+              name: "奥特赛文",
               color: "#c32020ab",
               price: 0,
               pic: "/z/ultramedal/M-002.jpg"
@@ -1110,7 +1110,7 @@ export default {
               pic: "/gashapon/HG/03/4180205956.jpg"
             },
             {
-              name: "赛文奥特曼",
+              name: "奥特赛文",
               color: "#c32020ab",
               price: 0,
               pic: "/gashapon/HG/03/3137503426.jpg"

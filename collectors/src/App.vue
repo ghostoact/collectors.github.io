@@ -38,7 +38,7 @@ export default {
         },
         {
           name: "德凯·奥特次元卡牌",
-          url: "/Decker",
+          url: "/UltraDimensionCard",
         },
         {
           name: "特利迦·胜利超越之钥",
