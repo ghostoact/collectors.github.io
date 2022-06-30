@@ -3,80 +3,126 @@
     <div class="ctrl-panel">
       <div class="switch-ctrl">
         <div class="switch-label">排序</div>
-        <div class="switch-item" :class="{ active: ctrl.sort == 0 }" @click="getListBySort(0)">
+        <div
+          class="switch-item"
+          :class="{ active: ctrl.sort == 0 }"
+          @click="getListBySort(0)"
+        >
           默认
         </div>
-        <div class="switch-item" :class="{ active: ctrl.sort == 1 }" @click="getListBySort(1)">
+        <div
+          class="switch-item"
+          :class="{ active: ctrl.sort == 1 }"
+          @click="getListBySort(1)"
+        >
           发售
         </div>
       </div>
       <div class="switch-ctrl right">
         <div class="switch-label">视图</div>
-        <div class="switch-item" :class="{ active: ctrl.view == 0 }" @click="changeViewType(0)">
+        <div
+          class="switch-item"
+          :class="{ active: ctrl.view == 0 }"
+          @click="changeViewType(0)"
+        >
           <i class="iconfont icon-list"></i>
         </div>
-        <div class="switch-item" :class="{ active: ctrl.view == 1 }" @click="changeViewType(1)">
+        <div
+          class="switch-item"
+          :class="{ active: ctrl.view == 1 }"
+          @click="changeViewType(1)"
+        >
           <i class="iconfont icon-jiugongge"></i>
         </div>
       </div>
     </div>
     <div class="model-toy" v-for="toy in nowList" :key="toy.title">
       <div class="toy-warp">
-        <span class="sale-date" v-html="toy.saledate ? toy.saledate + ' 发售' : ''"></span>
-        <a class="website" v-show="toy.url != ''" :href="toy.url" target="_blank" title="跳转到官网">
+        <span
+          class="sale-date"
+          v-html="toy.saledate ? toy.saledate + ' 发售' : ''"
+        ></span>
+        <a
+          class="website"
+          v-show="toy.url != ''"
+          :href="toy.url"
+          target="_blank"
+          title="跳转到官网"
+        >
           <i class="iconfont icon-wangye"></i>
         </a>
         <div class="trend-box">
-          <div class="trend-left" v-lazy:background-image="'./static/img/item/trend/' + toy.pic"></div>
+          <div
+            class="trend-left"
+            v-lazy:background-image="'./static/img/item/trend/' + toy.pic"
+          ></div>
           <div class="trend-right">
             <div class="trend-info">
               <p class="toy-title" :title="toy.name">{{ toy.name }}</p>
               <div class="price-box">
                 <div class="price-item yen">
                   <p class="price-num">
-                    <span v-html="toy.yenprice != null ? toy.yenprice : '-'"></span>
+                    <span
+                      v-html="toy.yenprice != null ? toy.yenprice : '-'"
+                    ></span>
                     <span class="unit" v-if="toy.yenprice != null">元</span>
                   </p>
                   <p class="price-name">发售参考价</p>
                 </div>
                 <div class="price-item min">
                   <p class="price-num">
-                    <span v-html="
-                      arrMinNum(toy.pastprice) != 0
-                        ? arrMinNum(toy.pastprice)
-                        : '-'
-                    "></span>
-                    <span class="unit" v-if="arrMinNum(toy.pastprice) != 0">元</span>
+                    <span
+                      v-html="
+                        arrMinNum(toy.pastprice) != 0
+                          ? arrMinNum(toy.pastprice)
+                          : '-'
+                      "
+                    ></span>
+                    <span class="unit" v-if="arrMinNum(toy.pastprice) != 0"
+                      >元</span
+                    >
                   </p>
                   <p class="price-name">最低价</p>
                 </div>
                 <div class="price-item">
                   <p class="price-num">
-                    <span v-html="
-                      getAverageNum(toy.pastprice) != 0
-                        ? getAverageNum(toy.pastprice)
-                        : '-'
-                    "></span>
-                    <span class="unit" v-if="getAverageNum(toy.pastprice) != 0">元</span>
+                    <span
+                      v-html="
+                        getAverageNum(toy.pastprice) != 0
+                          ? getAverageNum(toy.pastprice)
+                          : '-'
+                      "
+                    ></span>
+                    <span class="unit" v-if="getAverageNum(toy.pastprice) != 0"
+                      >元</span
+                    >
                   </p>
                   <p class="price-name">平均价</p>
                 </div>
                 <div class="price-item max">
                   <p class="price-num">
-                    <span v-html="
-                      getMaxNum(toy.pastprice) != 0
-                        ? getMaxNum(toy.pastprice)
-                        : '-'
-                    "></span>
-                    <span class="unit" v-if="getMaxNum(toy.pastprice) != 0">元</span>
+                    <span
+                      v-html="
+                        getMaxNum(toy.pastprice) != 0
+                          ? getMaxNum(toy.pastprice)
+                          : '-'
+                      "
+                    ></span>
+                    <span class="unit" v-if="getMaxNum(toy.pastprice) != 0"
+                      >元</span
+                    >
                   </p>
                   <p class="price-name">最高价</p>
                 </div>
               </div>
               <p class="toy-des">{{ toy.des }}</p>
             </div>
-            <v-chart class="trend-echarts" autoresize :option="getOption(toy.pastprice)"
-              style="width: 100%; height: 100%" />
+            <v-chart
+              class="trend-echarts"
+              autoresize
+              :option="getOption(toy.pastprice)"
+              style="width: 100%; height: 100%"
+            />
           </div>
         </div>
       </div>
@@ -311,7 +357,7 @@ export default {
           name: "特利迦新生代钥匙套装Vol.2",
           saledate: "2022.6.22",
           yenprice: 388,
-          pastprice: [455, 449, 429, 410, 400, 399, 395, 390, 385],
+          pastprice: [455, 449, 429, 410, 400, 399, 395, 390, 385, 365, 360],
           des: "含艾克斯、捷德、泰迦、泰塔斯、风马",
           url: "https://p-bandai.jp/item/item-1000167088/",
           pic: "6582630675.jpg",
@@ -321,7 +367,7 @@ export default {
           name: "特利迦新生代钥匙套装Vol.1",
           saledate: "2022.6.22",
           yenprice: 388,
-          pastprice: [455, 449, 429, 410, 400, 399, 395, 390, 385],
+          pastprice: [455, 449, 429, 410, 400, 399, 395, 390, 385, 365, 360],
           des: "含银河、维克特利、欧布、罗索、布鲁",
           url: "https://p-bandai.jp/item/item-1000167087/",
           pic: "5501806536.jpg",
@@ -1143,7 +1189,20 @@ export default {
           name: "特空机2号乌英达姆+格纳库套装PB",
           saledate: "2021.10.13",
           yenprice: 297,
-          pastprice: [380, 368, 359, 310, 279, 248, 245, 212, 195, 188, 169, 139],
+          pastprice: [
+            380,
+            368,
+            359,
+            310,
+            279,
+            248,
+            245,
+            212,
+            195,
+            188,
+            169,
+            139
+          ],
           des: "乌英达姆软件+格纳库",
           url: "https://p-bandai.jp/item/item-1000157343/",
           pic: "0188389793.jpg",
@@ -1313,9 +1372,9 @@ export default {
       ]
     };
   },
-  mounted: function () {
+  mounted: function() {
     const vm = this;
-    vm.$nextTick(() => { });
+    vm.$nextTick(() => {});
   },
   methods: {
     // 获取数组最大值
@@ -1388,7 +1447,7 @@ export default {
         rev = rev ? 1 : -1;
       }
 
-      return function (a, b) {
+      return function(a, b) {
         a = a[attr];
         b = b[attr];
         if (a < b) {
