@@ -680,7 +680,19 @@ export default {
           property: "",
           pic: "U-37.jpg"
         },
-        
+        {
+          id: "U-97",
+          type: "U",
+          tag: ["DX"],
+          name: "",
+          selfSound: true,
+          link: null,
+          color: "#033879",
+          code: [],
+          way: "",
+          property: "",
+          pic: "U-97.jpg"
+        },
         {
           id: "U-98",
           type: "U",

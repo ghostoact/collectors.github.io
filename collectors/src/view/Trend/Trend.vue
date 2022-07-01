@@ -154,6 +154,26 @@ export default {
         //   saleDateSort: 99999999
         // },
         {
+          name: "DX德凯奥特曼武器剑套装",
+          saledate: "2022.8.27",
+          yenprice: 270,
+          pastprice: [0],
+          des: "含武器一把+卡牌+密钥",
+          url: "https://toy.bandai.co.jp/series/ultraman/item/detail/12659/",
+          pic: "0721658418.jpg",
+          saleDateSort: 20220827
+        },
+        {
+          name: "德凯奥特曼次元卡牌收纳册",
+          saledate: "2022.8.6",
+          yenprice: 92,
+          pastprice: [0],
+          des: "含收纳册+三张卡牌",
+          url: "https://toy.bandai.co.jp/series/ultraman/item/detail/12658/",
+          pic: "5703467980.jpg",
+          saleDateSort: 20220806
+        },
+        {
           name: "DX德凯奥特曼胜利猎隼",
           saledate: "2022.7.9",
           yenprice: 119,
