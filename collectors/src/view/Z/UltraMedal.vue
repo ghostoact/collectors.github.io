@@ -46,7 +46,7 @@ export default {
   components: {
     PropItem,
     TagBar,
-    FloatLayer,
+    FloatLayer
   },
   data() {
     return {
@@ -55,110 +55,110 @@ export default {
           name: "ALL",
           title: "全部",
           count: 0,
-          own: 0,
+          own: 0
         },
         {
           name: "XD",
           title: "限定",
           count: 0,
-          own: 0,
+          own: 0
         },
         {
           name: "DX",
           title: "DX",
           count: 0,
-          own: 0,
+          own: 0
         },
         {
           name: "EX01",
           title: "EX01",
           count: 0,
-          own: 0,
+          own: 0
         },
         {
           name: "EX02",
           title: "EX02",
           count: 0,
-          own: 0,
+          own: 0
         },
         {
           name: "EX03",
           title: "EX03",
           count: 0,
-          own: 0,
+          own: 0
         },
         {
           name: "EX04",
           title: "EX04",
           count: 0,
-          own: 0,
+          own: 0
         },
         {
           name: "SG01",
           title: "SG01",
           count: 0,
-          own: 0,
+          own: 0
         },
         {
           name: "SG02",
           title: "SG02",
           count: 0,
-          own: 0,
+          own: 0
         },
         {
           name: "GP01",
           title: "GP01",
           count: 0,
-          own: 0,
+          own: 0
         },
         {
           name: "GP02",
           title: "GP02",
           count: 0,
-          own: 0,
+          own: 0
         },
         {
           name: "GP03",
           title: "GP03",
           count: 0,
-          own: 0,
+          own: 0
         },
         {
           name: "GP04",
           title: "GP04",
           count: 0,
-          own: 0,
+          own: 0
         },
         {
           name: "GPEX",
           title: "GPEX",
           count: 0,
-          own: 0,
+          own: 0
         },
         {
           name: "SP",
           title: "SP",
           count: 0,
-          own: 0,
+          own: 0
         },
         {
           name: "PF",
           title: "披风",
           count: 0,
-          own: 0,
+          own: 0
         },
         {
           name: "PB",
           title: "PB",
           count: 0,
-          own: 0,
+          own: 0
         },
         {
           name: "TPC",
           title: "国代",
           count: 0,
-          own: 0,
-        },
+          own: 0
+        }
       ],
       nowList: null, //展示列表
       nowDetail: null,
@@ -174,7 +174,7 @@ export default {
           name: "赛罗奥特曼", //名称
           link: [62], //关联奥特曼或怪兽实体数组
           // color: "#F44336", //自定义颜色
-          pic:"M-001.jpg"
+          pic: "M-001.jpg"
         },
         {
           id: "M-002",
@@ -182,7 +182,7 @@ export default {
           tag: ["DX"],
           name: "奥特赛文",
           link: [2],
-          pic:"M-002.jpg"
+          pic: "M-002.jpg"
         },
         {
           id: "M-003",
@@ -190,7 +190,7 @@ export default {
           tag: ["DX"],
           name: "雷欧奥特曼",
           link: [8],
-          pic:"M-003.jpg"
+          pic: "M-003.jpg"
         },
         {
           id: "M-004",
@@ -198,7 +198,7 @@ export default {
           tag: ["DX"],
           name: "奥特曼",
           link: [0],
-          pic:"M-004.jpg"
+          pic: "M-004.jpg"
         },
         {
           id: "M-005",
@@ -206,7 +206,7 @@ export default {
           tag: ["DX"],
           name: "艾斯奥特曼",
           link: [4],
-          pic:"M-005.jpg"
+          pic: "M-005.jpg"
         },
         {
           id: "M-006",
@@ -214,7 +214,7 @@ export default {
           tag: ["DX"],
           name: "泰罗奥特曼",
           link: [6],
-          pic:"M-006.jpg"
+          pic: "M-006.jpg"
         },
         {
           id: "M-007",
@@ -222,7 +222,7 @@ export default {
           tag: ["DX"],
           name: "迪迦奥特曼",
           link: [20],
-          pic:"M-007.jpg"
+          pic: "M-007.jpg"
         },
         {
           id: "M-008",
@@ -230,7 +230,7 @@ export default {
           tag: ["DX"],
           name: "戴拿奥特曼",
           link: [27],
-          pic:"M-008.jpg"
+          pic: "M-008.jpg"
         },
         {
           id: "M-009",
@@ -238,7 +238,7 @@ export default {
           tag: ["DX"],
           name: "盖亚奥特曼",
           link: [30],
-          pic:"M-009.jpg"
+          pic: "M-009.jpg"
         },
         {
           id: "M-010",
@@ -247,7 +247,7 @@ export default {
           name: "赛罗奥特曼 无限形态",
           link: [88],
           color: "#de9104",
-          pic:"M-010.jpg"
+          pic: "M-010.jpg"
         },
         {
           id: "M-011",
@@ -256,7 +256,7 @@ export default {
           name: "捷德奥特曼",
           link: [103],
           color: "#de9104",
-          pic:"M-011.jpg"
+          pic: "M-011.jpg"
         },
         {
           id: "M-012",
@@ -265,7 +265,7 @@ export default {
           name: "极恶 贝利亚",
           link: [123],
           color: "#de9104",
-          pic:"M-012.jpg"
+          pic: "M-012.jpg"
         },
         {
           id: "M-013",
@@ -273,7 +273,7 @@ export default {
           tag: ["DX"],
           name: "佐菲",
           link: [1],
-          pic:"M-013.jpg"
+          pic: "M-013.jpg"
         },
         {
           id: "M-014",
@@ -281,7 +281,7 @@ export default {
           tag: ["DX"],
           name: "杰克奥特曼",
           link: [3],
-          pic:"M-014.jpg"
+          pic: "M-014.jpg"
         },
         {
           id: "M-015",
@@ -289,7 +289,7 @@ export default {
           tag: ["DX"],
           name: "奥特之父",
           link: [5],
-          pic:"M-015.jpg"
+          pic: "M-015.jpg"
         },
         {
           id: "M-016",
@@ -297,7 +297,7 @@ export default {
           tag: ["DX"],
           name: "高斯奥特曼",
           link: [38],
-          pic:"M-016.jpg"
+          pic: "M-016.jpg"
         },
         {
           id: "M-017",
@@ -305,7 +305,7 @@ export default {
           tag: ["DX"],
           name: "奈克赛斯奥特曼",
           link: [46],
-          pic:"M-017.jpg"
+          pic: "M-017.jpg"
         },
         {
           id: "M-018",
@@ -313,7 +313,7 @@ export default {
           tag: ["DX"],
           name: "梦比优斯奥特曼",
           link: [54],
-          pic:"M-018.jpg"
+          pic: "M-018.jpg"
         },
         {
           id: "M-019",
@@ -321,7 +321,7 @@ export default {
           tag: ["DX"],
           name: "银河奥特曼",
           link: [65],
-          pic:"M-019.jpg"
+          pic: "M-019.jpg"
         },
         {
           id: "M-020",
@@ -329,7 +329,7 @@ export default {
           tag: ["DX"],
           name: "艾克斯奥特曼",
           link: [67],
-          pic:"M-020.jpg"
+          pic: "M-020.jpg"
         },
         {
           id: "M-021",
@@ -337,7 +337,7 @@ export default {
           tag: ["DX"],
           name: "欧布奥特曼",
           link: [68],
-          pic:"M-021.jpg"
+          pic: "M-021.jpg"
         },
         {
           id: "M-022",
@@ -345,7 +345,7 @@ export default {
           tag: ["EX01"],
           name: "赛罗奥特曼 闪耀形态",
           link: [64],
-          pic:"M-022.jpg"
+          pic: "M-022.jpg"
         },
         {
           id: "M-023",
@@ -353,7 +353,7 @@ export default {
           tag: ["EX01"],
           name: "火焰骑士",
           link: null,
-          pic:"M-023.jpg"
+          pic: "M-023.jpg"
         },
         {
           id: "M-024",
@@ -361,7 +361,7 @@ export default {
           tag: ["EX01"],
           name: "镜子骑士",
           link: null,
-          pic:"M-024.jpg"
+          pic: "M-024.jpg"
         },
         {
           id: "M-025",
@@ -369,7 +369,7 @@ export default {
           tag: ["EX01"],
           name: "钢铁九号",
           link: null,
-          pic:"M-025.jpg"
+          pic: "M-025.jpg"
         },
         {
           id: "M-026",
@@ -377,7 +377,7 @@ export default {
           tag: ["EX01"],
           name: "钢铁杀手",
           link: null,
-          pic:"M-026.jpg"
+          pic: "M-026.jpg"
         },
         {
           id: "M-027",
@@ -385,7 +385,7 @@ export default {
           tag: ["EX01"],
           name: "捷德奥特曼",
           link: [103],
-          pic:"M-027.jpg"
+          pic: "M-027.jpg"
         },
         {
           id: "M-028",
@@ -393,7 +393,7 @@ export default {
           tag: ["EX02"],
           name: "银河斯特利姆奥特曼",
           link: [90],
-          pic:"M-028.jpg"
+          pic: "M-028.jpg"
         },
         {
           id: "M-029",
@@ -401,7 +401,7 @@ export default {
           tag: ["EX02"],
           name: "维克特利奥特曼 骑士形态",
           link: [91],
-          pic:"M-029.jpg"
+          pic: "M-029.jpg"
         },
         {
           id: "M-030",
@@ -409,7 +409,7 @@ export default {
           tag: ["EX02"],
           name: "超越艾克斯",
           link: [93],
-          pic:"M-030.jpg"
+          pic: "M-030.jpg"
         },
         {
           id: "M-031",
@@ -417,7 +417,7 @@ export default {
           tag: ["EX02"],
           name: "捷德奥特曼 尊皇形态",
           link: [107],
-          pic:"M-031.jpg"
+          pic: "M-031.jpg"
         },
         {
           id: "M-032",
@@ -425,7 +425,7 @@ export default {
           tag: ["EX02"],
           name: "罗布奥特曼",
           link: [116],
-          pic:"M-032.jpg"
+          pic: "M-032.jpg"
         },
         {
           id: "M-033",
@@ -433,7 +433,7 @@ export default {
           tag: ["EX02"],
           name: "泰迦三重斯特利姆",
           link: [118],
-          pic:"M-033.jpg"
+          pic: "M-033.jpg"
         },
         {
           id: "M-034",
@@ -442,7 +442,7 @@ export default {
           name: "银河维克特利奥特曼",
           link: [92],
           color: "#173dc3",
-          pic:"M-034.jpg"
+          pic: "M-034.jpg"
         },
         {
           id: "M-035",
@@ -451,7 +451,7 @@ export default {
           name: "艾克斯奥特曼 贝塔火花装甲",
           link: [94],
           color: "#173dc3",
-          pic:"M-035.jpg"
+          pic: "M-035.jpg"
         },
         {
           id: "M-036",
@@ -460,7 +460,7 @@ export default {
           name: "欧布奥特曼 三重形态",
           link: [102],
           color: "#173dc3",
-          pic:"M-036.jpg"
+          pic: "M-036.jpg"
         },
         {
           id: "M-037",
@@ -469,7 +469,7 @@ export default {
           name: "捷德奥特曼 终极形态",
           link: [108],
           color: "#173dc3",
-          pic:"M-037.jpg"
+          pic: "M-037.jpg"
         },
         {
           id: "M-038",
@@ -478,7 +478,7 @@ export default {
           name: "格罗布奥特曼",
           link: [117],
           color: "#173dc3",
-          pic:"M-038.jpg"
+          pic: "M-038.jpg"
         },
         {
           id: "M-039",
@@ -487,7 +487,7 @@ export default {
           name: "令迦奥特曼",
           link: [124],
           color: "#173dc3",
-          pic:"M-039.jpg"
+          pic: "M-039.jpg"
         },
         {
           id: "M-040",
@@ -496,7 +496,7 @@ export default {
           name: "奥特六兄弟",
           link: [0, 1, 2, 3, 4, 6],
           color: "#8a939c",
-          pic:"M-040.jpg"
+          pic: "M-040.jpg"
         },
         {
           id: "M-041",
@@ -504,7 +504,7 @@ export default {
           tag: ["EX04"],
           name: "爱迪奥特曼",
           link: [12],
-          pic:"M-041.jpg"
+          pic: "M-041.jpg"
         },
         {
           id: "M-042",
@@ -512,7 +512,7 @@ export default {
           tag: ["EX04"],
           name: "杰斯提斯奥特曼 标准模式",
           link: [43],
-          pic:"M-042.jpg"
+          pic: "M-042.jpg"
         },
         {
           id: "M-043",
@@ -520,7 +520,7 @@ export default {
           tag: ["EX04"],
           name: "希卡利奥特曼",
           link: [58],
-          pic:"M-043.jpg"
+          pic: "M-043.jpg"
         },
         {
           id: "M-044",
@@ -528,7 +528,7 @@ export default {
           tag: ["EX04"],
           name: "赛罗奥特曼 月神奇迹型",
           link: [87],
-          pic:"M-044.jpg"
+          pic: "M-044.jpg"
         },
         {
           id: "M-045",
@@ -536,7 +536,7 @@ export default {
           tag: ["EX04"],
           name: "利布特奥特曼",
           link: [70],
-          pic:"M-045.jpg"
+          pic: "M-045.jpg"
         },
         {
           id: "M-046",
@@ -544,7 +544,7 @@ export default {
           tag: ["GP01"],
           name: "奥特赛文 闪耀型",
           link: [2],
-          pic:"M-046.jpg"
+          pic: "M-046.jpg"
         },
         {
           id: "M-047",
@@ -552,7 +552,7 @@ export default {
           tag: ["GP02"],
           name: "奥特曼 闪耀型",
           link: [0],
-          pic:"M-047.jpg"
+          pic: "M-047.jpg"
         },
         {
           id: "M-048",
@@ -560,7 +560,7 @@ export default {
           tag: ["GP01"],
           name: "葛雷奥特曼",
           link: [17],
-          pic:"M-048.jpg"
+          pic: "M-048.jpg"
         },
         {
           id: "M-049",
@@ -568,7 +568,7 @@ export default {
           tag: ["GP01"],
           name: "赛罗奥特曼 强壮日冕型",
           link: [86],
-          pic:"M-049.jpg"
+          pic: "M-049.jpg"
         },
         {
           id: "M-050",
@@ -576,7 +576,7 @@ export default {
           tag: ["GP01"],
           name: "阿古茹奥特曼",
           link: [33],
-          pic:"M-050.jpg"
+          pic: "M-050.jpg"
         },
         {
           id: "M-051",
@@ -584,7 +584,7 @@ export default {
           tag: ["GP01"],
           name: "乔尼亚斯奥特曼",
           link: [11],
-          pic:"M-051.jpg"
+          pic: "M-051.jpg"
         },
         {
           id: "M-052",
@@ -592,7 +592,7 @@ export default {
           tag: ["GP02"],
           name: "内隆嘎",
           link: null,
-          pic:"M-052.jpg"
+          pic: "M-052.jpg"
         },
         {
           id: "M-053",
@@ -600,7 +600,7 @@ export default {
           tag: ["GP02"],
           name: "盖内伽古",
           link: null,
-          pic:"M-053.jpg"
+          pic: "M-053.jpg"
         },
         {
           id: "M-054",
@@ -608,7 +608,7 @@ export default {
           tag: ["GP02"],
           name: "吉拉斯",
           link: null,
-          pic:"M-054.jpg"
+          pic: "M-054.jpg"
         },
         {
           id: "M-055",
@@ -616,7 +616,7 @@ export default {
           tag: ["GP02"],
           name: "奈克斯特奥特曼 蓝色青年形态",
           link: [50],
-          pic:"M-055.jpg"
+          pic: "M-055.jpg"
         },
         {
           id: "M-056",
@@ -624,7 +624,7 @@ export default {
           tag: ["GP02"],
           name: "戴拿奥特曼 奇迹型",
           link: [29],
-          pic:"M-056.jpg"
+          pic: "M-056.jpg"
         },
         {
           id: "M-057",
@@ -632,7 +632,7 @@ export default {
           tag: ["GP03"],
           name: "闪耀迪迦",
           link: [23],
-          pic:"M-057.jpg"
+          pic: "M-057.jpg"
         },
         {
           id: "M-058",
@@ -640,7 +640,7 @@ export default {
           tag: ["GP03"],
           name: "帕瓦特奥特曼",
           link: [18],
-          pic:"M-058.jpg"
+          pic: "M-058.jpg"
         },
         {
           id: "M-059",
@@ -648,7 +648,7 @@ export default {
           tag: ["GP03"],
           name: "奥特之王",
           link: [10],
-          pic:"M-059.jpg"
+          pic: "M-059.jpg"
         },
         {
           id: "M-060",
@@ -656,7 +656,7 @@ export default {
           tag: ["GP03"],
           name: "伽古拉斯·伽古拉",
           link: null,
-          pic:"M-060.jpg"
+          pic: "M-060.jpg"
         },
         {
           id: "M-061",
@@ -664,7 +664,7 @@ export default {
           tag: ["GP03"],
           name: "金古桥",
           link: null,
-          pic:"M-061.jpg"
+          pic: "M-061.jpg"
         },
         {
           id: "M-062",
@@ -672,7 +672,7 @@ export default {
           tag: ["GP04"],
           name: "哉阿斯奥特曼",
           link: [19],
-          pic:"M-062.jpg"
+          pic: "M-062.jpg"
         },
         {
           id: "M-063",
@@ -680,7 +680,7 @@ export default {
           tag: ["GP04"],
           name: "纳伊斯奥特曼",
           link: [35],
-          pic:"M-063.jpg"
+          pic: "M-063.jpg"
         },
         {
           id: "M-064",
@@ -688,7 +688,7 @@ export default {
           tag: ["GP04"],
           name: "格丽乔奥特曼",
           link: [74],
-          pic:"M-064.jpg"
+          pic: "M-064.jpg"
         },
         {
           id: "M-065",
@@ -696,7 +696,7 @@ export default {
           tag: ["GP04"],
           name: "特空机1号 赛文加",
           link: null,
-          pic:"M-065.jpg"
+          pic: "M-065.jpg"
         },
         {
           id: "M-066",
@@ -704,7 +704,7 @@ export default {
           tag: ["GP04"],
           name: "特空机2号 乌英达姆",
           link: null,
-          pic:"M-066.jpg"
+          pic: "M-066.jpg"
         },
         {
           id: "M-067",
@@ -712,7 +712,7 @@ export default {
           tag: ["GP04"],
           name: "特空机3号 金古桥军械库定制",
           link: null,
-          pic:"M-067.jpg"
+          pic: "M-067.jpg"
         },
         {
           id: "M-068",
@@ -720,7 +720,7 @@ export default {
           tag: ["GP04"],
           name: "特空机4号 奥特人造机甲赛罗",
           link: null,
-          pic:"M-068.jpg"
+          pic: "M-068.jpg"
         },
         {
           id: "M-069",
@@ -728,7 +728,7 @@ export default {
           tag: ["GP04"],
           name: "歼灭机甲兽德斯特鲁多斯",
           link: null,
-          pic:"M-069.jpg"
+          pic: "M-069.jpg"
         },
         {
           id: "M-070",
@@ -736,7 +736,7 @@ export default {
           tag: ["GP04"],
           name: "虚空怪兽 格利扎",
           link: null,
-          pic:"M-070.jpg"
+          pic: "M-070.jpg"
         },
         {
           id: "M-071",
@@ -744,7 +744,7 @@ export default {
           tag: ["SG01"],
           name: "究极赛罗",
           link: [63],
-          pic:"M-071.jpg"
+          pic: "M-071.jpg"
         },
         {
           id: "M-072",
@@ -752,7 +752,7 @@ export default {
           tag: ["SG01"],
           name: "欧布奥特曼 重光形态",
           link: [96],
-          pic:"M-072.jpg"
+          pic: "M-072.jpg"
         },
         {
           id: "M-073",
@@ -760,7 +760,7 @@ export default {
           tag: ["SG01"],
           name: "维克特利奥特曼",
           link: [66],
-          pic:"M-073.jpg"
+          pic: "M-073.jpg"
         },
         {
           id: "M-074",
@@ -768,7 +768,7 @@ export default {
           tag: ["SG01"],
           name: "麦克斯奥特曼",
           link: [52],
-          pic:"M-074.jpg"
+          pic: "M-074.jpg"
         },
         {
           id: "M-075",
@@ -776,7 +776,7 @@ export default {
           tag: ["SG01"],
           name: "泰迦奥特曼",
           link: [77],
-          pic:"M-075.jpg"
+          pic: "M-075.jpg"
         },
         {
           id: "M-076",
@@ -784,7 +784,7 @@ export default {
           tag: ["SG01"],
           name: "泰塔斯奥特曼",
           link: [79],
-          pic:"M-076.jpg"
+          pic: "M-076.jpg"
         },
         {
           id: "M-077",
@@ -792,7 +792,7 @@ export default {
           tag: ["SG01"],
           name: "风马奥特曼",
           link: [80],
-          pic:"M-077.jpg"
+          pic: "M-077.jpg"
         },
         {
           id: "M-078",
@@ -800,7 +800,7 @@ export default {
           tag: ["SG01"],
           name: "奈克斯特奥特曼 青年形态",
           link: [49],
-          pic:"M-078.jpg"
+          pic: "M-078.jpg"
         },
         {
           id: "M-079",
@@ -808,7 +808,7 @@ export default {
           tag: ["SG02"],
           name: "艾雷王",
           link: null,
-          pic:"M-079.jpg"
+          pic: "M-079.jpg"
         },
         {
           id: "M-080",
@@ -816,7 +816,7 @@ export default {
           tag: ["SG02"],
           name: "艾斯杀手",
           link: null,
-          pic:"M-080.jpg"
+          pic: "M-080.jpg"
         },
         {
           id: "M-081",
@@ -824,7 +824,7 @@ export default {
           tag: ["SG02"],
           name: "霍洛波罗兹",
           link: null,
-          pic:"M-081.jpg"
+          pic: "M-081.jpg"
         },
         {
           id: "M-082",
@@ -832,7 +832,7 @@ export default {
           tag: ["SG02"],
           name: "吉尔巴里斯",
           link: null,
-          pic:"M-082.jpg"
+          pic: "M-082.jpg"
         },
         {
           id: "M-083",
@@ -840,7 +840,7 @@ export default {
           tag: ["SG02"],
           name: "加拉特隆MK2",
           link: null,
-          pic:"M-083.jpg"
+          pic: "M-083.jpg"
         },
         {
           id: "M-084",
@@ -850,7 +850,7 @@ export default {
           link: [62, 103],
           color: "#de9104",
           way: "泽塔升华器套装附赠特典",
-          pic:"M-084.jpg"
+          pic: "M-084.jpg"
         },
         {
           id: "M-085",
@@ -859,7 +859,7 @@ export default {
           name: "戴拿奥特曼 强壮型",
           link: [28],
           way: "奥特曼联名童装附赠",
-          pic:"M-085.jpg"
+          pic: "M-085.jpg"
         },
         {
           id: "M-086",
@@ -868,7 +868,7 @@ export default {
           name: "高斯奥特曼 日冕模式",
           link: [39],
           way: "奥特曼联名童装附赠",
-          pic:"M-086.jpg"
+          pic: "M-086.jpg"
         },
         {
           id: "M-087",
@@ -877,7 +877,7 @@ export default {
           name: "初代光线",
           link: [0],
           way: "活动限定",
-          pic:"M-087.jpg"
+          pic: "M-087.jpg"
         },
         {
           id: "M-088",
@@ -885,8 +885,8 @@ export default {
           tag: ["XD"],
           name: "泽塔奥特曼 阿尔法装甲",
           link: [81, 62, 2, 8],
-          way:"泽塔奥特曼阿尔法装甲限定软胶附赠",
-          pic:"M-088.jpg"
+          way: "泽塔奥特曼阿尔法装甲限定软胶附赠",
+          pic: "M-088.jpg"
         },
         {
           id: "M-089",
@@ -894,8 +894,8 @@ export default {
           tag: ["XD"],
           name: "泽塔奥特曼 伽马未来",
           link: [81, 20, 27, 30],
-          way:"泽塔奥特曼伽马未来限定软胶附赠",
-          pic:"M-089.jpg"
+          way: "泽塔奥特曼伽马未来限定软胶附赠",
+          pic: "M-089.jpg"
         },
         {
           id: "M-090",
@@ -904,8 +904,8 @@ export default {
           name: "泽塔奥特曼 德尔塔天爪",
           link: [81, 71, 88, 123],
           color: "#8a939c",
-          way:"泽塔奥特曼德尔塔天爪限定软胶附赠",
-          pic:"M-090.jpg"
+          way: "泽塔奥特曼德尔塔天爪限定软胶附赠",
+          pic: "M-090.jpg"
         },
         {
           id: "M-091",
@@ -914,7 +914,7 @@ export default {
           name: "十周年赛罗",
           link: [62],
           way: "M78商店赛罗限定软胶附赠",
-          pic:"M-091.jpg"
+          pic: "M-091.jpg"
         },
         {
           id: "M-092",
@@ -923,8 +923,8 @@ export default {
           name: "泽塔奥特曼 德尔塔天爪圣诞版",
           link: [122],
           color: "#027e42",
-          way:"2020年M78商店圣诞节赠送",
-          pic:"M-092.jpg"
+          way: "2020年M78商店圣诞节赠送",
+          pic: "M-092.jpg"
         },
         {
           id: "M-093",
@@ -933,7 +933,7 @@ export default {
           name: "罗索奥特曼",
           link: [72],
           way: "奥特曼联名童装附赠",
-          pic:"M-093.jpg"
+          pic: "M-093.jpg"
         },
         {
           id: "M-094",
@@ -942,7 +942,7 @@ export default {
           name: "布鲁奥特曼",
           link: [73],
           way: "奥特曼联名童装附赠",
-          pic:"M-094.jpg"
+          pic: "M-094.jpg"
         },
         {
           id: "M-095",
@@ -951,7 +951,7 @@ export default {
           name: "泽塔奥特曼",
           link: [81],
           color: "#d8111a",
-          pic:"M-095.jpg"
+          pic: "M-095.jpg"
         },
         {
           id: "M-096",
@@ -960,7 +960,7 @@ export default {
           name: "银河奥特曼",
           link: [65],
           color: "#d8111a",
-          pic:"M-096.jpg"
+          pic: "M-096.jpg"
         },
         {
           id: "M-097",
@@ -969,7 +969,7 @@ export default {
           name: "维克特利奥特曼",
           link: [66],
           color: "#d8111a",
-          pic:"M-097.jpg"
+          pic: "M-097.jpg"
         },
         {
           id: "M-098",
@@ -978,7 +978,7 @@ export default {
           name: "艾克斯奥特曼",
           link: [67],
           color: "#d8111a",
-          pic:"M-098.jpg"
+          pic: "M-098.jpg"
         },
         {
           id: "M-099",
@@ -987,7 +987,7 @@ export default {
           name: "欧布奥特曼",
           link: [68],
           color: "#d8111a",
-          pic:"M-099.jpg"
+          pic: "M-099.jpg"
         },
         {
           id: "M-100",
@@ -996,7 +996,7 @@ export default {
           name: "捷德奥特曼",
           link: [103],
           color: "#d8111a",
-          pic:"M-100.jpg"
+          pic: "M-100.jpg"
         },
         {
           id: "M-101",
@@ -1005,7 +1005,7 @@ export default {
           name: "罗索奥特曼",
           link: [72],
           color: "#d8111a",
-          pic:"M-101.jpg"
+          pic: "M-101.jpg"
         },
         {
           id: "M-102",
@@ -1014,7 +1014,7 @@ export default {
           name: "布鲁奥特曼",
           link: [73],
           color: "#d8111a",
-          pic:"M-102.jpg"
+          pic: "M-102.jpg"
         },
         {
           id: "M-103",
@@ -1023,7 +1023,7 @@ export default {
           name: "泰迦奥特曼",
           link: [77],
           color: "#d8111a",
-          pic:"M-103.jpg"
+          pic: "M-103.jpg"
         },
         {
           id: "M-104",
@@ -1032,7 +1032,7 @@ export default {
           name: "赛罗奥特曼",
           link: [62],
           color: "#5dbc9c",
-          pic:"M-104.jpg"
+          pic: "M-104.jpg"
         },
         {
           id: "M-105",
@@ -1041,7 +1041,7 @@ export default {
           name: "奥特曼",
           link: [0],
           color: "#5dbc9c",
-          pic:"M-105.jpg"
+          pic: "M-105.jpg"
         },
         {
           id: "M-106",
@@ -1050,7 +1050,7 @@ export default {
           name: "佐菲",
           link: [1],
           color: "#5dbc9c",
-          pic:"M-106.jpg"
+          pic: "M-106.jpg"
         },
         {
           id: "M-107",
@@ -1059,7 +1059,7 @@ export default {
           name: "奥特赛文",
           link: [2],
           color: "#5dbc9c",
-          pic:"M-107.jpg"
+          pic: "M-107.jpg"
         },
         {
           id: "M-108",
@@ -1068,7 +1068,7 @@ export default {
           name: "杰克奥特曼",
           link: [3],
           color: "#5dbc9c",
-          pic:"M-108.jpg"
+          pic: "M-108.jpg"
         },
         {
           id: "M-109",
@@ -1077,7 +1077,7 @@ export default {
           name: "艾斯奥特曼",
           link: [4],
           color: "#5dbc9c",
-          pic:"M-109.jpg"
+          pic: "M-109.jpg"
         },
         {
           id: "M-110",
@@ -1086,7 +1086,7 @@ export default {
           name: "泰罗奥特曼",
           link: [6],
           color: "#5dbc9c",
-          pic:"M-110.jpg"
+          pic: "M-110.jpg"
         },
         {
           id: "M-111",
@@ -1094,7 +1094,7 @@ export default {
           tag: ["GPEX"],
           name: "奥特之母",
           link: [7],
-          pic:"M-111.jpg"
+          pic: "M-111.jpg"
         },
         {
           id: "M-112",
@@ -1102,7 +1102,7 @@ export default {
           tag: ["GPEX"],
           name: "尤莉安奥特曼",
           link: [13],
-          pic:"M-112.jpg"
+          pic: "M-112.jpg"
         },
         {
           id: "M-113",
@@ -1110,7 +1110,7 @@ export default {
           tag: ["GPEX"],
           name: "索拉",
           link: null,
-          pic:"M-113.jpg"
+          pic: "M-113.jpg"
         },
         {
           id: "M-114",
@@ -1118,7 +1118,7 @@ export default {
           tag: ["GPEX"],
           name: "博伊奥特曼",
           link: [45],
-          pic:"M-114.jpg"
+          pic: "M-114.jpg"
         },
         {
           id: "M-115",
@@ -1126,7 +1126,7 @@ export default {
           tag: ["GPEX"],
           name: "察克奥特曼",
           link: [15],
-          pic:"M-115.jpg"
+          pic: "M-115.jpg"
         },
         {
           id: "M-116",
@@ -1134,7 +1134,7 @@ export default {
           tag: ["GPEX"],
           name: "史考特奥特曼",
           link: [14],
-          pic:"M-116.jpg"
+          pic: "M-116.jpg"
         },
         {
           id: "M-117",
@@ -1142,7 +1142,7 @@ export default {
           tag: ["GPEX"],
           name: "贝斯奥特曼",
           link: [16],
-          pic:"M-117.jpg"
+          pic: "M-117.jpg"
         },
         {
           id: "M-118",
@@ -1150,7 +1150,7 @@ export default {
           tag: ["GPEX"],
           name: "杰诺奥特曼",
           link: [53],
-          pic:"M-118.jpg"
+          pic: "M-118.jpg"
         },
         {
           id: "M-119",
@@ -1158,7 +1158,7 @@ export default {
           tag: ["GPEX"],
           name: "赛文21奥特曼",
           link: [37],
-          pic:"M-119.jpg"
+          pic: "M-119.jpg"
         },
         {
           id: "M-120",
@@ -1166,7 +1166,7 @@ export default {
           tag: ["GPEX"],
           name: "奈欧斯奥特曼",
           link: [36],
-          pic:"M-120.jpg"
+          pic: "M-120.jpg"
         },
         {
           id: "M-121",
@@ -1174,7 +1174,7 @@ export default {
           tag: ["GPEX"],
           name: "奈克斯特奥特曼",
           link: [48],
-          pic:"M-121.jpg"
+          pic: "M-121.jpg"
         },
         {
           id: "M-122",
@@ -1182,7 +1182,7 @@ export default {
           tag: ["GPEX"],
           name: "诺亚奥特曼",
           link: [51],
-          pic:"M-122.jpg"
+          pic: "M-122.jpg"
         },
         {
           id: "M-123",
@@ -1190,7 +1190,7 @@ export default {
           tag: ["PB"],
           name: "泽塔奥特曼 阿尔法装甲",
           link: [119],
-          pic:"M-123.jpg"
+          pic: "M-123.jpg"
         },
         {
           id: "M-124",
@@ -1198,7 +1198,7 @@ export default {
           tag: ["PB"],
           name: "泽塔奥特曼 贝塔冲击",
           link: [120],
-          pic:"M-124.jpg"
+          pic: "M-124.jpg"
         },
         {
           id: "M-125",
@@ -1206,7 +1206,7 @@ export default {
           tag: ["PB"],
           name: "泽塔奥特曼 伽马未来",
           link: [121],
-          pic:"M-125.jpg"
+          pic: "M-125.jpg"
         },
         {
           id: "M-126",
@@ -1215,7 +1215,7 @@ export default {
           name: "泽塔奥特曼 德尔塔天爪",
           link: [122],
           color: "#de9104",
-          pic:"M-126.jpg"
+          pic: "M-126.jpg"
         },
         {
           id: "M-127",
@@ -1223,7 +1223,7 @@ export default {
           tag: ["PB"],
           name: "武器1",
           link: null,
-          pic:"M-127.jpg"
+          pic: "M-127.jpg"
         },
         {
           id: "M-128",
@@ -1231,7 +1231,7 @@ export default {
           tag: ["PB"],
           name: "武器2",
           link: null,
-          pic:"M-127.jpg"
+          pic: "M-127.jpg"
         },
         {
           id: "M-129",
@@ -1239,7 +1239,7 @@ export default {
           tag: ["PB"],
           name: "武器3",
           link: null,
-          pic:"M-127.jpg"
+          pic: "M-127.jpg"
         },
         {
           id: "M-130",
@@ -1247,7 +1247,7 @@ export default {
           tag: ["PB"],
           name: "杰顿",
           link: null,
-          pic:"M-130.jpg"
+          pic: "M-130.jpg"
         },
         {
           id: "M-131",
@@ -1255,7 +1255,7 @@ export default {
           tag: ["PB"],
           name: "庞敦",
           link: null,
-          pic:"M-131.jpg"
+          pic: "M-131.jpg"
         },
         {
           id: "M-132",
@@ -1263,7 +1263,7 @@ export default {
           tag: ["PB"],
           name: "玛伽大蛇",
           link: null,
-          pic:"M-132.jpg"
+          pic: "M-132.jpg"
         },
         {
           id: "M-133",
@@ -1271,7 +1271,7 @@ export default {
           tag: ["PB"],
           name: "超古代怪兽 哥尔赞",
           link: null,
-          pic:"M-133.jpg"
+          pic: "M-133.jpg"
         },
         {
           id: "M-134",
@@ -1279,7 +1279,7 @@ export default {
           tag: ["PB"],
           name: "超古代龙 美尔巴",
           link: null,
-          pic:"M-134.jpg"
+          pic: "M-134.jpg"
         },
         {
           id: "M-135",
@@ -1287,7 +1287,7 @@ export default {
           tag: ["PB"],
           name: "宇宙战斗兽 超戈布",
           link: null,
-          pic:"M-135.jpg"
+          pic: "M-135.jpg"
         },
         {
           id: "M-136",
@@ -1295,7 +1295,7 @@ export default {
           tag: ["PB"],
           name: "宇宙海兽 雷丘巴斯",
           link: null,
-          pic:"M-136.jpg"
+          pic: "M-136.jpg"
         },
         {
           id: "M-137",
@@ -1303,7 +1303,7 @@ export default {
           tag: ["PB"],
           name: "奇兽眼Q",
           link: null,
-          pic:"M-137.jpg"
+          pic: "M-137.jpg"
         },
         {
           id: "M-138",
@@ -1311,7 +1311,7 @@ export default {
           tag: ["DX"],
           name: "贝利亚奥特曼",
           link: [60],
-          pic:"M-138.jpg"
+          pic: "M-138.jpg"
         },
         {
           id: "M-139",
@@ -1319,7 +1319,7 @@ export default {
           tag: ["DX"],
           name: "宇古代怪兽 哥莫拉",
           link: null,
-          pic:"M-139.jpg"
+          pic: "M-139.jpg"
         },
         {
           id: "M-140",
@@ -1327,7 +1327,7 @@ export default {
           tag: ["DX"],
           name: "骷髅怪兽 雷德王",
           link: null,
-          pic:"M-140.jpg"
+          pic: "M-140.jpg"
         },
         {
           id: "M-141",
@@ -1336,7 +1336,7 @@ export default {
           name: "特利迦奥特曼 复合型",
           link: [82],
           way: "DX奥特勋章分析图鉴附赠",
-          pic:"M-141.jpg"
+          pic: "M-141.jpg"
         },
         {
           id: "M-142",
@@ -1345,7 +1345,7 @@ export default {
           name: "加拉特隆",
           link: [82],
           way: "第二弹推广勋章",
-          pic:"M-142.jpg"
+          pic: "M-142.jpg"
         },
         {
           id: "M-143",
@@ -1354,7 +1354,7 @@ export default {
           name: "新生代英雄勋章",
           link: [82],
           way: "奥特基地专属勋章",
-          pic:"M-143.jpg"
+          pic: "M-143.jpg"
         },
         {
           id: "M-144",
@@ -1363,7 +1363,7 @@ export default {
           name: "赛迦",
           link: [82],
           way: "第三弹推广勋章",
-          pic:"M-144.jpg"
+          pic: "M-144.jpg"
         },
         {
           id: "M-145",
@@ -1372,7 +1372,7 @@ export default {
           name: "泰莱斯通",
           link: [82],
           way: "第四弹推广勋章",
-          pic:"M-145.jpg"
+          pic: "M-145.jpg"
         },
         {
           id: "M-146",
@@ -1381,7 +1381,7 @@ export default {
           name: "梦比优斯 炽热勇气",
           link: [82],
           way: "奥特勋章第三弹",
-          pic:"M-146.jpg"
+          pic: "M-146.jpg"
         },
         {
           id: "M-147",
@@ -1390,9 +1390,27 @@ export default {
           name: "诺亚奥特曼",
           link: [82],
           way: "奥特基地专属勋章",
-          pic:"M-147.jpg"
+          pic: "M-147.jpg"
         }
       ],
+      fusionList: [
+        {
+          id: "M-123",
+          fusionArr: ["M-001", "M-002", "M-003"]
+        },
+        {
+          id: "M-124",
+          fusionArr: ["M-004", "M-005", "M-006"]
+        },
+        {
+          id: "M-125",
+          fusionArr: ["M-007", "M-008", "M-009"]
+        },
+        {
+          id: "M-126",
+          fusionArr: ["M-010", "M-011", "M-012"]
+        }
+      ]
     };
   },
   methods: {
@@ -1426,6 +1444,7 @@ export default {
         // 详情模式
         this.layerShow = true;
         this.nowDetail = item;
+        this.getFusionSub(item.id);
       }
     },
     hideDetail(visible) {
@@ -1476,12 +1495,34 @@ export default {
         });
       });
     },
+    // 可合成
+    getFusionSub(id) {
+      let arr = [];
+      this.fusionList.forEach((item, index, array) => {
+        if (item.fusionArr.indexOf(id) != -1) {
+          arr.push(item);
+        }
+      });
+      console.log(arr);
+      return arr;
+    },
+    // 被合成
+    getFusion(id) {
+      let item = {};
+      this.fusionList.forEach((item, index, array) => {
+        if (item.fusionArr.indexOf(id) != -1) {
+          arr.push(item);
+        }
+      });
+      console.log(item);
+      return item;
+    }
   },
   created() {
     this.nowList = this.ultramedal;
     this.getCollectData();
     this.getCollectProgress();
-  },
+  }
 };
 </script>
 
