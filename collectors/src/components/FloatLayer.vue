@@ -11,43 +11,36 @@
         <i class="iconfont icon-right"></i>
       </div>
       <img :src="showpic ? url + item.pic : ''" v-if="item.gallery == null" />
-      <img
-        :src="showpic ? galleryUrl + item.id + '/' + galleryIndex + '.jpg' : ''"
-        v-if="item.gallery != null"
-      />
+      <img :src="showpic ? galleryUrl + item.id + '/' + galleryIndex + '.jpg' : ''" v-if="item.gallery != null" />
+    </div>
+    <div class="fusion-list" v-if="[1].indexOf(urlType) != -1 && fusion != null">
+      <div class="medal-group" v-for="g in fusion" :key="g">
+        <div class="medal-item" v-for="f in g" :key="f.id" :title="f.name">
+          <img :src="url + f.pic" />
+        </div>
+      </div>
     </div>
     <div class="detail-info">
       <div class="unique-code" v-if="item.code != null" title="通用万能识别码">
-        <div
-          class="code-line"
-          :class="'c-' + c"
-          v-for="c in item.code"
-          :key="c"
-        >
+        <div class="code-line" :class="'c-' + c" v-for="c in item.code" :key="c">
           <div class="code-block"></div>
           <div class="code-block"></div>
           <div class="code-block"></div>
         </div>
         <p class="code-num" v-html="item.code.join('')"></p>
       </div>
-      <div
-        v-if="[0].indexOf(urlType) != -1"
-        class="sounds-mode"
-        :class="{ key: item.selfSound }"
-        :title="item.selfSound ? '自发声' : '海帕枪发声'"
-      ></div>
+      <div v-if="[0].indexOf(urlType) != -1" class="sounds-mode" :class="{ key: item.selfSound }"
+        :title="item.selfSound ? '自发声' : '海帕枪发声'"></div>
       <p class="b-title">
         {{ item.name
-        }}<span v-if="[0].indexOf(urlType) != -1"
-          >&nbsp;{{ item.property }}</span
-        >
+        }}<span v-if="[0].indexOf(urlType) != -1">&nbsp;{{ item.property }}</span>
       </p>
       <p class="item-way" v-if="[0, 1].indexOf(urlType) != -1">
         {{ item.way }}
       </p>
       <p class="tag-box" v-if="[0, 1].indexOf(urlType) != -1">
         <span class="tag-item" v-for="tag in item.tag" :key="tag">{{
-          tag
+            tag
         }}</span>
       </p>
       <p class="item-way" v-if="[3].indexOf(urlType) != -1">
@@ -67,6 +60,10 @@ export default {
     item: {
       type: Object,
       default: {}
+    },
+    fusion: {
+      type: Array,
+      default: null
     },
     show: {
       type: Boolean
@@ -140,6 +137,7 @@ export default {
   opacity: 0;
   visibility: hidden;
 }
+
 .float-layer.active {
   visibility: visible;
   transform: translate(-50%, -50%) scale(1);
@@ -152,58 +150,70 @@ export default {
   line-height: 500px;
   text-align: center;
 }
+
 .full-pic img {
   max-width: 100%;
   max-height: 100%;
   vertical-align: middle;
 }
+
 @media (max-width: 1024px) {
   .float-layer {
     width: calc(100% - 6px);
     margin: 0;
   }
+
   .full-pic {
     width: 100%;
   }
 }
+
 .detail-info {
   text-align: center;
   background-color: #f5f8f9;
   padding: 10px 0 20px;
 }
+
 .b-title {
   font-size: 22px;
   font-weight: 600;
   box-sizing: border-box;
 }
+
 .tag-box {
   padding-top: 10px;
 }
+
 .tag-item {
   background-color: #4caf50;
   padding: 5px 15px;
   border-radius: 23px;
   color: #fff;
 }
+
 .item-way {
   font-size: 14px;
   margin: 4px 0;
   color: #4caf50;
 }
+
 .unique-code {
   position: absolute;
   left: 15px;
   bottom: 10px;
 }
+
 .code-line {
   height: 5px;
   width: 30px;
   margin-top: 2px;
 }
+
 .code-line:nth-child(4) {
   height: 6px;
   margin-top: 4px;
 }
+
 .code-block {
   float: left;
   width: 10px;
@@ -211,38 +221,47 @@ export default {
   background-color: #000;
   opacity: 0;
 }
+
 .code-num {
   font-size: 12px;
   text-align: center;
   margin-top: 3px;
   letter-spacing: 1px;
 }
+
 .code-line.c-0 .code-block:nth-child(2),
 .code-line.c-0 .code-block:nth-child(3) {
   opacity: 1;
 }
+
 .code-line.c-1 .code-block:nth-child(3) {
   opacity: 1;
 }
+
 .code-line.c-2 .code-block:nth-child(2) {
   opacity: 1;
 }
+
 .code-line.c-3 .code-block:nth-child(1) {
   opacity: 1;
 }
+
 .code-line.c-4 .code-block:nth-child(1),
 .code-line.c-4 .code-block:nth-child(2) {
   opacity: 1;
 }
+
 .code-line.c-5 .code-block:nth-child(1),
 .code-line.c-5 .code-block:nth-child(3) {
   opacity: 1;
 }
+
 .code-line.c-6 .code-block:nth-child(1),
 .code-line.c-6 .code-block:nth-child(2),
 .code-line.c-6 .code-block:nth-child(3) {
   opacity: 1;
 }
+
 .sounds-mode {
   position: absolute;
   right: 22px;
@@ -252,9 +271,11 @@ export default {
   height: 30px;
   background-position: 0 0;
 }
+
 .sounds-mode.key {
   background-position: -34px 0;
 }
+
 .ctrl-left,
 .ctrl-right {
   width: 40px;
@@ -268,12 +289,35 @@ export default {
   color: #fff;
   background-color: #00000030;
 }
+
 .ctrl-left:hover,
 .ctrl-right:hover {
   background-color: #00000042;
 }
+
 .ctrl-right {
   left: auto;
   right: 0;
+}
+
+.fusion-list {
+  overflow: hidden;
+}
+
+.medal-group {
+  width: 33.33333%;
+  float: left;
+  text-align: center;
+}
+
+.medal-item {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+}
+
+.medal-item img {
+  width: 100%;
+  height: 100%;
 }
 </style>

@@ -1,39 +1,17 @@
 <template>
   <div class="item-list" :class="collectStatus ? 'collect-status' : ''">
-    <floatLayer
-      :show="layerShow"
-      :item="nowDetail"
-      :urlType="1"
-      @parentEvent="hideDetail"
-    />
+    <floatLayer :show="layerShow" :item="nowDetail" :fusion="nowFusion" :urlType="1" @parentEvent="hideDetail" />
     <div class="ctrl-panel">
-      <div
-        class="switch-box"
-        :class="collectFilter ? 'active' : ''"
-        @click="getCollectFilter"
-      >
+      <div class="switch-box" :class="collectFilter ? 'active' : ''" @click="getCollectFilter">
         <div class="switch-label">过滤已拥有的</div>
         <div class="switch-btn"></div>
       </div>
-      <div
-        class="btn"
-        v-text="collectStatus ? '退出标记模式' : '标记我已拥有的'"
-        @click="collectToggle"
-      ></div>
+      <div class="btn" v-text="collectStatus ? '退出标记模式' : '标记我已拥有的'" @click="collectToggle"></div>
       <tagBar v-bind:tags="tags" @parentEvent="getDataByTag" />
     </div>
-    <propItem
-      v-for="um in nowList"
-      v-bind:item="um"
-      :class="getCollect(um.id) ? 'collect' : ''"
-      :urlType="1"
-      :showPic="true"
-      :key="um.id"
-      :gridNum="4"
-      :barColor="um.color"
-      @click.native="showDetail(um)"
-      v-show="collectFilter == false || !getCollect(um.id)"
-    />
+    <propItem v-for="um in nowList" v-bind:item="um" :class="getCollect(um.id) ? 'collect' : ''" :urlType="1"
+      :showPic="true" :key="um.id" :gridNum="4" :barColor="um.color" @click.native="showDetail(um)"
+      v-show="collectFilter == false || !getCollect(um.id)" />
   </div>
 </template>
 
@@ -162,6 +140,7 @@ export default {
       ],
       nowList: null, //展示列表
       nowDetail: null,
+      nowFusion: null,
       layerShow: false,
       collectStatus: false, //标记模式
       collectFilter: false, //过滤已拥有的
@@ -1396,20 +1375,119 @@ export default {
       fusionList: [
         {
           id: "M-123",
+          name: "泽塔奥特曼 阿尔法装甲",
           fusionArr: ["M-001", "M-002", "M-003"]
         },
         {
           id: "M-124",
+          name: "泽塔奥特曼 贝塔冲击",
           fusionArr: ["M-004", "M-005", "M-006"]
         },
         {
           id: "M-125",
+          name: "泽塔奥特曼 伽马未来",
           fusionArr: ["M-007", "M-008", "M-009"]
         },
         {
           id: "M-126",
+          name: "泽塔奥特曼 德尔塔天爪",
           fusionArr: ["M-010", "M-011", "M-012"]
-        }
+        },
+        {
+          id: "",
+          name: "谢语",
+          fusionArr: ["M-088", "M-089", "M-090"]
+        },
+        {
+          id: "",
+          name: "梦比优斯 无限",
+          fusionArr: ["M-018", "M-040"]
+        },
+        {
+          id: "",
+          name: "盖亚奥特曼 至高型",
+          fusionArr: ["M-009", "M-050"]
+        },
+        {
+          id: "",
+          name: "雷杰多奥特曼",
+          fusionArr: ["M-016", "M-042"]
+        },
+        {
+          id: "M-144",
+          name: "赛迦",
+          fusionArr: ["M-001", "M-008", "M-016"]
+        },
+        {
+          id: "M-044",
+          name: "赛罗奥特曼 月神奇迹型",
+          fusionArr: ["M-001", "M-056", "M-016"]
+        },
+        {
+          id: "M-049",
+          name: "赛罗奥特曼 强壮日冕型",
+          fusionArr: ["M-001", "M-085", "M-086"]
+        },
+        {
+          id: "",
+          name: "黑暗赛罗",
+          fusionArr: ["M-001", "M-138"]
+        },
+        {
+          id: "",
+          name: "赛罗奥特曼 格兰剑刃",
+          fusionArr: ["M-004", "M-002", "M-005"]
+        },
+        {
+          id: "",
+          name: "赛罗奥特曼 特别联组",
+          fusionArr: ["M-001", "M-001", "M-001"]
+        },
+        {
+          id: "M-028",
+          name: "银河斯特利姆奥特曼",
+          fusionArr: ["M-096", "M-006"]
+        },
+        {
+          id: "M-034",
+          name: "银河维克特利奥特曼",
+          fusionArr: ["M-096", "M-073"]
+        },
+        {
+          id: "",
+          name: "维克特利奥特曼 艾雷王扫尾",
+          fusionArr: ["M-073", "M-079"]
+        },
+        {
+          id: "",
+          name: "维克特利奥特曼 EX雷德王重拳",
+          fusionArr: ["M-073", ""]
+        },
+        {
+          id: "",
+          name: "维克特利奥特曼 古墩鞭击",
+          fusionArr: ["M-073", ""]
+        },
+        {
+          id: "M-029",
+          name: "维克特利奥特曼 骑士形态",
+          fusionArr: ["M-073", "M-043"]
+        },
+        {
+          id: "",
+          name: "艾克斯奥特曼 哥莫拉装甲",
+          fusionArr: ["M-020", ""]
+        },
+        {
+          id: "",
+          name: "终极赛罗武装艾克斯",
+          fusionArr: ["M-020", "M-071"]
+        },
+        {
+          id: "",
+          name: "艾克斯奥特曼 贝塔火花装甲",
+          fusionArr: ["M-004", "M-020", "M-007"]
+        },
       ]
     };
   },
@@ -1444,7 +1522,7 @@ export default {
         // 详情模式
         this.layerShow = true;
         this.nowDetail = item;
-        this.getFusionSub(item.id);
+        this.nowFusion = this.getFusion(item.id);
       }
     },
     hideDetail(visible) {
@@ -1495,27 +1573,43 @@ export default {
         });
       });
     },
-    // 可合成
-    getFusionSub(id) {
-      let arr = [];
-      this.fusionList.forEach((item, index, array) => {
-        if (item.fusionArr.indexOf(id) != -1) {
-          arr.push(item);
+    // 获取单个数据
+    getInfo(id) {
+      let it = {};
+      this.ultramedal.forEach((item, index, array) => {
+        if (item.id == id) {
+          it = item;
         }
       });
-      console.log(arr);
-      return arr;
+      return it;
+    },
+    // 可合成
+    getFusion(id) {
+      let arra = [];
+      this.fusionList.forEach((item, index, array) => {
+        if (item.fusionArr.indexOf(id) != -1) {
+          let group = [];
+          item.fusionArr.forEach((ite, ind, arr) => {
+            group.push(this.getInfo(ite));
+          });
+          arra.push(group);
+        }
+      });
+      return arra;
     },
     // 被合成
-    getFusion(id) {
-      let item = {};
+    getFusionSub(id) {
+      let arra = [];
       this.fusionList.forEach((item, index, array) => {
-        if (item.fusionArr.indexOf(id) != -1) {
-          arr.push(item);
+        if (item.id == id) {
+          let group = [];
+          item.fusionArr.forEach((ite, ind, arr) => {
+            group.push(this.getInfo(ite));
+          });
+          arra.push(group);
         }
       });
-      console.log(item);
-      return item;
+      return arra;
     }
   },
   created() {
@@ -1526,4 +1620,5 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+</style>
