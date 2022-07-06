@@ -1489,12 +1489,12 @@ export default {
         {
           id: "",
           name: "维克特利奥特曼 EX雷德王重拳",
-          fusionArr: ["M-073", ""]
+          fusionArr: ["M-073", "EX雷德王"]
         },
         {
           id: "",
           name: "维克特利奥特曼 古墩鞭击",
-          fusionArr: ["M-073", ""]
+          fusionArr: ["M-073", "古墩"]
         },
         {
           id: "M-029",
@@ -1504,7 +1504,7 @@ export default {
         {
           id: "",
           name: "艾克斯奥特曼 哥莫拉装甲",
-          fusionArr: ["M-020", ""]
+          fusionArr: ["M-020", "电子哥莫拉"]
         },
         {
           id: "",
@@ -1569,7 +1569,7 @@ export default {
         {
           id: "",
           name: "欧布奥特曼 疾辉形态",
-          fusionArr: ["", "M-021", "M-074"]
+          fusionArr: ["迪迦奥特曼 空中型", "M-021", "M-074"]
         },
         {
           id: "",
@@ -1599,7 +1599,7 @@ export default {
         {
           id: "",
           name: "欧布奥特曼 刚力形态",
-          fusionArr: ["", "M-021", "M-085"]
+          fusionArr: ["迪迦奥特曼 强力型", "M-021", "M-085"]
         },
         {
           id: "",
@@ -1654,7 +1654,7 @@ export default {
         {
           id: "",
           name: "捷德奥特曼 飞刃形态",
-          fusionArr: ["M-138", "M-027", ""]
+          fusionArr: ["M-138", "M-027", "欧布奥特曼 智勇形态"]
         },
         {
           id: "",
@@ -1674,7 +1674,7 @@ export default {
         {
           id: "",
           name: "捷德奥特曼 斗魂形态",
-          fusionArr: ["M-003", "M-027", ""]
+          fusionArr: ["M-003", "M-027", "阿斯特拉奥特曼"]
         },
         {
           id: "",
@@ -1702,7 +1702,7 @@ export default {
           fusionArr: ["M-108", "M-016", "M-017"]
         },
         {
-          id: "",
+          id: "M-093",
           name: "罗索奥特曼 烈火形态",
           fusionArr: ["M-093", "M-006"]
         },
@@ -1717,7 +1717,7 @@ export default {
           fusionArr: ["M-093", "M-019"]
         },
         {
-          id: "",
+          id: "M-094",
           name: "布鲁奥特曼 跃水形态",
           fusionArr: ["M-094", "M-019"]
         },
@@ -1747,12 +1747,12 @@ export default {
           fusionArr: ["M-094", "M-073"]
         },
         {
-          id: "",
+          id: "M-032",
           name: "罗布奥特曼",
           fusionArr: ["M-093", "M-094"]
         },
         {
-          id: "",
+          id: "M-038",
           name: "格罗布奥特曼",
           fusionArr: ["M-093", "M-094", "M-064"]
         },
@@ -1760,7 +1760,62 @@ export default {
           id: "M-033",
           name: "泰迦奥特曼 三重斯特利姆",
           fusionArr: ["M-075", "M-076", "M-077"]
-        }
+        },
+        {
+          id: "",
+          name: "卷领泰莱斯通",
+          fusionArr: ["M-145", "M-054"]
+        },
+        {
+          id: "",
+          name: "三帝王",
+          fusionArr: ["M-133", "M-134", "M-135"]
+        },
+        {
+          id: "",
+          name: "五帝王",
+          fusionArr: ["三帝王", "M-137", "M-136"]
+        },
+        {
+          id: "",
+          name: "合体魔王兽 杰庞顿",
+          fusionArr: ["M-130", "M-131", "M-132"]
+        },
+        {
+          id: "",
+          name: "贝利亚融合兽斯卡鲁哥莫拉",
+          fusionArr: ["M-139", "M-138", "M-140"]
+        },
+        {
+          id: "",
+          name: "贝利亚融合兽雷霆杀手",
+          fusionArr: ["M-079", "M-138", "M-080"]
+        },
+        {
+          id: "",
+          name: "贝利亚融合兽佩丹尼姆杰顿",
+          fusionArr: ["M-130", "M-138", "M-061"]
+        },
+        {
+          id: "",
+          name: "寄生破灭兽麦茨波罗兹",
+          fusionArr: ["M-081", "M-082", "M-083"]
+        },
+        {
+          id: "",
+          name: "加拉特隆王",
+          fusionArr: ["M-061", "M-138", "M-142"]
+        },
+        {
+          id: "",
+          name: "奇美拉柏洛斯",
+          fusionArr: ["五帝王", "M-138", "佐格二形态"]
+        },
+        {
+          id: "",
+          name: "贝蒙杰多",
+          fusionArr: ["贝蒙斯坦", "M-138", "M-130"]
+        },
       ]
     };
   },
