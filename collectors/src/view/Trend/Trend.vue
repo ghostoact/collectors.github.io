@@ -154,6 +154,16 @@ export default {
         //   saleDateSort: 99999999
         // },
         {
+          name: "UR伽古拉黑暗欧布圆环",
+          saledate: "",
+          yenprice: null,
+          pastprice: [0],
+          des: "",
+          url: "",
+          pic: "def.jpg",
+          saleDateSort: 99999999
+        },
+        {
           name: "DX德凯奥特曼武器剑套装",
           saledate: "2022.8.27",
           yenprice: 270,
