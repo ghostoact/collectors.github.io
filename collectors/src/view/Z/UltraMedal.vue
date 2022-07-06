@@ -1,17 +1,40 @@
 <template>
   <div class="item-list" :class="collectStatus ? 'collect-status' : ''">
-    <floatLayer :show="layerShow" :item="nowDetail" :fusion="nowFusion" :urlType="1" @parentEvent="hideDetail" />
+    <floatLayer
+      :show="layerShow"
+      :item="nowDetail"
+      :fusion="nowFusion"
+      :urlType="1"
+      @parentEvent="hideDetail"
+    />
     <div class="ctrl-panel">
-      <div class="switch-box" :class="collectFilter ? 'active' : ''" @click="getCollectFilter">
+      <div
+        class="switch-box"
+        :class="collectFilter ? 'active' : ''"
+        @click="getCollectFilter"
+      >
         <div class="switch-label">过滤已拥有的</div>
         <div class="switch-btn"></div>
       </div>
-      <div class="btn" v-text="collectStatus ? '退出标记模式' : '标记我已拥有的'" @click="collectToggle"></div>
+      <div
+        class="btn"
+        v-text="collectStatus ? '退出标记模式' : '标记我已拥有的'"
+        @click="collectToggle"
+      ></div>
       <tagBar v-bind:tags="tags" @parentEvent="getDataByTag" />
     </div>
-    <propItem v-for="um in nowList" v-bind:item="um" :class="getCollect(um.id) ? 'collect' : ''" :urlType="1"
-      :showPic="true" :key="um.id" :gridNum="4" :barColor="um.color" @click.native="showDetail(um)"
-      v-show="collectFilter == false || !getCollect(um.id)" />
+    <propItem
+      v-for="um in nowList"
+      v-bind:item="um"
+      :class="getCollect(um.id) ? 'collect' : ''"
+      :urlType="1"
+      :showPic="true"
+      :key="um.id"
+      :gridNum="4"
+      :barColor="um.color"
+      @click.native="showDetail(um)"
+      v-show="collectFilter == false || !getCollect(um.id)"
+    />
   </div>
 </template>
 
@@ -274,7 +297,7 @@ export default {
           id: "M-016",
           type: "U",
           tag: ["DX"],
-          name: "高斯奥特曼",
+          name: "高斯奥特曼 月神模式",
           link: [38],
           pic: "M-016.jpg"
         },
@@ -322,7 +345,7 @@ export default {
           id: "M-022",
           type: "U",
           tag: ["EX01"],
-          name: "赛罗奥特曼 闪耀形态",
+          name: "赛罗奥特曼 光辉赛罗",
           link: [64],
           pic: "M-022.jpg"
         },
@@ -410,7 +433,7 @@ export default {
           id: "M-033",
           type: "U",
           tag: ["EX02"],
-          name: "泰迦三重斯特利姆",
+          name: "泰迦奥特曼 三重斯特利姆",
           link: [118],
           pic: "M-033.jpg"
         },
@@ -963,7 +986,7 @@ export default {
           id: "M-099",
           type: "U",
           tag: ["SP"],
-          name: "欧布奥特曼",
+          name: "捷德奥特曼",
           link: [68],
           color: "#d8111a",
           pic: "M-099.jpg"
@@ -972,7 +995,7 @@ export default {
           id: "M-100",
           type: "U",
           tag: ["SP"],
-          name: "捷德奥特曼",
+          name: "欧布奥特曼",
           link: [103],
           color: "#d8111a",
           pic: "M-100.jpg"
@@ -1395,6 +1418,11 @@ export default {
         },
         {
           id: "",
+          name: "西格玛爆破",
+          fusionArr: ["M-018", "M-007", "M-013"]
+        },
+        {
+          id: "",
           name: "谢语",
           fusionArr: ["M-088", "M-089", "M-090"]
         },
@@ -1488,6 +1516,251 @@ export default {
           name: "艾克斯奥特曼 贝塔火花装甲",
           fusionArr: ["M-004", "M-020", "M-007"]
         },
+        {
+          id: "M-072",
+          name: "欧布奥特曼 重光形态",
+          fusionArr: ["M-004", "M-021", "M-007"]
+        },
+        {
+          id: "",
+          name: "欧布奥特曼 暴炎形态",
+          fusionArr: ["M-018", "M-021", "M-006"]
+        },
+        {
+          id: "",
+          name: "欧布奥特曼 疾风形态",
+          fusionArr: ["M-014", "M-021", "M-001"]
+        },
+        {
+          id: "",
+          name: "欧布奥特曼 暗耀形态",
+          fusionArr: ["M-013", "M-021", "M-138"]
+        },
+        {
+          id: "",
+          name: "欧布奥特曼 煌闪形态",
+          fusionArr: ["M-019", "M-021", "M-020"]
+        },
+        {
+          id: "",
+          name: "欧布奥特曼 智勇形态",
+          fusionArr: ["M-002", "M-021", "M-001"]
+        },
+        {
+          id: "",
+          name: "欧布奥特曼 闪斩形态",
+          fusionArr: ["M-002", "M-021", "M-005"]
+        },
+        {
+          id: "",
+          name: "欧布奥特曼 慈愈形态",
+          fusionArr: ["M-016", "M-021", "M-020"]
+        },
+        {
+          id: "",
+          name: "欧布奥特曼 荣光形态",
+          fusionArr: ["M-043", "M-021", "M-013"]
+        },
+        {
+          id: "",
+          name: "欧布奥特曼 豪腕形态",
+          fusionArr: ["M-009", "M-021", "M-073"]
+        },
+        {
+          id: "",
+          name: "欧布奥特曼 疾辉形态",
+          fusionArr: ["", "M-021", "M-074"]
+        },
+        {
+          id: "",
+          name: "欧布奥特曼 光耀形态",
+          fusionArr: ["M-007", "M-021", "M-008"]
+        },
+        {
+          id: "",
+          name: "欧布奥特曼 斗拳形态",
+          fusionArr: ["M-003", "M-021", "M-001"]
+        },
+        {
+          id: "",
+          name: "欧布奥特曼 暗雷形态",
+          fusionArr: ["M-138", "M-021", "M-008"]
+        },
+        {
+          id: "",
+          name: "欧布奥特曼 光刃形态",
+          fusionArr: ["M-050", "M-021", "M-043"]
+        },
+        {
+          id: "",
+          name: "欧布奥特曼 光魂形态",
+          fusionArr: ["M-004", "M-021", "M-078"]
+        },
+        {
+          id: "",
+          name: "欧布奥特曼 刚力形态",
+          fusionArr: ["", "M-021", "M-085"]
+        },
+        {
+          id: "",
+          name: "欧布奥特曼 光岚形态",
+          fusionArr: ["M-138", "M-021", "M-050"]
+        },
+        {
+          id: "",
+          name: "欧布奥特曼 虹刃形态",
+          fusionArr: ["M-018", "M-021", "M-019"]
+        },
+        {
+          id: "",
+          name: "欧布奥特曼 强猛形态",
+          fusionArr: ["M-006", "M-021", "M-074"]
+        },
+        {
+          id: "",
+          name: "捷德奥特曼 原始形态",
+          fusionArr: ["M-004", "M-027", "M-138"]
+        },
+        {
+          id: "",
+          name: "捷德奥特曼 刚燃形态",
+          fusionArr: ["M-002", "M-027", "M-003"]
+        },
+        {
+          id: "",
+          name: "捷德奥特曼 机敏形态",
+          fusionArr: ["M-043", "M-027", "M-016"]
+        },
+        {
+          id: "",
+          name: "捷德奥特曼 豪勇形态",
+          fusionArr: ["M-001", "M-027", "M-015"]
+        },
+        {
+          id: "",
+          name: "捷德奥特曼 尊皇形态",
+          fusionArr: ["M-138", "M-027", "M-059"]
+        },
+        {
+          id: "",
+          name: "捷德奥特曼 银河初升",
+          fusionArr: ["M-019", "M-020", "M-021"]
+        },
+        {
+          id: "",
+          name: "捷德奥特曼 神辉形态",
+          fusionArr: ["M-004", "M-027", "M-022"]
+        },
+        {
+          id: "",
+          name: "捷德奥特曼 飞刃形态",
+          fusionArr: ["M-138", "M-027", ""]
+        },
+        {
+          id: "",
+          name: "捷德奥特曼 无尽形态",
+          fusionArr: ["M-007", "M-027", "M-044"]
+        },
+        {
+          id: "",
+          name: "捷德奥特曼 勇战形态",
+          fusionArr: ["M-018", "M-027", "M-072"]
+        },
+        {
+          id: "",
+          name: "捷德奥特曼 领航形态",
+          fusionArr: ["M-013", "M-027", "M-018"]
+        },
+        {
+          id: "",
+          name: "捷德奥特曼 斗魂形态",
+          fusionArr: ["M-003", "M-027", ""]
+        },
+        {
+          id: "",
+          name: "捷德奥特曼 勇进形态",
+          fusionArr: ["M-008", "M-027", "M-016"]
+        },
+        {
+          id: "",
+          name: "捷德奥特曼 光骑形态",
+          fusionArr: ["M-009", "M-027", "M-043"]
+        },
+        {
+          id: "",
+          name: "捷德奥特曼 豪力形态",
+          fusionArr: ["M-015", "M-027", "M-138"]
+        },
+        {
+          id: "",
+          name: "捷德奥特曼 超越形态",
+          fusionArr: ["M-071", "M-027", "M-078"]
+        },
+        {
+          id: "",
+          name: "捷德奥特曼 光之十字",
+          fusionArr: ["M-108", "M-016", "M-017"]
+        },
+        {
+          id: "",
+          name: "罗索奥特曼 烈火形态",
+          fusionArr: ["M-093", "M-006"]
+        },
+        {
+          id: "",
+          name: "布鲁奥特曼 烈火形态",
+          fusionArr: ["M-094", "M-006"]
+        },
+        {
+          id: "",
+          name: "罗索奥特曼 跃水形态",
+          fusionArr: ["M-093", "M-019"]
+        },
+        {
+          id: "",
+          name: "布鲁奥特曼 跃水形态",
+          fusionArr: ["M-094", "M-019"]
+        },
+        {
+          id: "",
+          name: "布鲁奥特曼 烈火形态",
+          fusionArr: ["M-094", "M-006"]
+        },
+        {
+          id: "",
+          name: "罗索奥特曼 疾风形态",
+          fusionArr: ["M-093", "M-007"]
+        },
+        {
+          id: "",
+          name: "布鲁奥特曼 疾风形态",
+          fusionArr: ["M-094", "M-007"]
+        },
+        {
+          id: "",
+          name: "罗索奥特曼 大地形态",
+          fusionArr: ["M-093", "M-073"]
+        },
+        {
+          id: "",
+          name: "布鲁奥特曼 大地形态",
+          fusionArr: ["M-094", "M-073"]
+        },
+        {
+          id: "",
+          name: "罗布奥特曼",
+          fusionArr: ["M-093", "M-094"]
+        },
+        {
+          id: "",
+          name: "格罗布奥特曼",
+          fusionArr: ["M-093", "M-094", "M-064"]
+        },
+        {
+          id: "M-033",
+          name: "泰迦奥特曼 三重斯特利姆",
+          fusionArr: ["M-075", "M-076", "M-077"]
+        }
       ]
     };
   },
@@ -1620,5 +1893,4 @@ export default {
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
