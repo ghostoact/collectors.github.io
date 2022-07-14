@@ -154,14 +154,24 @@ export default {
         //   saleDateSort: 99999999
         // },
         {
-          name: "UR伽古拉黑暗欧布圆环",
-          saledate: "",
-          yenprice: null,
+          name: "德凯奥特曼 闪耀型",
+          saledate: "2022.1",
+          yenprice: 192,
           pastprice: [0],
           des: "",
-          url: "",
-          pic: "def.jpg",
-          saleDateSort: 99999999
+          url: "https://tamashii.jp/item/14048/",
+          pic: "1320184343.jpg",
+          saleDateSort: 20221101
+        },
+        {
+          name: "UR伽古拉黑暗欧布圆环",
+          saledate: "2023.2",
+          yenprice: 801,
+          pastprice: [0],
+          des: "",
+          url: "https://p-bandai.jp/item/item-1000175969/",
+          pic: "3395407680.jpg",
+          saleDateSort: 20230201
         },
         {
           name: "DX德凯奥特曼武器剑套装",

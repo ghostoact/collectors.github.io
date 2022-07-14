@@ -1184,6 +1184,18 @@ export default {
           way: null,
           pic: "F-96.jpg",
         },
+        {
+          id: "F-97",
+          type: "U",
+          tag: ["U"],
+          name: "德凯奥特曼 闪耀型",
+          gallery: 5,
+          link: null,
+          color: null,
+          date: "2022.11",
+          way: null,
+          pic: "F-97.jpg",
+        },
       ],
     };
   },
