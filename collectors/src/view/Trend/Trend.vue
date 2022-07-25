@@ -3,126 +3,80 @@
     <div class="ctrl-panel">
       <div class="switch-ctrl">
         <div class="switch-label">排序</div>
-        <div
-          class="switch-item"
-          :class="{ active: ctrl.sort == 0 }"
-          @click="getListBySort(0)"
-        >
+        <div class="switch-item" :class="{ active: ctrl.sort == 0 }" @click="getListBySort(0)">
           默认
         </div>
-        <div
-          class="switch-item"
-          :class="{ active: ctrl.sort == 1 }"
-          @click="getListBySort(1)"
-        >
+        <div class="switch-item" :class="{ active: ctrl.sort == 1 }" @click="getListBySort(1)">
           发售
         </div>
       </div>
       <div class="switch-ctrl right">
         <div class="switch-label">视图</div>
-        <div
-          class="switch-item"
-          :class="{ active: ctrl.view == 0 }"
-          @click="changeViewType(0)"
-        >
+        <div class="switch-item" :class="{ active: ctrl.view == 0 }" @click="changeViewType(0)">
           <i class="iconfont icon-list"></i>
         </div>
-        <div
-          class="switch-item"
-          :class="{ active: ctrl.view == 1 }"
-          @click="changeViewType(1)"
-        >
+        <div class="switch-item" :class="{ active: ctrl.view == 1 }" @click="changeViewType(1)">
           <i class="iconfont icon-jiugongge"></i>
         </div>
       </div>
     </div>
     <div class="model-toy" v-for="toy in nowList" :key="toy.title">
       <div class="toy-warp">
-        <span
-          class="sale-date"
-          v-html="toy.saledate ? toy.saledate + ' 发售' : ''"
-        ></span>
-        <a
-          class="website"
-          v-show="toy.url != ''"
-          :href="toy.url"
-          target="_blank"
-          title="跳转到官网"
-        >
+        <span class="sale-date" v-html="toy.saledate ? toy.saledate + ' 发售' : ''"></span>
+        <a class="website" v-show="toy.url != ''" :href="toy.url" target="_blank" title="跳转到官网">
           <i class="iconfont icon-wangye"></i>
         </a>
         <div class="trend-box">
-          <div
-            class="trend-left"
-            v-lazy:background-image="'./static/img/item/trend/' + toy.pic"
-          ></div>
+          <div class="trend-left" v-lazy:background-image="'./static/img/item/trend/' + toy.pic"></div>
           <div class="trend-right">
             <div class="trend-info">
               <p class="toy-title" :title="toy.name">{{ toy.name }}</p>
               <div class="price-box">
                 <div class="price-item yen">
                   <p class="price-num">
-                    <span
-                      v-html="toy.yenprice != null ? toy.yenprice : '-'"
-                    ></span>
+                    <span v-html="toy.yenprice != null ? toy.yenprice : '-'"></span>
                     <span class="unit" v-if="toy.yenprice != null">元</span>
                   </p>
                   <p class="price-name">发售参考价</p>
                 </div>
                 <div class="price-item min">
                   <p class="price-num">
-                    <span
-                      v-html="
-                        arrMinNum(toy.pastprice) != 0
-                          ? arrMinNum(toy.pastprice)
-                          : '-'
-                      "
-                    ></span>
-                    <span class="unit" v-if="arrMinNum(toy.pastprice) != 0"
-                      >元</span
-                    >
+                    <span v-html="
+                      arrMinNum(toy.pastprice) != 0
+                        ? arrMinNum(toy.pastprice)
+                        : '-'
+                    "></span>
+                    <span class="unit" v-if="arrMinNum(toy.pastprice) != 0">元</span>
                   </p>
                   <p class="price-name">最低价</p>
                 </div>
                 <div class="price-item">
                   <p class="price-num">
-                    <span
-                      v-html="
-                        getAverageNum(toy.pastprice) != 0
-                          ? getAverageNum(toy.pastprice)
-                          : '-'
-                      "
-                    ></span>
-                    <span class="unit" v-if="getAverageNum(toy.pastprice) != 0"
-                      >元</span
-                    >
+                    <span v-html="
+                      getAverageNum(toy.pastprice) != 0
+                        ? getAverageNum(toy.pastprice)
+                        : '-'
+                    "></span>
+                    <span class="unit" v-if="getAverageNum(toy.pastprice) != 0">元</span>
                   </p>
                   <p class="price-name">平均价</p>
                 </div>
                 <div class="price-item max">
                   <p class="price-num">
-                    <span
-                      v-html="
-                        getMaxNum(toy.pastprice) != 0
-                          ? getMaxNum(toy.pastprice)
-                          : '-'
-                      "
-                    ></span>
-                    <span class="unit" v-if="getMaxNum(toy.pastprice) != 0"
-                      >元</span
-                    >
+                    <span v-html="
+                      getMaxNum(toy.pastprice) != 0
+                        ? getMaxNum(toy.pastprice)
+                        : '-'
+                    "></span>
+                    <span class="unit" v-if="getMaxNum(toy.pastprice) != 0">元</span>
                   </p>
                   <p class="price-name">最高价</p>
                 </div>
               </div>
               <p class="toy-des">{{ toy.des }}</p>
             </div>
-            <v-chart
-              class="trend-echarts"
-              autoresize
-              :option="getOption(toy.pastprice)"
-              style="width: 100%; height: 100%"
-            />
+            <v-chart class="trend-echarts" autoresize :option="getOption(toy.pastprice)"
+              style="width: 100%; height: 100%" />
           </div>
         </div>
       </div>
@@ -157,7 +111,7 @@ export default {
           name: "德凯奥特曼 闪耀型",
           saledate: "2022.1",
           yenprice: 192,
-          pastprice: [0],
+          pastprice: [205, 199, 195],
           des: "",
           url: "https://tamashii.jp/item/14048/",
           pic: "1320184343.jpg",
@@ -167,7 +121,7 @@ export default {
           name: "UR伽古拉黑暗欧布圆环",
           saledate: "2023.2",
           yenprice: 801,
-          pastprice: [0],
+          pastprice: [986, 980, 976, 975, 970, 949],
           des: "",
           url: "https://p-bandai.jp/item/item-1000175969/",
           pic: "3395407680.jpg",
@@ -197,7 +151,7 @@ export default {
           name: "DX德凯奥特曼胜利猎隼",
           saledate: "2022.7.9",
           yenprice: 119,
-          pastprice: [109, 99, 96, 93, 92, 89],
+          pastprice: [109, 99, 96, 93, 92, 89, 84, 83],
           des: "",
           url: "https://toy.bandai.co.jp/series/ultraman/item/detail/12604/",
           pic: "4174650803.jpg",
@@ -207,7 +161,7 @@ export default {
           name: "英雄勇像 邪恶迪迦",
           saledate: "2022.11",
           yenprice: 109,
-          pastprice: [0],
+          pastprice: [139, 109],
           des: "",
           url: "",
           pic: "8797725516.jpg",
@@ -247,7 +201,7 @@ export default {
           name: "SHF初代奥特曼真骨雕",
           saledate: "2022.7",
           yenprice: 391,
-          pastprice: [530, 500, 580, 538, 525],
+          pastprice: [530, 500, 580, 538, 525, 490, 488,],
           des: "",
           url: "https://tamashii.jp/item/13874/",
           pic: "9552016833.jpg",
@@ -780,7 +734,7 @@ export default {
             771,
             719,
             678,
-            675
+            675, 618
           ],
           des: "黑暗迪迦神光棒+卡蜜尔变身器",
           url: "https://p-bandai.jp/item/item-1000162608/",
@@ -1414,9 +1368,9 @@ export default {
       ]
     };
   },
-  mounted: function() {
+  mounted: function () {
     const vm = this;
-    vm.$nextTick(() => {});
+    vm.$nextTick(() => { });
   },
   methods: {
     // 获取数组最大值
@@ -1489,7 +1443,7 @@ export default {
         rev = rev ? 1 : -1;
       }
 
-      return function(a, b) {
+      return function (a, b) {
         a = a[attr];
         b = b[attr];
         if (a < b) {
