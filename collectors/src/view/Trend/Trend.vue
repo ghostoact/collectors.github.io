@@ -245,13 +245,13 @@ export default {
         },
         {
           name: "SHF初代奥特曼真骨雕",
-          saledate: "2022.7",
+          saledate: "2022.7.23",
           yenprice: 391,
           pastprice: [530, 500, 580, 538, 525, 490, 488],
           des: "",
           url: "https://tamashii.jp/item/13874/",
           pic: "9552016833.jpg",
-          saleDateSort: 20220701
+          saleDateSort: 20220723
         },
         {
           name: "欧布奥特曼UR奥特卡牌SPECIAL SET",
@@ -345,53 +345,53 @@ export default {
         },
         {
           name: "PB特利迦奥特曼纪念套装钥匙DX",
-          saledate: "2022.8",
+          saledate: "2022.8.23",
           yenprice: 380,
           pastprice: [439, 420, 399, 395],
           des: "含PB版光暗特利迦、闪耀特利迦、复合型、强力型和空中型",
           url: "https://p-bandai.jp/item/item-1000169439/",
           pic: "2323474899.jpg",
-          saleDateSort: 20220801
+          saleDateSort: 20220823
         },
         {
           name: "SHF妖丽战士 卡尔蜜拉",
-          saledate: "2022.8",
+          saledate: "2022.8.19",
           yenprice: 394,
           pastprice: [458, 448, 428, 480, 430],
           des: "",
           url: "https://tamashii.jp/item/13910/",
           pic: "8790263940.jpg",
-          saleDateSort: 20220801
+          saleDateSort: 20220819
         },
         {
           name: "SHF特利迦奥特曼 空中型",
-          saledate: "2022.7",
+          saledate: "2022.7.15",
           yenprice: 394,
           pastprice: [420, 430, 435, 449, 420, 440],
           des: "",
           url: "https://tamashii.jp/item/13891/",
           pic: "9083867813.jpg",
-          saleDateSort: 20220701
+          saleDateSort: 20220715
         },
         {
           name: "PB特利迦·奥特兄弟钥匙套装",
-          saledate: "2022.7",
+          saledate: "2022.7.28",
           yenprice: 668,
           pastprice: [809, 800, 799, 789, 730],
           des: "共8款钥匙，含初代、佐菲、赛文、杰克、艾斯、泰罗、雷欧和艾迪",
           url: "https://p-bandai.jp/item/item-1000167638/",
           pic: "9236776245.jpg",
-          saleDateSort: 20220701
+          saleDateSort: 20220728
         },
         {
           name: "SHF黑暗特利迦",
-          saledate: "2022.6",
+          saledate: "2022.6.17",
           yenprice: 416,
           pastprice: [485, 480, 465, 460, 450, 440, 430, 420, 410],
           des: "",
           url: "https://tamashii.jp/item/13890/",
           pic: "8542908695.jpg",
-          saleDateSort: 20220601
+          saleDateSort: 20220617
         },
         {
           name: "特利迦新生代钥匙套装Vol.2",
@@ -415,7 +415,7 @@ export default {
         },
         {
           name: "SHF迪迦奥特曼强力型真骨雕",
-          saledate: "2022.5",
+          saledate: "2022.5.28",
           yenprice: 401,
           pastprice: [
             610,
@@ -436,7 +436,7 @@ export default {
           des: "",
           url: "https://tamashii.jp/item/13821/",
           pic: "3937344485.jpg",
-          saleDateSort: 20220501
+          saleDateSort: 20220528
         },
         {
           name: "SHF风马奥特曼 Special Clear Color Ver.",
@@ -450,13 +450,13 @@ export default {
         },
         {
           name: "SHF基里艾洛德人",
-          saledate: "2022.5",
+          saledate: "2022.5.25",
           yenprice: 372,
           pastprice: [460, 480, 440, 429, 410, 435, 415, 428, 399],
           des: "",
           url: "https://tamashii.jp/item/13867/",
           pic: "7600487532.jpg",
-          saleDateSort: 20220501
+          saleDateSort: 20220525
         },
         {
           name: "磁力怪兽 安东拉钥匙童装附赠",
@@ -470,17 +470,17 @@ export default {
         },
         {
           name: "SHF利布特奥特曼",
-          saledate: "2022.4",
+          saledate: "2022.4.23",
           yenprice: 340,
           pastprice: [318, 328, 288, 268],
           des: "",
           url: "https://tamashii.jp/item/13803/",
           pic: "0942972170.jpg",
-          saleDateSort: 20220401
+          saleDateSort: 20220423
         },
         {
           name: "SHF泽塔奥特曼 贝塔冲击",
-          saledate: "2022.4",
+          saledate: "2022.4.15",
           yenprice: 404,
           pastprice: [
             440,
@@ -501,7 +501,7 @@ export default {
           des: "",
           url: "https://tamashii.jp/item/13829/",
           pic: "8442580298.jpg",
-          saleDateSort: 20220401
+          saleDateSort: 20220415
         },
         {
           name: "TDG迪迦25周年",
@@ -1174,14 +1174,14 @@ export default {
         },
         {
           name: "特利迦·食玩第二弹套装SG02",
-          saledate: "2021.10",
+          saledate: "2021.10.18",
           yenprice: 152,
           pastprice: [168, 120, 205, 140],
           des: "一套8款，含隐藏款",
           url:
             "https://www.bandai.co.jp/candy/products/2021/4549660700234000.html",
           pic: "2931378532.jpg",
-          saleDateSort: 20211001
+          saleDateSort: 20211018
         },
         {
           name: "特利迦·扭蛋第一弹套装GP01",
