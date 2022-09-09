@@ -154,6 +154,26 @@ export default {
         //   saleDateSort: 99999999
         // },
         {
+          name: "欧布奥特曼UR卡牌收纳盒",
+          saledate: "2023.3",
+          yenprice: 176,
+          pastprice: [0],
+          des: "",
+          url: "https://p-bandai.jp/item/item-1000179583/",
+          pic: "1757603429.jpg",
+          saleDateSort: 20230301
+        },
+        {
+          name: "欧布奥特曼UR奥特卡牌SPECIAL SET 02",
+          saledate: "2023.3",
+          yenprice: 401,
+          pastprice: [0],
+          des: "含32张新规卡牌",
+          url: "https://p-bandai.jp/item/item-1000179582/",
+          pic: "2185891387.jpg",
+          saleDateSort: 20230301
+        },
+        {
           name: "德凯奥特曼 闪耀型",
           saledate: "2022.1",
           yenprice: 192,
@@ -254,7 +274,7 @@ export default {
           saleDateSort: 20220723
         },
         {
-          name: "欧布奥特曼UR奥特卡牌SPECIAL SET",
+          name: "欧布奥特曼UR奥特卡牌SPECIAL SET 01",
           saledate: "2022.12",
           yenprice: 417,
           pastprice: [549, 450, 499, 489, 498, 508, 478, 475, 448],
